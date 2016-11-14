@@ -1,0 +1,95 @@
+
+/* Select */
+
+.Select {
+	color: #bdbdbd;
+	position: relative;
+	-webkit-transition: color .3s ease-in-out;
+	-moz-transition: color .3s ease-in-out;
+	-ms-transition: color .3s ease-in-out;
+	-o-transition: color .3s ease-in-out;
+	transition: color .3s ease-in-out;
+}
+
+.Select:hover {
+	color: #424242;
+}
+
+/* Select arrow */
+
+.Select-arrow {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	right: 0;
+}
+
+/* Select arrow span element */
+
+.Select-arrow span {
+	font-size: 1.5em;
+}
+
+/* Select inner */
+
+.Select-inner {
+	border: solid 1px #bdbdbd;
+	border-radius: 3px;
+	position: relative;
+	-webkit-transition: all .4s ease-in;
+	-moz-transition: all .4s ease-in;
+	-ms-transition: all .4s ease-in;
+	-o-transition: all .4s ease-in;
+	transition: all .4s ease-in;
+}
+
+.Select:hover .Select-inner {
+	border-color: #424242;
+}
+
+.Select.is-focus .Select-inner {
+	border-color: #03a9f4;
+}
+
+/* Select value */
+
+.Select-value {
+	-webkit-align-items: center;
+	align-items: center;
+	color: #424242;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	height: 100%;
+	left: .75em;
+	position: absolute;
+	top: 0;
+}
+
+/* Select value span element */
+
+.Select-value span {
+	font-size: 1.125em;
+	font-weight: 300;
+}
+
+/* Select select element */
+
+.Select select {
+	cursor: pointer;
+	font-size: 100%;
+	height: 2.25em;
+	opacity: 0;
+	position: relative;
+	width: 4.5em;
+	z-index: 1;
+}

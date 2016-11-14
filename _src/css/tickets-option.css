@@ -1,0 +1,27 @@
+
+/* Tickets Option */
+
+.TicketsOption {
+	border-bottom: solid 1px #bdbdbd;
+	width: 100%;
+}
+
+.TicketsOption-inner {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	padding: 1em 1em;
+	width: 100%;
+}
+
+.TicketsOption-quantity {
+
+}
+
+.TicketsOption h2 {
+	font-size: 1em;
+}

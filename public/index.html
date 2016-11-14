@@ -6,17 +6,34 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 <meta name="theme-color" content="#ffffff"/>
 <script>
-      (function(d) {
-            var config = {
-                          kitId: 'jhl4ayv',
-                          scriptTimeout: 3000,
-                          async: true
-                    },
-                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
+	(function (d) {
+		var config = {
+					kitId: 'jhl4ayv',
+					scriptTimeout: 3000,
+					async: true
+				},
+				h = d.documentElement, t = setTimeout(function () {
+					h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+				}, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a;
+		h.className += " wf-loading";
+		tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+		tk.async = true;
+		tk.onload = tk.onreadystatechange = function () {
+			a = this.readyState;
+			if (f || a && a != "complete" && a != "loaded")return;
+			f = true;
+			clearTimeout(t);
+			try {
+				Typekit.load(config)
+			} catch (e) {
+			}
+		};
+		s.parentNode.insertBefore(tk, s)
+	})(document);
 </script>
 <script src="dist/js/villa.min.js"></script>
 <link rel="stylesheet" href="dist/css/villa.min.css"/>
+<link rel="stylesheet" href="dist/css/tonovaso.css"/>
 <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="dist/css/material-colors.css"/>
 <link rel="stylesheet" type="text/css" href="dist/css/villa-cross.min.css"/>
@@ -27,7 +44,155 @@
 
 <body>
 
+<div class="Tickets">
 
+	<div class="Tickets-inner containerx">
+
+		<div class="Tickets-info"></div>
+
+		<div class="Tickets-options">
+
+			<div class="TicketsOption">
+
+				<div class="TicketsOption-inner">
+
+					<div class="TicketsOption-primary">
+
+						<h2 class="TicketOption-title">Pacote Masculino</h2>
+
+						<div class="TicketOption-info">
+
+							<span class="TicketOption-price">300</span>
+							<span class="TicketOption-taxFee">(+R$24,00 TAXA)</span> <!-- 7,999% ~ 8% -->
+
+						</div>
+
+					</div>
+
+					<div class="TicketsOption-secondary">
+
+						<div class="TicketsOption-quantity">
+
+							<div class="Select" data-name="select-01">
+
+								<div class="Select-inner">
+
+									<div class="Select-value"></div>
+									<div class="Select-arrow">
+
+										<span class="icon-keyboard_arrow_down"></span>
+
+									</div>
+
+									<select class="Select-select" name="quanity" id="q01">
+
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+
+									</select>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="TicketsOption">
+
+				<div class="TicketsOption-inner">
+
+					<div class="TicketsOption-primary">
+
+						<h2 class="TicketOption-title">Pacote Feminino</h2>
+
+						<div class="TicketOption-info">
+
+							<span class="TicketOption-price">180</span>
+							<span class="TicketOption-taxFee">(+R$14,39 TAXA)</span> <!-- 7,999% ~ 8% -->
+
+						</div>
+
+					</div>
+
+					<div class="TicketsOption-secondary">
+
+						<div class="TicketsOption-quantity">
+
+							<div class="Select" data-name="select-02">
+
+								<div class="Select-inner">
+
+									<div class="Select-value"></div>
+									<div class="Select-arrow">
+
+										<span class="icon-keyboard_arrow_down"></span>
+
+									</div>
+
+									<select class="Select-select" name="quanity" id="q02">
+
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+
+									</select>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="Tickets-checkout">
+
+
+
+		</div>
+
+	</div>
+
+</div>
+
+<script src="dist/js/tonovaso.js"></script>
+
+<script>
+
+	var SelectInputs = document.querySelectorAll('.Select');
+	var SelectInputElements = [];
+
+	for (var i = SelectInputs.length; i--; )
+		SelectInputElements.push(new Select(SelectInputs[i]));
+
+</script>
 
 </body>
 
