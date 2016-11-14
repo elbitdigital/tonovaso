@@ -88,6 +88,7 @@
 
 .Select-value span {
   font-size: 1.125em;
+  line-height: 1;
   font-weight: 300;
 }
 
@@ -109,7 +110,23 @@
   width: 100%;
 }
 
+/* Tickets Option inner */
+
 .TicketsOption-inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  padding: 1em 1em;
+  width: 100%;
+}
+
+/* Tickets Option header */
+
+.TicketsOption-header {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -117,14 +134,98 @@
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: 1em 1em;
+  margin-bottom: 1em;
   width: 100%;
 }
 
+/* Tickets Option footer */
+
+.TicketsOption-footer {
+  width: 100%;
+}
+
+/* Tickets Option quantity */
 
 
-.TicketsOption h2 {
+
+/* Tickets Option primary */
+
+.TicketsOption-primary {
+  padding-right: 1em;
+}
+
+/* Tickets Option title */
+
+.TicketOption-title {
+  color: #212121;
   font-size: 1em;
+  font-weight: 500;
+  line-height: 1.24;
+  padding-bottom: .375rem;
+}
+
+/* Tickets Option info span */
+
+.TicketOption-info span {
+  color: #424242;
+  font-size: .875em;
+  font-weight: 300;
+}
+
+/* Tickets Option a element */
+
+.TicketsOption a {
+  color: #2196f3;
+  cursor: pointer;
+  font-size: .875em;
+}
+
+.TicketsOption a:active,
+.TicketsOption a:focus {
+  text-decoration: underline;
+}
+
+.TicketsOption-description {
+  margin-bottom: .375em;
+  display: none;
+}
+
+.TicketsOption.is-showingMore .TicketsOption-description {
+  display: block;
+}
+
+.TicketsOption-description p {
+  color: #757575;
+  font-size: .875em;
+  line-height: 1.36;
+}
+
+/* Tickets Option show less and show more */
+
+.TicketsOptions-showLess,
+.TicketsOption.is-showingMore .TicketsOptions-showMore {
+  display: none;
+}
+
+.TicketsOption.is-showingMore .TicketsOptions-showLess,
+.TicketsOptions-showMore {
+  display: block;
+}
+
+@media (min-width: 21em) {
+  /* Tickets Option title */
+
+  .TicketOption-title {
+    font-size: 1.125em;
+    line-height: 1.3;
+    padding-bottom: .375rem;
+  }
+
+  /* Tickets Option info span */
+
+  .TicketOption-info span {
+    font-size: 1em;
+  }
 }
 /* Tickets */
 
