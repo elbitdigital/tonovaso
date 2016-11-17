@@ -4,9 +4,251 @@
  * Licensed under MIT (https://github.com/elbitdigital/base/blob/master/LICENSE)
 */
 
+body {
+  /*padding-bottom: 6em;*/
+}
+
 .container {
   width: 100%;
   padding: 0 1em;
+}
+
+@media (min-width: 60em) {
+  .container {
+    max-width: 48em;
+  }
+}
+
+@media (min-width: 96em) {
+  body {
+    padding-top: 3em;
+  }
+}
+/*
+   Animation example, for spinners
+*/
+
+.animate-spin {
+  -moz-animation: spin 3s infinite linear;
+  -o-animation: spin 3s infinite linear;
+  -webkit-animation: spin 3s infinite linear;
+  animation: spin 3s infinite linear;
+  display: inline-block;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-ms-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/* Dialog */
+
+.Dialog {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(0,0,0,.3);
+  display: none;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.Dialog.is-active {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Dialog loading */
+
+.Dialog-loading {
+  margin-bottom: 1em;
+}
+
+.Dialog-loading span {
+  color: #424242;
+  font-size: 2.25em;
+}
+
+/* Dialog inner */
+
+.Dialog-inner {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+  -moz-box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-height: 6em;
+  padding: 1em;
+  width: 18em;
+}
+
+/* Dialog text */
+
+.Dialog-text {
+  color: #424242;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.Dialog-text span {
+  font-size: .875em;
+  font-weight: 500;
+}
+
+/* Dialog subtext */
+
+.Dialog-subText {
+  color: #03a9f4;
+  text-align: center;
+}
+
+.Dialog-subText span {
+  font-size: .625em;
+  line-height: 1.1;
+  font-weight: 900;
+}
+/* Footer */
+
+.Footer {
+  text-align: center;
+}
+
+.Footer p {
+  color: #424242;
+  font-size: .875em;
+}
+
+.Footer a {
+  color: #2196f3;
+}
+/* Header */
+
+.Header {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.Header img {
+  width: 8em;
+  margin-bottom: 1em;
+}
+
+.Header p {
+  font-size: .75em;
+}
+
+@media (min-width: 48em) {
+  .Header {
+    margin-bottom: 1em;
+  }
+
+  .Header p {
+    font-size: .875em;
+  }
 }
 /* Select */
 
@@ -52,11 +294,11 @@
   border: solid 1px #bdbdbd;
   border-radius: 3px;
   position: relative;
-  -webkit-transition: all .4s ease-in;
-  -moz-transition: all .4s ease-in;
-  -ms-transition: all .4s ease-in;
-  -o-transition: all .4s ease-in;
-  transition: all .4s ease-in;
+  -webkit-transition: all 0s ease-in;
+  -moz-transition: all 0s ease-in;
+  -ms-transition: all 0s ease-in;
+  -o-transition: all 0s ease-in;
+  transition: all 0s ease-in;
 }
 
 .Select:hover .Select-inner {
@@ -102,6 +344,123 @@
   position: relative;
   width: 4.5em;
   z-index: 1;
+}
+/* Tickets Checkout */
+
+.TicketsCheckout {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.TicketsCheckout-inner {
+  background-color: #ffffff;
+  border-top: solid 1px #eeeeee;
+  position: relative;
+  width: 100%;
+  padding: 1em;
+}
+
+/* Tickets Checkout empty cart */
+
+.TicketsCheckout-emptyCart {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  color: #bdbdbd;
+  cursor: not-allowed;
+  display: none;
+  height: 3em;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.TicketsCheckout-emptyCart span {
+  font-size: 1.125em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.Tickets.is-empty .TicketsCheckout-emptyCart {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Tickets Checkout details */
+
+.TicketsCheckout-details {
+  color: #424242;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: .5em;
+  width: 100%;
+}
+
+.Tickets.is-empty .TicketsCheckout-details {
+  display: none;
+}
+
+/* Tickets Checkout start */
+
+.TicketsCheckout-start {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #4caf50;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 3em;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.Tickets.is-empty .TicketsCheckout-start {
+  display: none;
+}
+
+.TicketsCheckout-start:focus,
+.TicketsCheckout-start:hover {
+  background-color: #81c784;
+}
+
+.TicketsCheckout-start:active {
+  background-color: #43a047;
+}
+
+.TicketsCheckout-start span {
+  font-size: 1.125em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 /* Tickets Option */
 
@@ -198,6 +557,7 @@
   color: #757575;
   font-size: .875em;
   line-height: 1.36;
+  max-width: 24rem;
 }
 
 /* Tickets Option show less and show more */
@@ -229,19 +589,29 @@
 }
 /* Tickets */
 
+.Tickets {
+  padding-bottom: 8em;
+}
 
+.Tickets.is-empty {
+  padding-bottom: 6em;
+}
 
 .Tickets-inner {
   padding: 0;
 }
+
+.Tickets-options {
+  margin-bottom: 1em;
+}
 @font-face {
   font-family: 'tonovaso';
-  src: url("../font/tonovaso.eot?60450157");
-  src: url("../font/tonovaso.eot?60450157#iefix") format('embedded-opentype'),
-       url("../font/tonovaso.woff2?60450157") format('woff2'),
-       url("../font/tonovaso.woff?60450157") format('woff'),
-       url("../font/tonovaso.ttf?60450157") format('truetype'),
-       url("../font/tonovaso.svg?60450157#tonovaso") format('svg');
+  src: url("../font/tonovaso.eot?42892060");
+  src: url("../font/tonovaso.eot?42892060#iefix") format('embedded-opentype'),
+    url("../font/tonovaso.woff2?42892060") format('woff2'),
+    url("../font/tonovaso.woff?42892060") format('woff'),
+    url("../font/tonovaso.ttf?42892060") format('truetype'),
+    url("../font/tonovaso.svg?42892060#tonovaso") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -254,7 +624,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'tonovaso';
-    src: url('../font/tonovaso.svg?60450157#tonovaso') format('svg');
+    src: url('../font/tonovaso.svg?42892060#tonovaso') format('svg');
   }
 }
 */
@@ -407,3 +777,33 @@
 }
 
 /* '' */
+
+.icon-spin5:before {
+  content: '\e838';
+}
+
+/* '' */
+
+.icon-facebook:before {
+  content: '\f09a';
+}
+
+/* '' */
+
+.icon-instagram:before {
+  content: '\f16d';
+}
+
+/* '' */
+
+.icon-whatsapp:before {
+  content: '\f232';
+}
+
+/* '' */
+
+.icon-facebook-squared:before {
+  content: '\f308';
+}
+
+/* '' */

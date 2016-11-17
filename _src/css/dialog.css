@@ -1,0 +1,87 @@
+
+/* Dialog */
+
+.Dialog {
+	-webkit-align-items: center;
+	align-items: center;
+	background-color: rgba(0,0,0,.3);
+	display: none;
+	-webkit-justify-content: center;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.Dialog.is-active {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+/* Dialog loading */
+
+.Dialog-loading {
+	margin-bottom: 1em;
+}
+
+.Dialog-loading span {
+	color: #424242;
+	font-size: 2.25em;
+}
+
+/* Dialog inner */
+
+.Dialog-inner {
+	-webkit-align-items: center;
+	align-items: center;
+	background-color: #ffffff;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+	-moz-box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+	box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	min-height: 6em;
+	padding: 1em;
+	width: 18em;
+}
+
+/* Dialog text */
+
+.Dialog-text {
+	color: #424242;
+	margin-bottom: 1em;
+	text-align: center;
+	width: 100%;
+}
+
+.Dialog-text span {
+	font-size: .875em;
+	font-weight: 500;
+}
+
+/* Dialog subtext */
+
+.Dialog-subText {
+	color: #03a9f4;
+	text-align: center;
+}
+
+.Dialog-subText span {
+	font-size: .625em;
+	line-height: 1.1;
+	font-weight: 900;
+}

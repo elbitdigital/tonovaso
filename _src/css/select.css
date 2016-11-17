@@ -43,11 +43,11 @@
 	border: solid 1px #bdbdbd;
 	border-radius: 3px;
 	position: relative;
-	-webkit-transition: all .4s ease-in;
-	-moz-transition: all .4s ease-in;
-	-ms-transition: all .4s ease-in;
-	-o-transition: all .4s ease-in;
-	transition: all .4s ease-in;
+	-webkit-transition: all 0s ease-in;
+	-moz-transition: all 0s ease-in;
+	-ms-transition: all 0s ease-in;
+	-o-transition: all 0s ease-in;
+	transition: all 0s ease-in;
 }
 
 .Select:hover .Select-inner {

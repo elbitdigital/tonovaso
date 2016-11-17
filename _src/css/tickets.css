@@ -2,9 +2,17 @@
 /* Tickets */
 
 .Tickets {
+	padding-bottom: 8em;
+}
 
+.Tickets.is-empty {
+	padding-bottom: 6em;
 }
 
 .Tickets-inner {
 	padding: 0;
+}
+
+.Tickets-options {
+	margin-bottom: 1em;
 }

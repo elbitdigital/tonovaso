@@ -6,9 +6,10 @@ var Select = (function () {
 	 * Select constructor
 	 * @constructor
 	 */
-	function Select(element) {
+	function Select(element, fallback) {
 
 		this.element = element;
+		this.fallback = fallback;
 
 		this.config = {
 			innerElementSelector: '.Select-inner',
@@ -23,7 +24,11 @@ var Select = (function () {
 
 	Select.prototype.updateValue = function () {
 
+		var self = this;
+
 		try {
+
+			this.value = this.selectElement.value;
 
 			this.valueElement.innerHTML = '';
 
@@ -31,6 +36,13 @@ var Select = (function () {
 			valueTextElement.innerText = this.selectElement.value;
 
 			this.valueElement.appendChild(valueTextElement);
+
+			setTimeout(function () {
+
+				if (self.fallback)
+					self.fallback(self.value);
+
+			})
 
 		} catch (e) { }
 

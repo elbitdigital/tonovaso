@@ -1,0 +1,38 @@
+
+/* Header */
+
+.Header {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	padding: 1em;
+	text-align: center;
+	width: 100%;
+}
+
+.Header img {
+	width: 8em;
+	margin-bottom: 1em;
+}
+
+.Header p {
+	font-size: .75em;
+}
+
+@media (min-width: 48em) {
+
+	.Header {
+		margin-bottom: 1em;
+	}
+
+	.Header p {
+		font-size: .875em;
+	}
+
+}

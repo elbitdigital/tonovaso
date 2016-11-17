@@ -94,6 +94,7 @@
 	color: #757575;
 	font-size: .875em;
 	line-height: 1.36;
+	max-width: 24rem;
 }
 
 /* Tickets Option show less and show more */

@@ -4,7 +4,7 @@
 <title>Tô No Vaso</title>
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-<meta name="theme-color" content="#000000"/>
+<meta name="theme-color" content="#3f51b5"/>
 <script>
 	(function(d) {
 		var config = {
@@ -28,15 +28,57 @@
 
 <body class="tk-proxima-nova">
 
-<div class="Tickets">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	<div class="Tickets-inner containerx">
+	ga('create', 'UA-87600862-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+<div id="tickets-dialog" class="Dialog">
+
+	<div class="Dialog-inner">
+
+		<div class="Dialog-loading">
+
+			<span class="icon-spin5 animate-spin"></span>
+
+		</div>
+		<div class="Dialog-icon"></div>
+		<div class="Dialog-text"></div>
+		<div class="Dialog-subText"></div>
+
+	</div>
+
+</div>
+
+<header class="Header">
+
+	<div class="Header-inner container">
+
+		<img src="dist/img/logo.png" alt=""/>
+
+		<p>Data: de 24/02/17 à 28/02/17 <br/>
+			14hs de Open Bar <br/> (todos os dias das 14h às 04h) <br/>
+			Local: Palmital - São Paulo</p>
+
+	</div>
+	
+</header>
+
+<div id="tickets" class="Tickets">
+
+	<div class="Tickets-inner container">
 
 		<div class="Tickets-info"></div>
 
 		<div class="Tickets-options">
 
-			<div class="TicketsOption">
+			<div class="TicketsOption" data-option-id="TNVPACKPROMO_M" data-price="324.00" data-description="Pacote Masculino + Abadá | Pacote Promocional">
 
 				<div class="TicketsOption-inner">
 
@@ -44,7 +86,7 @@
 
 						<div class="TicketsOption-primary">
 
-							<h2 class="TicketOption-title">Pacote Masculino | Pacote Promocional</h2>
+							<h2 class="TicketOption-title">Pacote Masculino + Abadá | Pacote Promocional</h2>
 
 							<div class="TicketOption-info">
 
@@ -59,7 +101,7 @@
 
 							<div class="TicketsOption-quantity">
 
-								<div class="Select" data-name="select-01">
+								<div class="Select Select--ticketOption" data-name="select-01">
 
 									<div class="Select-inner">
 
@@ -99,7 +141,10 @@
 
 						<div class="TicketsOption-description">
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eaque libero numquam omnis perferendis perspiciatis quasi rerum saepe sed vitae. Atque eaque hic, laboriosam libero nam neque nesciunt non temporibus?</p>
+							<p>O pacote masculino dá o direito a dois abadás e uma pulseira para curtir todos os 5 dias do melhor carnaval da região.
+								São 14 horas de festa open bar todos os dias com atrações ao vivo, muita bebida e gente bonita.
+								Aproveite o preço promocional :)
+								*Informações sobre os locais de retirada dos abadás e pulseiras em breve aqui no nosso site e também nas redes sociais do Bloco Tô no Vaso.</p>
 
 						</div>
 
@@ -116,7 +161,7 @@
 
 			</div>
 
-			<div class="TicketsOption">
+			<div class="TicketsOption" data-option-id="TNVPACKPROMO_F" data-price="194.39" data-description="Pacote Feminino + Abadá | Pacote Promocional">
 
 				<div class="TicketsOption-inner">
 
@@ -124,7 +169,7 @@
 
 						<div class="TicketsOption-primary">
 
-							<h2 class="TicketOption-title">Pacote Feminino | Pacote Promocional</h2>
+							<h2 class="TicketOption-title">Pacote Feminino + Abadá | Pacote Promocional</h2>
 
 							<div class="TicketOption-info">
 
@@ -139,7 +184,7 @@
 
 							<div class="TicketsOption-quantity">
 
-								<div class="Select" data-name="select-02">
+								<div class="Select Select--ticketOption" data-name="select-02">
 
 									<div class="Select-inner">
 
@@ -179,7 +224,10 @@
 
 						<div class="TicketsOption-description">
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid consectetur deserunt dolores, eius, ipsum iure magnam nisi placeat quam quasi quidem quo rerum sit ut! Obcaecati ratione repellat reprehenderit?</p>
+							<p>O pacote feminino dá o direito a um abadá e uma pulseira para curtir todos os 5 dias do melhor carnaval da região.
+								São 14 horas de festa open bar todos os dias com atrações ao vivo, muita bebida e gente bonita.
+								Aproveite o preço promocional :)
+								*Informações sobre os locais de retirada dos abadás e pulseiras em breve aqui no nosso site e também nas redes sociais do Bloco Tô no Vaso.</p>
 
 						</div>
 
@@ -198,9 +246,42 @@
 
 		</div>
 
-		<div class="Tickets-checkout">
+		<div class="Tickets-footer">
 
+			<footer class="Footer">
 
+				<p>Osmair <a href="tel:+5518996155409">18 9 9615 5409</a> <br/>
+					Braz <a href="tel:+5518991076902">18 9 9107 6902</a> <br/>
+					<a href="mailto:contato@tonovaso.com.br">contato@tonovaso.com.br</a></p>
+
+			</footer>
+
+		</div>
+
+		<div class="TicketsCheckout Tickets-checkout">
+
+			<div class="TicketsCheckout-inner container">
+
+				<div class="TicketsCheckout-details">
+
+					<div class="TicketsCheckout-quantity"></div>
+					<div class="TicketsCheckout-amount"></div>
+
+				</div>
+
+				<div class="TicketsCheckout-emptyCart">
+
+					<span>Carrinho Vazio</span>
+
+				</div>
+
+				<div class="TicketsCheckout-start">
+
+					<span>Comprar</span>
+
+				</div>
+
+			</div>
 
 		</div>
 
@@ -208,25 +289,27 @@
 
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyBK8q18qHSR0toQutQGp_1wAcfzyfC0pEI",
+		authDomain: "dalia-tonovaso-com-br.firebaseapp.com",
+		databaseURL: "https://dalia-tonovaso-com-br.firebaseio.com",
+		storageBucket: "dalia-tonovaso-com-br.appspot.com",
+		messagingSenderId: "737535874060"
+	};
+	firebase.initializeApp(config);
+</script>
+
 <script src="dist/js/tonovaso.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <script>
 
-	// get ticket options
-
-	var ticketsOptions = document.querySelectorAll('.TicketsOption');
-	var ticketsOptionsElements = [];
-
-	for (var i = ticketsOptions.length; i--; )
-		ticketsOptionsElements.push(new TicketsOption(ticketsOptions[i]));
-
-	// get select inputs
-
-	var SelectInputs = document.querySelectorAll('.Select');
-	var SelectInputElements = [];
-
-	for (var i = SelectInputs.length; i--; )
-		SelectInputElements.push(new Select(SelectInputs[i]));
+	var tickets = new Tickets(document.getElementById('tickets'));
+	tickets.dialog = new Dialog(document.getElementById('tickets-dialog'));
 
 </script>
 

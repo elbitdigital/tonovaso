@@ -4,7 +4,27 @@
  * Licensed under MIT (https://github.com/elbitdigital/base/blob/master/LICENSE)
 */
 
+body {
+	/*padding-bottom: 6em;*/
+}
+
 .container {
 	width: 100%;
 	padding: 0 1em;
+}
+
+@media (min-width: 60em) {
+
+	.container {
+		max-width: 48em;
+	}
+
+}
+
+@media (min-width: 96em) {
+
+	body {
+		padding-top: 3em;
+	}
+
 }
