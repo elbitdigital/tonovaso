@@ -250,6 +250,39 @@ body {
     font-size: .875em;
   }
 }
+/* History */
+
+.History {
+  max-width: 70em;
+  padding: 3em 0;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+/* History background */
+
+.History-background {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* History inner */
+
+.History-inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  text-align: center;
+  width: 100%;
+}
 /* Select */
 
 .Select {
@@ -807,3 +840,117 @@ body {
 }
 
 /* '' */
+/* Yearbook Gallery Item */
+
+.YearbookGalleryItem {
+  padding: 1.5em;
+  background: #ccc;
+  margin: .25em;
+}
+/* Yearbook Gallery */
+
+.YearbookGallery {
+  position: relative;
+  width: 100%;
+}
+
+/* Yearbook Gallery list */
+
+.YearbookGallery-list {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+@media (min-width: 60em) {
+  .Yearbook--left .YearbookGallery-list {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  .Yearbook--right .YearbookGallery-list {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+}
+/* Yearbook */
+
+.Yearbook {
+  margin-bottom: 1em;
+  position: relative;
+  width: 100%;
+}
+
+/* Yearbook background */
+
+.Yearbook-background {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* Yearbook inner */
+
+.Yearbook-inner {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 1em 1.5em;
+  text-align: center;
+  width: 100%;
+}
+
+/* Yearbook primary */
+
+.Yearbook-primary,
+.Yearbook-secondary {
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  width: 100%;
+}
+
+.Yearbook-secondary p {
+  text-align: justify;
+}
+
+@media (min-width: 48em) {
+  .Yearbook-primary,
+  .Yearbook-secondary {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 60em) {
+  .Yearbook--left .Yearbook-inner {
+    -webkit-flex-flow: row;
+    flex-flow: row;
+  }
+
+  .Yearbook--right .Yearbook-inner {
+    -webkit-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+  }
+}
+
+@media (min-width: 72em) {
+
+}
