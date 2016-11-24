@@ -20,11 +20,3 @@ body {
 	}
 
 }
-
-@media (min-width: 96em) {
-
-	body {
-		padding-top: 3em;
-	}
-
-}

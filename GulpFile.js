@@ -62,9 +62,14 @@ source.images = {
 	location: source.location + 'img/'
 };
 
-source.images.largePhotos = {
+source.images.backgroundElement = {
 	content: '*.*',
-	location: source.images.location + 'largePhotos/'
+	location: source.images.location + 'backgroundElement/'
+};
+
+source.images.logo = {
+	content: '*.*',
+	location: source.images.location + 'logo/'
 };
 
 // Public Content structure
@@ -88,6 +93,21 @@ dist.css = {
 dist.js = {
 	content: '*.js',
 	location: dist.location + 'js/'
+};
+
+dist.images = {
+	content: '*.*',
+	location: dist.location + 'img/'
+};
+
+dist.images.backgroundElement = {
+	content: '*.*',
+	location: dist.images.location + 'backgroundElement/'
+};
+
+dist.images.logo = {
+	content: '*.*',
+	location: dist.images.location + 'logo/'
 };
 
 // CSS
@@ -142,7 +162,25 @@ gulp.task('resizePhotos', function () {
 			height : 960,
 			upscale : false
 		}))
-		.pipe(gulp.dest(dist.location + source.images.largePhotos.location));
+		.pipe(gulp.dest(dist.location.images.location));
+});
+
+gulp.task('resizeBackgroundElement', function () {
+	gulp.src(source.images.backgroundElement.location + source.images.backgroundElement.content)
+		.pipe(imageResize({
+			height : 1536,
+			upscale : false
+		}))
+		.pipe(gulp.dest(dist.images.backgroundElement.location));
+});
+
+gulp.task('resizeLogo', function () {
+	gulp.src(source.images.logo.location + source.images.logo.content)
+		.pipe(imageResize({
+			height : 576,
+			upscale : false
+		}))
+		.pipe(gulp.dest(dist.images.logo.location));
 });
 
 gulp.task('tinyPhotosSource', function () {
@@ -164,7 +202,8 @@ gulp.task('serve', function () {
 			baseDir: "./public/",
 			index: "index.html",
 			routes: {
-				"/home": "./index.html"
+				"/home": "./index.html",
+				"/tickets": "./tickets.html"
 			}
 		}
 	});

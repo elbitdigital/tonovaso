@@ -1,0 +1,16 @@
+
+/* Nav Item */
+
+.NavItem {
+	margin: 0 1em;
+	padding: .375em 0;
+}
+
+/* Nav Item span */
+
+.NavItem span {
+	color: #616161;
+	font-size: .875em;
+	line-height: 1;
+	font-weight: 900;
+}

@@ -18,12 +18,6 @@ body {
     max-width: 48em;
   }
 }
-
-@media (min-width: 96em) {
-  body {
-    padding-top: 3em;
-  }
-}
 /*
    Animation example, for spinners
 */
@@ -113,6 +107,110 @@ body {
     -o-transform: rotate(359deg);
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
+  }
+}
+/* Button */
+
+.Button {
+  background: none;
+  border: solid 2px transparent;
+  padding: 1em;
+  min-width: 12em;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-align: center;
+}
+
+.Button--primary {
+  background-color: #03a9f4;
+  border-radius: 3px;
+  color: #ffffff;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  -ms-transition: background .3s ease-in-out;
+  -o-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+.Button--primary:focus,
+.Button--primary:hover {
+  background-color: #81d4fa;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  -ms-transition: background .3s ease-in-out;
+  -o-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+.Button--primary:active {
+  background-color: #039be5;
+}
+
+/* Button span */
+
+.Button span {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* Animation */
+
+@-webkit-keyframes pulse--primary {
+  0% {
+    background-color: #03a9f4;
+  }
+
+  50% {
+    background-color: #4fc3f7;
+  }
+
+  100% {
+    background-color: #03a9f4;
+  }
+}
+
+@-moz-keyframes pulse--primary {
+  0% {
+    background-color: #03a9f4;
+  }
+
+  50% {
+    background-color: #4fc3f7;
+  }
+
+  100% {
+    background-color: #03a9f4;
+  }
+}
+
+@-o-keyframes pulse--primary {
+  0% {
+    background-color: #03a9f4;
+  }
+
+  50% {
+    background-color: #4fc3f7;
+  }
+
+  100% {
+    background-color: #03a9f4;
+  }
+}
+
+@keyframes pulse--primary {
+  0% {
+    background-color: #03a9f4;
+  }
+
+  50% {
+    background-color: #4fc3f7;
+  }
+
+  100% {
+    background-color: #03a9f4;
   }
 }
 /* Dialog */
@@ -218,8 +316,20 @@ body {
 /* Header */
 
 .Header {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.Header-action {
   -webkit-align-items: center;
   align-items: center;
+  bottom: 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -227,28 +337,127 @@ body {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  padding: 1em;
-  text-align: center;
+  left: 0;
+  padding: 1em 2.25em 3em;
+  position: absolute;
+  width: 100%;
+}
+/* Hero */
+
+.Hero {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Hero background */
+
+.Hero-background {
+  background: center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url("../img/backgroundElement/Element.png");
+  height: 100%;
+  left: 0;
+  opacity: .02;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Hero inner */
+
+.Hero-inner {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
   width: 100%;
 }
 
-.Header img {
-  width: 8em;
-  margin-bottom: 1em;
+.Hero img {
+  width: 16em;
 }
 
-.Header p {
-  font-size: .75em;
+@media (min-width: 21em) {
+  .Hero img {
+    width: 18em;
+  }
+}
+/* Nav Item */
+
+.NavItem {
+  margin: 0 1em;
+  padding: .375em 0;
 }
 
-@media (min-width: 48em) {
-  .Header {
-    margin-bottom: 1em;
-  }
+/* Nav Item span */
 
-  .Header p {
-    font-size: .875em;
-  }
+.NavItem span {
+  color: #616161;
+  font-size: .875em;
+  line-height: 1;
+  font-weight: 900;
+}
+/* Nav */
+
+.Nav {
+  position: absolute;
+  width: 100%;
+  padding: 0 0 1em;
+  top: 0;
+  left: 0;
+}
+
+.Nav-background {
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(231,56,39,0)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e73827', GradientType=0 );
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Nav menu */
+
+.Nav-menu {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 1em 2.25em;
+  position: relative;
 }
 /* Select */
 
@@ -461,6 +670,41 @@ body {
   font-size: 1.125em;
   font-weight: 600;
   text-transform: uppercase;
+}
+/* Header */
+
+.TicketsHeader {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.TicketsHeader img {
+  width: 8em;
+  margin-bottom: 1em;
+}
+
+.TicketsHeader p {
+  font-size: .75em;
+}
+
+@media (min-width: 48em) {
+  .TicketsHeader {
+    margin-bottom: 1em;
+  }
+
+  .TicketsHeader p {
+    font-size: .875em;
+  }
 }
 /* Tickets Option */
 

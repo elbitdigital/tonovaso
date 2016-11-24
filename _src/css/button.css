@@ -1,0 +1,110 @@
+
+/* Button */
+
+.Button {
+	background: none;
+	border: solid 2px transparent;
+	padding: 1em;
+	min-width: 12em;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	text-align: center;
+}
+
+.Button--primary {
+	background-color: #03a9f4;
+	border-radius: 3px;
+	color: #ffffff;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	-ms-transition: background .3s ease-in-out;
+	-o-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+}
+
+.Button--primary:focus,
+.Button--primary:hover {
+	background-color: #81d4fa;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	-ms-transition: background .3s ease-in-out;
+	-o-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+}
+
+.Button--primary:active {
+	background-color: #039be5;
+}
+
+/* Button span */
+
+.Button span {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+/* Animation */
+
+@-webkit-keyframes pulse--primary {
+
+	0% {
+		background-color: #03a9f4;
+	}
+
+	50% {
+		background-color: #4fc3f7;
+	}
+
+	100% {
+		background-color: #03a9f4;
+	}
+
+}
+@-moz-keyframes pulse--primary {
+
+	0% {
+		background-color: #03a9f4;
+	}
+
+	50% {
+		background-color: #4fc3f7;
+	}
+
+	100% {
+		background-color: #03a9f4;
+	}
+
+}
+@-o-keyframes pulse--primary {
+
+	0% {
+		background-color: #03a9f4;
+	}
+
+	50% {
+		background-color: #4fc3f7;
+	}
+
+	100% {
+		background-color: #03a9f4;
+	}
+
+}
+@keyframes pulse--primary {
+
+	0% {
+		background-color: #03a9f4;
+	}
+
+	50% {
+		background-color: #4fc3f7;
+	}
+
+	100% {
+		background-color: #03a9f4;
+	}
+
+}

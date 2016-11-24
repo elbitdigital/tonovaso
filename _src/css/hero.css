@@ -1,0 +1,64 @@
+
+/* Hero */
+
+.Hero {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* Hero background */
+
+.Hero-background {
+	background: center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image: url("../img/backgroundElement/Element.png");
+	height: 100%;
+	left: 0;
+	opacity: .02;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* Hero inner */
+
+.Hero-inner {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	height: 100%;
+	left: 0;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+
+.Hero img {
+	width: 16em;
+}
+
+@media (min-width: 21em) {
+
+	.Hero img {
+		width: 18em;
+	}
+
+}

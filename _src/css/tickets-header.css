@@ -1,0 +1,38 @@
+
+/* Header */
+
+.TicketsHeader {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	padding: 1em;
+	text-align: center;
+	width: 100%;
+}
+
+.TicketsHeader img {
+	width: 8em;
+	margin-bottom: 1em;
+}
+
+.TicketsHeader p {
+	font-size: .75em;
+}
+
+@media (min-width: 48em) {
+
+	.TicketsHeader {
+		margin-bottom: 1em;
+	}
+
+	.TicketsHeader p {
+		font-size: .875em;
+	}
+
+}
