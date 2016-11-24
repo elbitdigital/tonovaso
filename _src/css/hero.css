@@ -19,7 +19,7 @@
 	background-image: url("../img/backgroundElement/Element.png");
 	height: 100%;
 	left: 0;
-	opacity: .02;
+	opacity: .0225;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -59,6 +59,40 @@
 
 	.Hero img {
 		width: 18em;
+	}
+
+}
+
+@media (min-width: 48em) {
+
+	.Hero img {
+		width: 30em;
+	}
+
+}
+
+@media (min-width: 60em) {
+
+	.Hero img {
+		width: 24em;
+	}
+
+}
+
+@media (min-width: 96em) {
+
+	.Hero img {
+		width: 36em;
+	}
+
+	/* Hero background */
+
+	.Hero-background {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
 	}
 
 }

@@ -1,22 +1,9 @@
-/*!
- * Elbit Tô No Vaso Project v0.0.0 (http://elbit.com.br/)
- * Copyright 2013-2016 Elbit Developers
- * Licensed under MIT (https://github.com/elbitdigital/base/blob/master/LICENSE)
-*/
 
-body {
-  /*padding-bottom: 6em;*/
-}
+/* About */
 
-.container {
-  width: 100%;
-  padding: 0 1em;
-}
-
-@media (min-width: 60em) {
-  .container {
-    max-width: 48em;
-  }
+.About {
+  background-color: #fafafa;
+  min-height: 100vh;
 }
 /*
    Animation example, for spinners
@@ -154,6 +141,7 @@ body {
 .Button span {
   text-transform: uppercase;
   font-weight: 900;
+  font-size: 1.5em;
 }
 
 /* Animation */
@@ -338,9 +326,15 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
   left: 0;
-  padding: 1em 2.25em 3em;
+  padding: 1em 2.25em 2.25em;
   position: absolute;
   width: 100%;
+}
+
+@media (min-width: 48em) {
+  .Header-action {
+    padding-bottom: 3em;
+  }
 }
 /* Hero */
 
@@ -362,7 +356,7 @@ body {
   background-image: url("../img/backgroundElement/Element.png");
   height: 100%;
   left: 0;
-  opacity: .02;
+  opacity: .0225;
   position: absolute;
   top: 0;
   width: 100%;
@@ -403,6 +397,67 @@ body {
     width: 18em;
   }
 }
+
+@media (min-width: 48em) {
+  .Hero img {
+    width: 30em;
+  }
+}
+
+@media (min-width: 60em) {
+  .Hero img {
+    width: 24em;
+  }
+}
+
+@media (min-width: 96em) {
+  .Hero img {
+    width: 36em;
+  }
+
+  /* Hero background */
+
+  .Hero-background {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* History */
+
+.History {
+  max-width: 70em;
+  padding: 3em 0;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+/* History background */
+
+.History-background {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* History inner */
+
+.History-inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  text-align: center;
+  width: 100%;
+}
 /* Nav Item */
 
 .NavItem {
@@ -413,30 +468,53 @@ body {
 /* Nav Item span */
 
 .NavItem span {
-  color: #616161;
-  font-size: .875em;
+  color: #795548;
+  font-size: 1.125em;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -ms-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  white-space: nowrap;
+}
+
+.NavItem:hover span {
+  color: #ffc400;
+}
+
+@media (min-width: 21em) {
+  .NavItem span {
+    font-size: 1.3125em;
+  }
+}
+
+@media (min-width: 48em) {
+  .NavItem span {
+    font-size: 1.5em;
+  }
 }
 /* Nav */
 
 .Nav {
   position: absolute;
   width: 100%;
-  padding: 0 0 1em;
+  padding-bottom: 1em;
   top: 0;
   left: 0;
 }
 
 .Nav-background {
   background: rgba(255,255,255,1);
-  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(231,56,39,0)));
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
-  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
-  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e73827', GradientType=0 );
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.72) 24%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(24%, rgba(255,255,255,0.72)), color-stop(100%, rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.72) 24%, rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.72) 24%, rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.72) 24%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.72) 24%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
   height: 100%;
   left: 0;
   position: absolute;
@@ -456,8 +534,104 @@ body {
   flex-flow: row wrap;
   -webkit-justify-content: center;
   justify-content: center;
-  padding: 1em 2.25em;
+  padding: 1em 1.5em;
   position: relative;
+}
+
+@media (min-width: 48em) {
+  .Nav {
+    padding-bottom: 3em;
+  }
+
+  .Nav-menu {
+    padding: 1.5em 1em;
+  }
+}
+
+@media (min-width: 72em) {
+  .Nav {
+    padding-bottom: 4.5em;
+  }
+}
+
+@media (min-width: 96em) {
+  .Nav {
+    padding-bottom: 6em;
+  }
+
+  .Nav-menu {
+    padding: 2.25em 1em;
+  }
+}
+.Paragraph {
+  padding: 1.5em 0 1em;
+  width: 100%;
+}
+
+.Paragraph-inner {
+  position: relative;
+}
+
+.Paragraph .container {
+  padding: 0 1em;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.Paragraph h1,
+.Paragraph h2,
+.Paragraph h3 {
+  font-family: 'tenby-four', 'proxima-nova', sans-serif;
+}
+
+.Paragraph h2 {
+  font-size: 2.25em;
+  margin-bottom: .375em;
+}
+
+.Paragraph p {
+  font-size: 1.125em;
+  margin-bottom: .75em;
+  line-height: 1.42;
+}
+
+@media (min-width: 48em) {
+  .Paragraph .container {
+    max-width: 48em;
+  }
+}
+
+@media (min-width: 60em) {
+  .Paragraph .container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 72em) {
+  .Paragraph .container {
+    max-width: 60em;
+  }
+}
+
+@media (min-width: 96em) {
+  .Paragraph {
+    padding: 6em 0;
+  }
+
+  .Paragraph .container {
+    max-width: 72em;
+  }
+
+  .Paragraph h2 {
+    font-size: 3.75em;
+    margin-bottom: .375em;
+  }
+
+  .Paragraph p {
+    font-size: 1.5em;
+    max-width: 42rem;
+    margin-bottom: .75em;
+  }
 }
 /* Select */
 
@@ -1051,3 +1225,117 @@ body {
 }
 
 /* '' */
+/* Yearbook Gallery Item */
+
+.YearbookGalleryItem {
+  padding: 1.5em;
+  background: #ccc;
+  margin: .25em;
+}
+/* Yearbook Gallery */
+
+.YearbookGallery {
+  position: relative;
+  width: 100%;
+}
+
+/* Yearbook Gallery list */
+
+.YearbookGallery-list {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+@media (min-width: 60em) {
+  .Yearbook--left .YearbookGallery-list {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  .Yearbook--right .YearbookGallery-list {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+}
+/* Yearbook */
+
+.Yearbook {
+  margin-bottom: 1em;
+  position: relative;
+  width: 100%;
+}
+
+/* Yearbook background */
+
+.Yearbook-background {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* Yearbook inner */
+
+.Yearbook-inner {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 1em 1.5em;
+  text-align: center;
+  width: 100%;
+}
+
+/* Yearbook primary */
+
+.Yearbook-primary,
+.Yearbook-secondary {
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  width: 100%;
+}
+
+.Yearbook-secondary p {
+  text-align: justify;
+}
+
+@media (min-width: 48em) {
+  .Yearbook-primary,
+  .Yearbook-secondary {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 60em) {
+  .Yearbook--left .Yearbook-inner {
+    -webkit-flex-flow: row;
+    flex-flow: row;
+  }
+
+  .Yearbook--right .Yearbook-inner {
+    -webkit-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+  }
+}
+
+@media (min-width: 72em) {
+
+}

@@ -202,8 +202,9 @@ gulp.task('serve', function () {
 			baseDir: "./public/",
 			index: "index.html",
 			routes: {
-				"/home": "./index.html",
-				"/tickets": "./tickets.html"
+				"/home": "./public/index.html",
+				"/tickets": "./public/tickets.html",
+				"/ingressos": "./public/tickets.html"
 			}
 		}
 	});

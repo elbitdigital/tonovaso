@@ -9,6 +9,11 @@
         "source": "/home",
         "destination": "/",
         "type": 301
+      },
+      {
+        "source": "/ingressos",
+        "destination": "/tickets",
+        "type": 301
       }
     ],
     "headers": [
@@ -26,7 +31,7 @@
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "max-age=0"
+            "value": "max-age=604800"
           }
         ]
       },
@@ -35,7 +40,7 @@
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "max-age=86400"
+            "value": "max-age=31536000"
           }
         ]
       },

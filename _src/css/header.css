@@ -24,7 +24,15 @@
 	-webkit-justify-content: center;
 	justify-content: center;
 	left: 0;
-	padding: 1em 2.25em 3em;
+	padding: 1em 2.25em 2.25em;
 	position: absolute;
 	width: 100%;
+}
+
+@media (min-width: 48em) {
+
+	.Header-action {
+		padding-bottom: 3em;
+	}
+
 }
