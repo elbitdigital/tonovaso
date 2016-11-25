@@ -204,7 +204,8 @@ gulp.task('serve', function () {
 			routes: {
 				"/home": "./public/index.html",
 				"/tickets": "./public/tickets.html",
-				"/ingressos": "./public/tickets.html"
+				"/ingressos": "./public/tickets.html",
+				"/20-anos": "./public/20-anos.html"
 			}
 		}
 	});

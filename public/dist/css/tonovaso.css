@@ -1,9 +1,71 @@
+h1,
+h2,
+h3 {
+  font-family: 'tenby-four', 'proxima-nova', sans-serif;
+}
 
+h2 {
+  font-size: 2.25em;
+  margin-bottom: .375em;
+}
+
+p {
+  font-size: 1.125em;
+  margin-bottom: .75em;
+  line-height: 1.42;
+}
+
+@media (min-width: 48em) {
+
+}
+
+@media (min-width: 60em) {
+
+}
+
+@media (min-width: 72em) {
+
+}
+
+@media (min-width: 96em) {
+  h2 {
+    font-size: 3.75em;
+    margin-bottom: .375em;
+  }
+
+  p {
+    font-size: 1.5em;
+    max-width: 42rem;
+    margin-bottom: .75em;
+  }
+}
 /* About */
 
 .About {
-  background-color: #fafafa;
+  /*background-color: #fafafa;*/
+  /*background-color: #212121;*/
   min-height: 100vh;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -ms-transition: all .6s;
+  -o-transition: all .6s;
+  transition: all .6s;
+}
+
+.About.reverse {
+  background-color: #212121;
+}
+
+.About p {
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -ms-transition: all .6s;
+  -o-transition: all .6s;
+  transition: all .6s;
+}
+
+.About.reverse p {
+  color: #ffffff;
 }
 /*
    Animation example, for spinners
@@ -101,7 +163,7 @@
 .Button {
   background: none;
   border: solid 2px transparent;
-  padding: 1em;
+  padding: .75em 1em;
   min-width: 12em;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -144,61 +206,11 @@
   font-size: 1.5em;
 }
 
-/* Animation */
+@media (min-width: 60em) {
+  /* Button */
 
-@-webkit-keyframes pulse--primary {
-  0% {
-    background-color: #03a9f4;
-  }
-
-  50% {
-    background-color: #4fc3f7;
-  }
-
-  100% {
-    background-color: #03a9f4;
-  }
-}
-
-@-moz-keyframes pulse--primary {
-  0% {
-    background-color: #03a9f4;
-  }
-
-  50% {
-    background-color: #4fc3f7;
-  }
-
-  100% {
-    background-color: #03a9f4;
-  }
-}
-
-@-o-keyframes pulse--primary {
-  0% {
-    background-color: #03a9f4;
-  }
-
-  50% {
-    background-color: #4fc3f7;
-  }
-
-  100% {
-    background-color: #03a9f4;
-  }
-}
-
-@keyframes pulse--primary {
-  0% {
-    background-color: #03a9f4;
-  }
-
-  50% {
-    background-color: #4fc3f7;
-  }
-
-  100% {
-    background-color: #03a9f4;
+  .Button {
+    padding: .75em 1em;
   }
 }
 /* Dialog */
@@ -331,9 +343,27 @@
   width: 100%;
 }
 
+@media (max-height: 24em) {
+  .Header-action {
+    padding-bottom: 1em;
+  }
+}
+
 @media (min-width: 48em) {
   .Header-action {
-    padding-bottom: 3em;
+    padding-bottom: 2.25em;
+  }
+}
+
+@media (min-width: 72em) {
+  .Header-action {
+    padding-bottom: 1.5em;
+  }
+}
+
+@media (min-width: 96em) {
+  .Header-action {
+    padding-bottom: 2.25em;
   }
 }
 /* Hero */
@@ -395,6 +425,12 @@
 @media (min-width: 21em) {
   .Hero img {
     width: 18em;
+  }
+}
+
+@media (max-height: 24em) {
+  .Hero img {
+    width: 16em;
   }
 }
 
@@ -1307,14 +1343,25 @@
 
 .Yearbook-primary,
 .Yearbook-secondary {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   padding: 1em;
   margin-bottom: 1em;
   position: relative;
   width: 100%;
 }
 
-.Yearbook-secondary p {
-  text-align: justify;
+.Yearbook-primary {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.Yearbook-secondary {
+  -webkit-flex-flow: column;
+  flex-flow: column;
 }
 
 @media (min-width: 48em) {
@@ -1326,11 +1373,13 @@
 
 @media (min-width: 60em) {
   .Yearbook--left .Yearbook-inner {
+    text-align: left;
     -webkit-flex-flow: row;
     flex-flow: row;
   }
 
   .Yearbook--right .Yearbook-inner {
+    text-align: right;
     -webkit-flex-flow: row-reverse;
     flex-flow: row-reverse;
   }

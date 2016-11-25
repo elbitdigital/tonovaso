@@ -4,7 +4,7 @@
 .Button {
 	background: none;
 	border: solid 2px transparent;
-	padding: 1em;
+	padding: .75em 1em;
 	min-width: 12em;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
@@ -47,65 +47,12 @@
 	font-size: 1.5em;
 }
 
-/* Animation */
+@media (min-width: 60em) {
 
-@-webkit-keyframes pulse--primary {
+	/* Button */
 
-	0% {
-		background-color: #03a9f4;
-	}
-
-	50% {
-		background-color: #4fc3f7;
-	}
-
-	100% {
-		background-color: #03a9f4;
-	}
-
-}
-@-moz-keyframes pulse--primary {
-
-	0% {
-		background-color: #03a9f4;
-	}
-
-	50% {
-		background-color: #4fc3f7;
-	}
-
-	100% {
-		background-color: #03a9f4;
-	}
-
-}
-@-o-keyframes pulse--primary {
-
-	0% {
-		background-color: #03a9f4;
-	}
-
-	50% {
-		background-color: #4fc3f7;
-	}
-
-	100% {
-		background-color: #03a9f4;
-	}
-
-}
-@keyframes pulse--primary {
-
-	0% {
-		background-color: #03a9f4;
-	}
-
-	50% {
-		background-color: #4fc3f7;
-	}
-
-	100% {
-		background-color: #03a9f4;
+	.Button {
+		padding: .75em 1em;
 	}
 
 }

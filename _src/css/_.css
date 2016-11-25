@@ -1,0 +1,45 @@
+h1,
+h2,
+h3 {
+	font-family: 'tenby-four', 'proxima-nova', sans-serif;
+}
+
+h2 {
+	font-size: 2.25em;
+	margin-bottom: .375em;
+}
+
+p {
+	font-size: 1.125em;
+	margin-bottom: .75em;
+	line-height: 1.42;
+}
+
+@media (min-width: 48em) {
+
+}
+
+@media (min-width: 60em) {
+
+}
+
+@media (min-width: 72em) {
+
+
+
+}
+
+@media (min-width: 96em) {
+
+	h2 {
+		font-size: 3.75em;
+		margin-bottom: .375em;
+	}
+
+	p {
+		font-size: 1.5em;
+		max-width: 42rem;
+		margin-bottom: .75em;
+	}
+
+}

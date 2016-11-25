@@ -39,14 +39,25 @@
 
 .Yearbook-primary,
 .Yearbook-secondary {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
 	padding: 1em;
 	margin-bottom: 1em;
 	position: relative;
 	width: 100%;
 }
 
-.Yearbook-secondary p {
-	text-align: justify;
+.Yearbook-primary {
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.Yearbook-secondary {
+	-webkit-flex-flow: column;
+	flex-flow: column;
 }
 
 @media (min-width: 48em) {
@@ -61,11 +72,13 @@
 @media (min-width: 60em) {
 
 	.Yearbook--left .Yearbook-inner {
+		text-align: left;
 		-webkit-flex-flow: row;
 		flex-flow: row;
 	}
 
 	.Yearbook--right .Yearbook-inner {
+		text-align: right;
 		-webkit-flex-flow: row-reverse;
 		flex-flow: row-reverse;
 	}

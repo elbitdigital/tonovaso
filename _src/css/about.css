@@ -2,6 +2,28 @@
 /* About */
 
 .About {
-	background-color: #fafafa;
+	/*background-color: #fafafa;*/
+	/*background-color: #212121;*/
 	min-height: 100vh;
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	-ms-transition: all .6s;
+	-o-transition: all .6s;
+	transition: all .6s;
+}
+
+.About.reverse {
+	background-color: #212121;
+}
+
+.About p {
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	-ms-transition: all .6s;
+	-o-transition: all .6s;
+	transition: all .6s;
+}
+
+.About.reverse p {
+	color: #ffffff;
 }

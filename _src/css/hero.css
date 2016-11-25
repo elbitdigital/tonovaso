@@ -63,6 +63,14 @@
 
 }
 
+@media (max-height: 24em) {
+
+	.Hero img {
+		width: 16em;
+	}
+
+}
+
 @media (min-width: 48em) {
 
 	.Hero img {

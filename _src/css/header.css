@@ -29,10 +29,34 @@
 	width: 100%;
 }
 
+@media (max-height: 24em) {
+
+	.Header-action {
+		padding-bottom: 1em;
+	}
+
+}
+
 @media (min-width: 48em) {
 
 	.Header-action {
-		padding-bottom: 3em;
+		padding-bottom: 2.25em;
+	}
+
+}
+
+@media (min-width: 72em) {
+
+	.Header-action {
+		padding-bottom: 1.5em;
+	}
+
+}
+
+@media (min-width: 96em) {
+
+	.Header-action {
+		padding-bottom: 2.25em;
 	}
 
 }
