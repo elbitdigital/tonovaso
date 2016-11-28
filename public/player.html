@@ -17,48 +17,154 @@
 <style>
 
 	.responsive {
-		width: 50%;
-		height: 30vh;
+		width: 80%;
+		height: 80vh;
+		max-width: 600px;
+		max-height: 420px;
+	}
+
+	#player {
+		height: 100%;
+		width: 100%;
+	}
+
+	#player svg path {
+		fill: #fff;
+	}
+
+	.youtube {
+		background-position: center;
+		background-size: cover;
+		/*background-repeat: no-repeat;*/
+		position: relative;
+		display: block;
+		/*overflow: hidden;*/
+		transition: all 200ms ease-out;
+		cursor: pointer;
+	}
+
+	.youtube .play {
+		/*background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAERklEQVR4nOWbTWhcVRTHb1IJVoxGtNCNdal2JYJReC6GWuO83PM/59yUS3FRFARdFlwYP1CfiojQWt36sRCUurRIdVFXIn41lAoVdRGrG1M01YpKrWjiYmaSl8ybZJL3cd+YA//NLObd3++eO8x79z5jSq5Gw+8kov0AP8vMR5l1BtBZQM4B8ks75wCdZdYZZj5qLZ4hov2Nht9Z9vhKKSIaB/gI4M4w62KeAO6Mte4lYOq20FxrlqqOibhHmeWbvNC9ZfDX1mLae391aN6limO/gwgvAPJbWeAZuSDingdwXTBw7/0IsyaA/Fkh+KqOkD+YNfHej1QKD+y7iVlOhgLvFqFfNJvNGyuBJ+KDAF8MDd0tgS8y64OlgSdJMsysL4cG7SOHkyQZLhTee7+d2R2rAVy/S+Jd7/32ouBHAP4gNNRGQyTHc/84NhqNywZp5rvjjnnvt21aABFeCQ+RLwAf2hQ8s7sv9OCLk6AHNgQvIrvbfzKCD76g/O6cu7lf/iER/aQGgy448pExZmhdegAPhR9sObFWH1gT3lp7DaA/5bkIgJhZPgsNmz02novj+KqeApj1ubwXWe4kdyeznAgNvTpE/HQmvKqOMeuFogTUVQSRno+iaLRLAJF7uIgL9O4ubgL8aWgB7S44mNX+35YpICUiAvS9sBLkq1WzT+NFffl6AuoiApi6NT37h6sWkBIRZGkQ8YtLgyji6e1mBYTqCEBPG2Naz+0BWQgtoGoRgCzEsd9hAN1X5BfnFZASUfrSAFQNsyZ1FJASUVpHiLinDJG8U2cBZYogkrcNs5waBAGdstbeU9zdqpw0gPwwSAI6VUxHyFlDpOcHUUBBIuYNs14aZAE5RVwyzPr3/0EAEY0TyfGNjBWQvwZ+CTSbehfAH29mrID8bET0+0EUkAd8WYDOmqJ3ecsG30yr9wqRfm6Y+a1BEFDEjHfHvWmY9ck6CygHvBVr8Xhtb4ZE5HZA3y8DvBNA1TjnrmXWf+sioMwZX5V/VHXMGGMMoKdDCxCRvRWBdzKzdHEO+EisilbPyopHYqp6S9UCAsz4iojI7hUDAtyXVQgIDd6KnOoaWNkbI6FaPSuZGyMArsi7MZoloB4zviI/Nhr3X95jltwTRQmoIfgisy5ai+me67OI7fE4nrqjrqfK1t0eby0FPRB6oGVlchL3rgnfrq19RKbVBdhV9IOSwJmfmJi4vi/4ThERitwyCxVAFqydshuCX5awhQ9KtmuIWd8IDZED/nXT77rvVVv6sHRKwjYi91poqP7Dr+Y6JJ1VSZIMA3wkPNy6bX+o8Bcm0sXMdwM8Fxo0A3xORPaWBp6uPXsmbxCRD0NDL0dOANhVCXy6iAjMcjbcrMt3RITKwdMVRdFo+y5yvkL4eWZ+zHt/ZVD4dEVRNGotpst+dZZZH8k86lqn2pIvT/eqrNfn2xuyqYPZ8mv7s8pfn/8Pybm4TIjanscAAAAASUVORK5CYII=") no-repeat center center;*/
+		/*background-size: 64px 64px;*/
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 35%;
+		width: 35%;
+		opacity: .8;
+		filter: alpha(opacity=80);
+		-webkit-transition: all 0.2s ease-out;
+		-moz-transition: all 0.2s ease-out;
+		-o-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+	}
+
+	.youtube .play:hover {
+		opacity: 1;
+		filter: alpha(opacity=100);
 	}
 
 </style>
 
 <body>
 
-<!--DOC
+<!--
+/* DOCS */
 https://developers.google.com/youtube/iframe_api_reference
 
-/*player settings*/
+/* player settings */
 https://developers.google.com/youtube/player_parameters?playerVersion=HTML5
+
+/* player functions demo */
+http://demo.tutorialzine.com/2015/08/how-to-control-youtubes-video-player-with-javascript/
+
+/* "lazy load" aproach to embed youtube videos */
+https://www.sitepoint.com/faster-youtube-embeds-javascript/
+https://ctrlq.org/code/19452-embed-youtube-with-javascript
+http://www.labnol.org/internet/light-youtube-embeds/27941/
+
+/* responsive demo */
+http://jsbin.com/hesesoyafofi/1/watch?html,css,output
+
 -->
 
 <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 <div class="responsive">
-	<div id="player"></div>
+	<div id="player" class="youtube" data-id="tnJ998Trn7g">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.1 30.1" class="play">
+			<path d="M20 14.4l-6.2-4.5c-0.2-0.2-0.5-0.2-0.8-0.1 -0.3 0.1-0.4 0.4-0.4 0.7v9.1c0 0.3 0.2 0.5 0.4 0.7 0.1 0.1 0.2 0.1 0.3 0.1 0.2 0 0.3 0 0.4-0.1l6.2-4.5c0.2-0.1 0.3-0.4 0.3-0.6C20.3 14.8 20.2 14.6 20 14.4z"/>
+			<path d="M15 0C6.7 0 0 6.7 0 15c0 8.3 6.7 15 15 15 8.3 0 15-6.7 15-15C30.1 6.7 23.3 0 15 0zM15 27.5c-6.9 0-12.5-5.6-12.5-12.5 0-6.9 5.6-12.5 12.5-12.5 6.9 0 12.5 5.6 12.5 12.5C27.5 21.9 21.9 27.5 15 27.5z"/>
+		</svg>
+	</div>
 </div>
-
 
 <button id="controlplay">Play</button>
 <button id="controlpause">Pause</button>
 <button id="controlstop">Stop</button>
 
 <script>
-	// 2. This code loads the IFrame Player API code asynchronously.
-	var tag = document.createElement('script');
 
-	tag.src = "https://www.youtube.com/iframe_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	/* DOMLoaded snippet - can be replaced */
 
-	// 3. This function creates an <iframe> (and YouTube player)
-	//    after the API code downloads.
+	'use strict';
+	function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
+	r(function(){
+		if (!document.getElementsByClassName) {
+			// IE8 support
+			var getElementsByClassName = function(node, classname) {
+				var a = [];
+				var re = new RegExp('(^| )'+classname+'( |$)');
+				var els = node.getElementsByTagName("*");
+				for(var i=0,j=els.length; i<j; i++)
+					if(re.test(els[i].className))a.push(els[i]);
+				return a;
+			};
+			var videos = getElementsByClassName(document.body, "youtube");
+		} else {
+			var videos = document.getElementsByClassName("youtube");
+		}
+
+		for (var i = 0 ; i < videos.length; i++) {
+
+			videos[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + videos[i].dataset.id + '/hqdefault.jpg)';
+
+			videos[i].onclick = function() {
+
+				/* download iframe js only on clicked on the thumbnail place holder */
+				var tag = document.createElement('script');
+				tag.src = "https://www.youtube.com/iframe_api";
+				var firstScriptTag = document.getElementsByTagName('script')[0];
+				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+			}
+		}
+	});
+
+</script>
+
+<script>
+
 	var player;
+
+	//trigged only when iframe js is downloaded
 	function onYouTubeIframeAPIReady() {
 		player = new YT.Player('player', {
 			height: '100%',
 			width: '100%',
 			videoId: 'tnJ998Trn7g',
-			playerVars: {'controls': 0, 'rel': 0, 'showinfo': 0, 'modestbranding': 1},
+//			videoId: ocument.getElementById('player').dataset.id,
+//			playerVars: {'controls': 0, 'rel': 0, 'showinfo': 0, 'modestbranding': 1},
+			playerVars: {
+				'autoplay': 1,
+				'color': 'white',
+				'disablekb': 1,
+				'iv_load_policy': 3,
+				'modestbranding': 1,
+				'rel': 0,
+				'showinfo': 0,
+				'theme': 'light'
+			},
 			events: {
 				'onReady': onPlayerReady,
 				'onStateChange': onPlayerStateChange
@@ -66,9 +172,11 @@ https://developers.google.com/youtube/player_parameters?playerVersion=HTML5
 		});
 	}
 
-	// 4. The API will call this function when the video player is ready.
 	function onPlayerReady(event) {
-//		event.target.playVideo();
+		event.target.playVideo();
+
+		displayVideoDuration();
+		setInterval(displayVideoCurrentTime, 1000);
 	}
 
 	// 5. The API calls this function when the player's state changes.
@@ -93,6 +201,21 @@ https://developers.google.com/youtube/player_parameters?playerVersion=HTML5
 	function pauseVideo() {
 		player.pauseVideo();
 	}
+
+	function displayVideoCurrentTime() {
+		console.log(formatTime(player.getCurrentTime()) + ' - ' + player.getCurrentTime());
+	}
+
+	function displayVideoDuration() {
+		console.log(formatTime(player.getDuration()) + ' - ' + player.getDuration());
+	}
+
+	function formatTime(time) {
+		time = Math.round(time);
+		var minutes = Math.floor(time / 60), seconds = time - minutes * 60;
+		seconds = seconds < 10 ? '0' + seconds : seconds;
+		return minutes + ":" + seconds;
+	}
 </script>
 
 <script>
@@ -112,7 +235,6 @@ https://developers.google.com/youtube/player_parameters?playerVersion=HTML5
 	});
 
 </script>
-
 
 </body>
 
