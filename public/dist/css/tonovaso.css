@@ -52,7 +52,7 @@ p {
   transition: all .6s;
 }
 
-.About.reverse {
+.About.is-theater {
   background-color: #212121;
 }
 
@@ -64,7 +64,7 @@ p {
   transition: all .6s;
 }
 
-.About.reverse p {
+.About.is-theater p {
   color: #ffffff;
 }
 /*

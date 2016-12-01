@@ -50,6 +50,7 @@ var Player = (function () {
 	Player.prototype.setVideo = function (video) {
 
 		this.video = video;
+		this.video.elementID = this.element.id;
 		this.element.style.backgroundImage = 'url(http://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
 
 	};
@@ -85,6 +86,9 @@ var Player = (function () {
 				break;
 			case 'play':
 				self.addControlListener(controlElement, self.play);
+				break;
+			case 'power':
+				self.addControlListener(controlElement, self.power);
 				break;
 			case 'stop':
 				self.addControlListener(controlElement, self.stop);

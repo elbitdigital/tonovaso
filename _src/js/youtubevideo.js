@@ -13,10 +13,11 @@ var YouTubeVideo = (function () {
 
 		this.id = id;
 		this.player = false;
+		this.elementID = false;
 
 		window.onYouTubeIframeAPIReady = function() {
 
-			self.player = new YT.Player('player', self.config);
+			self.player = new YT.Player(self.elementID, self.config);
 
 		};
 
