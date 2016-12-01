@@ -69,29 +69,8 @@
 
 <body>
 
-<!--
-/* DOCS */
-https://developers.google.com/youtube/iframe_api_reference
-
-/* player settings */
-https://developers.google.com/youtube/player_parameters?playerVersion=HTML5
-
-/* player functions demo */
-http://demo.tutorialzine.com/2015/08/how-to-control-youtubes-video-player-with-javascript/
-
-/* "lazy load" aproach to embed youtube videos */
-https://www.sitepoint.com/faster-youtube-embeds-javascript/
-https://ctrlq.org/code/19452-embed-youtube-with-javascript
-http://www.labnol.org/internet/light-youtube-embeds/27941/
-
-/* responsive demo */
-http://jsbin.com/hesesoyafofi/1/watch?html,css,output
-
--->
-
-<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 <div class="responsive">
-	<div id="player" class="youtube" data-id="tnJ998Trn7g">
+	<div id="player" class="youtube" data-id="9e2mMf1--v8" >
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.1 30.1" class="play">
 			<path d="M20 14.4l-6.2-4.5c-0.2-0.2-0.5-0.2-0.8-0.1 -0.3 0.1-0.4 0.4-0.4 0.7v9.1c0 0.3 0.2 0.5 0.4 0.7 0.1 0.1 0.2 0.1 0.3 0.1 0.2 0 0.3 0 0.4-0.1l6.2-4.5c0.2-0.1 0.3-0.4 0.3-0.6C20.3 14.8 20.2 14.6 20 14.4z"/>
 			<path d="M15 0C6.7 0 0 6.7 0 15c0 8.3 6.7 15 15 15 8.3 0 15-6.7 15-15C30.1 6.7 23.3 0 15 0zM15 27.5c-6.9 0-12.5-5.6-12.5-12.5 0-6.9 5.6-12.5 12.5-12.5 6.9 0 12.5 5.6 12.5 12.5C27.5 21.9 21.9 27.5 15 27.5z"/>
@@ -103,136 +82,17 @@ http://jsbin.com/hesesoyafofi/1/watch?html,css,output
 <button id="controlpause">Pause</button>
 <button id="controlstop">Stop</button>
 
-<script>
-
-	/* DOMLoaded snippet - can be replaced */
-
-	'use strict';
-	function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
-	r(function(){
-		if (!document.getElementsByClassName) {
-			// IE8 support
-			var getElementsByClassName = function(node, classname) {
-				var a = [];
-				var re = new RegExp('(^| )'+classname+'( |$)');
-				var els = node.getElementsByTagName("*");
-				for(var i=0,j=els.length; i<j; i++)
-					if(re.test(els[i].className))a.push(els[i]);
-				return a;
-			};
-			var videos = getElementsByClassName(document.body, "youtube");
-		} else {
-			var videos = document.getElementsByClassName("youtube");
-		}
-
-		for (var i = 0 ; i < videos.length; i++) {
-
-			videos[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + videos[i].dataset.id + '/hqdefault.jpg)';
-
-			videos[i].onclick = function() {
-
-				/* download iframe js only on clicked on the thumbnail place holder */
-				var tag = document.createElement('script');
-				tag.src = "https://www.youtube.com/iframe_api";
-				var firstScriptTag = document.getElementsByTagName('script')[0];
-				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-			}
-		}
-	});
-
-</script>
+<script src="dist/js/tonovaso.js"></script>
 
 <script>
 
-	var player;
+	var player = new Player(document.getElementById('player'));
+	player.setVideo(new YouTubeVideo('9e2mMf1--v8'));
 
-	//trigged only when iframe js is downloaded
-	function onYouTubeIframeAPIReady() {
-		player = new YT.Player('player', {
-			height: '100%',
-			width: '100%',
-			videoId: 'tnJ998Trn7g',
-//			videoId: ocument.getElementById('player').dataset.id,
-//			playerVars: {'controls': 0, 'rel': 0, 'showinfo': 0, 'modestbranding': 1},
-			playerVars: {
-				'autoplay': 1,
-				'color': 'white',
-				'disablekb': 1,
-				'iv_load_policy': 3,
-				'modestbranding': 1,
-				'rel': 0,
-				'showinfo': 0,
-				'theme': 'light'
-			},
-			events: {
-				'onReady': onPlayerReady,
-				'onStateChange': onPlayerStateChange
-			}
-		});
-	}
-
-	function onPlayerReady(event) {
-		event.target.playVideo();
-
-		displayVideoDuration();
-		setInterval(displayVideoCurrentTime, 1000);
-	}
-
-	// 5. The API calls this function when the player's state changes.
-	//    The function indicates that when playing a video (state=1),
-	//    the player should play for six seconds and then stop.
-	var done = false;
-	function onPlayerStateChange(event) {
-//		if (event.data == YT.PlayerState.PLAYING && !done) {
-//			setTimeout(stopVideo, 6000);
-//			done = true;
-//		}
-	}
-
-	function stopVideo() {
-		player.stopVideo();
-	}
-
-	function playVideo() {
-		player.playVideo();
-	}
-
-	function pauseVideo() {
-		player.pauseVideo();
-	}
-
-	function displayVideoCurrentTime() {
-		console.log(formatTime(player.getCurrentTime()) + ' - ' + player.getCurrentTime());
-	}
-
-	function displayVideoDuration() {
-		console.log(formatTime(player.getDuration()) + ' - ' + player.getDuration());
-	}
-
-	function formatTime(time) {
-		time = Math.round(time);
-		var minutes = Math.floor(time / 60), seconds = time - minutes * 60;
-		seconds = seconds < 10 ? '0' + seconds : seconds;
-		return minutes + ":" + seconds;
-	}
-</script>
-
-<script>
-
-	var controlplay = document.getElementById('controlplay');
-	var controlpause = document.getElementById('controlpause');
-	var controlstop = document.getElementById('controlstop');
-
-	controlplay.addEventListener('click', function() {
-		playVideo();
-	});
-	controlpause.addEventListener('click', function() {
-		pauseVideo();
-	});
-	controlstop.addEventListener('click', function() {
-		stopVideo();
-	});
+	// add buttons controllers
+	player.addControl('pause', document.getElementById('controlpause'));
+	player.addControl('play', document.getElementById('controlplay'));
+	player.addControl('stop', document.getElementById('controlstop'));
 
 </script>
 
