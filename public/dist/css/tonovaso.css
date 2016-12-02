@@ -45,11 +45,11 @@ p {
   /*background-color: #fafafa;*/
   /*background-color: #212121;*/
   min-height: 100vh;
-  -webkit-transition: all .6s;
-  -moz-transition: all .6s;
-  -ms-transition: all .6s;
-  -o-transition: all .6s;
-  transition: all .6s;
+  -webkit-transition: all .8s .2s;
+  -moz-transition: all .8s .2s;
+  -ms-transition: all .8s .2s;
+  -o-transition: all .8s .2s;
+  transition: all .8s .2s;
 }
 
 .About.is-theater {
@@ -57,11 +57,11 @@ p {
 }
 
 .About p {
-  -webkit-transition: all .6s;
-  -moz-transition: all .6s;
-  -ms-transition: all .6s;
-  -o-transition: all .6s;
-  transition: all .6s;
+  -webkit-transition: all .8s .2s;
+  -moz-transition: all .8s .2s;
+  -ms-transition: all .8s .2s;
+  -o-transition: all .8s .2s;
+  transition: all .8s .2s;
 }
 
 .About.is-theater p {
@@ -667,6 +667,75 @@ p {
     font-size: 1.5em;
     max-width: 42rem;
     margin-bottom: .75em;
+  }
+}
+/* Player */
+
+.Player {
+  background: #000000 no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  cursor: pointer;
+  height: 240px;
+  margin-bottom: 1em;
+  -webkit-transition: height .6s, width .6s, margin .6s;
+  -moz-transition: height .6s, width .6s, margin .6s;
+  -ms-transition: height .6s, width .6s, margin .6s;
+  -o-transition: height .6s, width .6s, margin .6s;
+  transition: height .6s, width .6s, margin .6s;
+  width: 426px;
+}
+
+.is-theater .Player {
+  cursor: default;
+  width: 1280px;
+  height: 720px;
+}
+
+.Player-inner {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Player svg {
+  fill: #ffffff;
+  max-width: 6em;
+  margin: 0 auto;
+  -webkit-transition: transform .3s;
+  -moz-transition: transform .3s;
+  -ms-transition: transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+}
+
+.Player:hover svg {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@media (min-width: 96em) {
+  .Player {
+    margin-bottom: 3em;
+  }
+
+  .is-theater .Player {
+    margin-top: 3em;
+    width: 1280px;
+    height: 720px;
   }
 }
 /* Select */

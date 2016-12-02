@@ -2,15 +2,14 @@
 /* About */
 
 .About {
-
 	/*background-color: #fafafa;*/
 	/*background-color: #212121;*/
 	min-height: 100vh;
-	-webkit-transition: all .6s;
-	-moz-transition: all .6s;
-	-ms-transition: all .6s;
-	-o-transition: all .6s;
-	transition: all .6s;
+	-webkit-transition: all .8s .2s;
+	-moz-transition: all .8s .2s;
+	-ms-transition: all .8s .2s;
+	-o-transition: all .8s .2s;
+	transition: all .8s .2s;
 }
 
 .About.is-theater {
@@ -18,11 +17,11 @@
 }
 
 .About p {
-	-webkit-transition: all .6s;
-	-moz-transition: all .6s;
-	-ms-transition: all .6s;
-	-o-transition: all .6s;
-	transition: all .6s;
+	-webkit-transition: all .8s .2s;
+	-moz-transition: all .8s .2s;
+	-ms-transition: all .8s .2s;
+	-o-transition: all .8s .2s;
+	transition: all .8s .2s;
 }
 
 .About.is-theater p {
