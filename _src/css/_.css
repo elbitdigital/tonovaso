@@ -15,21 +15,41 @@ p {
 	line-height: 1.42;
 }
 
+.container {
+	padding: 0 1em;
+	margin: 0 auto;
+	width: 100%;
+}
+
 @media (min-width: 48em) {
+
+	.container {
+		max-width: 48em;
+	}
 
 }
 
 @media (min-width: 60em) {
 
+	.container {
+		padding: 0;
+	}
+
 }
 
 @media (min-width: 72em) {
 
-
+	.container {
+		max-width: 60em;
+	}
 
 }
 
 @media (min-width: 96em) {
+
+	.container {
+		max-width: 72em;
+	}
 
 	h2 {
 		font-size: 3.75em;

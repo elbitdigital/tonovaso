@@ -64,9 +64,11 @@
 	}
 
 	.is-theater .Player {
-		margin-top: 3em;
-		width: 1280px;
-		height: 720px;
+		margin-top: 2.25em;
+		margin-bottom: 3.75em;
+		margin-left: -4em; /* ( 80em - 72em ) / 2 */
+		width: 80em;
+		height: 45em;
 	}
 
 }

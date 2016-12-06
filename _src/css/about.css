@@ -10,6 +10,7 @@
 	-ms-transition: all .8s .2s;
 	-o-transition: all .8s .2s;
 	transition: all .8s .2s;
+	padding: 1em 0;
 }
 
 .About.is-theater {
@@ -26,4 +27,12 @@
 
 .About.is-theater p {
 	color: #ffffff;
+}
+
+@media (min-width: 96em) {
+
+	.About {
+		padding: 6em 0;
+	}
+
 }

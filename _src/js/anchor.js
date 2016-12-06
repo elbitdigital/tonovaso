@@ -7,14 +7,21 @@ var Anchor = (function () {
 	 * Anchor class constructor
 	 * @constructor
 	 */
-	function Anchor(element, duration, easing, callback) {
+	function Anchor(element, options) {
 
 		var self = this;
 
 		this.element = element;
-		this.duration = duration || 200;
-		this.easing = easing || 'linear';
-		this.callback = callback || null;
+
+		_.defaults(options, {
+			duration:  200,
+			easing: 'linear',
+			callback: false
+		});
+
+		this.duration = options.duration;
+		this.easing = options.easing;
+		this.callback = options.callback;
 
 		this.push = function() {
 
