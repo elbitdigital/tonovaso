@@ -21,12 +21,23 @@
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
 	-webkit-justify-content: center;
 	justify-content: center;
 	left: 0;
 	padding: 1em 2.25em 2.25em;
 	position: absolute;
 	width: 100%;
+}
+
+.Header-action p {
+	color: #5d4037;
+	font-size: 1.125em;
+	font-weight: 900;
+	max-width: 14rem;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 @media (max-height: 24em) {

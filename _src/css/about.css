@@ -5,12 +5,12 @@
 	/*background-color: #fafafa;*/
 	/*background-color: #212121;*/
 	min-height: 100vh;
+	padding: 1em 0;
 	-webkit-transition: all .8s .2s;
 	-moz-transition: all .8s .2s;
 	-ms-transition: all .8s .2s;
 	-o-transition: all .8s .2s;
 	transition: all .8s .2s;
-	padding: 1em 0;
 }
 
 .About.is-theater {

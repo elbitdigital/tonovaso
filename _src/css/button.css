@@ -4,8 +4,9 @@
 .Button {
 	background: none;
 	border: solid 2px transparent;
-	padding: .75em 1em;
+	margin-bottom: 1em;
 	min-width: 12em;
+	padding: .75em 1em;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
