@@ -1,0 +1,83 @@
+
+/* Aside Button */
+
+.AsideButton {
+	position: relative;
+	height: 3em;
+	width: 3em;
+}
+
+/* Aside Button select area */
+
+.AsideButton-selectArea {
+	cursor: pointer;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	height: 100%;
+}
+
+.AsideButton--facebook .AsideButton-selectArea:hover,
+.AsideButton--instagram .AsideButton-selectArea:hover,
+.AsideButton--messenger .AsideButton-selectArea:hover {
+	color: #ffffff;
+	height: 3.75em;
+}
+
+.AsideButton--facebook:focus .AsideButton-selectArea,
+.AsideButton--facebook:hover .AsideButton-selectArea {
+	background-color: #1976d2;
+}
+
+.AsideButton--instagram:focus .AsideButton-selectArea,
+.AsideButton--instagram:hover .AsideButton-selectArea {
+	background-color: #9c27b0;
+}
+
+.AsideButton--messenger:focus .AsideButton-selectArea,
+.AsideButton--messenger:hover .AsideButton-selectArea {
+	background-color: #2196f3;
+}
+
+.AsideButton-icon {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+.AsideButton-icon span {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 1.3125em;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}

@@ -21,13 +21,8 @@
 		left: 0;
 		top: 0;
 		z-index: 2;
-		position: fixed;
+		position: absolute;
 		width: 3em;
-	}
-
-	/* Aside inner */
-
-	.Aside-inner {
 		display: -webkit-box;
 		display: -moz-box;
 		display: -ms-flexbox;
@@ -37,25 +32,20 @@
 		justify-content: center;
 		-webkit-align-items: center;
 		align-items: center;
-		/*width: 3em;*/
-		height: 100%;
-		position: relative;
 	}
 
-    .Aside-text {
-	    display: -webkit-box;
-	    display: -moz-box;
-	    display: -ms-flexbox;
-	    display: -webkit-flex;
-	    display: flex;
-	    -webkit-align-items: center;
-	    align-items: center;
-	    -webkit-justify-content: center;
-	    justify-content: center;
-	    -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,.16);
-	    -moz-box-shadow: 1px 1px 4px 0 rgba(0,0,0,.16);
-	    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.16);
+	/* Aside inner */
+
+    .Aside-inner {
 	    background-color: #ffffff;
+	    border-radius: 2px;
+	    -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .16);
+	    -moz-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .16);
+	    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .16);
+	    float: left;
+	    height: 3em;
+	    margin-right: 100%;
+	    /*padding: 0 2.25em;*/
 	    -webkit-transform: rotate(-90deg);
 	    -moz-transform: rotate(-90deg);
 	    -ms-transform: rotate(-90deg);
@@ -66,11 +56,24 @@
 	    -ms-transform-origin: 50% 0 0;
 	    -o-transform-origin: 50% 0 0;
 	    transform-origin: 50% 0 0;
-	    margin-right: 100%;
-	    float: left;
-	    height: 3em;
-	    padding: 0 2.25em;
 	}
+
+    .Aside-content {
+	    -webkit-align-items: center;
+	    align-items: center;
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    width: 100%;
+	    height: 100%;
+    }
+
+    .Aside-text {
+	    margin-left: 2.25em;
+	    margin-right: 1.125em;
+    }
 
     .Aside-text span {
 	    white-space: nowrap;
@@ -78,6 +81,14 @@
 	    text-transform: uppercase;
 	    font-weight: 900;
 	    font-size: 1em;
+    }
+
+    .Aside-social {
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
     }
 
 }

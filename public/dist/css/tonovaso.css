@@ -181,6 +181,88 @@ p {
     transform: rotate(359deg);
   }
 }
+/* Aside Button */
+
+.AsideButton {
+  position: relative;
+  height: 3em;
+  width: 3em;
+}
+
+/* Aside Button select area */
+
+.AsideButton-selectArea {
+  cursor: pointer;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  height: 100%;
+}
+
+.AsideButton--facebook .AsideButton-selectArea:hover,
+.AsideButton--instagram .AsideButton-selectArea:hover,
+.AsideButton--messenger .AsideButton-selectArea:hover {
+  color: #ffffff;
+  height: 3.75em;
+}
+
+.AsideButton--facebook:focus .AsideButton-selectArea,
+.AsideButton--facebook:hover .AsideButton-selectArea {
+  background-color: #1976d2;
+}
+
+.AsideButton--instagram:focus .AsideButton-selectArea,
+.AsideButton--instagram:hover .AsideButton-selectArea {
+  background-color: #9c27b0;
+}
+
+.AsideButton--messenger:focus .AsideButton-selectArea,
+.AsideButton--messenger:hover .AsideButton-selectArea {
+  background-color: #2196f3;
+}
+
+.AsideButton-icon {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.AsideButton-icon span {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 1.3125em;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
 /* Aside */
 
 .Aside {
@@ -200,41 +282,31 @@ p {
     left: 0;
     top: 0;
     z-index: 2;
-    position: fixed;
+    position: absolute;
     width: 3em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
 
   /* Aside inner */
 
   .Aside-inner {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-    /*width: 3em;*/
-    height: 100%;
-    position: relative;
-  }
-
-  .Aside-text {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,.16);
-    -moz-box-shadow: 1px 1px 4px 0 rgba(0,0,0,.16);
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.16);
     background-color: #ffffff;
+    border-radius: 2px;
+    -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .16);
+    -moz-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .16);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .16);
+    float: left;
+    height: 3em;
+    margin-right: 100%;
+    /*padding: 0 2.25em;*/
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -245,10 +317,23 @@ p {
     -ms-transform-origin: 50% 0 0;
     -o-transform-origin: 50% 0 0;
     transform-origin: 50% 0 0;
-    margin-right: 100%;
-    float: left;
-    height: 3em;
-    padding: 0 2.25em;
+  }
+
+  .Aside-content {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Aside-text {
+    margin-left: 2.25em;
+    margin-right: 1.125em;
   }
 
   .Aside-text span {
@@ -257,6 +342,14 @@ p {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 1em;
+  }
+
+  .Aside-social {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
   }
 }
 /* Button */
@@ -1260,12 +1353,12 @@ p {
 }
 @font-face {
   font-family: 'tonovaso';
-  src: url("../font/tonovaso.eot?42892060");
-  src: url("../font/tonovaso.eot?42892060#iefix") format('embedded-opentype'),
-    url("../font/tonovaso.woff2?42892060") format('woff2'),
-    url("../font/tonovaso.woff?42892060") format('woff'),
-    url("../font/tonovaso.ttf?42892060") format('truetype'),
-    url("../font/tonovaso.svg?42892060#tonovaso") format('svg');
+  src: url("../font/tonovaso.eot?24248213");
+  src: url("../font/tonovaso.eot?24248213#iefix") format('embedded-opentype'),
+       url("../font/tonovaso.woff2?24248213") format('woff2'),
+       url("../font/tonovaso.woff?24248213") format('woff'),
+       url("../font/tonovaso.ttf?24248213") format('truetype'),
+       url("../font/tonovaso.svg?24248213#tonovaso") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1278,7 +1371,7 @@ p {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'tonovaso';
-    src: url('../font/tonovaso.svg?42892060#tonovaso') format('svg');
+    src: url('../font/tonovaso.svg?24248213#tonovaso') format('svg');
   }
 }
 */
@@ -1426,6 +1519,48 @@ p {
 
 /* '' */
 
+.icon-play_circle_outline:before {
+  content: '\e814';
+}
+
+/* '' */
+
+.icon-local_parking:before {
+  content: '\e815';
+}
+
+/* '' */
+
+.icon-phone:before {
+  content: '\e816';
+}
+
+/* '' */
+
+.icon-arrow_forward:before {
+  content: '\e817';
+}
+
+/* '' */
+
+.icon-arrow_upward:before {
+  content: '\e818';
+}
+
+/* '' */
+
+.icon-message:before {
+  content: '\e819';
+}
+
+/* '' */
+
+.icon-arrow_back:before {
+  content: '\e81c';
+}
+
+/* '' */
+
 .icon-arrow_downward:before {
   content: '\e826';
 }
@@ -1438,11 +1573,23 @@ p {
 
 /* '' */
 
+.icon-facebook-messenger:before {
+  content: '\ebd8';
+}
+
+/* '' */
+
 .icon-facebook:before {
   content: '\f09a';
 }
 
 /* '' */
+
+.icon-ticket:before {
+  content: '\f145';
+}
+
+/* '' */
 
 .icon-instagram:before {
   content: '\f16d';
@@ -1461,6 +1608,12 @@ p {
 }
 
 /* '' */
+
+.icon-comment:before {
+  content: '\f4ac';
+}
+
+/* '' */
 /* Yearbook Gallery Item */
 
 .YearbookGalleryItem {
