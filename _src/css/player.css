@@ -57,6 +57,41 @@
 	transform: scale(1.2);
 }
 
+@media (min-width: 48em) {
+
+	.Player {
+		margin-left: 0;
+	}
+
+	.is-theater .Player {
+		width: 40em;
+		height: 22.5em;
+	}
+
+}
+
+@media (min-width: 60em) {
+
+	.is-theater .Player {
+		margin-top: 1em;
+		margin-bottom: 2.25em;
+		margin-left: -2.6875em; /* ( 53.375em - 48em ) / 2 */
+		width: 53.375em;
+		height: 30em;
+	}
+
+}
+
+@media (min-width: 72em) {
+
+	.is-theater .Player {
+		margin-left: -2em; /* ( 64em - 60em ) / 2 */
+		width: 64em;
+		height: 36em;
+	}
+
+}
+
 @media (min-width: 96em) {
 
 	.Player {

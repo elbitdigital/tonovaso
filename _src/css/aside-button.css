@@ -30,7 +30,8 @@
 
 .AsideButton--facebook .AsideButton-selectArea:hover,
 .AsideButton--instagram .AsideButton-selectArea:hover,
-.AsideButton--messenger .AsideButton-selectArea:hover {
+.AsideButton--messenger .AsideButton-selectArea:hover,
+.AsideButton--ticket .AsideButton-selectArea:hover {
 	color: #ffffff;
 	height: 3.75em;
 }
@@ -42,12 +43,27 @@
 
 .AsideButton--instagram:focus .AsideButton-selectArea,
 .AsideButton--instagram:hover .AsideButton-selectArea {
-	background-color: #9c27b0;
+	background-color: #aa00ff;
 }
 
 .AsideButton--messenger:focus .AsideButton-selectArea,
 .AsideButton--messenger:hover .AsideButton-selectArea {
-	background-color: #2196f3;
+	background-color: #0091ea;
+}
+
+.AsideButton--ticket .AsideButton-selectArea {
+	color: #ffab00;
+	/*background-color: #ffffff;*/
+	/*height: 3.75em;*/
+}
+
+.AsideButton--ticket:focus .AsideButton-selectArea,
+.AsideButton--ticket:hover .AsideButton-selectArea {
+	background-color: #ffc400;
+}
+
+.AsideButton--ticket:active .AsideButton-selectArea {
+	background-color: #ffab00;
 }
 
 .AsideButton-icon {

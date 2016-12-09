@@ -23,6 +23,7 @@ p {
 
 @media (min-width: 48em) {
   .container {
+    padding: 0 3em 0 4.5em;
     max-width: 48em;
   }
 }
@@ -212,7 +213,8 @@ p {
 
 .AsideButton--facebook .AsideButton-selectArea:hover,
 .AsideButton--instagram .AsideButton-selectArea:hover,
-.AsideButton--messenger .AsideButton-selectArea:hover {
+.AsideButton--messenger .AsideButton-selectArea:hover,
+.AsideButton--ticket .AsideButton-selectArea:hover {
   color: #ffffff;
   height: 3.75em;
 }
@@ -224,12 +226,27 @@ p {
 
 .AsideButton--instagram:focus .AsideButton-selectArea,
 .AsideButton--instagram:hover .AsideButton-selectArea {
-  background-color: #9c27b0;
+  background-color: #aa00ff;
 }
 
 .AsideButton--messenger:focus .AsideButton-selectArea,
 .AsideButton--messenger:hover .AsideButton-selectArea {
-  background-color: #2196f3;
+  background-color: #0091ea;
+}
+
+.AsideButton--ticket .AsideButton-selectArea {
+  color: #ffab00;
+  /*background-color: #ffffff;*/
+  /*height: 3.75em;*/
+}
+
+.AsideButton--ticket:focus .AsideButton-selectArea,
+.AsideButton--ticket:hover .AsideButton-selectArea {
+  background-color: #ffc400;
+}
+
+.AsideButton--ticket:active .AsideButton-selectArea {
+  background-color: #ffab00;
 }
 
 .AsideButton-icon {
@@ -274,7 +291,11 @@ p {
 
 
 
-@media (min-width: 60em) {
+.heightLarge-visible {
+  display: none;
+}
+
+@media (min-width: 48em) {
   /* Aside */
 
   .Aside {
@@ -300,7 +321,8 @@ p {
 
   .Aside-inner {
     background-color: #ffffff;
-    border-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
     -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .16);
     -moz-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .16);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .16);
@@ -328,14 +350,13 @@ p {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    padding-right: .375em;
+    padding: 0 .375em;
     width: 100%;
     height: 100%;
   }
 
   .Aside-text {
-    margin-left: 2.25em;
-    margin-right: 1.125em;
+    margin: 0 1.125em;
   }
 
   .Aside-text span {
@@ -352,6 +373,12 @@ p {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+  }
+}
+
+@media (min-height: 48em) {
+  .heightLarge-visible {
+    display: inline-block;
   }
 }
 /* Button */
@@ -844,13 +871,13 @@ p {
   }
 
   .Paragraph h2 {
-    font-size: 3.75em;
+    font-size: 3em;
     margin-bottom: .375em;
   }
 
   .Paragraph p {
-    font-size: 1.5em;
-    max-width: 42rem;
+    font-size: 1.3125em;
+    max-width: 36rem;
     margin-bottom: .75em;
   }
 }
@@ -948,6 +975,37 @@ p {
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+@media (min-width: 48em) {
+  .Player {
+    margin-left: 0;
+  }
+
+  .is-theater .Player {
+    width: 40em;
+    height: 22.5em;
+  }
+}
+
+@media (min-width: 60em) {
+  .is-theater .Player {
+    margin-top: 1em;
+    margin-bottom: 2.25em;
+    margin-left: -2.6875em;
+    /* ( 53.375em - 48em ) / 2 */
+    width: 53.375em;
+    height: 30em;
+  }
+}
+
+@media (min-width: 72em) {
+  .is-theater .Player {
+    margin-left: -2em;
+    /* ( 64em - 60em ) / 2 */
+    width: 64em;
+    height: 36em;
+  }
 }
 
 @media (min-width: 96em) {

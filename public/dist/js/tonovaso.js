@@ -17,12 +17,14 @@ var Anchor = (function () {
 		_.defaults(options, {
 			duration:  200,
 			easing: 'linear',
-			callback: false
+			callback: false,
+			scrollOffset: 0
 		});
 
 		this.duration = options.duration;
 		this.easing = options.easing;
 		this.callback = options.callback;
+		this.scrollOffset = options.scrollOffset;
 
 		this.push = function() {
 
@@ -157,7 +159,7 @@ var Anchor = (function () {
 
 	Anchor.prototype.getDestinationPosition = function () {
 
-		return this.documentHeight - this.element.offsetTop < this.windowHeight ? this.documentHeight - this.windowHeight : this.element.offsetTop;
+		return ( this.documentHeight - this.element.offsetTop < this.windowHeight ? this.documentHeight - this.windowHeight : this.element.offsetTop ) + this.scrollOffset;
 
 	};
 

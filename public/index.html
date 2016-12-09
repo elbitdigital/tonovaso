@@ -50,9 +50,23 @@
 
 		<div class="Aside-content">
 
+			<div class="AsideButton AsideButton--ticket">
+
+				<a href="tickets" class="AsideButton-selectArea" draggable="false">
+
+					<div class="AsideButton-icon">
+
+						<span class="icon-ticket"></span>
+
+					</div>
+
+				</a>
+
+			</div>
+
 			<div class="Aside-text">
 
-				<span>24 a 28 de fevereiro de 2017, Palmital - SP</span>
+				<span>24 a 28 de fevereiro de 2017<span class="heightLarge-visible">, Palmital - SP</span></span>
 
 			</div>
 
@@ -70,13 +84,13 @@
 
 			</div>
 
-			<div class="AsideButton AsideButton--instagram">
+			<div class="AsideButton AsideButton--facebook">
 
-				<a href="https://www.instagram.com/braztnv" class="AsideButton-selectArea" draggable="false">
+				<a href="https://www.facebook.com/tonovaso.palmital/" class="AsideButton-selectArea" draggable="false">
 
 					<div class="AsideButton-icon">
 
-						<span class="icon-instagram"></span>
+						<span class="icon-facebook-squared"></span>
 
 					</div>
 
@@ -84,13 +98,13 @@
 
 			</div>
 
-			<div class="AsideButton AsideButton--facebook">
+			<div class="AsideButton AsideButton--instagram">
 
-				<a href="https://www.facebook.com/tonovaso.palmital/" class="AsideButton-selectArea" draggable="false">
+				<a href="https://www.instagram.com/braztnv" class="AsideButton-selectArea" draggable="false">
 
 					<div class="AsideButton-icon">
 
-						<span class="icon-facebook"></span>
+						<span class="icon-instagram"></span>
 
 					</div>
 
@@ -172,13 +186,13 @@
 
 </header>
 
-<section id="sobre" class="About grey-50" onclick="this.classList.add('is-theater');">
+<section id="sobre" class="About grey-50">
 
 	<div class="About-inner container">
 
 		<div class="Paragraph font-brown-900">
 
-			<div class="Paragraph-inner container">
+			<div class="Paragraph-inner">
 
 				<h2 class="font-amber-a700">20 anos de Open Bar</h2>
 
@@ -190,7 +204,7 @@
 
 		</div>
 
-		<div id="player" class="Player">
+		<div id="player" class="Player" onclick="playerAnchor.push(); aboutElement.classList.add('is-theater');">
 
 			<div class="Player-background"></div>
 
@@ -248,8 +262,16 @@
 
 <script>
 
+	var aboutElement = document.getElementById('sobre');
+
 	var player = new Player(document.getElementById('player'));
 	player.setVideo(new YouTubeVideo('ui4jqQV7rco'));
+
+	var playerAnchor = new Anchor(document.getElementById('player'), {
+		duration: 600,
+		easing: 'easeInQuad',
+		scrollOffset: -36
+	});
 
 	var aboutAnchor = new Anchor(document.getElementById('sobre'), {
 		duration: 600,
