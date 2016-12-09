@@ -11,6 +11,7 @@
 	-ms-transition: all .8s .2s;
 	-o-transition: all .8s .2s;
 	transition: all .8s .2s;
+	overflow-x: hidden;
 }
 
 .About.is-theater {

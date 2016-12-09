@@ -8,20 +8,21 @@
 	-o-background-size: cover;
 	background-size: cover;
 	cursor: pointer;
-	height: 240px;
+	height: 9em;
 	margin-bottom: 1em;
 	-webkit-transition: height .6s, width .6s, margin .6s;
 	-moz-transition: height .6s, width .6s, margin .6s;
 	-ms-transition: height .6s, width .6s, margin .6s;
 	-o-transition: height .6s, width .6s, margin .6s;
 	transition: height .6s, width .6s, margin .6s;
-	width: 426px;
+	width: 16em;
 }
 
 .is-theater .Player {
 	cursor: default;
-	width: 1280px;
-	height: 720px;
+	margin-left: -1em;
+	width: 20em;
+	height: 11.25em;
 }
 
 .Player-inner {
@@ -40,7 +41,7 @@
 
 .Player svg {
 	fill: #ffffff;
-	max-width: 6em;
+	max-width: 4.5em;
 	margin: 0 auto;
 	-webkit-transition: transform .3s;
 	-moz-transition: transform .3s;
@@ -57,10 +58,29 @@
 	transform: scale(1.2);
 }
 
+@media (min-width: 21em) {
+
+	/* Player */
+
+	.Player {
+		height: 10em;
+		width: 18em;
+	}
+
+	.is-theater .Player {
+		margin-left: -1em;
+		width: 22.5em;
+		height: 12.6875em;
+	}
+
+}
+
 @media (min-width: 48em) {
 
 	.Player {
+		height: 13.5em;
 		margin-left: 0;
+		width: 24em;
 	}
 
 	.is-theater .Player {
