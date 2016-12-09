@@ -267,6 +267,7 @@ p {
 
 .Aside {
   visibility: hidden;
+  display: none;
 }
 
 /* Aside inner */
@@ -327,6 +328,7 @@ p {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    padding-right: .375em;
     width: 100%;
     height: 100%;
   }
