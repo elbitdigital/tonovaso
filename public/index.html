@@ -4,7 +4,7 @@
 <title>TNV | Bloco Tô No Vaso - Palmital</title>
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-<meta name="theme-color" content="#ffffff"/>
+<meta id="theme-color" name="theme-color" content="#eeeeee"/>
 <script src="https://use.typekit.net/jhl4ayv.js"></script>
 <!--<script>try{Typekit.load({ async: true });}catch(e){}</script>-->
 <script>
@@ -271,11 +271,12 @@
 	var player = new Player(document.getElementById('player'));
 	player.setVideo(new YouTubeVideo('ui4jqQV7rco'));
 
+	// add fallback functions to 'power' button (select area element)
 	player.addControlListener(player.selectAreaElement, function () {
 
-		console.log('aodifajpsd');
 		playerAnchor.push();
 		aboutElement.classList.add('is-theater');
+		document.getElementById('theme-color').content = '#212121';
 
 	});
 
