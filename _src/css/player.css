@@ -41,7 +41,8 @@
 
 .Player svg {
 	fill: #ffffff;
-	max-width: 4.5em;
+	width: 4.5em;
+	height: 4.5em;
 	margin: 0 auto;
 	-webkit-transition: transform .3s;
 	-moz-transition: transform .3s;
@@ -85,7 +86,13 @@
 
 	.is-theater .Player {
 		width: 40em;
+		margin-left: 0;
 		height: 22.5em;
+	}
+
+	.Player svg {
+		width: 6em;
+		height: 6em;
 	}
 
 }
