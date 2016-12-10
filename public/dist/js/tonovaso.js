@@ -179,9 +179,6 @@ var Anchor = (function () {
 
 		this.bodyElement = this.checkBody();
 
-		console.log(this.start);
-
-		// requestAnimationFrame(this.animate);
 	};
 
 	return Anchor;
@@ -277,6 +274,12 @@ var Player = (function () {
 		this.element = element;
 		this.video = false;
 
+		this.config = {
+			backgroundElementSelector: '.Player-background',
+			innerElementSelector: '.Player-inner',
+			selectAreaElementSelector: '.Player-selectArea'
+		};
+
 		this.pause = function () {
 
 			if (self.video)	self.video.pause();
@@ -314,19 +317,13 @@ var Player = (function () {
 
 		this.video = video;
 		this.video.elementID = this.element.id;
-		this.element.style.backgroundImage = 'url(http://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
 
-	};
+		console.log(this);
 
-	Player.prototype.addListeners = function () {
-
-		var self = this;
-
-		try {
-
-			this.element.addEventListener('click', self.power);
-
-		} catch (e) { }
+		if (this.backgroundElement)
+			this.backgroundElement.style.backgroundImage = 'url(http://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
+		else
+			this.element.style.backgroundImage = 'url(http://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
 
 	};
 
@@ -383,8 +380,28 @@ var Player = (function () {
 
 	};
 
+	Player.prototype.getElements = function () {
+
+		this.backgroundElement = this.element.querySelector(this.config.backgroundElementSelector);
+		this.innerElement = this.element.querySelector(this.config.innerElementSelector);
+		this.selectAreaElement = this.element.querySelector(this.config.selectAreaElementSelector);
+
+	};
+
+	Player.prototype.addListeners = function () {
+
+		var self = this;
+
+		if (this.selectAreaElement)
+			self.addControlListener(this.selectAreaElement, self.power);
+		else
+			self.addControlListener(this.element, self.power);
+
+	};
+
 	Player.prototype.init = function () {
 
+		this.getElements();
 		this.addListeners();
 
 	};

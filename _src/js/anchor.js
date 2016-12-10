@@ -178,9 +178,6 @@ var Anchor = (function () {
 
 		this.bodyElement = this.checkBody();
 
-		console.log(this.start);
-
-		// requestAnimationFrame(this.animate);
 	};
 
 	return Anchor;

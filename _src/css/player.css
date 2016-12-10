@@ -7,9 +7,9 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	cursor: pointer;
 	height: 9em;
 	margin-bottom: 1em;
+	position: relative;
 	-webkit-transition: height .6s, width .6s, margin .6s;
 	-moz-transition: height .6s, width .6s, margin .6s;
 	-ms-transition: height .6s, width .6s, margin .6s;
@@ -19,25 +19,12 @@
 }
 
 .is-theater .Player {
-	cursor: default;
 	margin-left: -1em;
 	width: 20em;
 	height: 11.25em;
 }
 
-.Player-inner {
-	-webkit-align-items: center;
-	align-items: center;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	height: 100%;
-	-webkit-justify-content: center;
-	justify-content: center;
-	width: 100%;
-}
+/* Player svg */
 
 .Player svg {
 	fill: #ffffff;
@@ -57,6 +44,57 @@
 	-ms-transform: scale(1.2);
 	-o-transform: scale(1.2);
 	transform: scale(1.2);
+}
+
+/* Player background */
+
+.Player-background {
+	background: #000000 no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/* Player inner */
+
+.Player-inner {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	height: 100%;
+	-webkit-justify-content: center;
+	justify-content: center;
+	left: 0;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+
+/* Player select area */
+
+.Player-selectArea {
+	cursor: pointer;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
 }
 
 @media (min-width: 21em) {
