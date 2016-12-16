@@ -389,7 +389,7 @@ p {
   border: solid 2px transparent;
   margin-bottom: 1em;
   min-width: 12em;
-  padding: .75em 1em;
+  padding: .5em 1em;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
@@ -431,11 +431,42 @@ p {
   font-size: 1.5em;
 }
 
+@media (max-width: 24em) {
+  /* Button */
+
+  .Button--contact span {
+    font-size: 1.25em;
+  }
+}
+
 @media (min-width: 60em) {
   /* Button */
 
   .Button {
     padding: .75em 1em;
+  }
+}
+/* Contact */
+
+.Contact {
+  margin-top: 30px;
+  max-width: 24em;
+  text-align: center;
+}
+
+.Contact p {
+  color: #424242;
+}
+
+.Contact a {
+  color: #2196f3;
+}
+
+@media (min-width: 42em) {
+  /* Contact */
+
+  .Contact p {
+    font-size: 1.5em;
   }
 }
 /* Dialog */
