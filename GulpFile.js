@@ -33,7 +33,7 @@ var gulp = require('gulp'),
  * http://www.imagemagick.org/script/binary-releases.php
  * */
 
-const tinypngToken = false;
+const tinypngToken = 'c8yyMiCZDZU7wE4SWDTxiKdNcEq7krZU';
 
 // Source Content structure
 
@@ -183,11 +183,11 @@ gulp.task('resizeLogo', function () {
 		.pipe(gulp.dest(dist.images.logo.location));
 });
 
-gulp.task('tinyPhotosSource', function () {
+gulp.task('tinyUniformImages', function () {
 	if (tinypngToken)
-		gulp.src(source.images.location + source.images.content)
+		gulp.src(source.images.location + 'uniformImages/' + source.images.content)
 			.pipe(tinypng(tinypngToken))
-			.pipe(gulp.dest(source.images.location));
+			.pipe(gulp.dest(source.images.location + 'uniformImages/done'));
 	else
 		console.log('TinyPNG Token Required');
 });
