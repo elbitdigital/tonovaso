@@ -157,7 +157,7 @@
 
 			<li class="NavItem">
 
-				<a href="#sobre" onclick="aboutAnchor.push()"><span>O evento</span></a>
+				<a href="#"><span>O evento</span></a>
 
 			</li>
 
@@ -186,70 +186,12 @@
 
 </header>
 
-<section id="sobre" class="About grey-50">
-
-	<div class="About-inner container">
-
-		<div class="Paragraph font-brown-900">
-
-			<div class="Paragraph-inner">
-
-				<h2 class="font-amber-a700">20 anos de Open Bar</h2>
-
-				<p>O Carnaval da região ganhou um novo capítulo em 1998, ano de fundação do bloco Tô no Vaso.</p>
-
-				<p>De lá pra cá, depois de alguns carnavais percebemos que poderíamos ser referência para os foliões da região e começamos um trabalho para trazer as melhores novidades ano a ano.</p>
-
-				<p>Para comemorar duas décadas de festa, não poderíamos deixar de fazer algo especial em 2017 e para isso teremos para cada dia de festa uma temática diferente.</p>
-
-				<p>Então prepare seu chinelo, seu abadá, acesse nossa página no Facebook e fique por dentro de todas as novidades que irão surgir até o começo do carnaval!</p>
-
-			</div>
-
-		</div>
-
-		<div class="Paragraph font-brown-900">
-
-			<div class="Paragraph-inner" style="display:flex;flex-flow:column;align-items:flex-end;text-align:right;">
-
-				<h2 class="font-amber-a700">Como funciona?</h2>
-
-				<p>O TNV se orgulha de ser uma "maratona Open Bar". <br> São 66 HORAS de bebida liberada, divididos em 5 dias de festa, montado em um complexo que conta com lounge, banheiros, tendas, palcos, uma praia itinerante com iluminação, muita música e muita gente bonita.</p>
-
-				<p>As bebidas são liberadas à partir da sexta às 14h e indo até às 04h, seguindo assim até na terça às 0h onde a festa acaba temporariamente até o próximo ano :D</p>
-
-			</div>
-
-		</div>
-
-	</div>
-
-</section>
-
 <script src="dist/js/underscore-min.js"></script>
 <script src="dist/js/tonovaso.js"></script>
 
 <script>
 
 	var aboutElement = document.getElementById('sobre');
-
-	var player = new Player(document.getElementById('player'));
-	player.setVideo(new YouTubeVideo('ui4jqQV7rco'));
-
-	// add fallback functions to 'power' button (select area element)
-	player.addControlListener(player.selectAreaElement, function () {
-
-		playerAnchor.push();
-		aboutElement.classList.add('is-theater');
-		document.getElementById('theme-color').content = '#212121';
-
-	});
-
-	var playerAnchor = new Anchor(document.getElementById('player'), {
-		duration: 600,
-		easing: 'easeInQuad',
-		scrollOffset: -36
-	});
 
 	var aboutAnchor = new Anchor(document.getElementById('sobre'), {
 		duration: 600,
