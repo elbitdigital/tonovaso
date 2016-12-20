@@ -1,0 +1,26 @@
+
+/* Contact */
+
+.Contact {
+	margin-top: 30px;
+	max-width: 24em;
+	text-align: center;
+}
+
+.Contact p {
+	color: #424242;
+}
+
+.Contact a {
+	color: #2196f3;
+}
+
+@media (min-width: 42em) {
+
+	/* Contact */
+
+	.Contact p {
+		font-size: 1.5em;
+	}
+
+}
