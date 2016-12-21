@@ -285,8 +285,6 @@
 
 <script>
 
-	var aboutElement = document.getElementById('sobre');
-
 	var player = new Player(document.getElementById('player'));
 	player.setVideo(new YouTubeVideo('ui4jqQV7rco'));
 
@@ -304,6 +302,8 @@
 		easing: 'easeInQuad',
 		scrollOffset: -36
 	});
+
+	var aboutElement = document.getElementById('sobre');
 
 	var aboutAnchor = new Anchor(document.getElementById('sobre'), {
 		duration: 600,

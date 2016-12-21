@@ -69,13 +69,23 @@
 
 <body>
 
-<div class="responsive">
-	<div id="player" class="youtube">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.1 30.1" class="play">
-			<path d="M20 14.4l-6.2-4.5c-0.2-0.2-0.5-0.2-0.8-0.1 -0.3 0.1-0.4 0.4-0.4 0.7v9.1c0 0.3 0.2 0.5 0.4 0.7 0.1 0.1 0.2 0.1 0.3 0.1 0.2 0 0.3 0 0.4-0.1l6.2-4.5c0.2-0.1 0.3-0.4 0.3-0.6C20.3 14.8 20.2 14.6 20 14.4z"/>
-			<path d="M15 0C6.7 0 0 6.7 0 15c0 8.3 6.7 15 15 15 8.3 0 15-6.7 15-15C30.1 6.7 23.3 0 15 0zM15 27.5c-6.9 0-12.5-5.6-12.5-12.5 0-6.9 5.6-12.5 12.5-12.5 6.9 0 12.5 5.6 12.5 12.5C27.5 21.9 21.9 27.5 15 27.5z"/>
-		</svg>
+<div id="player" class="Player">
+
+	<div class="Player-background"></div>
+
+	<div class="Player-inner">
+
+		<a class="Player-selectArea">
+
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.1 30.1" class="play">
+				<path d="M20 14.4l-6.2-4.5c-0.2-0.2-0.5-0.2-0.8-0.1 -0.3 0.1-0.4 0.4-0.4 0.7v9.1c0 0.3 0.2 0.5 0.4 0.7 0.1 0.1 0.2 0.1 0.3 0.1 0.2 0 0.3 0 0.4-0.1l6.2-4.5c0.2-0.1 0.3-0.4 0.3-0.6C20.3 14.8 20.2 14.6 20 14.4z"/>
+				<path d="M15 0C6.7 0 0 6.7 0 15c0 8.3 6.7 15 15 15 8.3 0 15-6.7 15-15C30.1 6.7 23.3 0 15 0zM15 27.5c-6.9 0-12.5-5.6-12.5-12.5 0-6.9 5.6-12.5 12.5-12.5 6.9 0 12.5 5.6 12.5 12.5C27.5 21.9 21.9 27.5 15 27.5z"/>
+			</svg>
+
+		</a>
+
 	</div>
+
 </div>
 
 <button id="controlplay">Play</button>
@@ -88,7 +98,22 @@
 <script>
 
 	var player = new Player(document.getElementById('player'));
-	player.setVideo(new YouTubeVideo('9e2mMf1--v8'));
+	player.setVideo(new YouTubeVideo('ui4jqQV7rco'));
+
+	// add fallback functions to 'power' button (select area element)
+	player.addControlListener(player.selectAreaElement, function () {
+
+		playerAnchor.push();
+		aboutElement.classList.add('is-theater');
+		document.getElementById('theme-color').content = '#212121';
+
+	});
+
+	var playerAnchor = new Anchor(document.getElementById('player'), {
+		duration: 600,
+		easing: 'easeInQuad',
+		scrollOffset: -36
+	});
 
 	// add buttons controllers
 	player.addControl('pause', document.getElementById('controlpause'));
