@@ -10,9 +10,10 @@
 
 .NavItem span {
 	color: #795548;
+	font-family: "tenby-four", sans-serif;
 	font-size: 1.125em;
-	line-height: 1;
 	font-weight: 700;
+	line-height: 1;
 	text-transform: uppercase;
 	-webkit-transition: color .3s ease-in-out;
 	-moz-transition: color .3s ease-in-out;

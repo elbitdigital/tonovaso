@@ -180,7 +180,15 @@ gulp.task('resizeLogo', function () {
 			height : 576,
 			upscale : false
 		}))
+		.pipe(tinypng(tinypngToken))
 		.pipe(gulp.dest(dist.images.logo.location));
+	gulp.src(source.images.logo.location + source.images.logo.content)
+		.pipe(imageResize({
+			height : 256,
+			upscale : false
+		}))
+		.pipe(tinypng(tinypngToken))
+		.pipe(gulp.dest(dist.images.logo.location + 'small/'));
 });
 
 gulp.task('tinyUniformImages', function () {

@@ -2,6 +2,21 @@
 /* Header */
 
 .TicketsHeader {
+	padding: 1em;
+	text-align: center;
+	width: 100%;
+}
+
+.TicketsHeader img {
+	height: 6em;
+	margin-bottom: 1em;
+}
+
+.TicketsHeader p {
+	font-size: .75em;
+}
+
+.TicketsHeader-inner {
 	-webkit-align-items: center;
 	align-items: center;
 	display: -webkit-box;
@@ -9,20 +24,10 @@
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
 	-webkit-justify-content: center;
 	justify-content: center;
-	padding: 1em;
-	text-align: center;
-	width: 100%;
-}
-
-.TicketsHeader img {
-	width: 8em;
-	margin-bottom: 1em;
-}
-
-.TicketsHeader p {
-	font-size: .75em;
 }
 
 @media (min-width: 48em) {
@@ -33,6 +38,11 @@
 
 	.TicketsHeader p {
 		font-size: .875em;
+	}
+
+	.TicketsHeader img {
+		height: 6em;
+		margin-bottom: 1em;
 	}
 
 }

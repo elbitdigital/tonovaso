@@ -16,3 +16,30 @@
 .Tickets-options {
 	margin-bottom: 1em;
 }
+
+.Tickets p {
+	text-align: center;
+	font-size: .75em;
+}
+
+.Tickets-footer {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+}
+
+@media (min-width: 48em) {
+
+	.Tickets p {
+		font-size: .875em;
+	}
+
+}

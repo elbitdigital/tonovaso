@@ -2,14 +2,26 @@
 /* Nav */
 
 .Nav {
-	position: absolute;
 	width: 100%;
+}
+
+.Nav--header {
+	position: absolute;
 	padding-bottom: 1em;
+	width: 100%;
 	top: 0;
 	left: 0;
 }
 
 .Nav-background {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.Nav--header .Nav-background {
 	background: rgba(255,255,255,1);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.72) 24%, rgba(255,255,255,0) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(24%, rgba(255,255,255,0.72)), color-stop(100%, rgba(255,255,255,0)));
@@ -18,11 +30,6 @@
 	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.72) 24%, rgba(255,255,255,0) 100%);
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.72) 24%, rgba(255,255,255,0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
 }
 
 /* Nav menu */
@@ -43,7 +50,7 @@
 
 @media (min-width: 48em) {
 
-	.Nav {
+	.Nav--header {
 		padding-bottom: 3em;
 	}
 
@@ -55,7 +62,7 @@
 
 @media (min-width: 72em) {
 
-	.Nav {
+	.Nav--header {
 		padding-bottom: 4.5em;
 	}
 
@@ -63,11 +70,11 @@
 
 @media (min-width: 96em) {
 
-	.Nav {
+	.Nav--header {
 		padding-bottom: 6em;
 	}
 
-	.Nav-menu {
+	.Nav--header .Nav-menu {
 		padding: 2.25em 1em;
 	}
 
