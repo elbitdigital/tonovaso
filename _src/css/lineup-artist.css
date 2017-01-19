@@ -1,0 +1,23 @@
+
+/* LineUp Artist */
+
+.LineUpArtist {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	margin: 0 auto 1.5em;
+	width: 100%;
+}
+
+.LineUpArtist:last-of-type {
+	margin-bottom: 0;
+}
+
+.LineUpArtist img {
+	display: block;
+	width: 100%;
+}

@@ -95,6 +95,7 @@
 	font-size: .875em;
 	line-height: 1.36;
 	max-width: 24rem;
+	text-align: left !important;
 }
 
 /* Tickets Option show less and show more */

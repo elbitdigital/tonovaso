@@ -211,7 +211,43 @@
 
 </header>
 
-<section id="sobre" class="About grey-50">
+<div class="LineUp grey-50">
+
+	<h2 class="font-amber-a700">Atrações</h2>
+
+	<div class="LineUpArtist">
+
+		<img src="dist/img/lineup/LineupArtist-2017--24-zoom-boxx.png" alt="24 Fev - Zoom Boox"/>
+
+	</div>
+
+	<div class="LineUpArtist">
+
+		<img src="dist/img/lineup/LineupArtist-2017--25-donna-banda.png" alt="25 Fev - Donna Banda"/>
+
+	</div>
+
+	<div class="LineUpArtist">
+
+		<img src="dist/img/lineup/LineupArtist-2017--26-mc-guime.png" alt="26 Fev - MC Guimê"/>
+
+	</div>
+
+	<div class="LineUpArtist">
+
+		<img src="dist/img/lineup/LineupArtist-2017--27-pagode-mc-duh.png" alt="27 Fev - MC Duh"/>
+
+	</div>
+
+	<div class="LineUpArtist">
+
+		<img src="dist/img/lineup/LineupArtist-2017--28-dj-renatinho.png" alt="28 Fev - DJ Renatinho"/>
+
+	</div>
+
+</div>
+
+<section id="sobre" class="About grey-100">
 
 	<div class="About-inner container">
 
@@ -341,6 +377,12 @@
 		playerAnchor.push();
 		aboutElement.classList.add('is-theater');
 		document.getElementById('theme-color').content = '#212121';
+
+		ga('send', 'event', {
+			eventCategory: 'Video',
+			eventAction: 'play',
+			eventLabel: player.video.id
+		});
 
 	});
 

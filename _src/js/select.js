@@ -42,7 +42,7 @@ var Select = (function () {
 				if (self.fallback)
 					self.fallback(self.value);
 
-			})
+			}, 1);
 
 		} catch (e) { }
 

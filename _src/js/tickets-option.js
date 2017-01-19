@@ -33,6 +33,16 @@ var TicketsOption = (function () {
 				self.quantity = parseInt(value);
 				self.parent.onOptionQuantityChange();
 
+				if (self.quantity > 0) {
+
+					ga('send', 'event', {
+						eventCategory: 'TicketOptionSelect',
+						eventAction: 'change',
+						eventLabel: self.id
+					});
+
+				}
+
 			} catch (e) { }
 
 		};

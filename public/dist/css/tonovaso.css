@@ -857,6 +857,43 @@ p {
   text-align: center;
   width: 100%;
 }
+/* LineUp Artist */
+
+.LineUpArtist {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0 auto 1.5em;
+  width: 100%;
+}
+
+.LineUpArtist:last-of-type {
+  margin-bottom: 0;
+}
+
+.LineUpArtist img {
+  display: block;
+  width: 100%;
+}
+/* LineUp */
+
+.LineUp {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  padding: 1.5em 1.5em;
+  width: 100%;
+}
 /* Nav Item */
 
 .NavItem {
@@ -966,7 +1003,7 @@ p {
     padding-bottom: 6em;
   }
 
-  .Nav--header .Nav-menu {
+  .Nav-menu {
     padding: 2.25em 1em;
   }
 }
@@ -1575,6 +1612,7 @@ p {
   font-size: .875em;
   line-height: 1.36;
   max-width: 24rem;
+  text-align: left !important;
 }
 
 /* Tickets Option show less and show more */

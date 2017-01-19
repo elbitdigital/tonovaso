@@ -318,8 +318,6 @@ var Player = (function () {
 		this.video = video;
 		this.video.elementID = this.element.id;
 
-		console.log(this);
-
 		if (this.backgroundElement)
 			this.backgroundElement.style.backgroundImage = 'url(http://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
 		else
@@ -453,7 +451,7 @@ var Select = (function () {
 				if (self.fallback)
 					self.fallback(self.value);
 
-			})
+			}, 1);
 
 		} catch (e) { }
 
@@ -578,56 +576,80 @@ var TicketsCheckout = (function () {
 
 		}
 
-		if (firebase) {
+		if (items.length) {
 
-			var transactions = firebase.database().ref('transactions/');
+			if (firebase) {
 
-			var transaction = {
-				items: items,
-				reference: transactions.push(items).key
-			};
+				var transactions = firebase.database().ref('transactions/');
 
-			transactions.child(transaction.reference).set(transaction);
+				var transactionReferenceKey = transactions.push().key;
+				var transactionTime = Date.now().toString();
 
-			/*
-			var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
-			xmlhttp.open("POST", "https://service.elbit.com.br/dalia-server/");
-			xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-			//JSON.stringify(transaction)
-			xmlhttp.send();
-			*/
+				var transaction = {
+					items: items,
+					reference: transactionReferenceKey,
+					time: transactionTime
+				};
 
-			$.ajax({
-				//contentType: "application/json",
-				crossDomain: true,
-				// url: 'https://service.elbit.com.br/dalia-server/index.php',
-				url: 'https://service-elbit-com-br.umbler.net/dalia-server/index.php',
-				type: "POST",
-				cache: false,
-				data: {
-					pedido: JSON.stringify(transaction)
-				},
-				//dataType: 'json',
-				beforeSend: function () {
+				transactions.child(transactionReferenceKey).set(transaction);
 
-					self.parent.dialog.setText('Aguarde, estamos te redirecionando para uma página segura de pagamento');
-					//self.parent.dialog.setSubText('Fique tranquilo, de agora em diante você estarem um ambiente seguro');
-					self.parent.dialog.show();
+				$.ajax({
+					//contentType: "application/json",
+					crossDomain: true,
+					// url: 'https://service.elbit.com.br/dalia-server/index.php',
+					url: 'https://service-elbit-com-br.umbler.net/dalia-server/index.php',
+					type: "POST",
+					cache: false,
+					data: {
+						pedido: JSON.stringify(transaction)
+					},
+					//dataType: 'json',
+					beforeSend: function () {
 
-				},
-				success: function (data) {
+						self.parent.dialog.setText('Aguarde, estamos te redirecionando para uma página segura de pagamento');
+						//self.parent.dialog.setSubText('Fique tranquilo, de agora em diante você estarem um ambiente seguro');
+						self.parent.dialog.show();
 
-					console.log(data);
+						try {
 
-					setTimeout(function () {
+							ga('send', 'event', {
+								eventCategory: 'Ticket',
+								eventAction: 'click',
+								eventLabel: 'TicketCheckout'
+							});
 
-						if (data.url)
-							window.location.replace(data.url);
+						} catch (e) { }
 
-					}, 2000);
+					},
+					success: function (data) {
 
-				}
-			});
+						try {
+
+							if (data.code) {
+
+								transaction.code = data.code;
+								transaction.date = data.date;
+
+								// update transaction data
+								console.log(transaction);
+								console.log(transactionReferenceKey);
+								transactions.child(transactionReferenceKey).set(transaction);
+
+							}
+
+						} catch (e) { }
+
+						setTimeout(function () {
+
+							if (data.url)
+								window.location.replace(data.url);
+
+						}, 2000);
+
+					}
+				});
+
+			}
 
 		}
 
@@ -761,6 +783,16 @@ var TicketsOption = (function () {
 
 				self.quantity = parseInt(value);
 				self.parent.onOptionQuantityChange();
+
+				if (self.quantity > 0) {
+
+					ga('send', 'event', {
+						eventCategory: 'TicketOptionSelect',
+						eventAction: 'change',
+						eventLabel: self.id
+					});
+
+				}
 
 			} catch (e) { }
 

@@ -58,8 +58,6 @@ var Player = (function () {
 		this.video = video;
 		this.video.elementID = this.element.id;
 
-		console.log(this);
-
 		if (this.backgroundElement)
 			this.backgroundElement.style.backgroundImage = 'url(http://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
 		else
