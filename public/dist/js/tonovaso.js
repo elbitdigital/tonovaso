@@ -319,9 +319,9 @@ var Player = (function () {
 		this.video.elementID = this.element.id;
 
 		if (this.backgroundElement)
-			this.backgroundElement.style.backgroundImage = 'url(http://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
+			this.backgroundElement.style.backgroundImage = 'url(https://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
 		else
-			this.element.style.backgroundImage = 'url(http://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
+			this.element.style.backgroundImage = 'url(https://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
 
 	};
 

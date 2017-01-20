@@ -54,11 +54,17 @@
 	justify-content: center;
 }
 
+.Yearbook-primary img {
+	width: 100%;
+	height: 100%;
+}
+
 /* Yearbook secondary */
 
 .Yearbook-secondary {
 	-webkit-flex-flow: column;
 	flex-flow: column;
+	align-self: flex-start;
 }
 
 .Yearbook-secondary h2 {

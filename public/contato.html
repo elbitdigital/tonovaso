@@ -5,7 +5,16 @@
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 <meta id="theme-color" name="theme-color" content="#eeeeee"/>
-<script src="https://use.typekit.net/jhl4ayv.js"></script>
+<script>
+	(function(d) {
+		var config = {
+					kitId: 'jhl4ayv',
+					scriptTimeout: 3000,
+					async: true
+				},
+				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	})(document);
+</script>
 <!--<script>try{Typekit.load({ async: true });}catch(e){}</script>-->
 <script>
 
@@ -179,15 +188,15 @@
 
 			<li class="NavItem">
 
-				<a href="/"><span>20 Anos</span></a>
+				<a href="20-anos"><span>20 Anos</span></a>
 
 			</li>
 
-			<li class="NavItem">
+			<!--<li class="NavItem">-->
 
-				<a href="/"><span>O evento</span></a>
+				<!--<a href="/"><span>O evento</span></a>-->
 
-			</li>
+			<!--</li>-->
 
 			<li class="NavItem">
 

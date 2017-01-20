@@ -828,7 +828,6 @@ p {
 
 .History {
   max-width: 70em;
-  padding: 3em 0;
   margin: 0 auto;
   position: relative;
   width: 100%;
@@ -855,7 +854,72 @@ p {
   -webkit-flex-flow: column;
   flex-flow: column;
   text-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   width: 100%;
+}
+
+/* History inner text */
+
+.History-inner p {
+  font-size: 1em;
+  margin-bottom: .75em;
+  line-height: 1.42;
+}
+
+.History-inner h1 {
+  margin-bottom: .5em;
+}
+
+@media (min-width: 48em) {
+  /*.History-inner {*/
+
+  /*margin: 1em 0 1.5em;*/
+
+  /*}*/
+
+  .History-inner h1 {
+    font-size: 3em;
+    margin-bottom: .375em;
+  }
+
+  .History-inner p {
+    font-size: 1.3125em;
+    max-width: 36rem;
+    margin-bottom: .75em;
+  }
+}
+
+@media (min-width: 72em) {
+  /*.History-inner {*/
+
+  /*margin: 1em 0 1.5em;*/
+
+  /*}*/
+
+  .History-inner h1 {
+    font-size: 3.75em;
+    margin-bottom: .25em;
+  }
+
+  .History-inner p {
+    font-size: 1.5em;
+    max-width: 42rem;
+    margin-bottom: .75em;
+  }
+}
+
+@media (min-width: 96em) {
+  .History-inner h1 {
+    font-size: 3.75em;
+    margin-bottom: .375em;
+  }
+
+  .History-inner p {
+    font-size: 1.5em;
+    max-width: 42rem;
+    margin-bottom: .75em;
+  }
 }
 /* Lineup Artist */
 
@@ -910,6 +974,35 @@ p {
 /* LineUp */
 
 .Lineup {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 1.5em 0 3em;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  /* para normalizar, alterar para a versão modificada */
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+
+.Lineup-background {
+  /*background-color: #000000;*/
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.Lineup-inner {
   -webkit-align-items: center;
   align-items: center;
   display: -webkit-box;
@@ -919,27 +1012,8 @@ p {
   display: flex;
   -webkit-flex-flow: column;
   flex-flow: column;
-  padding: 1.5em 0 3em;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.Lineup-background {
-  background-color: #000000;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.Lineup-inner {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
   left: 0;
   position: relative;
   top: 0;
@@ -2085,7 +2159,6 @@ p {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  padding: 1em;
   margin-bottom: 1em;
   position: relative;
   width: 100%;
@@ -2096,20 +2169,55 @@ p {
   justify-content: center;
 }
 
+.Yearbook-primary img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Yearbook secondary */
+
 .Yearbook-secondary {
   -webkit-flex-flow: column;
   flex-flow: column;
+  align-self: flex-start;
+}
+
+.Yearbook-secondary h2 {
+  font-size: 2.25em;
+  margin-bottom: .375em;
+}
+
+.Yearbook-secondary p {
+  font-size: 1em;
+  margin-bottom: .75em;
+  line-height: 1.42;
 }
 
 @media (min-width: 48em) {
   .Yearbook-primary,
   .Yearbook-secondary {
-    max-width: 50%;
+    padding: 1em;
+  }
+
+  .Yearbook-secondary h2 {
+    font-size: 3em;
+    margin-bottom: .375em;
+  }
+
+  .Yearbook-secondary p {
+    font-size: 1.3125em;
+    max-width: 36rem;
+    margin-bottom: .75em;
   }
 }
 
 @media (min-width: 60em) {
-  .Yearbook--left .Yearbook-inner {
+  .Yearbook-primary,
+  .Yearbook-secondary {
+    max-width: 50%;
+  }
+
+  .Yearbook-inner {
     text-align: left;
     -webkit-flex-flow: row;
     flex-flow: row;
@@ -2120,8 +2228,34 @@ p {
     -webkit-flex-flow: row-reverse;
     flex-flow: row-reverse;
   }
+
+  .Yearbook-secondary.Yearbook--compact p {
+    font-size: 1.25em;
+  }
 }
 
 @media (min-width: 72em) {
+  .Yearbook-secondary h2 {
+    font-size: 3.75em;
+    margin-bottom: .375em;
+  }
 
+  .Yearbook-secondary p {
+    font-size: 1.5em;
+    max-width: 42rem;
+    margin-bottom: .75em;
+  }
+}
+
+@media (min-width: 96em) {
+  .Yearbook-secondary h2 {
+    font-size: 3.75em;
+    margin-bottom: .375em;
+  }
+
+  .Yearbook-secondary p {
+    font-size: 1.5em;
+    max-width: 42rem;
+    margin-bottom: .75em;
+  }
 }
