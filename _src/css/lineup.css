@@ -1,7 +1,7 @@
 
 /* LineUp */
 
-.LineUp {
+.Lineup {
 	-webkit-align-items: center;
 	align-items: center;
 	display: -webkit-box;
@@ -11,6 +11,29 @@
 	display: flex;
 	-webkit-flex-flow: column;
 	flex-flow: column;
-	padding: 1.5em 1.5em;
+	padding: 1.5em 0 3em;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.Lineup-background {
+	background-color: #000000;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.Lineup-inner {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	left: 0;
+	position: relative;
+	top: 0;
 	width: 100%;
 }
