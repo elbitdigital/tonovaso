@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="roboto">
+<html lang="pt-br">
 <meta charset="UTF-8">
-<title>Yearbook</title>
+<title>20 anos | Bloco Tô No Vaso - Palmital</title>
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<meta id="theme-color" name="theme-color" content="#eeeeee"/>
+<script src="https://use.typekit.net/jhl4ayv.js"></script>
+<!--<script>try{Typekit.load({ async: true });}catch(e){}</script>-->
+<script>
+
+	try {
+		Typekit.load({
+			loading: function() {
+				// Javascript to execute when fonts start loading
+				console.log('loading');
+				document.documentElement.classList.add('is-loading');
+			},
+			active: function() {
+				// Javascript to execute when fonts become active
+				console.log('active');
+				document.documentElement.classList.remove('is-loading');
+				document.documentElement.classList.add('is-active');
+			},
+			inactive: function() {
+				// Javascript to execute when fonts become inactive
+				console.log('inactive');
+				document.documentElement.classList.remove('is-loading');
+			}
+		})
+	} catch(e) {}
+
+</script>
 <script src="dist/js/villa.min.js"></script>
 <link rel="stylesheet" href="dist/css/villa.min.css"/>
-<link rel="stylesheet" href="dist/css/tonovaso.css">
+<link rel="stylesheet" href="dist/css/tonovaso.css"/>
 <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="dist/css/material-colors.css"/>
 <link rel="stylesheet" type="text/css" href="dist/css/villa-cross.min.css"/>
@@ -15,7 +42,18 @@
 <script src="dist/js/classList.min.js"></script>
 <![endif]-->
 
-<body>
+<style>
+	.Header {
+		height: auto;
+	}
+
+	.Nav--header {
+		position: relative;
+		padding-bottom: 0;
+	}
+</style>
+
+<body class="tk-proxima-nova">
 
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -28,43 +66,155 @@
 
 </script>
 
-<div class="History">
+<aside class="Aside font-grey-700">
+
+	<div class="Aside-inner">
+
+		<div class="Aside-content">
+
+			<div class="AsideButton AsideButton--ticket">
+
+				<a href="tickets" class="AsideButton-selectArea" draggable="false">
+
+					<div class="AsideButton-icon">
+
+						<span class="icon-ticket"></span>
+
+					</div>
+
+				</a>
+
+			</div>
+
+			<div class="Aside-text">
+
+				<span>24 a 28 de fevereiro de 2017<span class="heightLarge-visible">, Palmital - SP</span></span>
+
+			</div>
+
+			<div class="AsideButton AsideButton--messenger">
+
+				<a href="https://www.messenger.com/t/tonovaso.palmital/" class="AsideButton-selectArea" draggable="false">
+
+					<div class="AsideButton-icon">
+
+						<span class="icon-facebook-messenger"></span>
+
+					</div>
+
+				</a>
+
+			</div>
+
+			<div class="AsideButton AsideButton--facebook">
+
+				<a href="https://www.facebook.com/tonovaso.palmital/" class="AsideButton-selectArea" draggable="false">
+
+					<div class="AsideButton-icon">
+
+						<span class="icon-facebook-squared"></span>
+
+					</div>
+
+				</a>
+
+			</div>
+
+			<div class="AsideButton AsideButton--instagram">
+
+				<a href="https://www.instagram.com/braztnv" class="AsideButton-selectArea" draggable="false">
+
+					<div class="AsideButton-icon">
+
+						<span class="icon-instagram"></span>
+
+					</div>
+
+				</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</aside>
+
+<header class="Header tk-tenby-four">
+
+	<nav class="Nav Nav--header Header-nav">
+
+		<div class="Nav-background"></div>
+
+		<ul class="Nav-menu">
+
+			<li class="NavItem">
+
+				<a href="/"><span>Início</span></a>
+
+			</li>
+
+			<li class="NavItem">
+
+				<a href="tickets"><span>Ingressos</span></a>
+
+			</li>
+
+			<li class="NavItem">
+
+				<a href="/"><span>20 Anos</span></a>
+
+			</li>
+
+			<li class="NavItem">
+
+				<a href="/"><span>O evento</span></a>
+
+			</li>
+
+			<li class="NavItem">
+
+				<a href="contato"><span>Contato</span></a>
+
+			</li>
+
+		</ul>
+
+	</nav>
+
+</header>
+
+<section class="History font-brown-900">
 
 	<div class="History-background"></div>
 
-	<div class="History-inner">
+	<div class="History-inner container">
 
-		<h3>Nossa história</h3>
+		<h1 class="font-amber-a700">NOSSA HISTÓRIA - 20 ANOS</h1>
+		<a href="./"><img src="dist/img/logo/small/TNVLogo.png" alt="Logo TNV" style="max-height: 6em; margin-bottom: 1em;"/></a>
 
-		<div class="Yearbook Yearbook--left">
+		<p>Nossa memória contada pelos acontecimentos. Acompanhe nossa jornada pelos 20 anos do bloco Tô no Vaso e venha fazer parte dessa história também!</p>
+
+		<div class="Yearbook">
 
 			<div class="Yearbook-background"></div>
 			<div class="Yearbook-inner">
 
 				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/7b/0b/1e/7b0b1e48db3dad1e46c633c747a3920e.jpg"
-					     alt="Camiseta to no vaso">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
 				</div>
 
 				<div class="Yearbook-secondary">
 
-					<h3>2016</h3>
-					<p>Com 5 noites de temáticas diferentes, o projeto "Thematic Praia" traz a cada dia uma festa diferente. Entre dias a fantasia e dias no Hawai, o carnaval é um dos mais movimentados de todos os tempos. Muita bebida, gente bonita e uma grande vibe positiva.</p>
+					<h2 class="font-amber-a700">1998</h2>
+					<p>O bloco Tô no Vaso foi criado e fundado em 1998 por um grupo de amigos e teve como primeira sede a antiga danceteria "Kelpp's" (hoje Rock Caramujo Club).</p>
+					<p>Com a intenção de reunir todos para comemorar o carnaval e participar de matinês, nessa época foram confeccionadas algumas camisetas para os integrantes e o carnaval todo foi regado a muito refrigerante.</p>
 
-					<div class="YearbookGallery">
-
-						<ul class="YearbookGallery-list">
-
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-
-						</ul>
-
-					</div>
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
 				</div>
 
@@ -78,26 +228,46 @@
 			<div class="Yearbook-inner">
 
 				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
 				</div>
 
 				<div class="Yearbook-secondary">
 
-					<h3>2015</h3>
-					<p>O projeto "Neon" traz cores ao carnaval em um clima de festival dos anos 70, com muita tinta distribuída aos foliões, pintamos todo o complexo com muita felicidade e alto astral.</p>
+					<h2 class="font-amber-a700">1999</h2>
+					<p>Nesse ano não há uma sede própria e o bloco fica com um bloco chamado "Sempre a tôa" que era, em suma, formado pelos pais dos integrantes do bloco Tô no Vaso.</p>
 
-					<div class="YearbookGallery">
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
-						<ul class="YearbookGallery-list">
+				</div>
 
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
+			</div>
 
-						</ul>
+		</div>
 
-					</div>
+
+		<div class="Yearbook">
+
+			<div class="Yearbook-background"></div>
+			<div class="Yearbook-inner">
+
+				<div class="Yearbook-primary">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
+				</div>
+
+				<div class="Yearbook-secondary">
+
+					<h2 class="font-amber-a700">2000</h2>
+					<p>Ainda muito jovem, o bloco se instala na principal avenida da cidade. Nesse ano já há ideias de "diferenciais" na estrutura. Piscinas e caixas d'água são colocadas no canteiro da avenida.</p>
+
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
 				</div>
 
@@ -111,27 +281,46 @@
 			<div class="Yearbook-inner">
 
 				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
 				</div>
 
 				<div class="Yearbook-secondary">
 
-					<h3>2014</h3>
-					<p>O projeto "Cup Praia" ficou marcado pelo conforto e infraestrutura para que os foliões pudessem ter conforto enquanto curtiam o carnaval no melhor open da Região.</p>
-					<p>Muita música com atrações ao vivo e um lounge exclusivo para aqueles momentos onde a canseira bate.</p>
+					<h2 class="font-amber-a700">2001</h2>
+					<p>Em 2001, ainda com pouca idade, o Tô no Vaso já começa a chamar a atenção e atrair alguns foliões. O que antes era somente um pretexto para reunir um grupo de amigos, agora começa a ganhar forma com som locado.</p>
+					<p>Nesse ano, numa briga entre integrantes, quase é extinto. Para a nossa sorte a briga foi superada (Sim, somos amigos até hoje :D).</p>
 
-					<div class="YearbookGallery">
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
-						<ul class="YearbookGallery-list">
+				</div>
 
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
+			</div>
 
-						</ul>
+		</div>
 
-					</div>
+		<div class="Yearbook">
+
+			<div class="Yearbook-background"></div>
+			<div class="Yearbook-inner">
+
+				<div class="Yearbook-primary">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
+				</div>
+
+				<div class="Yearbook-secondary">
+
+					<h2 class="font-amber-a700">2002</h2>
+					<p>Nesse ano o bloco Tô no Vaso fica instalado na rua Duque de Caxias e começa a incomodar outros blocos. Mesmo sem bebidas alcoólicas e outros atrativos, começa a reunir um grande número de pessoas. Com disposição de sobra pra alçar o bloco como um dos principais da cidade mesmo com a pouca idade, o Tô no Vaso ganha um carro (sim, um carro para o bloco onde nenhum integrante possuía CNH) em um pré-carnaval. Dias depois, no carnaval, o carro foi destruído pelos próprios integrantes.</p>
+
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
 				</div>
 
@@ -145,26 +334,46 @@
 			<div class="Yearbook-inner">
 
 				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
+				</div>
+
+				<div class="Yearbook-secondary Yearbook--compact">
+
+					<h2 class="font-amber-a700">2003</h2>
+					<p>Em 2003 o Tô no Vaso é convidado juntamente com os blocos "Os Karakata", "Nostravamus" e "Atecubanos" para reerguerem o tradicional carnaval de salão do clube local. O acordo era que os blocos ficariam em uma mesma sede (antigo bar "Los Hermanos") e não poderiam abrir nas noites em que o clube promovesse festividades. Em uma estratégia desleal, um dos blocos, o "Atecubanos", rompe o acordo na última hora e decide se instalar em frente ao clube, concorrendo com todos. Essa atitude deu início a uma rivalidade que entrou para a história da cidade.</p>
+					<p>Esse ano também marca o primeiro ano em que há o consumo de cerveja no bloco e 80 caixas de cerveja Bohemia foram compradas.</p>
+
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="Yearbook">
+
+			<div class="Yearbook-background"></div>
+			<div class="Yearbook-inner">
+
+				<div class="Yearbook-primary">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
 				</div>
 
 				<div class="Yearbook-secondary">
 
-					<h3>2013</h3>
-					<p>Um grande trio elétrico montado marca o projeto "Roots Praia" tem como temática a cultura Rastafari.</p>
+					<h2 class="font-amber-a700">2004</h2>
+					<p>Já sendo considerado o maior bloco da cidade, um trio elétrico é montado para o carnaval e causa um grande transtorno logo na primeira noite, já que o caminhão juntamente com o sistema de som foram apreendidos pela PM. Nesse ano o bloco volta a ficar instalado na Kelpp's (hoje Rock Caramujo Club) e o bloco "Atecubanos" se instala bem em frente, do outro lado da rua; uma verdadeira competição de som. Não por acaso esse ano ficou marcado pela intervenção da PM em quase todos os dias.</p>
 
-					<div class="YearbookGallery">
-
-						<ul class="YearbookGallery-list">
-
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-
-						</ul>
-
-					</div>
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
 				</div>
 
@@ -178,26 +387,46 @@
 			<div class="Yearbook-inner">
 
 				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
 				</div>
 
 				<div class="Yearbook-secondary">
 
-					<h3>2012</h3>
-					<p>Uma mega estrutura de som e iluminação é montada e o projeto "Olimpic Praia" é realizado. A ideia era inscrever participantes para algumas disputas de uma olimpíadas etílicas e a diversão foi garantida. Quem ganhou? Até hoje ninguém sabe dado que até os juízes estavam bêbados.</p>
+					<h2 class="font-amber-a700">2005</h2>
+					<p>Nesse ano o Tô no Vaso volta a ficar sediado no bar "Los Hermanos" juntamente com o bloco "Nostravamus". O carnaval é marcado pela disputa de público com o bloco rival e isso acirra os ânimos de ambos os lados. Muitas reclamações de perturbação do sossego são registradas.</p>
 
-					<div class="YearbookGallery">
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
-						<ul class="YearbookGallery-list">
+				</div>
 
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
+			</div>
 
-						</ul>
+		</div>
 
-					</div>
+		<div class="Yearbook">
+
+			<div class="Yearbook-background"></div>
+			<div class="Yearbook-inner">
+
+				<div class="Yearbook-primary">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
+				</div>
+
+				<div class="Yearbook-secondary Yearbook--compact">
+
+					<h2 class="font-amber-a700">2006</h2>
+					<p>Tentando sanar o problema da pertubação do sossego, a prefeitura cria o "Estação Folia" (molde usado até hoje no carnaval Palmitalense), porém o Tô no Vaso juntamente com mais alguns blocos não aderem a iniciativa e ficam sediados novamente no bar "Los Hermanos".</p>
+					<p>Considerado por muitos o melhor carnaval já feito até hoje, foi marcado por "enterros" ao bloco rival; os integrantes e simpatizantes marchavam pela manhã até a sede do bloco rival para celebrar a "morte" do mesmo, já que eles se encontravam fechados enquanto a festa ainda ocorria na sede do Tô no Vaso. Houve um placar para contabilizar os dias em que houveram enterros (todos os dias no caso), diversas marchas, disputa de som, algumas ocorrências policiais e muita, muita cerveja.</p>
+
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
 				</div>
 
@@ -211,162 +440,47 @@
 			<div class="Yearbook-inner">
 
 				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
 				</div>
 
-				<div class="Yearbook-secondary">
+				<div class="Yearbook-secondary Yearbook--compact">
 
-					<h3>2011</h3>
-					<p>O projeto "Mikapraia" tinha como visão expandir e consolidar o bloco como um dos melhores destinos do estado de São Paulo e norte paranaense.</p>
-					<p>Além da já famosa praia itinerante, o bloco investe pesado em atrações para embalar as noites e tardes de carnaval.</p>
-
-					<div class="YearbookGallery">
-
-						<ul class="YearbookGallery-list">
-
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-
-						</ul>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="Yearbook Yearbook--right">
-
-			<div class="Yearbook-background"></div>
-			<div class="Yearbook-inner">
-
-				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
-				</div>
-
-				<div class="Yearbook-secondary">
-
-					<h3>2010</h3>
-					<p>Nesse ano por alguns problemas com a administração municipal, o bloco é sediado na boate Dub's Disco Club.</p>
-					<p>Máquinas de espuma e uma grande estrutura fizeram o carnaval daquele ano ser um dos mais diferentes da história do bloco.</p>
-
-					<div class="YearbookGallery">
-
-						<ul class="YearbookGallery-list">
-
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-
-						</ul>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="Yearbook Yearbook--right">
-
-			<div class="Yearbook-background"></div>
-			<div class="Yearbook-inner">
-
-				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
-				</div>
-
-				<div class="Yearbook-secondary">
-
-					<h3>2009</h3>
-					<p>Em 2009 o projeto "Praia Adventure" faz as tardes e noites serem uma das mais agitadas do carnaval. Futebol de sabão, surf machine, parede de escalada são algumas das atrações do carnaval.</p>
-
-					<div class="YearbookGallery">
-
-						<ul class="YearbookGallery-list">
-
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-
-						</ul>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="Yearbook Yearbook--right">
-
-			<div class="Yearbook-background"></div>
-			<div class="Yearbook-inner">
-
-				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
-				</div>
-
-				<div class="Yearbook-secondary">
-
-					<h3>2008</h3>
-					<p>O Tô no Vaso alça a cidade de Palmital no circuito do carnaval regional. O projeto "Praia" é mantido, porém esse ano atrações ao vivo começam a tomar as areias da sede. Rodas de samba, Dj's, Acústicos e outras atrações agitam as tardes e as noites do Carnaval.</p>
-
-					<div class="YearbookGallery">
-
-						<ul class="YearbookGallery-list">
-
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-
-						</ul>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="Yearbook Yearbook--right">
-
-			<div class="Yearbook-background"></div>
-			<div class="Yearbook-inner">
-
-				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
-				</div>
-
-				<div class="Yearbook-secondary">
-
-					<h3>2007</h3>
+					<h2 class="font-amber-a700">2007</h2>
 					<p>Depois da repercussão do ano anterior a prefeitura toma uma medida drástica e decide que nenhum bloco poderia se instalar pelas ruas da cidade.</p>
 					<p>Para evitar brigas, os blocos rivais deveriam ocupar as sedes em lados opostos do espaço, ficando alguns blocos de menor expressão entre os dois. O som seria interligado e comum a todos, controlados por uma central.</p>
 					<p>Sendo obrigado a compartilhar o espaço com outros blocos, o Tô no Vaso precisa ser criativo para chamar a atenção dos foliões e não desaponta: alguns caminhões de areia foram espalhados por todo o espaço da sede e então é criado a primeira praia itinerante do interior paulista.</p>
 
-					<div class="YearbookGallery">
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
-						<ul class="YearbookGallery-list">
+				</div>
 
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
+			</div>
 
-						</ul>
+		</div>
 
-					</div>
+		<div class="Yearbook">
+
+			<div class="Yearbook-background"></div>
+			<div class="Yearbook-inner">
+
+				<div class="Yearbook-primary">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
+				</div>
+
+				<div class="Yearbook-secondary">
+
+					<h2 class="font-amber-a700">2008</h2>
+					<p>O Tô no Vaso alça a cidade de Palmital no circuito do carnaval regional. O projeto "Praia" é mantido, porém esse ano atrações ao vivo começam a tomar as areias da sede. Rodas de samba, Dj's, Acústicos e outras atrações agitam as tardes e as noites do Carnaval.</p>
+
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
 				</div>
 
@@ -380,27 +494,46 @@
 			<div class="Yearbook-inner">
 
 				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
 				</div>
 
 				<div class="Yearbook-secondary">
 
-					<h3>2006</h3>
-					<p>Tentando sanar o problema da pertubação do sossego, a prefeitura cria o "Estação Folia" (molde usado até hoje no carnaval Palmitalense), porém o Tô no Vaso juntamente com mais alguns blocos não aderem a iniciativa e ficam sediados novamente no bar "Los Hermanos".</p>
-					<p>Considerado por muitos o melhor carnaval já feito até hoje, foi marcado por "enterros" ao bloco rival; os integrantes e simpatizantes marchavam pela manhã até a sede do bloco rival para celebrar a "morte" do mesmo, já que eles se encontravam fechados enquanto a festa ainda ocorria na sede do Tô no Vaso. Houve um placar para contabilizar os dias em que houveram enterros (todos os dias no caso), diversas marchas, disputa de som, algumas ocorrências policiais e muita, muita cerveja.</p>
+					<h2 class="font-amber-a700">2009</h2>
+					<p>Em 2009 o projeto "Praia Adventure" faz as tardes e noites serem uma das mais agitadas do carnaval. Futebol de sabão, surf machine, parede de escalada são algumas das atrações do carnaval.</p>
 
-					<div class="YearbookGallery">
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
-						<ul class="YearbookGallery-list">
+				</div>
 
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
+			</div>
 
-						</ul>
+		</div>
 
-					</div>
+		<div class="Yearbook">
+
+			<div class="Yearbook-background"></div>
+			<div class="Yearbook-inner">
+
+				<div class="Yearbook-primary">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
+				</div>
+
+				<div class="Yearbook-secondary">
+
+					<h2 class="font-amber-a700">2010</h2>
+					<p>Nesse ano por alguns problemas com a administração municipal, o bloco é sediado na boate Dub's Disco Club.</p>
+					<p>Máquinas de espuma e uma grande estrutura fizeram o carnaval daquele ano ser um dos mais diferentes da história do bloco.</p>
+
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
 				</div>
 
@@ -414,26 +547,46 @@
 			<div class="Yearbook-inner">
 
 				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
 				</div>
 
 				<div class="Yearbook-secondary">
 
-					<h3>2005</h3>
-					<p>Nesse ano o Tô no Vaso volta a ficar sediado no bar "Los Hermanos" juntamente com o bloco "Nostravamus". O carnaval é marcado pela disputa de público com o bloco rival e isso acirra os ânimos de ambos os lados. Muitas reclamações de perturbação do sossego são registradas.</p>
+					<h2 class="font-amber-a700">2011</h2>
+					<p>O projeto "Mikapraia" tinha como visão expandir e consolidar o bloco como um dos melhores destinos do estado de São Paulo e norte paranaense.</p>
+					<p>Além da já famosa praia itinerante, o bloco investe pesado em atrações para embalar as noites e tardes de carnaval.</p>
 
-					<div class="YearbookGallery">
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
-						<ul class="YearbookGallery-list">
+				</div>
 
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
+			</div>
 
-						</ul>
+		</div>
 
-					</div>
+		<div class="Yearbook">
+
+			<div class="Yearbook-background"></div>
+			<div class="Yearbook-inner">
+
+				<div class="Yearbook-primary">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
+				</div>
+
+				<div class="Yearbook-secondary">
+
+					<h2 class="font-amber-a700">2012</h2>
+					<p>Uma mega estrutura de som e iluminação é montada e o projeto "Olimpic Praia" é realizado. A ideia era inscrever participantes para algumas disputas de uma olimpíadas etílicas e a diversão foi garantida. Quem ganhou? Até hoje ninguém sabe dado que até os juízes estavam bêbados.</p>
+
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
 				</div>
 
@@ -447,26 +600,46 @@
 			<div class="Yearbook-inner">
 
 				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
 				</div>
 
 				<div class="Yearbook-secondary">
 
-					<h3>2004</h3>
-					<p>Já sendo considerado o maior bloco da cidade, um trio elétrico é montado para o carnaval e causa um grande transtorno logo na primeira noite, já que o caminhão juntamente com o sistema de som foram apreendidos pela PM. Nesse ano o bloco volta a ficar instalado na Kelpp's (hoje Rock Caramujo Club) e o bloco "atecubanos" se instala bem em frente, do outro lado da rua; uma verdadeira competição de som. Não por acaso esse ano ficou marcado pela intervenção da PM em quase todos os dias.</p>
+					<h2 class="font-amber-a700">2013</h2>
+					<p>Um grande trio elétrico montado marca o projeto "Roots Praia" tendo como temática a cultura Rastafari.</p>
 
-					<div class="YearbookGallery">
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
-						<ul class="YearbookGallery-list">
+				</div>
 
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
+			</div>
 
-						</ul>
+		</div>
 
-					</div>
+		<div class="Yearbook">
+
+			<div class="Yearbook-background"></div>
+			<div class="Yearbook-inner">
+
+				<div class="Yearbook-primary">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
+				</div>
+
+				<div class="Yearbook-secondary">
+
+					<h2 class="font-amber-a700">2014</h2>
+					<p>O projeto "Cup Praia" ficou marcado pelo conforto e infraestrutura para que os foliões pudessem ter conforto enquanto curtiam o carnaval no melhor open da Região.</p>
+					<p>Muita música com atrações ao vivo e um lounge exclusivo para aqueles momentos onde a canseira bate.</p>
+
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
 				</div>
 
@@ -480,27 +653,45 @@
 			<div class="Yearbook-inner">
 
 				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
 				</div>
 
 				<div class="Yearbook-secondary">
 
-					<h3>2003</h3>
-					<p>Em 2003 o Tô no Vaso é convidado juntamente com os blocos "Os Karakata", "Nostravamus" e "Atecubanos" para reerguerem o tradicional carnaval de salão do clube local. O acordo era que os blocos ficariam em uma mesma sede (antigo bar "Los Hermanos") e não poderiam abrir nas noites em que o clube promovesse festividades. Em uma estratégia desleal, um dos blocos, o "Atecubanos", rompe o acordo na última hora e decide se instalar em frente ao clube, concorrendo com todos. Essa atitude deu início a uma rivalidade que entrou para a história da cidade.</p>
-					<p>Esse ano também marca o primeiro ano em que há o consumo de cerveja no bloco e 80 caixas de cerveja Bohemia foram compradas.</p>
+					<h2 class="font-amber-a700">2015</h2>
+					<p>O projeto "Neon" traz cores ao carnaval em um clima de festival dos anos 70, com muita tinta distribuída aos foliões, pintamos todo o complexo com muita felicidade e alto astral.</p>
 
-					<div class="YearbookGallery">
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
-						<ul class="YearbookGallery-list">
+				</div>
 
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
+			</div>
 
-						</ul>
+		</div>
 
-					</div>
+		<div class="Yearbook">
+
+			<div class="Yearbook-background"></div>
+			<div class="Yearbook-inner">
+
+				<div class="Yearbook-primary">
+					<img src="dist/img/tshirt.png" alt="Abadá TNV"/>
+				</div>
+
+				<div class="Yearbook-secondary">
+
+					<h2 class="font-amber-a700">2016</h2>
+					<p>Com 5 noites de temáticas diferentes, o projeto "Thematic Praia" traz a cada dia uma festa diferente. Entre dias a fantasia e dias no Hawai, o carnaval é um dos mais movimentados de todos os tempos. Muita bebida, gente bonita e uma grande vibe positiva.</p>
+
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
 				</div>
 
@@ -514,159 +705,43 @@
 			<div class="Yearbook-inner">
 
 				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
-				</div>
 
-				<div class="Yearbook-secondary">
+					<div id="player" class="Player">
 
-					<h3>2002</h3>
-					<p>Nesse ano o bloco Tô no Vaso fica instalado na rua Duque de Caxias e começa a incomodar outros blocos. Mesmo sem bebidas alcoólicas e outros atrativos, começa a reunir um grande número de pessoas. Com disposição de sobra pra alçar o bloco como um dos principais da cidade mesmo com a pouca idade, o Tô no Vaso ganha um carro (sim, um carro para o bloco onde nenhum integrante possuía CNH) em um pré carnaval. Dias depois, no carnaval, o carro foi destruído pelos próprios integrantes.</p>
+						<div class="Player-background"></div>
 
-					<div class="YearbookGallery">
+						<div class="Player-inner">
 
-						<ul class="YearbookGallery-list">
+							<a class="Player-selectArea">
 
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.1 30.1" class="play">
+									<path d="M20 14.4l-6.2-4.5c-0.2-0.2-0.5-0.2-0.8-0.1 -0.3 0.1-0.4 0.4-0.4 0.7v9.1c0 0.3 0.2 0.5 0.4 0.7 0.1 0.1 0.2 0.1 0.3 0.1 0.2 0 0.3 0 0.4-0.1l6.2-4.5c0.2-0.1 0.3-0.4 0.3-0.6C20.3 14.8 20.2 14.6 20 14.4z"/>
+									<path d="M15 0C6.7 0 0 6.7 0 15c0 8.3 6.7 15 15 15 8.3 0 15-6.7 15-15C30.1 6.7 23.3 0 15 0zM15 27.5c-6.9 0-12.5-5.6-12.5-12.5 0-6.9 5.6-12.5 12.5-12.5 6.9 0 12.5 5.6 12.5 12.5C27.5 21.9 21.9 27.5 15 27.5z"/>
+								</svg>
 
-						</ul>
+							</a>
 
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="Yearbook Yearbook--right">
-
-			<div class="Yearbook-background"></div>
-			<div class="Yearbook-inner">
-
-				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
-				</div>
-
-				<div class="Yearbook-secondary">
-
-					<h3>2001</h3>
-					<p>Em 2001, ainda com pouca idade, o Tô no Vaso já começa a chamar a atenção e atrair alguns foliões. O que antes era somente um pretexto para reunir um grupo de amigos, agora começa a ganhar forma com som locado.</p>
-					<p>Nesse ano uma briga entre integrantes quase é extinto. Para a nossa sorte a briga foi superada (Sim, somos amigos até hoje :D).</p>
-
-					<div class="YearbookGallery">
-
-						<ul class="YearbookGallery-list">
-
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-
-						</ul>
+						</div>
 
 					</div>
 
 				</div>
 
-			</div>
+				<div class="Yearbook-secondary" style="text-align: center;">
 
-		</div>
+					<h2 class="font-amber-a700">2017</h2>
+					<p>Adquira seu ingresso, vista seu abadá e vem fazer parte dessa história!</p>
+					<a href="tickets" class="Button Button--primary">
 
-		<div class="Yearbook Yearbook--right">
+						<span>Comprar ingressos</span>
 
-			<div class="Yearbook-background"></div>
-			<div class="Yearbook-inner">
+					</a>
 
-				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
-				</div>
-
-				<div class="Yearbook-secondary">
-
-					<h3>2000</h3>
-					<p>Ainda muito jovem o bloco se instala na principal avenida da cidade. Nesse ano já há ideias de "diferenciais" na estrutura. Piscinas e caixas d'água são colocadas no canteiro da avenida.</p>
-
-					<div class="YearbookGallery">
-
-						<ul class="YearbookGallery-list">
-
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-
-						</ul>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="Yearbook Yearbook--right">
-
-			<div class="Yearbook-background"></div>
-			<div class="Yearbook-inner">
-
-				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
-				</div>
-
-				<div class="Yearbook-secondary">
-
-					<h3>1999</h3>
-					<p>Nesse ano não há uma sede própria e o bloco fica com um bloco chamado "Sempre a tôa" que era, em suma, formado pelos pais dos integrantes do bloco Tô no Vaso.</p>
-
-					<div class="YearbookGallery">
-
-						<ul class="YearbookGallery-list">
-
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-
-						</ul>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="Yearbook Yearbook--right">
-
-			<div class="Yearbook-background"></div>
-			<div class="Yearbook-inner">
-
-				<div class="Yearbook-primary">
-					<img src="https://s-media-cache-ak0.pinimg.com/236x/36/81/10/3681102ae7e95c7a5a095d7a97107230.jpg"
-					     alt="Camiseta to no vaso">
-				</div>
-
-				<div class="Yearbook-secondary">
-
-					<h3>1998</h3>
-					<p>O bloco Tô no Vaso foi criado e fundado em 1998 por um grupo de amigos e teve como primeira sede a antiga danceteria "Kelpp's" (hoje Rock Caramujo Club). Com a intenção de reunir todos para comemorar o carnaval e participar de matinês, nessa época foram confeccionadas algumas camisetas para os integrantes e o carnaval todo foi regado a muito refrigerante.</p>
-
-					<div class="YearbookGallery">
-
-						<ul class="YearbookGallery-list">
-
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-							<li class="YearbookGalleryItem"></li>
-
-						</ul>
-
-					</div>
+					<!--<div class="YearbookGallery">-->
+					<!--<ul class="YearbookGallery-list">-->
+					<!--<li class="YearbookGalleryItem"></li>-->
+					<!--</ul>-->
+					<!--</div>-->
 
 				</div>
 
@@ -676,7 +751,62 @@
 
 	</div>
 
-</div>
+</section>
+
+<footer class="Footer">
+
+	<div class="Footer-inner container">
+
+		<p class="Footer-title tk-tenby-four">Bloco Tô No Vaso 2017</p>
+
+		<p>Pátio da FEPASA, Av. Reginalda Leão, S/N - Palmital, SP</p>
+		<p>Osmair <a href="tel:+5518996155409">18 9 9615 5409</a></p>
+		<p>Braz <a href="tel:+5518991076902">18 9 9107 6902</a></p>
+		<p><a href="mailto:contato@tonovaso.com.br">contato@tonovaso.com.br</a></p>
+
+		<div class="Footer-social">
+
+			<a href="https://www.messenger.com/t/tonovaso.palmital/" class="Footer-socialIcon">
+
+				<span class="icon-facebook-messenger"></span>
+
+			</a>
+
+			<a href="https://www.facebook.com/tonovaso.palmital/" class="Footer-socialIcon">
+
+				<span class="icon-facebook"></span>
+
+			</a>
+
+			<a href="https://www.instagram.com/braztnv" class="Footer-socialIcon">
+
+				<span class="icon-instagram"></span>
+
+			</a>
+
+
+		</div>
+
+		<p>TNV © 1998 - 2017</p>
+
+	</div>
+
+</footer>
+
+<script src="dist/js/underscore-min.js"></script>
+<script src="dist/js/tonovaso.js"></script>
+
+<script>
+
+	var player = new Player(document.getElementById('player'));
+	player.setVideo(new YouTubeVideo('B0gZUY2DdFw'));
+
+	// add fallback functions to 'power' button (select area element)
+	player.addControlListener(player.selectAreaElement, function () {
+		playerAnchor.push();
+	});
+
+</script>
 
 </body>
 

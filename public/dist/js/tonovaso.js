@@ -321,9 +321,9 @@ var Player = (function () {
 		console.log(this);
 
 		if (this.backgroundElement)
-			this.backgroundElement.style.backgroundImage = 'url(http://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
+			this.backgroundElement.style.backgroundImage = 'url(https://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
 		else
-			this.element.style.backgroundImage = 'url(http://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
+			this.element.style.backgroundImage = 'url(https://i.ytimg.com/vi/' + this.video.id + '/hqdefault.jpg)';
 
 	};
 
@@ -587,7 +587,7 @@ var TicketsCheckout = (function () {
 				reference: transactions.push(items).key
 			};
 
-			transactions.child(transaction.reference).set(transaction);
+			// transactions.child(transaction.reference).set(transaction);
 
 			/*
 			var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
@@ -601,7 +601,7 @@ var TicketsCheckout = (function () {
 				//contentType: "application/json",
 				crossDomain: true,
 				// url: 'https://service.elbit.com.br/dalia-server/index.php',
-				url: 'https://service-elbit-com-br.umbler.net/dalia-server/index.php',
+				url: 'https://service-elbit-com-br.umbler.net/dalia-server/test.php',
 				type: "POST",
 				cache: false,
 				data: {

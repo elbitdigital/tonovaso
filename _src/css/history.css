@@ -2,7 +2,6 @@
 
 .History {
 	max-width: 70em;
-	padding: 3em 0;
 	margin: 0 auto;
 	position: relative;
 	width: 100%;
@@ -29,5 +28,72 @@
 	-webkit-flex-flow: column;
 	flex-flow: column;
 	text-align: center;
+	-webkit-align-items: center;
+	align-items: center;
 	width: 100%;
+}
+
+/* History inner text */
+
+.History-inner p {
+	font-size: 1em;
+	margin-bottom: .75em;
+	line-height: 1.42;
+}
+
+.History-inner h1 {
+	margin-bottom: .5em;
+}
+
+@media (min-width: 48em) {
+
+	/*.History-inner {*/
+	/*margin: 1em 0 1.5em;*/
+	/*}*/
+
+	.History-inner h1 {
+		font-size: 3em;
+		margin-bottom: .375em;
+	}
+
+	.History-inner p {
+		font-size: 1.3125em;
+		max-width: 36rem;
+		margin-bottom: .75em;
+	}
+
+}
+
+@media (min-width: 72em) {
+
+	/*.History-inner {*/
+	/*margin: 1em 0 1.5em;*/
+	/*}*/
+
+	.History-inner h1 {
+		font-size: 3.75em;
+		margin-bottom: .25em;
+	}
+
+	.History-inner p {
+		font-size: 1.5em;
+		max-width: 42rem;
+		margin-bottom: .75em;
+	}
+
+}
+
+@media (min-width: 96em) {
+
+	.History-inner h1 {
+		font-size: 3.75em;
+		margin-bottom: .375em;
+	}
+
+	.History-inner p {
+		font-size: 1.5em;
+		max-width: 42rem;
+		margin-bottom: .75em;
+	}
+
 }

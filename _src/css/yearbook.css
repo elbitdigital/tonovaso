@@ -44,7 +44,6 @@
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	padding: 1em;
 	margin-bottom: 1em;
 	position: relative;
 	width: 100%;
@@ -55,23 +54,52 @@
 	justify-content: center;
 }
 
+/* Yearbook secondary */
+
 .Yearbook-secondary {
 	-webkit-flex-flow: column;
 	flex-flow: column;
+}
+
+.Yearbook-secondary h2 {
+	font-size: 2.25em;
+	margin-bottom: .375em;
+}
+
+.Yearbook-secondary p {
+	font-size: 1em;
+	margin-bottom: .75em;
+	line-height: 1.42;
 }
 
 @media (min-width: 48em) {
 
 	.Yearbook-primary,
 	.Yearbook-secondary {
-		max-width: 50%;
+		padding: 1em;
+	}
+
+	.Yearbook-secondary h2 {
+		font-size: 3em;
+		margin-bottom: .375em;
+	}
+
+	.Yearbook-secondary p {
+		font-size: 1.3125em;
+		max-width: 36rem;
+		margin-bottom: .75em;
 	}
 
 }
 
 @media (min-width: 60em) {
 
-	.Yearbook--left .Yearbook-inner {
+	.Yearbook-primary,
+	.Yearbook-secondary {
+		max-width: 50%;
+	}
+
+	.Yearbook-inner {
 		text-align: left;
 		-webkit-flex-flow: row;
 		flex-flow: row;
@@ -83,10 +111,38 @@
 		flex-flow: row-reverse;
 	}
 
+    .Yearbook-secondary.Yearbook--compact p {
+	    font-size: 1.25em;
+    }
+
 }
 
 @media (min-width: 72em) {
 
+	.Yearbook-secondary h2 {
+		font-size: 3.75em;
+		margin-bottom: .375em;
+	}
 
+	.Yearbook-secondary p {
+		font-size: 1.5em;
+		max-width: 42rem;
+		margin-bottom: .75em;
+	}
+
+}
+
+@media (min-width: 96em) {
+
+	.Yearbook-secondary h2 {
+		font-size: 3.75em;
+		margin-bottom: .375em;
+	}
+
+	.Yearbook-secondary p {
+		font-size: 1.5em;
+		max-width: 42rem;
+		margin-bottom: .75em;
+	}
 
 }

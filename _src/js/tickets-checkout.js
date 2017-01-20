@@ -58,7 +58,7 @@ var TicketsCheckout = (function () {
 				reference: transactions.push(items).key
 			};
 
-			transactions.child(transaction.reference).set(transaction);
+			// transactions.child(transaction.reference).set(transaction);
 
 			/*
 			var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
@@ -72,7 +72,7 @@ var TicketsCheckout = (function () {
 				//contentType: "application/json",
 				crossDomain: true,
 				// url: 'https://service.elbit.com.br/dalia-server/index.php',
-				url: 'https://service-elbit-com-br.umbler.net/dalia-server/index.php',
+				url: 'https://service-elbit-com-br.umbler.net/dalia-server/test.php',
 				type: "POST",
 				cache: false,
 				data: {
