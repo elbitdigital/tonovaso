@@ -14,6 +14,16 @@
         "source": "/ingressos",
         "destination": "/tickets",
         "type": 301
+      },
+      {
+        "source": "/historia",
+        "destination": "/20-anos",
+        "type": 301
+      },
+      {
+        "source": "/20anos",
+        "destination": "/20-anos",
+        "type": 301
       }
     ],
     "headers": [
