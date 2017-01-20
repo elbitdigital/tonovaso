@@ -72,6 +72,21 @@ source.images.logo = {
 	location: source.images.location + 'logo/'
 };
 
+source.images.artists= {
+	content: '*.*',
+	location: source.images.location + 'artists/'
+};
+
+source.images.lineup = {
+	content: '*.*',
+	location: source.images.location + 'lineup/'
+};
+
+source.images.uniform = {
+	content: '*.*',
+	location: source.images.location + 'uniform/'
+};
+
 // Public Content structure
 
 var public = {
@@ -108,6 +123,21 @@ dist.images.backgroundElement = {
 dist.images.logo = {
 	content: '*.*',
 	location: dist.images.location + 'logo/'
+};
+
+dist.images.artists= {
+	content: '*.*',
+	location: dist.images.location + 'artists/'
+};
+
+dist.images.lineup = {
+	content: '*.*',
+	location: dist.images.location + 'lineup/'
+};
+
+dist.images.uniform = {
+	content: '*.*',
+	location: dist.images.location + 'uniform/'
 };
 
 // CSS
@@ -189,6 +219,55 @@ gulp.task('resizeLogo', function () {
 		}))
 		.pipe(tinypng(tinypngToken))
 		.pipe(gulp.dest(dist.images.logo.location + 'small/'));
+});
+
+gulp.task('resizeArtists', function () {
+	gulp.src(source.images.artists.location + source.images.artists.content)
+		.pipe(imageResize({
+			height : 576,
+			upscale : false
+		}))
+		.pipe(gulp.dest(dist.images.artists.location));
+	gulp.src(source.images.artists.location + source.images.artists.content)
+		.pipe(imageResize({
+			height : 288,
+			upscale : false
+		}))
+		.pipe(gulp.dest(dist.images.artists.location + 'small/'));
+});
+
+gulp.task('resizeLineup', function () {
+	gulp.src(source.images.lineup.location + source.images.lineup.content)
+		.pipe(imageResize({
+			height : 672,
+			upscale : false
+		}))
+		.pipe(tinypng(tinypngToken))
+		.pipe(gulp.dest(dist.images.lineup.location));
+	gulp.src(source.images.lineup.location + source.images.lineup.content)
+		.pipe(imageResize({
+			height : 384,
+			upscale : false
+		}))
+		.pipe(tinypng(tinypngToken))
+		.pipe(gulp.dest(dist.images.lineup.location + 'small/'));
+});
+
+gulp.task('resizeUniform', function () {
+	gulp.src(source.images.uniform.location + source.images.uniform.content)
+		.pipe(imageResize({
+			width : 576,
+			upscale : false
+		}))
+		.pipe(tinypng(tinypngToken))
+		.pipe(gulp.dest(dist.images.uniform.location));
+	gulp.src(source.images.uniform.location + source.images.uniform.content)
+		.pipe(imageResize({
+			width : 376,
+			upscale : false
+		}))
+		.pipe(tinypng(tinypngToken))
+		.pipe(gulp.dest(dist.images.uniform.location + 'small/'));
 });
 
 gulp.task('tinyUniformImages', function () {
