@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'tonovaso';
-  src: url('../font/tonovaso.eot?24248213');
-  src: url('../font/tonovaso.eot?24248213#iefix') format('embedded-opentype'),
-       url('../font/tonovaso.woff2?24248213') format('woff2'),
-       url('../font/tonovaso.woff?24248213') format('woff'),
-       url('../font/tonovaso.ttf?24248213') format('truetype'),
-       url('../font/tonovaso.svg?24248213#tonovaso') format('svg');
+  src: url('../font/tonovaso.eot?72613670');
+  src: url('../font/tonovaso.eot?72613670#iefix') format('embedded-opentype'),
+       url('../font/tonovaso.woff2?72613670') format('woff2'),
+       url('../font/tonovaso.woff?72613670') format('woff'),
+       url('../font/tonovaso.ttf?72613670') format('truetype'),
+       url('../font/tonovaso.svg?72613670#tonovaso') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'tonovaso';
-    src: url('../font/tonovaso.svg?24248213#tonovaso') format('svg');
+    src: url('../font/tonovaso.svg?72613670#tonovaso') format('svg');
   }
 }
 */
@@ -74,6 +74,7 @@
 .icon-arrow_drop_down:before { content: '\e810'; } /* '' */
 .icon-keyboard_arrow_down:before { content: '\e811'; } /* '' */
 .icon-arrow_drop_down_circle:before { content: '\e812'; } /* '' */
+.icon-keyboard_arrow_up:before { content: '\e813'; } /* '' */
 .icon-play_circle_outline:before { content: '\e814'; } /* '' */
 .icon-local_parking:before { content: '\e815'; } /* '' */
 .icon-phone:before { content: '\e816'; } /* '' */
@@ -82,6 +83,8 @@
 .icon-message:before { content: '\e819'; } /* '' */
 .icon-arrow_back:before { content: '\e81c'; } /* '' */
 .icon-arrow_downward:before { content: '\e826'; } /* '' */
+.icon-keyboard_arrow_left:before { content: '\e827'; } /* '' */
+.icon-keyboard_arrow_right:before { content: '\e828'; } /* '' */
 .icon-spin5:before { content: '\e838'; } /* '' */
 .icon-facebook-messenger:before { content: '\ebd8'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */

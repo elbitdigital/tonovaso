@@ -2,28 +2,23 @@
 /* LineUp */
 
 .Lineup {
+	-webkit-align-items: center;
+	align-items: center;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
 	padding: 1.5em 0 3em;
 	overflow: hidden;
 	position: relative;
-	text-align: center;
 	width: 100%;
-
-	/* para normalizar, alterar para a versão modificada */
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-flex-flow: column;
-	flex-flow: column;
 }
 
 .Lineup-background {
-	/*background-color: #000000;*/
+	background-color: #000000;
 	height: 100%;
 	left: 0;
 	position: absolute;
@@ -32,8 +27,6 @@
 }
 
 .Lineup-inner {
-	-webkit-align-items: center;
-	align-items: center;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -41,8 +34,6 @@
 	display: flex;
 	-webkit-flex-flow: column;
 	flex-flow: column;
-	-webkit-justify-content: center;
-	justify-content: center;
 	left: 0;
 	position: relative;
 	top: 0;

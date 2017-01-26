@@ -15,6 +15,49 @@
 	text-align: center;
 }
 
+a.Button {
+	cursor: pointer;
+}
+
+.Button--lineupResume {
+	border: solid 2px #ffffff;
+	border-radius: 3px;
+	margin: 0;
+}
+
+.Button--lineupResume:hover {
+	-webkit-box-shadow: 0 0 12px 1px rgba(0,176,255,.72);
+	-moz-box-shadow: 0 0 12px 1px rgba(0,176,255,.72);
+	box-shadow: 0 0 12px 1px rgba(0,176,255,.72);
+	border-color: #00b0ff;
+	background-color: #00b0ff;
+}
+
+.Button--lineupShowMore {
+	-webkit-align-items: center;
+	align-items: center;
+	padding: 0 !important;
+	margin: 0;
+	border-radius: 50%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	height: 3em;
+	-webkit-justify-content: center;
+	justify-content: center;
+	min-width: 0;
+	width: 3em;
+}
+
+.Button--lineupShowMore:hover {
+	/*-webkit-box-shadow: 0 0 12px 1px rgba(0,176,255,.72);*/
+	/*-moz-box-shadow: 0 0 12px 1px rgba(0,176,255,.72);*/
+	/*box-shadow: 0 0 12px 1px rgba(0,176,255,.72);*/
+	background-color: #00b0ff;
+}
+
 .Button--primary {
 	background-color: #03a9f4;
 	border-radius: 3px;
@@ -46,6 +89,20 @@
 	text-transform: uppercase;
 	font-weight: 900;
 	font-size: 1.5em;
+}
+
+.Button--lineupShowMore:hover span {
+	color: #ffffff !important;
+}
+
+.Button--lineupResume span {
+	color: #ffffff !important;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.Button--lineupResume:hover span {
+	color: #ffffff !important;
 }
 
 @media (max-width: 24em) {
