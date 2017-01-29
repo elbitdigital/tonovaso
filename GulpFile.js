@@ -224,7 +224,7 @@ gulp.task('resizeLogo', function () {
 gulp.task('resizeArtists', function () {
 	gulp.src(source.images.artists.location + source.images.artists.content)
 		.pipe(imageResize({
-			height : 576,
+			height : 480,
 			upscale : false
 		}))
 		.pipe(gulp.dest(dist.images.artists.location));

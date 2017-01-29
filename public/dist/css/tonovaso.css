@@ -978,6 +978,256 @@ a.Button {
     margin-bottom: .75em;
   }
 }
+/* Lineup Artist Resume */
+
+.LineupArtistResume {
+  cursor: default;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  padding: 1em;
+  height: 4.5em;
+}
+
+.LineupArtistResume span {
+  color: #ffffff;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.LineupArtistResume:hover span {
+  color: #40c4ff;
+}
+
+.LineupArtistResume-date {
+  -webkit-align-items: center;
+  align-items: center;
+  border-right: 2px solid #ffffff;
+  padding: 0 .375em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+}
+
+.LineupArtistResume-date span {
+  font-size: .875em;
+  font-weight: 900;
+}
+
+.LineupArtistResume-artist {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex: 5;
+}
+
+.LineupArtistResume-artist span {
+  font-weight: 900;
+  font-size: .875em;
+}
+
+.LineupArtist--pagodeDoNova .LineupArtistResume-artist span {
+  /*font-size: 1.3125em;*/
+}
+
+.LineupArtist--djRenatinho  .LineupArtistResume-artist span {
+  /*font-size: 1.3125em;*/
+}
+
+.LineupArtist--mcMigue .LineupArtistResume-artist span {
+  /*font-size: 1.75em;*/
+}
+
+.LineupArtistResume-misc {
+  border-left: 2px solid #ffffff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex: 3;
+}
+
+.LineupArtistResume-misc span {
+  font-weight: 700;
+}
+
+.LineupArtistResume-misc ul {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.LineupArtistResume-misc ul li {
+  margin-right: 1em;
+}
+
+.LineupArtistResume-misc ul li:last-child {
+  margin-right: 0;
+}
+
+.LineupArtistResume .icon-keyboard_arrow_up,
+.is-showingMore .LineupArtistResume .icon-keyboard_arrow_down {
+  display: none;
+}
+
+.is-showingMore .LineupArtistResume .icon-keyboard_arrow_up {
+  display: block;
+}
+
+@media (min-width: 48em) {
+  /* Lineup Artist Resume */
+
+  .LineupArtistResume {
+    cursor: default;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    max-width: 48em;
+    padding: 1em;
+    height: 6em;
+  }
+
+  .LineupArtistResume span {
+    color: #ffffff;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+  }
+
+  .LineupArtistResume:hover span {
+    color: #40c4ff;
+  }
+
+  .LineupArtistResume-date {
+    -webkit-align-items: center;
+    align-items: center;
+    border-right: 2px solid #ffffff;
+    padding: 0 1em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+  }
+
+  .LineupArtistResume-date span {
+    font-size: 1em;
+    font-weight: 900;
+  }
+
+  .LineupArtistResume-artist {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex: 5;
+  }
+
+  .LineupArtistResume-artist span {
+    font-weight: 900;
+    font-size: 1.5em;
+  }
+
+  .LineupArtist--pagodeDoNova .LineupArtistResume-artist span {
+    font-size: 1.3125em;
+  }
+
+  .LineupArtist--djRenatinho  .LineupArtistResume-artist span {
+    font-size: 1.3125em;
+  }
+
+  .LineupArtist--mcMigue .LineupArtistResume-artist span {
+    font-size: 1.75em;
+  }
+
+  .LineupArtistResume-misc {
+    border-left: 2px solid #ffffff;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex: 3;
+  }
+
+  .LineupArtistResume-misc span {
+    font-weight: 700;
+  }
+
+  .LineupArtistResume-misc ul {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .LineupArtistResume-misc ul li {
+    margin-right: 1em;
+  }
+
+  .LineupArtistResume-misc ul li:last-child {
+    margin-right: 0;
+  }
+
+  .LineupArtistResume .icon-keyboard_arrow_up,
+  .is-showingMore .LineupArtistResume .icon-keyboard_arrow_down {
+    display: none;
+  }
+
+  .is-showingMore .LineupArtistResume .icon-keyboard_arrow_up {
+    display: block;
+  }
+}
 /* Lineup Artist */
 
 .LineupArtist {
@@ -1121,129 +1371,6 @@ a.Button {
   position: relative;
   top: 0;
   width: 100%;
-}
-/* Lineup Artist Resume */
-
-.LineupArtistResume {
-  cursor: default;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  width: 100%;
-  max-width: 48em;
-  padding: 1em;
-  height: 6em;
-}
-
-.LineupArtistResume span {
-  color: #ffffff;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
-}
-
-.LineupArtistResume:hover span {
-  color: #40c4ff;
-}
-
-.LineupArtistResume-date {
-  -webkit-align-items: center;
-  align-items: center;
-  border-right: 2px solid #ffffff;
-  padding: 0 1em;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  height: 100%;
-  flex: 1;
-}
-
-.LineupArtistResume-date span {
-  font-weight: 900;
-}
-
-.LineupArtistResume-artist {
-  -webkit-align-items: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  flex: 5;
-}
-
-.LineupArtistResume-artist span {
-  font-weight: 900;
-  font-size: 1.5em;
-}
-
-.LineupArtist--pagodeDoNova .LineupArtistResume-artist span {
-  font-size: 1.3125em;
-}
-
-.LineupArtist--djRenatinho  .LineupArtistResume-artist span {
-  font-size: 1.3125em;
-}
-
-.LineupArtist--mcMigue .LineupArtistResume-artist span {
-  font-size: 1.75em;
-}
-
-.LineupArtistResume-misc {
-  border-left: 2px solid #ffffff;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  flex: 3;
-}
-
-.LineupArtistResume-misc span {
-  font-weight: 700;
-}
-
-.LineupArtistResume-misc ul {
-  -webkit-align-items: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.LineupArtistResume-misc ul li {
-  margin-right: 1em;
-}
-
-.LineupArtistResume-misc ul li:last-child {
-  margin-right: 0;
-}
-
-.LineupArtistResume .icon-keyboard_arrow_up,
-.is-showingMore .LineupArtistResume .icon-keyboard_arrow_down {
-  display: none;
-}
-
-.is-showingMore .LineupArtistResume .icon-keyboard_arrow_up {
-  display: block;
 }
 /* Nav Item */
 
