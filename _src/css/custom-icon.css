@@ -1,0 +1,122 @@
+
+/* Icon mouse animation */
+
+.custom-icon-mouse {
+	border: 2px solid #000;
+	border-radius: 16px;
+	display: block;
+	height: 40px;
+	margin: 5px 5px 10px 5px;
+	opacity: 0.8;
+	width: 24px;
+	z-index: 10;
+}
+
+/* Mouse animation with wheel (circle) */
+
+.custom-icon-mouse .wheel {
+	-webkit-animation-name: drop;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+	animation-name: drop;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+
+/* Mouse animation with arrow */
+
+.custom-icon-mouse .arrow {
+	-webkit-animation-name: drop;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+	animation-name: drop;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+
+.custom-icon-mouse .wheel {
+	background: #000;
+	border-radius: 10px;
+	height: 6px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 4px;
+	width: 6px;
+}
+
+.custom-icon-mouse .arrow {
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	height: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 4px;
+	transform: rotate(45deg);
+	width: 4px;
+}
+
+/* Mouse tooltip */
+
+.custom-icon-mouse .tooltip {
+	display: block;
+	background: #00b0ff;
+	border-radius: 2px;
+	color: #fff;
+	font-size: .725em;
+	font-weight: 600;
+	opacity: 0;
+	padding: 5px 0;
+	position: absolute;
+	right: 110%;
+	text-align: center;
+	text-transform: uppercase;
+	transition: opacity .7s;
+	top: 0;
+	width: 150px;
+	z-index: 11;
+}
+
+.custom-icon-mouse .tooltip::after {
+	border-color: transparent transparent transparent #00b0ff;
+	border-style: solid;
+	border-width: 5px;
+	content: "";
+	left: 100%;
+	margin-top: -5px;
+	position: absolute;
+	top: 50%;
+}
+
+/* Display mouse icon tooltip on hover */
+
+.custom-icon-mouse:hover .tooltip {
+	opacity: 0.8;
+}
+
+@-webkit-keyframes drop {
+	0% {top: 5px; opacity: 0;}
+	30% {top: 10px;}
+	50% {opacity: 1;}
+	100% {top: 25px; opacity: 0;}
+}
+
+@keyframes drop {
+	0% {top: 5px; opacity: 0;}
+	30% {top: 10px;}
+	50% {opacity: 1;}
+	100% {top: 25px; opacity: 0;}
+}

@@ -190,11 +190,11 @@
 
 			</li>
 
-			<!--<li class="NavItem">-->
+			<li class="NavItem">
 
-				<!--<a href="/"><span>O evento</span></a>-->
+				<a id="trigger-about" href="#sobre"><span>O evento</span></a>
 
-			<!--</li>-->
+			</li>
 
 			<li class="NavItem">
 
@@ -208,13 +208,18 @@
 
 	<div class="Header-action">
 
-		<a href="tickets" class="Button Button--primary">
+		<a href="tickets" class="Button Button--primary" style="margin-bottom: 0;">
 
 			<span>Ingressos</span>
 
 		</a>
 
 		<p>24 a 28 de fevereiro de 2017</p>
+
+		<div class="custom-icon-mouse">
+			<div class="arrow"></div>
+			<span class="tooltip">Explore a página</span>
+		</div>
 
 	</div>
 
@@ -717,8 +722,15 @@
 	var aboutElement = document.getElementById('sobre');
 
 	var aboutAnchor = new Anchor(document.getElementById('sobre'), {
-		duration: 600,
+		duration: 500,
 		easing: 'easeInQuad'
+	});
+
+	var triggerAbout = document.getElementById('trigger-about');
+
+	triggerAbout.addEventListener('click', function (e) {
+		e.preventDefault();
+		aboutAnchor.push();
 	});
 
 	var lineupArtistElements = document.querySelectorAll('.LineupArtist');
