@@ -4,6 +4,13 @@
 .Button {
 	background: none;
 	border: solid 2px transparent;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
 	margin-bottom: 1em;
 	min-width: 12em;
 	padding: .5em 1em;
@@ -19,10 +26,14 @@ a.Button {
 	cursor: pointer;
 }
 
+/* lineup resume */
+
 .Button--lineupResume {
 	border: solid 2px #ffffff;
 	border-radius: 3px;
 	margin: 0;
+	min-width: 0;
+	padding: .5em .5em;
 }
 
 .Button--lineupResume:hover {
@@ -33,17 +44,14 @@ a.Button {
 	background-color: #00b0ff;
 }
 
+/* lineup show more */
+
 .Button--lineupShowMore {
 	-webkit-align-items: center;
 	align-items: center;
 	padding: 0 !important;
 	margin: 0;
 	border-radius: 50%;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
 	height: 3em;
 	-webkit-justify-content: center;
 	justify-content: center;
@@ -120,6 +128,12 @@ a.Button {
 	/* Button */
 
 	.Button {
+		padding: .75em 1em;
+	}
+
+	/* lineup resume */
+
+	.Button--lineupResume {
 		padding: .75em 1em;
 	}
 

@@ -21,7 +21,19 @@ p {
 	width: 100%;
 }
 
+.mobile-hidden {
+	display: none;
+}
+
 @media (min-width: 48em) {
+
+	.mobile-hidden {
+		display: block;
+	}
+
+	.tablet-hidden {
+		display: none;
+	}
 
 	.container {
 		padding: 0 3em 0 4.5em;

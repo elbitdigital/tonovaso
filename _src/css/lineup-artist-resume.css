@@ -63,18 +63,11 @@
 .LineupArtistResume-artist span {
 	font-weight: 900;
 	font-size: .875em;
-}
-
-.LineupArtist--pagodeDoNova .LineupArtistResume-artist span {
-	/*font-size: 1.3125em;*/
-}
-
-.LineupArtist--djRenatinho  .LineupArtistResume-artist span {
-	/*font-size: 1.3125em;*/
+	text-align: center;
 }
 
 .LineupArtist--mcMigue .LineupArtistResume-artist span {
-	/*font-size: 1.75em;*/
+	font-size: 1em;
 }
 
 .LineupArtistResume-misc {
@@ -107,7 +100,11 @@
 }
 
 .LineupArtistResume-misc ul li {
-	margin-right: 1em;
+	margin-right: .5em;
+}
+
+.LineupArtistResume-misc ul li:first-child {
+	margin-left: .75em;
 }
 
 .LineupArtistResume-misc ul li:last-child {
