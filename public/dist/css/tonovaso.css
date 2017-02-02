@@ -1196,6 +1196,7 @@ a.Button {
   justify-content: center;
   height: 100%;
   flex: 1;
+  flex-direction: column;
 }
 
 .LineupArtistResume-date span {
@@ -1319,6 +1320,7 @@ a.Button {
     justify-content: center;
     height: 100%;
     flex: 1;
+    flex-direction: column;
   }
 
   .LineupArtistResume-date span {
