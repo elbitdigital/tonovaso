@@ -1,0 +1,57 @@
+
+/* Title light gradient style */
+
+.TitleLight {
+	color: #d5ac70;
+}
+
+@supports (mix-blend-mode: lighten) {
+	.TitleLight-gradient {
+		display: inline-block;
+		position: relative;
+		color: #000;
+		background: #fff;
+		mix-blend-mode: multiply;
+	}
+	.TitleLight-gradient::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: -webkit-linear-gradient(left, #947341, #D5AC70, #7B5C2D);
+		background: linear-gradient(to right, #947341, #D5AC70, #7B5C2D);
+		pointer-events: none;
+	}
+	.TitleLight-gradient::before {
+		mix-blend-mode: screen;
+	}
+}
+
+.TitleLight p {
+	text-transform: uppercase;
+	margin: 0 0 .5em 0;
+	font-weight: 700;
+}
+
+.TitleLight .text-date {
+	font-size: 1.5em;
+}
+
+.TitleLight .text-local {
+	font-size: 1.25em;
+}
+
+@media (min-width: 48em) {
+
+	.TitleLight .text-date {
+		font-size: 1.75em;
+	}
+
+	.TitleLight .text-local {
+		font-size: 1.5em;
+	}
+
+}

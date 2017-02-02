@@ -4,6 +4,7 @@
 .custom-icon-mouse {
 	border: 2px solid #000;
 	border-radius: 16px;
+	cursor: pointer;
 	display: block;
 	height: 40px;
 	margin: 5px 5px 10px 5px;
@@ -96,8 +97,8 @@
 	border-color: transparent transparent transparent #00b0ff;
 	border-style: solid;
 	border-width: 5px;
-	content: "";
-	left: 100%;
+	content: " ";
+	right: -10px;
 	margin-top: -5px;
 	position: absolute;
 	top: 50%;
@@ -106,7 +107,7 @@
 /* Display mouse icon tooltip on hover */
 
 .custom-icon-mouse:hover .tooltip {
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 @-webkit-keyframes drop {
@@ -121,4 +122,19 @@
 	30% {top: 10px;}
 	50% {opacity: 1;}
 	100% {top: 25px; opacity: 0;}
+}
+
+@media (max-height: 24em) {
+
+	.custom-icon-mouse .tooltip {
+		right: auto;
+		left: 150%;
+	}
+
+	.custom-icon-mouse .tooltip::after {
+		border-color: transparent #00b0ff transparent transparent;
+		right: auto;
+		left: -10px;
+	}
+
 }

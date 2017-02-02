@@ -151,7 +151,15 @@
 		<div class="Hero-background"></div>
 		<div class="Hero-inner">
 
-			<img src="dist/img/logo/TNVLogoTyped.png" alt="Logo TNV"/>
+			<div class="TitleLight">
+				<p class="TitleLight-gradient text-date">24 a 28 de fevereiro</p>
+			</div>
+
+			<img src="dist/img/logo/TNVLogo.png" alt="Logo TNV"/>
+
+			<div class="TitleLight">
+				<p class="TitleLight-gradient text-local">Carnaval 2017, Palmital - SP</p>
+			</div>
 
 		</div>
 
@@ -199,17 +207,18 @@
 
 	<div class="Header-action">
 
-		<a href="tickets" class="Button Button--primary" style="margin-bottom: 0;">
+		<a href="tickets" class="Button Button--primary" style="margin-bottom: .5em;">
 
 			<span>Ingressos</span>
 
 		</a>
 
-		<p>24 a 28 de fevereiro de 2017</p>
+		<div id="trigger-explore" class="custom-icon-mouse">
 
-		<div class="custom-icon-mouse">
 			<div class="arrow"></div>
+
 			<span class="tooltip">Explore a página</span>
+
 		</div>
 
 	</div>
@@ -218,7 +227,7 @@
 
 <!-- see lineup.css comment -->
 
-<div class="Lineup">
+<div id="atracoes" class="Lineup">
 
 	<div class="Lineup-background"></div>
 
@@ -247,7 +256,7 @@
 
 						<li>
 
-							<a class="Button Button--lineupResume" href="/tickets"><span>INGRESSOS</span></a>
+							<a class="Button Button--lineupResume" href="/tickets"><span class="icon-ticket"></span><span class="mobile-hidden">INGRESSOS</span></a>
 
 						</li>
 
@@ -315,7 +324,7 @@
 
 						<li>
 
-							<a class="Button Button--lineupResume" href="/tickets"><span>INGRESSOS</span></a>
+							<a class="Button Button--lineupResume" href="/tickets"><span class="icon-ticket"></span><span class="mobile-hidden">INGRESSOS</span></a>
 
 						</li>
 
@@ -352,7 +361,7 @@
 
 				<div class="LineupArtist-description">
 
-					<p>Cantar, dançar, atuar, transformar através da arte... Isso é Donna Banda!. </p>
+					<p>Cantar, dançar, atuar, transformar através da arte... Isso é Donna Banda!</p>
 
 				</div>
 
@@ -383,7 +392,7 @@
 
 						<li>
 
-							<a class="Button Button--lineupResume" href="/tickets"><span>INGRESSOS</span></a>
+							<a class="Button Button--lineupResume" href="/tickets"><span class="icon-ticket"></span><span class="mobile-hidden">INGRESSOS</span></a>
 
 						</li>
 
@@ -453,7 +462,7 @@
 
 						<li>
 
-							<a class="Button Button--lineupResume" href="/tickets"><span>INGRESSOS</span></a>
+							<a class="Button Button--lineupResume" href="/tickets"><span class="icon-ticket"></span><span class="mobile-hidden">INGRESSOS</span></a>
 
 						</li>
 
@@ -521,7 +530,7 @@
 
 						<li>
 
-							<a class="Button Button--lineupResume" href="/tickets"><span>INGRESSOS</span></a>
+							<a class="Button Button--lineupResume" href="/tickets"><span class="icon-ticket"></span><span class="mobile-hidden">INGRESSOS</span></a>
 
 						</li>
 
@@ -717,7 +726,7 @@
 
 	var aboutElement = document.getElementById('sobre');
 
-	var aboutAnchor = new Anchor(document.getElementById('sobre'), {
+	var aboutAnchor = new Anchor(aboutElement, {
 		duration: 500,
 		easing: 'easeInQuad'
 	});
@@ -727,6 +736,18 @@
 	triggerAbout.addEventListener('click', function (e) {
 		e.preventDefault();
 		aboutAnchor.push();
+	});
+
+	var exploreAnchor = new Anchor(document.getElementById('atracoes'), {
+		duration: 600,
+		easing: 'easeInQuad',
+		scrollOffset: -80
+	});
+
+	var triggerExplore = document.getElementById('trigger-explore');
+
+	triggerExplore.addEventListener('click', function (e) {
+		exploreAnchor.push();
 	});
 
 	var lineupArtistElements = document.querySelectorAll('.LineupArtist');

@@ -69,6 +69,14 @@
 		width: 16em;
 	}
 
+	.Hero-inner {
+		-webkit-flex-flow: row;
+		flex-flow: row;
+		-webkit-justify-content: space-around;
+		justify-content: space-around;
+		text-align: center;
+	}
+
 }
 
 @media (min-width: 48em) {

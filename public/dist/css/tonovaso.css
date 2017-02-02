@@ -559,6 +559,7 @@ a.Button {
 .custom-icon-mouse {
   border: 2px solid #000;
   border-radius: 16px;
+  cursor: pointer;
   display: block;
   height: 40px;
   margin: 5px 5px 10px 5px;
@@ -651,8 +652,8 @@ a.Button {
   border-color: transparent transparent transparent #00b0ff;
   border-style: solid;
   border-width: 5px;
-  content: "";
-  left: 100%;
+  content: " ";
+  right: -10px;
   margin-top: -5px;
   position: absolute;
   top: 50%;
@@ -661,7 +662,7 @@ a.Button {
 /* Display mouse icon tooltip on hover */
 
 .custom-icon-mouse:hover .tooltip {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 @-webkit-keyframes drop {
@@ -701,6 +702,19 @@ a.Button {
   100% {
     top: 25px;
     opacity: 0;
+  }
+}
+
+@media (max-height: 24em) {
+  .custom-icon-mouse .tooltip {
+    right: auto;
+    left: 150%;
+  }
+
+  .custom-icon-mouse .tooltip::after {
+    border-color: transparent #00b0ff transparent transparent;
+    right: auto;
+    left: -10px;
   }
 }
 /* Dialog */
@@ -961,7 +975,7 @@ a.Button {
     padding-bottom: 0;
   }
 
-
+  /* change mouse icon tooltip to the right */
 }
 /* Hero */
 
@@ -1028,6 +1042,14 @@ a.Button {
 @media (max-height: 24em) {
   .Hero img {
     width: 16em;
+  }
+
+  .Hero-inner {
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    text-align: center;
   }
 }
 
@@ -2338,6 +2360,62 @@ a.Button {
 @media (min-width: 48em) {
   .Tickets p {
     font-size: .875em;
+  }
+}
+/* Title light gradient style */
+
+.TitleLight {
+  color: #d5ac70;
+}
+
+@supports (mix-blend-mode: lighten) {
+  .TitleLight-gradient {
+    display: inline-block;
+    position: relative;
+    color: #000;
+    background: #fff;
+    mix-blend-mode: multiply;
+  }
+
+  .TitleLight-gradient::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient(left, #947341, #D5AC70, #7B5C2D);
+    background: linear-gradient(to right, #947341, #D5AC70, #7B5C2D);
+    pointer-events: none;
+  }
+
+  .TitleLight-gradient::before {
+    mix-blend-mode: screen;
+  }
+}
+
+.TitleLight p {
+  text-transform: uppercase;
+  margin: 0 0 .5em 0;
+  font-weight: 700;
+}
+
+.TitleLight .text-date {
+  font-size: 1.5em;
+}
+
+.TitleLight .text-local {
+  font-size: 1.25em;
+}
+
+@media (min-width: 48em) {
+  .TitleLight .text-date {
+    font-size: 1.75em;
+  }
+
+  .TitleLight .text-local {
+    font-size: 1.5em;
   }
 }
 @font-face {
