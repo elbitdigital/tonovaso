@@ -40,6 +40,8 @@
 	justify-content: center;
 	height: 100%;
 	flex: 1;
+	-webkit-flex-direction: column;
+	flex-direction: column;
 }
 
 .LineupArtistResume-date span {
@@ -165,6 +167,8 @@
 		justify-content: center;
 		height: 100%;
 		flex: 1;
+		-webkit-flex-direction: column;
+		flex-direction: column;
 	}
 
 	.LineupArtistResume-date span {

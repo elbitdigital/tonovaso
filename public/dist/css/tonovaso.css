@@ -1196,6 +1196,7 @@ a.Button {
   justify-content: center;
   height: 100%;
   flex: 1;
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1320,6 +1321,7 @@ a.Button {
     justify-content: center;
     height: 100%;
     flex: 1;
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
 
