@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <meta charset="UTF-8">
-<title>Contato | Bloco Tô No Vaso - Palmital</title>
+<title>TNV | Bloco Tô No Vaso - Palmital</title>
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<link rel="canonical" href="https://tonovaso.com.br/"/>
+<meta property="og:url" content="https://tonovaso.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TNV | Bloco Tô No Vaso - Palmital">
+<meta property="og:description" content="Bloco TnV">
+<meta property="og:image" content="https://tonovaso.com.br/dist/img/meta-image1.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="fb:pages" content="440721119282308">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@tonovaso">
+<meta name="twitter:title" content="TNV | Bloco Tô No Vaso - Palmital">
+<meta name="twitter:description" content="Bloco TnV">
+<meta name="twitter:image" content="https://tonovaso.com.br/dist/img/meta-image.jpg">
 <meta id="theme-color" name="theme-color" content="#eeeeee"/>
-<script src="https://use.typekit.net/jhl4ayv.js"></script>
+<script>
+	(function(d) {
+		var config = {
+					kitId: 'jhl4ayv',
+					scriptTimeout: 3000,
+					async: false
+				},
+				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	})(document);
+</script>
 <!--<script>try{Typekit.load({ async: true });}catch(e){}</script>-->
 <script>
 
@@ -63,7 +87,7 @@
 
 			<div class="AsideButton AsideButton--ticket">
 
-				<a href="/tickets" class="AsideButton-selectArea" draggable="false">
+				<a href="tickets" class="AsideButton-selectArea" draggable="false">
 
 					<div class="AsideButton-icon">
 
@@ -97,7 +121,7 @@
 
 			<div class="AsideButton AsideButton--facebook">
 
-				<a href="https://www.facebook.com/tonovaso.palmital/" class="AsideButton-selectArea" draggable="false">
+				<a href="https://www.facebook.com/events/150763765394621/" class="AsideButton-selectArea" draggable="false">
 
 					<div class="AsideButton-icon">
 
@@ -111,7 +135,7 @@
 
 			<div class="AsideButton AsideButton--instagram">
 
-				<a href="https://www.instagram.com/braztnv" class="AsideButton-selectArea" draggable="false">
+				<a href="https://www.instagram.com/blocotnv/" class="AsideButton-selectArea" draggable="false">
 
 					<div class="AsideButton-icon">
 
@@ -136,24 +160,7 @@
 		<div class="Hero-background"></div>
 		<div class="Hero-inner">
 
-			<div class="Contact">
-
-				<h2 class="font-amber-a700">Entre em contato!</h2>
-
-				<p>Osmair <a href="tel:+5518996155409">18 9 9615 5409</a> <br/>
-				Braz <a href="tel:+5518991076902">18 9 9107 6902</a></p>
-
-				<p><a href="mailto:contato@tonovaso.com.br">contato@tonovaso.com.br</a> <br/>
-					<span class="Contact-complementary">Palmital - São Paulo</span></p>
-
-			</div>
-
-			<a href="https://www.messenger.com/t/tonovaso.palmital/" class="Button Button--primary Button--contact">
-
-				<span class="icon-facebook-messenger"></span>
-				<span>Envie-nos uma mensagem</span>
-
-			</a>
+			<img src="dist/img/logo/TNVLogoTyped.png" alt="Logo TNV"/>
 
 		</div>
 
@@ -185,7 +192,7 @@
 
 			<li class="NavItem">
 
-				<a href="/#sobre"><span>O evento</span></a>
+				<a id="trigger-about" href="#sobre"><span>O evento</span></a>
 
 			</li>
 
@@ -195,12 +202,80 @@
 
 			</li>
 
-
 		</ul>
 
 	</nav>
 
+	<div class="Header-action">
+
+		<a href="tickets" class="Button Button--primary" style="margin-bottom: 0;">
+
+			<span>Ingressos</span>
+
+		</a>
+
+		<p>24 a 28 de fevereiro de 2017</p>
+
+		<div class="custom-icon-mouse">
+			<div class="arrow"></div>
+			<span class="tooltip">Explore a página</span>
+		</div>
+
+	</div>
+
 </header>
+
+<script src="dist/js/underscore-min.js"></script>
+<script src="dist/js/tonovaso.js"></script>
+
+<script>
+
+	var player = new Player(document.getElementById('player'));
+	player.setVideo(new YouTubeVideo('B0gZUY2DdFw'));
+
+	// add fallback functions to 'power' button (select area element)
+	player.addControlListener(player.selectAreaElement, function () {
+
+		playerAnchor.push();
+		aboutElement.classList.add('is-theater');
+		document.getElementById('theme-color').content = '#212121';
+
+		ga('send', 'event', {
+			eventCategory: 'Video',
+			eventAction: 'play',
+			eventLabel: player.video.id
+		});
+
+	});
+
+	var playerAnchor = new Anchor(document.getElementById('player'), {
+		duration: 600,
+		easing: 'easeInQuad',
+		scrollOffset: -36
+	});
+
+	var aboutElement = document.getElementById('sobre');
+
+	var aboutAnchor = new Anchor(document.getElementById('sobre'), {
+		duration: 500,
+		easing: 'easeInQuad'
+	});
+
+	var triggerAbout = document.getElementById('trigger-about');
+
+	triggerAbout.addEventListener('click', function (e) {
+		e.preventDefault();
+		aboutAnchor.push();
+	});
+
+	var lineupArtistElements = document.querySelectorAll('.LineupArtist');
+
+	var lineupArtists = [];
+
+	for (var i = lineupArtistElements.length; i--; )
+		lineupArtists.push(new LineupArtist(lineupArtistElements[i]));
+
+</script>
 
 </body>
 

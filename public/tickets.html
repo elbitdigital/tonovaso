@@ -15,15 +15,30 @@
 <meta property="og:image:height" content="800">
 <meta property="fb:pages" content="440721119282308">
 <meta id="theme-color" name="theme-color" content="#3f51b5"/>
+<script src="https://use.typekit.net/jhl4ayv.js"></script>
 <script>
-	(function(d) {
-		var config = {
-					kitId: 'jhl4ayv',
-					scriptTimeout: 3000,
-					async: true
-				},
-				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-	})(document);
+
+	try {
+		Typekit.load({
+			loading: function() {
+				// Javascript to execute when fonts start loading
+				console.log('loading');
+				document.documentElement.classList.add('is-loading');
+			},
+			active: function() {
+				// Javascript to execute when fonts become active
+				console.log('active');
+				document.documentElement.classList.remove('is-loading');
+				document.documentElement.classList.add('is-active');
+			},
+			inactive: function() {
+				// Javascript to execute when fonts become inactive
+				console.log('inactive');
+				document.documentElement.classList.remove('is-loading');
+			}
+		})
+	} catch(e) {}
+
 </script>
 <script src="dist/js/villa.min.js"></script>
 <link rel="stylesheet" href="dist/css/villa.min.css"/>

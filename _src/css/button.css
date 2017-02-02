@@ -11,6 +11,8 @@
 	display: flex;
 	-webkit-flex-flow: row nowrap;
 	flex-flow: row nowrap;
+	-webkit-justify-content: center;
+	justify-content: center;
 	margin-bottom: 1em;
 	min-width: 12em;
 	padding: .5em 1em;
