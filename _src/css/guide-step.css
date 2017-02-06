@@ -1,0 +1,39 @@
+
+/* Guide step */
+
+.GuideStep {
+	/*max-width: 20%;*/
+	text-align: center;
+}
+
+.GuideStep-header {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+
+.GuideStep-icon {
+	order: 3;
+	font-size: 3.25em;
+}
+
+.GuideStep-number {
+	order: 1;
+	font-size: 2em;
+	background: #cccccc;
+	border-radius: 50%;
+}
+.GuideStep-title {
+	order: 2;
+	font-size: 1.25em;
+}
+
+.GuideStep-description {
+	padding: .25em;
+}
