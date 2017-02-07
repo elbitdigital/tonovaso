@@ -24,6 +24,9 @@
 }
 
 .GuideStep-number {
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
 	order: 1;
 	font-size: 2em;
 	background: #cccccc;
