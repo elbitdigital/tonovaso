@@ -25,10 +25,18 @@ p {
 	display: none;
 }
 
+.mobile-only {
+	display: inline;
+}
+
 @media (min-width: 48em) {
 
 	.mobile-hidden {
 		display: block;
+	}
+
+	.mobile-only {
+		display: none;
 	}
 
 	.tablet-hidden {

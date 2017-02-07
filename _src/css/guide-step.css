@@ -2,41 +2,42 @@
 /* Guide step */
 
 .GuideStep {
-	/*max-width: 20%;*/
-	text-align: center;
-}
-
-.GuideStep-header {
 	-webkit-align-items: center;
 	align-items: center;
+	/*max-width: 20%;*/
+	text-align: center;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-justify-content: space-around;
-	justify-content: space-around;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	margin-bottom: .5em;
+}
+
+.GuideStep h1,
+.GuideStep h2,
+.GuideStep h3 {
+	font-family: 'tenby-four', 'proxima-nova', sans-serif !important;
 }
 
 .GuideStep-icon {
-	order: 3;
-	font-size: 3.25em;
+	/*order: 3;*/
+	font-size: 2.5em;
 }
 
-.GuideStep-number {
-	width: 1.5em;
-	height: 1.5em;
-	line-height: 1.5em;
-	order: 1;
+h1.GuideStep-number {
 	font-size: 2em;
-	background: #cccccc;
-	border-radius: 50%;
-}
-.GuideStep-title {
-	order: 2;
-	font-size: 1.25em;
 }
 
-.GuideStep-description {
-	padding: .25em;
+h2.GuideStep-title {
+	font-size: 1.5em;
+}
+
+p.GuideStep-description {
+	font-size: .825em;
+	padding: 0 1em;
 }

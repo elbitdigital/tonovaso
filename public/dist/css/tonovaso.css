@@ -1,3 +1,81 @@
+h1,
+h2,
+h3 {
+  font-family: 'tenby-four', 'proxima-nova', sans-serif;
+}
+
+h2 {
+  font-size: 2.25em;
+  margin-bottom: .375em;
+}
+
+p {
+  font-size: 1.125em;
+  margin-bottom: .75em;
+  line-height: 1.42;
+}
+
+.container {
+  padding: 0 1em;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+.mobile-only {
+  display: inline;
+}
+
+@media (min-width: 48em) {
+  .mobile-hidden {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-hidden {
+    display: none;
+  }
+
+  .container {
+    padding: 0 3em 0 4.5em;
+    max-width: 48em;
+  }
+}
+
+@media (min-width: 60em) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 72em) {
+  .container {
+    max-width: 60em;
+  }
+}
+
+@media (min-width: 96em) {
+  .container {
+    max-width: 72em;
+  }
+
+  h2 {
+    font-size: 3.75em;
+    margin-bottom: .375em;
+  }
+
+  p {
+    font-size: 1.5em;
+    max-width: 42rem;
+    margin-bottom: .75em;
+  }
+}
 /* About */
 
 .About {
@@ -39,10 +117,10 @@
 */
 
 .animate-spin {
-  -moz-animation: spin 3s infinite linear;
-  -o-animation: spin 3s infinite linear;
-  -webkit-animation: spin 3s infinite linear;
-  animation: spin 3s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
   display: inline-block;
 }
 
@@ -834,44 +912,44 @@ a.Button {
 /* Guide step */
 
 .GuideStep {
-  /*max-width: 20%;*/
-  text-align: center;
-}
-
-.GuideStep-header {
   -webkit-align-items: center;
   align-items: center;
+  /*max-width: 20%;*/
+  text-align: center;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-bottom: .5em;
+}
+
+.GuideStep h1,
+.GuideStep h2,
+.GuideStep h3 {
+  font-family: 'tenby-four', 'proxima-nova', sans-serif !important;
 }
 
 .GuideStep-icon {
-  order: 3;
-  font-size: 3.25em;
+  /*order: 3;*/
+  font-size: 2.5em;
 }
 
-.GuideStep-number {
-  width: 1.5em;
-  height: 1.5em;
-  line-height: 1.5em;
-  order: 1;
+h1.GuideStep-number {
   font-size: 2em;
-  background: #cccccc;
-  border-radius: 50%;
 }
 
-.GuideStep-title {
-  order: 2;
-  font-size: 1.25em;
+h2.GuideStep-title {
+  font-size: 1.5em;
 }
 
-.GuideStep-description {
-  padding: .25em;
+p.GuideStep-description {
+  font-size: .825em;
+  padding: 0 1em;
 }
 /* Guide */
 
@@ -879,15 +957,16 @@ a.Button {
 
 .Guide-background {
   height: 100%;
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
   width: 100%;
 }
 
 .Guide-inner {
-  right: 0;
+  padding: 1em 0;
   position: relative;
+  right: 0;
   top: 0;
   width: 100%;
 }
@@ -2425,12 +2504,12 @@ a.Button {
 }
 @font-face {
   font-family: 'tonovaso';
-  src: url("../font/tonovaso.eot?72613670");
-  src: url("../font/tonovaso.eot?72613670#iefix") format('embedded-opentype'),
-       url("../font/tonovaso.woff2?72613670") format('woff2'),
-       url("../font/tonovaso.woff?72613670") format('woff'),
-       url("../font/tonovaso.ttf?72613670") format('truetype'),
-       url("../font/tonovaso.svg?72613670#tonovaso") format('svg');
+  src: url("../font/tonovaso.eot?9989613");
+  src: url("../font/tonovaso.eot?9989613#iefix") format('embedded-opentype'),
+       url("../font/tonovaso.woff2?9989613") format('woff2'),
+       url("../font/tonovaso.woff?9989613") format('woff'),
+       url("../font/tonovaso.ttf?9989613") format('truetype'),
+       url("../font/tonovaso.svg?9989613#tonovaso") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2443,7 +2522,7 @@ a.Button {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'tonovaso';
-    src: url('../font/tonovaso.svg?72613670#tonovaso') format('svg');
+    src: url('../font/tonovaso.svg?9989613#tonovaso') format('svg');
   }
 }
 */
@@ -2633,11 +2712,53 @@ a.Button {
 
 /* '' */
 
+.icon-edit:before {
+  content: '\e81a';
+}
+
+/* '' */
+
+.icon-print:before {
+  content: '\e81b';
+}
+
+/* '' */
+
 .icon-arrow_back:before {
   content: '\e81c';
 }
 
 /* '' */
+
+.icon-credit-card:before {
+  content: '\e81d';
+}
+
+/* '' */
+
+.icon-ok:before {
+  content: '\e81e';
+}
+
+/* '' */
+
+.icon-ok-circled:before {
+  content: '\e81f';
+}
+
+/* '' */
+
+.icon-ok-circled2:before {
+  content: '\e820';
+}
+
+/* '' */
+
+.icon-basket:before {
+  content: '\e821';
+}
+
+/* '' */
 
 .icon-arrow_downward:before {
   content: '\e826';
@@ -2662,6 +2783,12 @@ a.Button {
 }
 
 /* '' */
+
+.icon-pagseguro:before {
+  content: '\ebd7';
+}
+
+/* '' */
 
 .icon-facebook-messenger:before {
   content: '\ebd8';
@@ -2888,76 +3015,6 @@ a.Button {
   }
 
   .Yearbook-secondary p {
-    font-size: 1.5em;
-    max-width: 42rem;
-    margin-bottom: .75em;
-  }
-}
-h1,
-h2,
-h3 {
-  font-family: 'tenby-four', 'proxima-nova', sans-serif;
-}
-
-h2 {
-  font-size: 2.25em;
-  margin-bottom: .375em;
-}
-
-p {
-  font-size: 1.125em;
-  margin-bottom: .75em;
-  line-height: 1.42;
-}
-
-.container {
-  padding: 0 1em;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.mobile-hidden {
-  display: none;
-}
-
-@media (min-width: 48em) {
-  .mobile-hidden {
-    display: block;
-  }
-
-  .tablet-hidden {
-    display: none;
-  }
-
-  .container {
-    padding: 0 3em 0 4.5em;
-    max-width: 48em;
-  }
-}
-
-@media (min-width: 60em) {
-  .container {
-    padding: 0;
-  }
-}
-
-@media (min-width: 72em) {
-  .container {
-    max-width: 60em;
-  }
-}
-
-@media (min-width: 96em) {
-  .container {
-    max-width: 72em;
-  }
-
-  h2 {
-    font-size: 3.75em;
-    margin-bottom: .375em;
-  }
-
-  p {
     font-size: 1.5em;
     max-width: 42rem;
     margin-bottom: .75em;

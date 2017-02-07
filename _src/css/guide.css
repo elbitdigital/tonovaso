@@ -5,15 +5,16 @@
 
 .Guide-background {
 	height: 100%;
-	position: absolute;
+	position: relative;
 	right: 0;
 	top: 0;
 	width: 100%;
 }
 
 .Guide-inner {
-	right: 0;
+	padding: 1em 0;
 	position: relative;
+	right: 0;
 	top: 0;
 	width: 100%;
 }
