@@ -46,3 +46,11 @@
 	}
 
 }
+
+@media (min-width: 48em) {
+
+	.TicketsHeader p {
+		font-size: 1em;
+	}
+
+}

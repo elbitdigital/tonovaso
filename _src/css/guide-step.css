@@ -2,19 +2,18 @@
 /* Guide step */
 
 .GuideStep {
-	-webkit-align-items: center;
-	align-items: center;
-	/*max-width: 20%;*/
-	text-align: center;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: column;
-	flex-flow: column;
-	-webkit-justify-content: center;
-	justify-content: center;
+	/*-webkit-align-items: center;*/
+	/*align-items: center;*/
+	/*text-align: center;*/
+	/*display: -webkit-box;*/
+	/*display: -moz-box;*/
+	/*display: -ms-flexbox;*/
+	/*display: -webkit-flex;*/
+	/*display: flex;*/
+	/*-webkit-flex-flow: column;*/
+	/*flex-flow: column;*/
+	/*-webkit-justify-content: center;*/
+	/*justify-content: center;*/
 	margin-bottom: .5em;
 }
 
@@ -25,11 +24,11 @@
 }
 
 .GuideStep-icon {
-	/*order: 3;*/
-	font-size: 2.5em;
+	font-size: 2em;
 }
 
 h1.GuideStep-number {
+	display: none;
 	font-size: 2em;
 }
 
@@ -40,4 +39,29 @@ h2.GuideStep-title {
 p.GuideStep-description {
 	font-size: .825em;
 	padding: 0 1em;
+}
+
+@media (min-width: 30em) {
+
+	.GuideStep {
+		flex: 0 0 33.33333%;
+	}
+
+	p.GuideStep-description {
+		font-size: 1em;
+		line-height: 1em;
+	}
+
+}
+
+@media (min-width: 60em) {
+
+	.GuideStep {
+		flex: 0 0 20%;
+	}
+
+	p.GuideStep-description {
+		font-weight: 100;
+	}
+
 }

@@ -57,6 +57,115 @@
 	}
 </style>
 
+<style>
+
+	.points {
+		margin: 0px;
+		display: flex;
+		flex-direction: column;
+		padding: 0px;
+	}
+
+	.points-wrapper {
+		padding: 0px;
+		margin: 0px;
+		width: 99vw;
+	}
+
+	.points-title {
+
+		display: flex;
+		justify-content: center;
+		padding: .5em 0px;
+		margin: 0 0 45px 0;
+		background-color: #eeeeee;
+
+	}
+
+	.points h1 {
+
+		color: #ffa000;
+		font-size: 3em;
+
+	}
+
+	.points h2 {
+
+		color: #3e2723;
+		font-weight: 700;
+		font-size: 1.5em;
+		letter-spacing: .07em;
+
+	}
+
+	.points h3 {
+
+		color: #ffa000;
+		font-weight: 600;
+		font-size: 1.5em;
+
+	}
+
+	.points h4 {
+
+		color: #3e2723;
+		font-size: .875em;
+
+	}
+
+	.points h5 {
+
+		color: #3e2723;
+		font-size: .875em;
+
+	}
+
+	.tags {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.tags-wrapper {
+		/*background-color: #f5f5f5;*/
+		height: 190px;
+		width: 320px;
+		margin: 0px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.tag-city {
+		padding: 1em 0px .5em 0px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.tag-local {
+		display: flex;
+		justify-content: center;
+		padding: .2em 0px;
+	}
+
+	.tag-address {
+
+		display: flex;
+		justify-content: center;
+		/*padding: .5em 0px;*/
+
+	}
+
+	.tag-phone {
+
+		display: flex;
+		justify-content: center;
+		/*padding: .5em 0px;*/
+
+	}
+
+</style>
+
 <body class="tk-proxima-nova">
 
 <!--<script>-->
@@ -231,25 +340,9 @@
 
 				<h1 class="GuideStep-number font-amber-a700 mobile-hidden">1</h1>
 
-				<h2 class="GuideStep-title font-amber-a700"><span class="mobile-only">1 - </span>Escolha</h2>
+				<h2 class="GuideStep-title font-amber-a700">1 - Escolha</h2>
 
-				<p class="GuideStep-description">Selecione a quantidade de Pacotes ou Diárias desejadas e clique em "Finalizar pedido"</p>
-
-			</div>
-
-			<div class="GuideStep">
-
-				<div class="GuideStep-icon">
-
-					<span class="icon-edit"></span>
-
-				</div>
-
-				<h1 class="GuideStep-number font-amber-a700 mobile-hidden">2</h1>
-
-				<h2 class="GuideStep-title font-amber-a700"><span class="mobile-only">2 - </span>Ambiente seguro</h2>
-
-				<p class="GuideStep-description">Você será redirecionado ao PagSeguro</p>
+				<p class="GuideStep-description">Selecione abaixo os Pacotes e/ou Diárias desejadas e clique em "Finalizar pedido"</p>
 
 			</div>
 
@@ -261,9 +354,25 @@
 
 				</div>
 
+				<h1 class="GuideStep-number font-amber-a700 mobile-hidden">2</h1>
+
+				<h2 class="GuideStep-title font-amber-a700">2 - Ambiente seguro</h2>
+
+				<p class="GuideStep-description">Você será redirecionado ao PagSeguro</p>
+
+			</div>
+
+			<div class="GuideStep">
+
+				<div class="GuideStep-icon">
+
+					<span class="icon-edit"></span>
+
+				</div>
+
 				<h1 class="GuideStep-number font-amber-a700 mobile-hidden">3</h1>
 
-				<h2 class="GuideStep-title font-amber-a700"><span class="mobile-only">3 - </span>Identifique-se</h2>
+				<h2 class="GuideStep-title font-amber-a700">3 - Identifique-se</h2>
 
 				<p class="GuideStep-description">Insira seu login e senha ou cadastre-se no PagSeguro</p>
 
@@ -279,7 +388,7 @@
 
 				<h1 class="GuideStep-number font-amber-a700 mobile-hidden">4</h1>
 
-				<h2 class="GuideStep-title font-amber-a700"><span class="mobile-only">4 - </span>Pague em até 18x</h2>
+				<h2 class="GuideStep-title font-amber-a700">4 - Pague em até 18x</h2>
 
 				<p class="GuideStep-description">Escolha a forma de pagamento desejada e aguarde a confirmação de pagamento</p>
 
@@ -295,9 +404,10 @@
 
 				<h1 class="GuideStep-number font-amber-a700 mobile-hidden">5</h1>
 
-				<h2 class="GuideStep-title font-amber-a700"><span class="mobile-only">5 - </span>Pronto!</h2>
+				<h2 class="GuideStep-title font-amber-a700">5 - Pronto!</h2>
 
-				<p class="GuideStep-description">Agora é só imprimir o comprovante e trocar ele pela sua pulseira na data indicada nos locais que você encontra aqui</p>
+				<!--<p class="GuideStep-description">Imprima o comprovante e troque-o pela pulseira na portaria do bloco.</p>-->
+				<p class="GuideStep-description">Com comprovante impresso, retire sua pulseira na portaria e <a href="/">confira os locais de retirada</a> dos abadás.</p>
 
 			</div>
 
@@ -772,6 +882,300 @@
 	</div>
 
 </div>
+
+<section class="Points">
+
+	<div class="Points-background"></div>
+	<div class="Points-inner">
+
+		<div class="Points-title">
+			Pontos de Venda
+		</div>
+
+		<div class="Points-list container">
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">Assis</h1>
+				<h2 class="PointTag-local">Cheia de Charme</h2>
+				<p class="PointTag-address">Rua Gonçalves Dias, 50</p>
+				<p class="PointTag-phone">18 3325 1399</p>
+
+			</div>
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">Assis</h1>
+				<h2 class="PointTag-local">Padaria do Alex</h2>
+				<p class="PointTag-address">Av. Armando Salles de Oliveira, 59</p>
+				<p class="PointTag-phone">18 3022-2166</p>
+
+			</div>
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">Cândido Mota</h1>
+				<h2 class="PointTag-local">Wilson Discos</h2>
+				<p class="PointTag-address">Rua Cel. Valêncio Carneiro, 399</p>
+				<p class="PointTag-phone">18 3341 5251</p>
+
+			</div>
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">Palmital</h1>
+				<h2 class="PointTag-local">Cheia de Charme</h2>
+				<p class="PointTag-address">Rua Praça da Matriz, 55</p>
+				<p class="PointTag-phone">18 3351 4515</p>
+
+			</div>
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">PARAGUAÇU PAULISTA</h1>
+				<h2 class="PointTag-local">Solário Piscinas</h2>
+				<p class="PointTag-address">Av. Siqueira Campos, 2222</p>
+				<p class="PointTag-phone">18 3361-5076</p>
+
+			</div>
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">PORTARIA</h1>
+				<h2 class="PointTag-local">Dub's Disco Club</h2>
+				<p class="PointTag-address">Rua XV de Novembro, 29</p>
+				<p class="PointTag-phone">(À partir de 23/02)</p>
+
+			</div>
+
+		</div>
+
+		<div class="Points-title">
+			Pontos de retirada dos abadás
+		</div>
+
+		<div class="Points-list">
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">ASSIS</h1>
+				<h2 class="PointTag-local">Cheia de Charme</h2>
+				<p class="PointTag-address">Rua Gonçalves Dias, 50</p>
+				<p class="PointTag-phone">18 3325 1399</p>
+
+			</div>
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">PALMITAL</h1>
+				<h2 class="PointTag-local">Cheia de Charme</h2>
+				<p class="PointTag-address">Rua Praça da Matriz, 55</p>
+				<p class="PointTag-phone">18 3351 4515</p>
+
+			</div>
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">PORTARIA</h1>
+				<h2 class="PointTag-local">Dub's Disco Club</h2>
+				<p class="PointTag-address">Rua XV de Novembro, 29</p>
+				<p class="PointTag-phone">(À partir de 23/02)</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<!--
+<div class="points">
+
+	<div class="points-wrapper">
+
+		<div class="points-title">
+
+			<h1>Vendas</h1>
+
+		</div>
+
+		<div class="tags">
+
+			<div class="tags-wrapper">
+
+				<div class="tag-city">
+					<h2>ASSIS</h2>
+				</div>
+				<div class="tag-local">
+					<h3>Cheia de Charme</h3>
+				</div>
+				<div class="tag-address">
+					<h4>Rua Gonçalves Dias, 50</h4>
+				</div>
+				<div class="tag-phone">
+					<h5>18 3325 1399</h5>
+				</div>
+
+			</div>
+
+			<div class="tags-wrapper">
+
+				<div class="tag-city">
+					<h2>ASSIS</h2>
+				</div>
+				<div class="tag-local">
+					<h3>Padaria do Alex</h3>
+				</div>
+				<div class="tag-address">
+					<h4>Av. Armando Salles de Oliveira, 59</h4>
+				</div>
+				<div class="tag-phone">
+					<h5>18 3022-2166</h5>
+				</div>
+
+			</div>
+
+			<div class="tags-wrapper">
+
+				<div class="tag-city">
+					<h2>CÂNDIDO MOTA</h2>
+				</div>
+				<div class="tag-local">
+					<h3>Wilson Discos</h3>
+				</div>
+				<div class="tag-address">
+					<h4>Rua Cel. Valêncio Carneiro, 399</h4>
+				</div>
+				<div class="tag-phone">
+					<h5>18 3341 5251</h5>
+				</div>
+
+			</div>
+
+			<div class="tags-wrapper">
+
+				<div class="tag-city">
+					<h2>PALMITAL</h2>
+				</div>
+				<div class="tag-local">
+					<h3>Cheia de Charme</h3>
+				</div>
+				<div class="tag-address">
+					<h4>Rua Praça da Matriz, 55</h4>
+				</div>
+				<div class="tag-phone">
+					<h5>18 3351 4515</h5>
+				</div>
+
+			</div>
+
+			<div class="tags-wrapper">
+
+				<div class="tag-city">
+					<h2>PARAGUAÇU PAULISTA</h2>
+				</div>
+				<div class="tag-local">
+					<h3>Solário Piscinas</h3>
+				</div>
+				<div class="tag-address">
+					<h4>Av. Siqueira Campos, 2222</h4>
+				</div>
+				<div class="tag-phone">
+					<h5>18 3361-5076</h5>
+				</div>
+
+			</div>
+
+			<div class="tags-wrapper">
+
+				<div class="tag-city">
+					<h2>PORTARIA</h2>
+				</div>
+				<div class="tag-local">
+					<h3>Dub's Disco Club</h3>
+				</div>
+				<div class="tag-address">
+					<h4>Rua XV de Novembro, 29</h4>
+				</div>
+				<div class="tag-phone">
+					<h5>(À partir de 23/02)</h5>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="points-wrapper">
+
+		<div class="points-title">
+
+			<h1>Abadás</h1>
+
+		</div>
+
+		<div class="tags">
+
+			<div class="tags-wrapper">
+
+				<div class="tag-city">
+					<h2>ASSIS</h2>
+				</div>
+				<div class="tag-local">
+					<h3>Cheia de Charme</h3>
+				</div>
+				<div class="tag-address">
+					<h4>Rua Gonçalves Dias, 50</h4>
+				</div>
+				<div class="tag-phone">
+					<h5>18 3325 1399</h5>
+				</div>
+
+			</div>
+
+			<div class="tags-wrapper">
+
+				<div class="tag-city">
+					<h2>PALMITAL</h2>
+				</div>
+				<div class="tag-local">
+					<h3>Cheia de Charme</h3>
+				</div>
+				<div class="tag-address">
+					<h4>Rua Praça da Matriz, 55</h4>
+				</div>
+				<div class="tag-phone">
+					<h5>18 3351 4515</h5>
+				</div>
+
+			</div>
+
+			<div class="tags-wrapper">
+
+				<div class="tag-city">
+					<h2>PORTARIA</h2>
+				</div>
+				<div class="tag-local">
+					<h3>Dub's Disco Club</h3>
+				</div>
+				<div class="tag-address">
+					<h4>Rua XV de Novembro, 29</h4>
+				</div>
+				<div class="tag-phone">
+					<h5>(À partir de 23/02)</h5>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+-->
+
 
 <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
 <script>

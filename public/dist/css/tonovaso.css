@@ -316,7 +316,7 @@ p {
   display: none;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 60em) {
   /* Aside */
 
   .Aside {
@@ -912,19 +912,18 @@ a.Button {
 /* Guide step */
 
 .GuideStep {
-  -webkit-align-items: center;
-  align-items: center;
-  /*max-width: 20%;*/
-  text-align: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column;
-  flex-flow: column;
-  -webkit-justify-content: center;
-  justify-content: center;
+  /*-webkit-align-items: center;*/
+  /*align-items: center;*/
+  /*text-align: center;*/
+  /*display: -webkit-box;*/
+  /*display: -moz-box;*/
+  /*display: -ms-flexbox;*/
+  /*display: -webkit-flex;*/
+  /*display: flex;*/
+  /*-webkit-flex-flow: column;*/
+  /*flex-flow: column;*/
+  /*-webkit-justify-content: center;*/
+  /*justify-content: center;*/
   margin-bottom: .5em;
 }
 
@@ -935,11 +934,11 @@ a.Button {
 }
 
 .GuideStep-icon {
-  /*order: 3;*/
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 h1.GuideStep-number {
+  display: none;
   font-size: 2em;
 }
 
@@ -950,6 +949,27 @@ h2.GuideStep-title {
 p.GuideStep-description {
   font-size: .825em;
   padding: 0 1em;
+}
+
+@media (min-width: 30em) {
+  .GuideStep {
+    flex: 0 0 33.33333%;
+  }
+
+  p.GuideStep-description {
+    font-size: 1em;
+    line-height: 1em;
+  }
+}
+
+@media (min-width: 60em) {
+  .GuideStep {
+    flex: 0 0 20%;
+  }
+
+  p.GuideStep-description {
+    font-weight: 100;
+  }
 }
 /* Guide */
 
@@ -964,11 +984,13 @@ p.GuideStep-description {
 }
 
 .Guide-inner {
-  padding: 1em 0;
-  position: relative;
-  right: 0;
-  top: 0;
-  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 .Guide-list {
@@ -983,7 +1005,24 @@ p.GuideStep-description {
   flex-flow: column;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  padding: 2.5em 0 2em 0;
   text-align: center;
+}
+
+@media (min-width: 30em) {
+  .Guide-list {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 48em) {
+  .Guide-list {
+    -webkit-align-items: baseline;
+    align-items: baseline;
+  }
 }
 /* Header */
 
@@ -2020,6 +2059,116 @@ p.GuideStep-description {
     height: 45em;
   }
 }
+/* Point tag */
+
+.PointTag {
+  /*height: 190px;*/
+  /*width: 320px;*/
+  /*margin: 0;*/
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.PointTag h1,
+.PointTag h2,
+.PointTag h3 {
+  font-family: 'tenby-four', 'proxima-nova', sans-serif !important;
+}
+
+h1.PointTag-city {
+  color: #3e2723;
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: .07em;
+  padding: 1em 0 .5em 0;
+}
+
+h2.PointTag-local {
+  color: #ffa000;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: .2em 0;
+}
+
+.PointTag p {
+  color: #3e2723;
+  font-size: .875em;
+  line-height: .975em;
+  font-weight: 600;
+}
+
+@media (min-width: 48em) {
+  .PointTag {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 60em) {
+  .PointTag {
+    flex: 0 0 33.333333%;
+  }
+}
+/* Points */
+
+/* Points background */
+
+.Points-background {
+  height: 100%;
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.Points-inner {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  text-align: center;
+}
+
+.Points-title {
+  background: #bdbdbd;
+  font-size: 3em;
+  padding: .5em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.Points-list {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /*padding: 2.5em 0 2em 0;*/
+  text-align: center;
+}
 /* Select */
 
 .Select {
@@ -2276,6 +2425,12 @@ p.GuideStep-description {
   .TicketsHeader img {
     height: 6em;
     margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 48em) {
+  .TicketsHeader p {
+    font-size: 1em;
   }
 }
 /* Tickets Option */
