@@ -215,7 +215,7 @@
 
 </header>
 
-<section class="Guide grey-50 font-brown-900">
+<section id="como-comprar" class="Guide grey-50 font-brown-900">
 
 	<div class="Guide-background"></div>
 	<div class="Guide-inner container">
@@ -234,7 +234,7 @@
 
 				<h2 class="GuideStep-title font-amber-a700">1 - Escolha</h2>
 
-				<p class="GuideStep-description">Selecione abaixo os Pacotes e/ou Diárias desejadas e clique em "Finalizar pedido"</p>
+				<p class="GuideStep-description"><a id="trigger-tickets" href="#tickets">Selecione abaixo</a> os Pacotes e/ou Diárias desejadas e clique em "Finalizar pedido"</p>
 
 			</div>
 
@@ -951,6 +951,16 @@
 
 	}
 
+	var ticketsAnchor = new Anchor(document.getElementById('tickets'), {
+		duration: 600,
+		easing: 'easeInQuad',
+		scrollOffset: -25
+	});
+
+	document.getElementById('trigger-tickets').addEventListener('click', function (e) {
+		e.preventDefault();
+		ticketsAnchor.push();
+	});
 
 </script>
 
