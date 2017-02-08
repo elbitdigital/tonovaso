@@ -11,7 +11,7 @@
 	display: flex;
 	-webkit-flex-flow: column;
 	flex-flow: column;
-	padding: 1.5em 0 3em;
+	padding: 1em 0;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
@@ -38,4 +38,12 @@
 	position: relative;
 	top: 0;
 	width: 100%;
+}
+
+@media (min-width: 48em) {
+
+	.Lineup {
+		padding: 2.25em 0;
+	}
+
 }

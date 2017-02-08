@@ -2,17 +2,12 @@
 /* Lineup Artist Resume */
 
 .LineupArtistResume {
-	cursor: default;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
 	width: 100%;
 	padding: 1em;
-	height: 4.5em;
+	position: relative;
 }
 
+.LineupArtistResume p,
 .LineupArtistResume span {
 	color: #ffffff;
 	-webkit-transition: all .4s;
@@ -22,26 +17,36 @@
 	transition: all .4s;
 }
 
+.LineupArtistResume:hover p,
 .LineupArtistResume:hover span {
 	color: #40c4ff;
 }
 
-.LineupArtistResume-date {
-	-webkit-align-items: center;
-	align-items: center;
-	border-right: 2px solid #ffffff;
-	padding: 0 .375em;
+.LineupArtistResume-inner {
+	-webkit-align-items: stretch;
+	align-items: stretch;
+	cursor: default;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	position: relative;
+}
+
+.LineupArtistResume-date {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex: 2;
 	-webkit-justify-content: center;
 	justify-content: center;
-	height: 100%;
-	flex: 1;
-	-webkit-flex-direction: column;
-	flex-direction: column;
+	padding: 0 .375em;
+	min-height: 3em;
 }
 
 .LineupArtistResume-date span {
@@ -50,6 +55,8 @@
 }
 
 .LineupArtistResume-artist {
+	border-left: 2px solid #ffffff;
+	border-right: 2px solid #ffffff;
 	-webkit-align-items: center;
 	align-items: center;
 	display: -webkit-box;
@@ -57,23 +64,47 @@
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	flex: 5;
+	-webkit-flex-flow: column;
+	flex-flow: column;
 	-webkit-justify-content: center;
 	justify-content: center;
-	flex: 5;
+	padding: 0 .375em;
 }
 
-.LineupArtistResume-artist span {
+.LineupArtistResume-artist p {
+	margin-bottom: 0;
 	font-weight: 900;
 	font-size: .875em;
 	text-align: center;
 }
 
-.LineupArtist--mcMigue .LineupArtistResume-artist span {
+.LineupArtist--zoomBoxx .LineupArtistResume-artist p {
 	font-size: 1em;
 }
 
+.LineupArtist--mcMigue .LineupArtistResume-artist p {
+	font-size: 1.125em;
+}
+
+.LineupArtist--eletronicSunsect .LineupArtistResume-artist p {
+	font-size: .875em;
+}
+
+.LineupArtist--pagodeDoNova .LineupArtistResume-artist p {
+	font-size: .75em;
+}
+
+.LineupArtist--djRenatinho  .LineupArtistResume-artist p {
+	font-size: .875em;
+}
+
+.LineupArtistResume-artist span {
+	font-size: .75em;
+	font-weight: 700;
+}
+
 .LineupArtistResume-misc {
-	border-left: 2px solid #ffffff;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -128,15 +159,7 @@
 	/* Lineup Artist Resume */
 
 	.LineupArtistResume {
-		cursor: default;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		width: 100%;
 		max-width: 48em;
-		padding: 1em;
 		height: 6em;
 	}
 
@@ -154,21 +177,8 @@
 	}
 
 	.LineupArtistResume-date {
-		-webkit-align-items: center;
-		align-items: center;
-		border-right: 2px solid #ffffff;
-		padding: 0 1em;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-justify-content: center;
-		justify-content: center;
-		height: 100%;
 		flex: 1;
-		-webkit-flex-direction: column;
-		flex-direction: column;
+		padding: 0 1em;
 	}
 
 	.LineupArtistResume-date span {
@@ -177,63 +187,37 @@
 	}
 
 	.LineupArtistResume-artist {
-		-webkit-align-items: center;
-		align-items: center;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-justify-content: center;
-		justify-content: center;
 		flex: 5;
 	}
 
-	.LineupArtistResume-artist span {
-		font-weight: 900;
+	.LineupArtistResume-artist p {
 		font-size: 1.5em;
 	}
 
-	.LineupArtist--pagodeDoNova .LineupArtistResume-artist span {
-		font-size: 1.3125em;
+	.LineupArtist--zoomBoxx .LineupArtistResume-artist p {
+		font-size: 1.5em;
 	}
 
-	.LineupArtist--djRenatinho  .LineupArtistResume-artist span {
-		font-size: 1.3125em;
-	}
-
-	.LineupArtist--mcMigue .LineupArtistResume-artist span {
+	.LineupArtist--mcMigue .LineupArtistResume-artist p {
 		font-size: 1.75em;
 	}
 
+	.LineupArtist--eletronicSunsect .LineupArtistResume-artist p {
+		font-size: 1.5em;
+	}
+
+	.LineupArtist--pagodeDoNova .LineupArtistResume-artist p {
+		font-size: 1.3125em;
+	}
+
+	.LineupArtist--djRenatinho  .LineupArtistResume-artist p {
+		font-size: 1.3125em;
+	}
+
 	.LineupArtistResume-misc {
-		border-left: 2px solid #ffffff;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-justify-content: center;
-		justify-content: center;
 		flex: 3;
 	}
 
-	.LineupArtistResume-misc span {
-		font-weight: 700;
-	}
-
-	.LineupArtistResume-misc ul {
-		-webkit-align-items: center;
-		align-items: center;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-justify-content: center;
-		justify-content: center;
-		width: 100%;
-	}
 
 	.LineupArtistResume-misc ul li {
 		margin-right: 1em;
@@ -241,15 +225,6 @@
 
 	.LineupArtistResume-misc ul li:last-child {
 		margin-right: 0;
-	}
-
-	.LineupArtistResume .icon-keyboard_arrow_up,
-	.is-showingMore .LineupArtistResume .icon-keyboard_arrow_down {
-		display: none;
-	}
-
-	.is-showingMore .LineupArtistResume .icon-keyboard_arrow_up {
-		display: block;
 	}
 
 }
