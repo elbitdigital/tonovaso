@@ -41,6 +41,14 @@ p.GuideStep-description {
 	padding: 0 1em;
 }
 
+.GuideStep-description a {
+	color: #2196f3;
+}
+
+.GuideStep-description a:hover {
+	color: #1565c0;
+}
+
 @media (min-width: 30em) {
 
 	.GuideStep {

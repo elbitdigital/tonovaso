@@ -295,7 +295,8 @@ gulp.task('serve', function () {
 				"/20-anos": "./public/20-anos.html",
 				"/contato": "./public/contato.html"
 			}
-		}
+		},
+		ghostMode: false
 	});
 
 	gulp.watch(source.index.content).on('change', browserSync.reload);

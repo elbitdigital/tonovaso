@@ -2,11 +2,11 @@
 /* Tickets */
 
 .Tickets {
-	padding-bottom: 8em;
+	padding-bottom: 3em;
 }
 
 .Tickets.is-empty {
-	padding-bottom: 6em;
+	padding-bottom: 3em;
 }
 
 .Tickets-inner {

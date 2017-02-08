@@ -819,6 +819,10 @@ a.Button {
   text-align: center;
 }
 
+.Footer.Footer--tickets {
+  padding: 1.5em 0 8em 0;
+}
+
 .Footer p {
   color: #eeeeee;
   font-size: .875em;
@@ -951,6 +955,14 @@ p.GuideStep-description {
   padding: 0 1em;
 }
 
+.GuideStep-description a {
+  color: #2196f3;
+}
+
+.GuideStep-description a:hover {
+  color: #1565c0;
+}
+
 @media (min-width: 30em) {
   .GuideStep {
     flex: 0 0 33.33333%;
@@ -972,6 +984,10 @@ p.GuideStep-description {
   }
 }
 /* Guide */
+
+.Guide {
+  margin-bottom: 2em;
+}
 
 /* Guide background */
 
@@ -2062,9 +2078,6 @@ p.GuideStep-description {
 /* Point tag */
 
 .PointTag {
-  /*height: 190px;*/
-  /*width: 320px;*/
-  /*margin: 0;*/
   -webkit-align-items: center;
   align-items: center;
   display: -webkit-box;
@@ -2076,6 +2089,7 @@ p.GuideStep-description {
   flex-flow: column;
   -webkit-justify-content: center;
   justify-content: center;
+  margin-bottom: 1em;
   text-align: center;
   width: 100%;
 }
@@ -2087,22 +2101,21 @@ p.GuideStep-description {
 }
 
 h1.PointTag-city {
-  color: #3e2723;
   font-weight: 700;
   font-size: 1.5em;
   letter-spacing: .07em;
-  padding: 1em 0 .5em 0;
+  padding: .25em 0;
+  text-transform: uppercase;
 }
 
 h2.PointTag-local {
-  color: #ffa000;
   font-weight: 600;
   font-size: 1.5em;
   padding: .2em 0;
+  margin-bottom: 0;
 }
 
 .PointTag p {
-  color: #3e2723;
   font-size: .875em;
   line-height: .975em;
   font-weight: 600;
@@ -2120,6 +2133,10 @@ h2.PointTag-local {
   }
 }
 /* Points */
+
+.Points {
+  margin-bottom: 2em;
+}
 
 /* Points background */
 
@@ -2147,10 +2164,13 @@ h2.PointTag-local {
 }
 
 .Points-title {
-  background: #bdbdbd;
-  font-size: 3em;
-  padding: .5em 0;
+  font-family: 'tenby-four', 'proxima-nova', sans-serif !important;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: .5em;
+  padding: .25em 0;
   text-align: center;
+  text-transform: uppercase;
   width: 100%;
 }
 
@@ -2166,7 +2186,7 @@ h2.PointTag-local {
   flex-flow: row wrap;
   -webkit-justify-content: center;
   justify-content: center;
-  /*padding: 2.5em 0 2em 0;*/
+  margin-bottom: 1.5em;
   text-align: center;
 }
 /* Select */
@@ -2267,11 +2287,12 @@ h2.PointTag-local {
 /* Tickets Checkout */
 
 .TicketsCheckout {
-  position: fixed;
+  background-color: #ffffff;
   bottom: 0;
-  left: 0;
-  width: 100%;
   box-shadow: 0 2px 10px 0 rgba(0,0,0,0.25);
+  left: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .TicketsCheckout-inner {
@@ -2562,11 +2583,11 @@ h2.PointTag-local {
 /* Tickets */
 
 .Tickets {
-  padding-bottom: 8em;
+  padding-bottom: 3em;
 }
 
 .Tickets.is-empty {
-  padding-bottom: 6em;
+  padding-bottom: 3em;
 }
 
 .Tickets-inner {
