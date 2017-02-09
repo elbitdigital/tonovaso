@@ -15,6 +15,8 @@
 	/*-webkit-justify-content: center;*/
 	/*justify-content: center;*/
 	margin-bottom: .5em;
+	min-width: 15em;
+	/*width: 100%;*/
 }
 
 .GuideStep h1,
@@ -24,7 +26,7 @@
 }
 
 .GuideStep-icon {
-	font-size: 2em;
+	font-size: 2.25em;
 }
 
 h1.GuideStep-number {
@@ -66,6 +68,7 @@ p.GuideStep-description {
 
 	.GuideStep {
 		flex: 0 0 20%;
+		min-width: 0;
 	}
 
 	p.GuideStep-description {

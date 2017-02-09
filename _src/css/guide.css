@@ -33,12 +33,13 @@
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: column;
-	flex-flow: column;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
-	padding: 2.5em 0 2em 0;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	padding: .5em 0;
 	text-align: center;
+	overflow-x: scroll;
 }
 
 @media (min-width: 30em) {
@@ -57,6 +58,8 @@
 	.Guide-list {
 		-webkit-align-items: baseline;
 		align-items: baseline;
+		overflow: hidden;
+		padding: 2.5em 0 2em 0;
 	}
 
 }

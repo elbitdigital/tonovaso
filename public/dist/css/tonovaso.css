@@ -947,6 +947,8 @@ a.Button {
   /*-webkit-justify-content: center;*/
   /*justify-content: center;*/
   margin-bottom: .5em;
+  min-width: 15em;
+  /*width: 100%;*/
 }
 
 .GuideStep h1,
@@ -956,7 +958,7 @@ a.Button {
 }
 
 .GuideStep-icon {
-  font-size: 2em;
+  font-size: 2.25em;
 }
 
 h1.GuideStep-number {
@@ -995,6 +997,7 @@ p.GuideStep-description {
 @media (min-width: 60em) {
   .GuideStep {
     flex: 0 0 20%;
+    min-width: 0;
   }
 
   p.GuideStep-description {
@@ -1035,12 +1038,13 @@ p.GuideStep-description {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: column;
-  flex-flow: column;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  padding: 2.5em 0 2em 0;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  padding: .5em 0;
   text-align: center;
+  overflow-x: scroll;
 }
 
 @media (min-width: 30em) {
@@ -1056,6 +1060,8 @@ p.GuideStep-description {
   .Guide-list {
     -webkit-align-items: baseline;
     align-items: baseline;
+    overflow: hidden;
+    padding: 2.5em 0 2em 0;
   }
 }
 /* Header */
