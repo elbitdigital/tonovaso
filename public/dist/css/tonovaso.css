@@ -1587,9 +1587,13 @@ p.GuideStep-description {
 /* Lineup Artist inner */
 
 .LineupArtist-inner {
+  -webkit-align-items: center;
+  align-items: center;
   display: none;
   -webkit-flex-flow: column;
   flex-flow: column;
+  width: 100%;
+  max-width: 72em;
 }
 
 .is-showingMore .LineupArtist-inner {
@@ -1742,10 +1746,21 @@ p.GuideStep-description {
     padding-bottom: 3em;
   }
 
+  .LineupArtist--eletronicSunset .LineupArtist-inner {
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
   /* Lineup Artist image */
 
   .LineupArtist-figure {
     height: 36em;
+  }
+
+  .LineupArtist--eletronicSunset .LineupArtist-figure {
+    height: 21em;
   }
 
   /* Lineup Artist image figcaption element */
@@ -1756,10 +1771,18 @@ p.GuideStep-description {
     padding-left: 3em;
   }
 
+  .LineupArtist--eletronicSunset .LineupArtist-figure figcaption {
+    padding-left: 2.25em;
+  }
+
   .LineupArtist-figure figcaption > span {
     font-size: 3.75em;
     font-weight: 800;
     line-height: .96;
+  }
+
+  .LineupArtist--eletronicSunset .LineupArtist-figure figcaption > span {
+    font-size: 2.25em;
   }
 
   .LineupArtist--pagodeDoNova .LineupArtist-figure figcaption > span {

@@ -72,9 +72,14 @@ source.images.logo = {
 	location: source.images.location + 'logo/'
 };
 
-source.images.artists= {
+source.images.artists = {
 	content: '*.*',
 	location: source.images.location + 'artists/'
+};
+
+source.images.artistsEletronicSunset = {
+	content: '*.*',
+	location: source.images.location + 'artistsEletronicSunset/'
 };
 
 source.images.lineup = {
@@ -125,9 +130,14 @@ dist.images.logo = {
 	location: dist.images.location + 'logo/'
 };
 
-dist.images.artists= {
+dist.images.artists = {
 	content: '*.*',
 	location: dist.images.location + 'artists/'
+};
+
+dist.images.artistsEletronicSunset = {
+	content: '*.*',
+	location: dist.images.location + 'artistsEletronicSunset/'
 };
 
 dist.images.lineup = {
@@ -234,6 +244,23 @@ gulp.task('resizeArtists', function () {
 			upscale : false
 		}))
 		.pipe(gulp.dest(dist.images.artists.location + 'small/'));
+});
+
+gulp.task('resizeArtistsEletronicSunset', function () {
+	gulp.src(source.images.artistsEletronicSunset.location + source.images.artistsEletronicSunset.content)
+		.pipe(imageResize({
+			height : 320,
+			upscale : false
+		}))
+		.pipe(tinypng(tinypngToken))
+		.pipe(gulp.dest(dist.images.artistsEletronicSunset.location));
+	gulp.src(source.images.artistsEletronicSunset.location + source.images.artistsEletronicSunset.content)
+		.pipe(imageResize({
+			height : 180,
+			upscale : false
+		}))
+		.pipe(tinypng(tinypngToken))
+		.pipe(gulp.dest(dist.images.artistsEletronicSunset.location + 'small/'));
 });
 
 gulp.task('resizeLineup', function () {
