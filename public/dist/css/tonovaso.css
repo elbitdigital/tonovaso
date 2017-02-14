@@ -1587,8 +1587,6 @@ p.GuideStep-description {
 /* Lineup Artist inner */
 
 .LineupArtist-inner {
-  -webkit-align-items: center;
-  align-items: center;
   display: none;
   -webkit-flex-flow: column;
   flex-flow: column;
@@ -1622,6 +1620,10 @@ p.GuideStep-description {
 
 .LineupArtist--mcMigue .LineupArtist-figure {
   padding-left: 0;
+}
+
+.LineupArtist--eletronicSunset .LineupArtist-figure {
+  padding-left: 3em;
 }
 
 .LineupArtist--pagodeDoNova .LineupArtist-figure {
@@ -1674,6 +1676,11 @@ p.GuideStep-description {
 .LineupArtist--mcMigue .LineupArtist-figure figcaption {
   left: 40%;
   padding-bottom: 1em;
+}
+
+.LineupArtist--eletronicSunset .LineupArtist-figure figcaption {
+  left: 40%;
+  padding-bottom: 1.5em;
 }
 
 .LineupArtist--pagodeDoNova .LineupArtist-figure figcaption {
