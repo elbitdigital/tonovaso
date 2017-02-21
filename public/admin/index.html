@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="roboto">
+<meta charset="UTF-8">
+<title>TnV - Vendas</title>
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<script src="../dist/js/villa.min.js"></script>
+<link rel="stylesheet" href="../dist/css/villa.min.css"/>
+<link rel="stylesheet" href="../dist/css/tonovaso.css"/>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="../dist/css/material-colors.css"/>
+<link rel="stylesheet" type="text/css" href="../dist/css/villa-cross.min.css"/>
+<script src="../dist/js/html5shiv.js"></script>
+<script src="../dist/js/html5shiv-printshiv.js"></script>
+<script src="../dist/js/classList.min.js"></script>
+<![endif]-->
+
+<style>
+
+	body {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: column;
+		flex-flow: column;
+		padding: 0 1em;
+	}
+
+	.OrderItem {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: column;
+		flex-flow: column;
+		padding: 1em 0;
+		width: 100%;
+	}
+
+	.OrderItem input {
+		border: solid 1px transparent;
+		padding: .5em;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+	}
+
+	.OrderItem input.OrderItem-clientNameField {
+		font-size: 1.125em;
+		font-weight: 700;
+	}
+
+	.OrderItem input:focus {
+		border: solid 1px #bdbdbd;
+	}
+
+</style>
+
+<body>
+
+<button onclick="getXMLandSyncPagSeguroData();">Sincronizar com PagSeguro</button>
+
+<div id="orderList" class="OrderList"></div>
+<span id="orderList-count"></span>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="../dist/js/xml2json.min.js"></script>
+<script src="../dist/js/moment.js"></script>
+<script src="../dist/js/moment-with-locales.js"></script>
+
+<script>
+
+	/* Order List */
+
+	var OrderList = (function () {
+
+		/**
+		 * Order List constructor
+		 * @constructor
+		 */
+		function OrderList(element, database) {
+
+			this.element = element;
+			this.database = database;
+
+			// bloqueia o build enquanto o delay de 3000 milisegundos não passar
+			this.locked = true;
+
+			// global list
+			this.list = [];
+
+		}
+
+		OrderList.prototype.build = function () {
+
+			if (!this.locked) {
+
+				var self = this;
+
+				function appendOrderItem(orderItemElement) {
+
+					self.element.appendChild(orderItemElement);
+
+				}
+
+				for (var i = this.list.length; i--; )
+					// permite apenas transações com estado
+					if (this.list[i].status == 'Aprovada')
+						appendOrderItem(this.list[i].element);
+
+			}
+
+		};
+
+		OrderList.prototype.isInList = function (orderItem) {
+
+			var filterItemReference = this.list.filter(function (orderListItem) {
+
+				return orderListItem.reference == orderItem.reference;
+
+			});
+
+			return !!filterItemReference.length;
+
+		};
+
+		OrderList.prototype.push = function (orderItem) {
+
+			// check if order item is on order list
+			if (!this.isInList(orderItem))
+				this.list.push(orderItem);
+
+		};
+
+		OrderList.prototype.start = function () {
+
+			var self = this;
+
+			this.database.ref('transactions/').on('child_added', function (snap) {
+
+				// create the order item object
+				var orderItem = new OrderItem(snap.val());
+
+				// push order item object to order list
+				self.push(orderItem);
+
+				document.getElementById('orderList-count').innerText = self.list.length + '';
+
+				if (!self.locked)
+					self.build();
+
+				if (!snap.val().reference)
+					console.log(snap.key);
+
+			});
+
+			setTimeout(function () {
+
+				self.locked = false;
+				self.build();
+
+			}, 3000);
+
+		};
+
+		return OrderList;
+
+	})();
+
+</script>
+
+<script>
+
+	/* Order Item */
+
+	var OrderItem = (function () {
+
+		/**
+		 * Order Item constructor
+		 * @constructor
+		 */
+		function OrderItem(data, database) {
+
+			if (data) {
+
+				this.clientName = data.clientName;
+				this.code = data.code;
+				this.date = data.date;
+				this.items = data.items;
+				this.reference = data.reference;
+				this.status = data.status;
+				this.time = data.time;
+
+				this.createElement();
+
+			}
+
+		}
+
+		OrderItem.prototype.setClientName = function (clientName) {
+
+			this.clientName = clientName;
+			database.ref('transactions/' + this.reference).child('clientName').set(this.clientName);
+
+		};
+
+		OrderItem.prototype.setCode = function (code) {
+
+			this.code = code;
+			database.ref('transactions/' + this.reference).child('code').set(this.code);
+
+		};
+
+		OrderItem.prototype.setDate = function (date) {
+
+			this.date = moment(date).format();
+			database.ref('transactions/' + this.reference).child('date').set(this.date);
+
+		};
+
+		OrderItem.prototype.setStatus = function (status) {
+
+			this.status = status;
+			database.ref('transactions/' + this.reference).child('status').set(this.status);
+
+		};
+
+		OrderItem.prototype.setTime = function (time) {
+
+			this.time = time;
+			database.ref('transactions/' + this.reference).child('time').set(this.time);
+
+		};
+
+		OrderItem.prototype.createElement = function () {
+
+			this.element = document.createElement('div');
+			this.element.className = 'OrderItem';
+			this.element.dataset.itemReferenceId = this.reference;
+
+			// Reference Label element
+			this.referenceLabelElement = document.createElement('span');
+			this.referenceLabelElement.className = 'OrderItem-referenceLabel';
+			this.referenceLabelElement.innerText = this.reference + ' (' + this.status + ')';
+			this.referenceLabelElement.dataset.itemReferenceId = this.reference;
+
+			this.element.appendChild(this.referenceLabelElement);
+
+			// Client Name Label element
+			this.clientNameLabelElement = document.createElement('input');
+			this.clientNameLabelElement.className = 'OrderItem-clientNameField';
+			this.clientNameLabelElement.placeholder = 'Nome (titular)';
+			this.clientNameLabelElement.value = this.clientName;
+			this.clientNameLabelElement.dataset.itemReferenceId = this.reference;
+			this.clientNameLabelElement.addEventListener('input', function () {
+
+				if (this.dataset.itemReferenceId) {
+
+					var value = this.value.length ? this.value : null;
+
+					database.ref('transactions/' + this.dataset.itemReferenceId).child('clientName').set(value);
+
+				}
+
+			});
+
+			this.element.appendChild(this.clientNameLabelElement);
+
+			// Code ID Input element
+			this.codeFieldElement = document.createElement('input');
+			this.codeFieldElement.className = 'OrderItem-codeField';
+			this.codeFieldElement.placeholder = 'Código de Pagamento';
+			this.codeFieldElement.value = this.code || '';
+			this.codeFieldElement.dataset.itemReferenceId = this.reference;
+			this.codeFieldElement.addEventListener('input', function () {
+
+				if (this.dataset.itemReferenceId) {
+
+					var value = this.value.length ? this.value : null;
+
+					database.ref('transactions/' + this.dataset.itemReferenceId).child('code').set(value);
+
+				}
+
+			});
+
+			this.element.appendChild(this.codeFieldElement);
+
+		};
+
+		return OrderItem;
+
+	})();
+
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyBK8q18qHSR0toQutQGp_1wAcfzyfC0pEI",
+		authDomain: "dalia-tonovaso-com-br.firebaseapp.com",
+		databaseURL: "https://dalia-tonovaso-com-br.firebaseio.com",
+		storageBucket: "dalia-tonovaso-com-br.appspot.com",
+		messagingSenderId: "737535874060"
+	};
+	firebase.initializeApp(config);
+</script>
+
+<script>
+
+	moment.locale('pt-br');
+	console.log(moment().format('LLLL'));
+
+	var database = firebase.database();
+
+	var orderList = new OrderList(document.getElementById('orderList'), database);
+	orderList.start();
+
+	function syncPagSeguroData(pagSeguroData) {
+
+		var changeCount = 0;
+
+		if (pagSeguroData) {
+
+			console.log(pagSeguroData.length);
+
+			for (var i = pagSeguroData.length; i--; ) {
+
+				var pagSeguroDataItem = pagSeguroData[i];
+
+				var filteredOrderListItems = orderList.list.filter(function (orderItem) {
+
+					if (orderItem.reference == pagSeguroDataItem['Ref_Transacao'])
+						return orderItem;
+
+				});
+
+				if (filteredOrderListItems.length > 0) {
+
+					var changed = false;
+
+					var orderListItem = filteredOrderListItems[0];
+
+					// atualiza o código
+					if (orderListItem.code != pagSeguroDataItem['Transacao_ID'])  {
+
+						// update
+						orderListItem.setCode(pagSeguroDataItem['Transacao_ID']);
+
+						// significa que houve alguma atualização
+						changed = true;
+
+					}
+
+					// atualiza o nome
+					if (!orderListItem.clientName) {
+
+						orderListItem.setClientName(pagSeguroDataItem['Cliente_Nome']);
+
+						// significa que houve alguma atualização
+						changed = true;
+
+					}
+
+					// atualiza a data
+					if (orderListItem.date != pagSeguroDataItem['Data_Transacao']) {
+
+						var date = moment(pagSeguroDataItem['Data_Transacao'], 'DD/MM/YYYY HH:mm:ss');
+						orderListItem.setDate(date);
+
+						// significa que houve alguma atualização
+						changed = true;
+
+					}
+
+					// atualiza o status
+					if (orderListItem.date != pagSeguroDataItem['Status']) {
+
+						orderListItem.setStatus(pagSeguroDataItem['Status']);
+
+						// significa que houve alguma atualização
+						changed = true;
+
+					}
+
+					if (changed)
+						changeCount++;
+
+				} else {
+
+					console.log(pagSeguroDataItem['Ref_Transacao']);
+
+				}
+
+			}
+
+			if (changeCount)
+				console.log(changeCount + ' items de pedido foram atualizados com sucesso! :)');
+
+		} else {
+
+			alert('O XML está vazio');
+
+		}
+
+	}
+
+	function getXMLandSyncPagSeguroData() {
+
+		if (self.fetch) {
+
+			fetch('data/PagSeguro_2017-02-20_22-19-01.xml')
+					.then(function (response) {
+
+						return response.text()
+
+					}).then(function (xmlString) {
+
+						try {
+
+							var x2js = new X2JS();
+
+							syncPagSeguroData(x2js.xml_str2json(xmlString).NewDataSet.Table);
+
+						} catch (e) {
+
+//							alert('Algum erro com o XML, teste outro arquivo');
+
+						}
+
+					});
+
+		} else {
+
+			alert('Não é possível sincronizar no seu navegador, utilize o Firefox ou Chrome');
+
+		}
+
+	}
+
+</script>
+
+</body>
+
+</html>
