@@ -320,7 +320,11 @@ gulp.task('serve', function () {
 				"/tickets": "./public/tickets.html",
 				"/ingressos": "./public/tickets.html",
 				"/20-anos": "./public/20-anos.html",
-				"/contato": "./public/contato.html"
+				"/contato": "./public/contato.html",
+				"/administracao/acesso": "./public/administracao/acesso.html",
+				"/administracao/retirada": "./public/administracao/retirada.html",
+				"/administracao/homologacao": "./public/administracao/homologacao.html",
+				"/administracao/confirmacao": "./public/administracao/confirmacao.html"
 			}
 		},
 		ghostMode: false
