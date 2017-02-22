@@ -1,0 +1,113 @@
+
+.OrderItem {
+	background-color: #fafafa;
+	border-radius: 2px;
+	-webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .3);
+	-moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .3);
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .3);
+	color: #212121;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	margin-bottom: 1em;
+	padding: 1em;
+	-webkit-transition: background .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out;
+	-ms-transition: background .2s ease-in-out;
+	-o-transition: background .2s ease-in-out;
+	transition: background .2s ease-in-out;
+	width: 100%;
+}
+
+.OrderItem:hover {
+	background-color: #ffffff;
+}
+
+.OrderItem input {
+	border: solid 1px transparent;
+	font-size: .75em;
+	background-color: transparent;
+	margin-bottom: .5em;
+	padding: .5em;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	width: 100%;
+}
+
+.OrderItem input.OrderItem-clientNameField {
+	cursor: default;
+	font-size: 1em;
+	padding: .5em .375em;
+	font-weight: 700;
+}
+
+.OrderItem input:focus,
+.OrderItem input:hover {
+	/*background-color: #ffffff;*/
+	border: solid 1px #e0e0e0;
+}
+
+.OrderItem input:focus {
+	cursor: text;
+	border: solid 1px #bdbdbd;
+	padding: .5em;
+}
+
+.OrderItem-referenceLabel {
+	margin-bottom: .375em;
+}
+
+.OrderItem-referenceLabel span {
+	font-size: .75em;
+}
+
+.OrderItem-showMore {
+	border: none;
+	background: none;
+	color: #03a9f4;
+	cursor: pointer;
+	text-align: left;
+}
+
+.OrderItem-showMore:focus,
+.OrderItem-showMore:hover {
+	text-decoration: underline;
+}
+
+.OrderItem-showMore span {
+	font-size: .75em;
+}
+
+.OrderItem-body {
+	display: none;
+}
+
+.OrderItem.is-showingMore .OrderItem-body {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@media (min-width: 48em) {
+
+	.OrderItem input {
+		padding: .5em;
+		font-size: .875em;
+		max-width: 18rem;
+	}
+
+	.OrderItem input.OrderItem-clientNameField {
+		font-size: 1.125em;
+		font-weight: 700;
+	}
+
+}

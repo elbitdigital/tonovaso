@@ -1,0 +1,14 @@
+
+.OrderList {
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	max-width: 48em;
+	padding: 1em 1em 0;
+	width: 100%;
+}

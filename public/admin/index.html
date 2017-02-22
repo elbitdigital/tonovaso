@@ -25,43 +25,28 @@
 		display: flex;
 		-webkit-flex-flow: column;
 		flex-flow: column;
-		padding: 0 1em;
 	}
 
-	.OrderItem {
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-flow: column;
-		flex-flow: column;
-		padding: 1em 0;
+	#orderList-count {
+		cursor: default;
+		color: #bdbdbd;
+		font-size: .875em;
+		text-align: center;
+		margin: 1em auto 1.125em;
 		width: 100%;
 	}
 
-	.OrderItem input {
-		border: solid 1px transparent;
-		padding: .5em;
-		-webkit-transition: all .3s ease-in-out;
-		-moz-transition: all .3s ease-in-out;
-		-ms-transition: all .3s ease-in-out;
-		-o-transition: all .3s ease-in-out;
-		transition: all .3s ease-in-out;
-	}
+	@media (min-width: 48em) {
 
-	.OrderItem input.OrderItem-clientNameField {
-		font-size: 1.125em;
-		font-weight: 700;
-	}
+		#orderList-count {
+			/*font-size: .875em;*/
+		}
 
-	.OrderItem input:focus {
-		border: solid 1px #bdbdbd;
 	}
 
 </style>
 
-<body>
+<body class="grey-100">
 
 <button onclick="getXMLandSyncPagSeguroData();">Sincronizar com PagSeguro</button>
 
@@ -72,232 +57,7 @@
 <script src="../dist/js/xml2json.min.js"></script>
 <script src="../dist/js/moment.js"></script>
 <script src="../dist/js/moment-with-locales.js"></script>
-
-<script>
-
-	/* Order List */
-
-	var OrderList = (function () {
-
-		/**
-		 * Order List constructor
-		 * @constructor
-		 */
-		function OrderList(element, database) {
-
-			this.element = element;
-			this.database = database;
-
-			// bloqueia o build enquanto o delay de 3000 milisegundos não passar
-			this.locked = true;
-
-			// global list
-			this.list = [];
-
-		}
-
-		OrderList.prototype.build = function () {
-
-			if (!this.locked) {
-
-				var self = this;
-
-				function appendOrderItem(orderItemElement) {
-
-					self.element.appendChild(orderItemElement);
-
-				}
-
-				for (var i = this.list.length; i--; )
-					// permite apenas transações com estado
-					if (this.list[i].status == 'Aprovada')
-						appendOrderItem(this.list[i].element);
-
-			}
-
-		};
-
-		OrderList.prototype.isInList = function (orderItem) {
-
-			var filterItemReference = this.list.filter(function (orderListItem) {
-
-				return orderListItem.reference == orderItem.reference;
-
-			});
-
-			return !!filterItemReference.length;
-
-		};
-
-		OrderList.prototype.push = function (orderItem) {
-
-			// check if order item is on order list
-			if (!this.isInList(orderItem))
-				this.list.push(orderItem);
-
-		};
-
-		OrderList.prototype.start = function () {
-
-			var self = this;
-
-			this.database.ref('transactions/').on('child_added', function (snap) {
-
-				// create the order item object
-				var orderItem = new OrderItem(snap.val());
-
-				// push order item object to order list
-				self.push(orderItem);
-
-				document.getElementById('orderList-count').innerText = self.list.length + '';
-
-				if (!self.locked)
-					self.build();
-
-				if (!snap.val().reference)
-					console.log(snap.key);
-
-			});
-
-			setTimeout(function () {
-
-				self.locked = false;
-				self.build();
-
-			}, 3000);
-
-		};
-
-		return OrderList;
-
-	})();
-
-</script>
-
-<script>
-
-	/* Order Item */
-
-	var OrderItem = (function () {
-
-		/**
-		 * Order Item constructor
-		 * @constructor
-		 */
-		function OrderItem(data, database) {
-
-			if (data) {
-
-				this.clientName = data.clientName;
-				this.code = data.code;
-				this.date = data.date;
-				this.items = data.items;
-				this.reference = data.reference;
-				this.status = data.status;
-				this.time = data.time;
-
-				this.createElement();
-
-			}
-
-		}
-
-		OrderItem.prototype.setClientName = function (clientName) {
-
-			this.clientName = clientName;
-			database.ref('transactions/' + this.reference).child('clientName').set(this.clientName);
-
-		};
-
-		OrderItem.prototype.setCode = function (code) {
-
-			this.code = code;
-			database.ref('transactions/' + this.reference).child('code').set(this.code);
-
-		};
-
-		OrderItem.prototype.setDate = function (date) {
-
-			this.date = moment(date).format();
-			database.ref('transactions/' + this.reference).child('date').set(this.date);
-
-		};
-
-		OrderItem.prototype.setStatus = function (status) {
-
-			this.status = status;
-			database.ref('transactions/' + this.reference).child('status').set(this.status);
-
-		};
-
-		OrderItem.prototype.setTime = function (time) {
-
-			this.time = time;
-			database.ref('transactions/' + this.reference).child('time').set(this.time);
-
-		};
-
-		OrderItem.prototype.createElement = function () {
-
-			this.element = document.createElement('div');
-			this.element.className = 'OrderItem';
-			this.element.dataset.itemReferenceId = this.reference;
-
-			// Reference Label element
-			this.referenceLabelElement = document.createElement('span');
-			this.referenceLabelElement.className = 'OrderItem-referenceLabel';
-			this.referenceLabelElement.innerText = this.reference + ' (' + this.status + ')';
-			this.referenceLabelElement.dataset.itemReferenceId = this.reference;
-
-			this.element.appendChild(this.referenceLabelElement);
-
-			// Client Name Label element
-			this.clientNameLabelElement = document.createElement('input');
-			this.clientNameLabelElement.className = 'OrderItem-clientNameField';
-			this.clientNameLabelElement.placeholder = 'Nome (titular)';
-			this.clientNameLabelElement.value = this.clientName;
-			this.clientNameLabelElement.dataset.itemReferenceId = this.reference;
-			this.clientNameLabelElement.addEventListener('input', function () {
-
-				if (this.dataset.itemReferenceId) {
-
-					var value = this.value.length ? this.value : null;
-
-					database.ref('transactions/' + this.dataset.itemReferenceId).child('clientName').set(value);
-
-				}
-
-			});
-
-			this.element.appendChild(this.clientNameLabelElement);
-
-			// Code ID Input element
-			this.codeFieldElement = document.createElement('input');
-			this.codeFieldElement.className = 'OrderItem-codeField';
-			this.codeFieldElement.placeholder = 'Código de Pagamento';
-			this.codeFieldElement.value = this.code || '';
-			this.codeFieldElement.dataset.itemReferenceId = this.reference;
-			this.codeFieldElement.addEventListener('input', function () {
-
-				if (this.dataset.itemReferenceId) {
-
-					var value = this.value.length ? this.value : null;
-
-					database.ref('transactions/' + this.dataset.itemReferenceId).child('code').set(value);
-
-				}
-
-			});
-
-			this.element.appendChild(this.codeFieldElement);
-
-		};
-
-		return OrderItem;
-
-	})();
-
-</script>
+<script src="../dist/js/tonovaso.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
 <script>
