@@ -15,14 +15,15 @@
 <script src="../dist/js/classList.min.js"></script>
 <![endif]-->
 
-<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 <script>
+	// Initialize Firebase
 	var config = {
-		apiKey: "AIzaSyBXspo0nGSMVHqMRkcfjT1NyErFW2kGTsM",
-		authDomain: "tonovaso-com-br.firebaseapp.com",
-		databaseURL: "https://tonovaso-com-br.firebaseio.com",
-		storageBucket: "",
-		messagingSenderId: "101212266019"
+		apiKey: "AIzaSyBK8q18qHSR0toQutQGp_1wAcfzyfC0pEI",
+		authDomain: "dalia-tonovaso-com-br.firebaseapp.com",
+		databaseURL: "https://dalia-tonovaso-com-br.firebaseio.com",
+		storageBucket: "dalia-tonovaso-com-br.appspot.com",
+		messagingSenderId: "737535874060"
 	};
 	firebase.initializeApp(config);
 </script>
@@ -31,30 +32,11 @@
 	initApp = function() {
 		firebase.auth().onAuthStateChanged(function(user) {
 			if (user) {
-				// User is signed in.
-				var displayName = user.displayName;
 				var email = user.email;
-				var emailVerified = user.emailVerified;
-				var photoURL = user.photoURL;
 				var uid = user.uid;
 				var providerData = user.providerData;
-				user.getToken().then(function(accessToken) {
-					document.getElementById('sign-in-status').textContent = 'Signed in';
-					document.getElementById('sign-in').textContent = 'Sign out';
-					document.getElementById('account-details').textContent = JSON.stringify({
-						displayName: displayName,
-						email: email,
-						emailVerified: emailVerified,
-						photoURL: photoURL,
-						uid: uid,
-						accessToken: accessToken,
-						providerData: providerData
-					}, null, '  ');
-				});
+
 			} else {
-				// User is signed out.
-				document.getElementById('sign-in-status').textContent = 'Signed out';
-				document.getElementById('sign-in').textContent = 'Sign in';
 				document.getElementById('account-details').textContent = 'null';
 			}
 		}, function(error) {
@@ -72,11 +54,24 @@
 
 </script>
 
-<body>
 
-<h1>TELA DE RETIRADA DOS INGRESSO MANEIRINHA</h1>
-<div id="sign-in-status"></div>
-<div id="sign-in"></div>
+<body>
+<!--
+<header class="Topper">
+	<div class="Topper-background"></div>
+	<div class="Topper-inner">
+		<button>Retirados</button>
+		<div class="Session">
+			<p class="Session-user"></p>
+			<p class="Session-login"></p>
+			<div class="Session-control">
+				<p class="Session-quantity"></p>
+				<button>Sair</button>
+			</div>
+		</div>
+	</div>
+</header>
+-->
 <div id="account-details"></div>
 
 <button id="sign-out">Sair</button>

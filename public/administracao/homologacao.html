@@ -6,14 +6,16 @@
 	<meta name="viewport"
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 
-	<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+	<link type="text/css" rel="stylesheet" href="../dist/css/tonovaso.min.css" />
+	<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 	<script>
+		// Initialize Firebase
 		var config = {
-			apiKey: "AIzaSyBXspo0nGSMVHqMRkcfjT1NyErFW2kGTsM",
-			authDomain: "tonovaso-com-br.firebaseapp.com",
-			databaseURL: "https://tonovaso-com-br.firebaseio.com",
-			storageBucket: "",
-			messagingSenderId: "101212266019"
+			apiKey: "AIzaSyBK8q18qHSR0toQutQGp_1wAcfzyfC0pEI",
+			authDomain: "dalia-tonovaso-com-br.firebaseapp.com",
+			databaseURL: "https://dalia-tonovaso-com-br.firebaseio.com",
+			storageBucket: "dalia-tonovaso-com-br.appspot.com",
+			messagingSenderId: "737535874060"
 		};
 		firebase.initializeApp(config);
 	</script>
@@ -26,12 +28,30 @@
 			callbacks: {
 				'signInSuccess': function(user, credential, redirectUrl) {
 
-					firebase.database().ref('admins/' + user.uid).set({
+					var inner = document.querySelectorAll('div.Login-inner');
+					inner[0].classList.add('is-return');
+
+					var updates = {};
+					updates['/admins/a' + user.uid] = {
 						'uid': user.uid,
 						'datetime': new Date().toLocaleString()
+					};
+					updates['/users/u' + user.uid] = {
+						'role': 'admin',
+						'displayName': user.displayName,
+						'email': user.email,
+						'emailVerified': user.emailVerified,
+						'photoURL': user.photoURL,
+						'uid': user.uid,
+						'providerData': user.providerData
+					};
+
+					firebase.database().ref().update(updates).then(function() {
+						window.location.href = uiConfig.signInSuccessUrl;
+					}).catch(function(err){
+						console.log('Algo de errado não está certo: ' + err);
 					});
 
-					return true;
 				}
 			},
 			signInSuccessUrl: '/administracao/confirmacao',
@@ -93,6 +113,18 @@
 
 		.Login-inner .logo {
 			height: 150px;
+		}
+
+		.Login-inner.is-return .Return {
+			display: block;
+		}
+
+		.Login-inner-is-return #firebaseui-auth-container {
+			display: none;
+		}
+
+		.Return {
+			display: none;
 		}
 
 		.TitleLight {
@@ -168,6 +200,13 @@
 
 		<div class="TitleLight">
 			<p class="TitleLight-gradient">Homologação de acesso - Autenticação</p>
+		</div>
+
+		<div class="Return">
+			<span class="icon-spin5 animate-spin" style="font-size: 1.75em; color: #d5ac70;"></span>
+			<div class="TitleLight">
+				<p class="TitleLight-gradient">Processando dados</p>
+			</div>
 		</div>
 
 		<div id="firebaseui-auth-container"></div>

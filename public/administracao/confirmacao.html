@@ -15,14 +15,15 @@
 <script src="../dist/js/classList.min.js"></script>
 <![endif]-->
 
-<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 <script>
+	// Initialize Firebase
 	var config = {
-		apiKey: "AIzaSyBXspo0nGSMVHqMRkcfjT1NyErFW2kGTsM",
-		authDomain: "tonovaso-com-br.firebaseapp.com",
-		databaseURL: "https://tonovaso-com-br.firebaseio.com",
-		storageBucket: "",
-		messagingSenderId: "101212266019"
+		apiKey: "AIzaSyBK8q18qHSR0toQutQGp_1wAcfzyfC0pEI",
+		authDomain: "dalia-tonovaso-com-br.firebaseapp.com",
+		databaseURL: "https://dalia-tonovaso-com-br.firebaseio.com",
+		storageBucket: "dalia-tonovaso-com-br.appspot.com",
+		messagingSenderId: "737535874060"
 	};
 	firebase.initializeApp(config);
 </script>
@@ -48,11 +49,6 @@
 						uid: uid,
 						providerData: providerData
 					}, null, 4);
-				});
-
-				firebase.database().ref('admins/' + uid).set({
-					'uid': uid,
-					'datetime': new Date().toLocaleString()
 				});
 
 			} else {
@@ -117,6 +113,55 @@
 		white-space: pre-wrap;
 		word-wrap: break-word;
 	}
+
+	.account-confirmation {
+		max-width: 100%;
+		padding: .5em 0;
+	}
+
+	.Button--narrow {
+		background-color: #03a9f4;
+		border: none;
+		border-radius: 2px;
+		color: #ffffff;
+		font-weight: 700;
+		padding: .25em .5em;
+		-webkit-transition: background .3s ease-in-out;
+		-moz-transition: background .3s ease-in-out;
+		-ms-transition: background .3s ease-in-out;
+		-o-transition: background .3s ease-in-out;
+		transition: background .3s ease-in-out;
+		text-transform: uppercase;
+	}
+
+	.Button--narrow:focus,
+	.Button--narrow:hover {
+		background-color: #81d4fa;
+		cursor: pointer;
+		-webkit-transition: background .3s ease-in-out;
+		-moz-transition: background .3s ease-in-out;
+		-ms-transition: background .3s ease-in-out;
+		-o-transition: background .3s ease-in-out;
+		transition: background .3s ease-in-out;
+	}
+
+	.Button--narrow:active {
+		background-color: #039be5;
+	}
+
+	.Button--alert {
+		background-color: #F44336;
+	}
+
+	.Button--alert:focus,
+	.Button--alert:hover {
+		background-color: #EF9A9A;
+	}
+
+	.Button--alert:active {
+		background-color: #E53935;
+	}
+
 </style>
 
 <body class="roboto">
@@ -131,9 +176,9 @@
 			<p class="TitleLight-gradient">Autorização de acesso cadastrada!</p>
 		</div>
 
-		<button id="sign-out">Sair do sistema</button>
+		<button id="sign-out" class="Button--narrow Button--alert roboto">Sair do sistema</button>
 
-		<p><span id="user-name"></span>, você foi associado a um perfil administrativo com sucesso!<br> Esses são os dados que foram compartilhados:</p>
+		<p class="account-confirmation"><span id="user-name"></span>, você foi associado a um perfil administrativo com sucesso!<br> Esses são os dados que foram compartilhados:</p>
 
 		<pre id="account-details"></pre>
 
@@ -146,7 +191,7 @@
 	document.getElementById('sign-out').addEventListener('click', function () {
 		localStorage.removeItem("firebaseui::rememberedAccounts");
 		firebase.auth().signOut();
-		window.location.href = "/administracao/homologacao";
+		window.location.href = "/";
 	});
 
 </script>
