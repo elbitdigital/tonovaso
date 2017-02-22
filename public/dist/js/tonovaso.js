@@ -338,9 +338,11 @@ var OrderItem = (function () {
 			this.reference = data.reference;
 			this.status = data.status;
 			this.time = data.time;
-			this.ticket = data.ticket;
+			this.tickets = data.tickets;
 
+			this.normalizeData();
 			this.createElement();
+			this.getTicketList();
 
 		}
 
@@ -385,6 +387,47 @@ var OrderItem = (function () {
 
 		this.time = time;
 		database.ref('transactions/' + this.reference).child('time').set(this.time);
+
+	};
+
+	OrderItem.prototype.getTicketList = function () {
+
+		this.ticketList = new OrderTicketList(this.ticketListElement, this);
+
+	};
+
+	OrderItem.prototype.normalizeData = function () {
+
+		if (!this.tickets) {
+
+			var tickets = [];
+
+			for (var i = this.items.length; i--; ) {
+
+				if (this.items[i].id != 'TNVABADA') {
+
+					if (this.items[i].quantity > 0) {
+
+						for (var j = this.items[i].quantity; j--; ) {
+
+							var pushKey = database.ref('transactions/' + this.reference).child('tickets').push().key;
+
+							database.ref('transactions/' + this.reference).child('tickets').child(pushKey).set({
+								amount: this.items[i].amount,
+								description: this.items[i].description,
+								id: this.items[i].id,
+								reference: pushKey
+							})
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
 
 	};
 
@@ -501,8 +544,15 @@ var OrderItem = (function () {
 
 		this.bodyElement.appendChild(this.clientEmailFieldElement);
 
+		// Create Ticket List element
+		this.ticketListElement = document.createElement('div');
+		this.ticketListElement.className = 'OrderTicketList';
+		this.ticketListElement.dataset.itemReferenceId = this.reference;
+
+		this.bodyElement.appendChild(this.ticketListElement);
+
 		// Create Ticket Button element
-		this.createTicketButtonElement = document.createElement('button');
+		/*this.createTicketButtonElement = document.createElement('button');
 		this.createTicketButtonElement.className = 'OrderItem-createTicketButton';
 		this.createTicketButtonElement.innerHTML = "<span>Retirar</span>";
 		this.createTicketButtonElement.dataset.itemReferenceId = this.reference;
@@ -533,7 +583,7 @@ var OrderItem = (function () {
 		if (this.ticket)
 			this.createTicketButtonElement.classList.add('is-empty');
 
-		this.bodyElement.appendChild(this.createTicketButtonElement);
+		this.bodyElement.appendChild(this.createTicketButtonElement);*/
 
 		// Show More button
 		this.showMoreButtonElement = document.createElement('button');
@@ -690,6 +740,115 @@ var OrderList = (function () {
 	};
 
 	return OrderList;
+
+})();
+
+
+/* Order Ticket Item */
+
+var OrderTicketItem = (function () {
+
+	/**
+	 * Order Ticket Item constructor
+	 * @constructor
+	 */
+	function OrderTicketItem(data, orderItem) {
+
+		var self = this;
+
+		if (data && orderItem) {
+
+			this.orderItem = orderItem;
+
+			this.reference = data.reference;
+			this.id = data.id;
+			this.amount= data.amount;
+			this.description = data.description;
+
+			this.createElement();
+
+			database.ref('transactions/' + this.orderItem.reference + '/tickets/' + data.reference + '/').child('shipped').on('value', function (snap) {
+
+				self.updateShippingStatus(snap.val());
+
+			});
+
+		}
+
+	}
+
+	OrderTicketItem.prototype.updateShippingStatus = function (data) {
+
+		this.shipping = data;
+
+		if (!this.shipping) {
+
+			this.element.innerHTML = "<span>" + this.id + "</span>";
+			this.element.innerHTML += "<button>" + 'RETIRAR' + "</button>";
+
+		}
+
+	};
+
+	OrderTicketItem.prototype.createElement = function () {
+
+		this.element = document.createElement('div');
+		this.element.className  = 'OrderTicketItem';
+		this.element.dataset.itemReferenceId = this.reference;
+
+	};
+
+	return OrderTicketItem;
+
+})();
+
+/* Order Ticket List */
+
+var OrderTicketList = (function () {
+
+	/**
+	 * Order Ticket List constructor
+	 * @constructor
+	 */
+	function OrderTicketList(element, orderItem) {
+
+		var self = this;
+
+		this.element = element;
+		this.orderItem = orderItem;
+		this.list = [];
+
+		if (this.orderItem && this.element) {
+
+			//console.log(data);
+			database.ref('transactions/' + this.orderItem.reference + '/tickets/').on('child_added', function (snap) {
+
+				var orderTicketItem = new OrderTicketItem(snap.val(), self.orderItem);
+				self.push(orderTicketItem);
+
+			});
+
+		}
+
+	}
+
+	OrderTicketList.prototype.build = function () {
+
+		this.element.innerHTML = '';
+
+		for (var i = this.list.length; i--; )
+			this.element.appendChild(this.list[i].element);
+
+	};
+
+	OrderTicketList.prototype.push = function (orderTicketItem) {
+
+		this.list.push(orderTicketItem);
+		this.build();
+
+	};
+
+	return OrderTicketList;
 
 })();
 

@@ -2013,6 +2013,7 @@ p.GuideStep-description {
 }
 
 .OrderItem input.OrderItem-clientNameField {
+  text-transform: uppercase;
   cursor: default;
   font-size: 1em;
   padding: .5em .375em;
@@ -2068,6 +2069,11 @@ p.GuideStep-description {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+}
+
+.OrderItem-createTicketButton {
+  background: #03a9f4;
+  border: none;
 }
 
 @media (min-width: 48em) {
@@ -2150,6 +2156,31 @@ p.GuideStep-description {
   flex-flow: column;
   max-width: 48em;
   padding: 1em 1em 0;
+  width: 100%;
+}
+/* Order Ticket Item */
+
+.OrderTicketItem {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+}
+/* Order Ticket List */
+
+.OrderTicketList {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  padding: 0 .5em;
   width: 100%;
 }
 .Paragraph {

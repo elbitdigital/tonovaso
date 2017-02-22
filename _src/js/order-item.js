@@ -19,9 +19,11 @@ var OrderItem = (function () {
 			this.reference = data.reference;
 			this.status = data.status;
 			this.time = data.time;
-			this.ticket = data.ticket;
+			this.tickets = data.tickets;
 
+			this.normalizeData();
 			this.createElement();
+			this.getTicketList();
 
 		}
 
@@ -66,6 +68,47 @@ var OrderItem = (function () {
 
 		this.time = time;
 		database.ref('transactions/' + this.reference).child('time').set(this.time);
+
+	};
+
+	OrderItem.prototype.getTicketList = function () {
+
+		this.ticketList = new OrderTicketList(this.ticketListElement, this);
+
+	};
+
+	OrderItem.prototype.normalizeData = function () {
+
+		if (!this.tickets) {
+
+			var tickets = [];
+
+			for (var i = this.items.length; i--; ) {
+
+				if (this.items[i].id != 'TNVABADA') {
+
+					if (this.items[i].quantity > 0) {
+
+						for (var j = this.items[i].quantity; j--; ) {
+
+							var pushKey = database.ref('transactions/' + this.reference).child('tickets').push().key;
+
+							database.ref('transactions/' + this.reference).child('tickets').child(pushKey).set({
+								amount: this.items[i].amount,
+								description: this.items[i].description,
+								id: this.items[i].id,
+								reference: pushKey
+							})
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
 
 	};
 
@@ -182,8 +225,15 @@ var OrderItem = (function () {
 
 		this.bodyElement.appendChild(this.clientEmailFieldElement);
 
+		// Create Ticket List element
+		this.ticketListElement = document.createElement('div');
+		this.ticketListElement.className = 'OrderTicketList';
+		this.ticketListElement.dataset.itemReferenceId = this.reference;
+
+		this.bodyElement.appendChild(this.ticketListElement);
+
 		// Create Ticket Button element
-		this.createTicketButtonElement = document.createElement('button');
+		/*this.createTicketButtonElement = document.createElement('button');
 		this.createTicketButtonElement.className = 'OrderItem-createTicketButton';
 		this.createTicketButtonElement.innerHTML = "<span>Retirar</span>";
 		this.createTicketButtonElement.dataset.itemReferenceId = this.reference;
@@ -214,7 +264,7 @@ var OrderItem = (function () {
 		if (this.ticket)
 			this.createTicketButtonElement.classList.add('is-empty');
 
-		this.bodyElement.appendChild(this.createTicketButtonElement);
+		this.bodyElement.appendChild(this.createTicketButtonElement);*/
 
 		// Show More button
 		this.showMoreButtonElement = document.createElement('button');

@@ -42,6 +42,7 @@
 }
 
 .OrderItem input.OrderItem-clientNameField {
+	text-transform: uppercase;
 	cursor: default;
 	font-size: 1em;
 	padding: .5em .375em;
@@ -97,6 +98,11 @@
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+}
+
+.OrderItem-createTicketButton {
+	background: #03a9f4;
+	border: none;
 }
 
 @media (min-width: 48em) {
