@@ -331,14 +331,14 @@ var OrderItem = (function () {
 		if (data) {
 
 			this.clientName = data.clientName;
+			this.clientEmail = data.clientEmail;
 			this.code = data.code;
 			this.date = data.date;
 			this.items = data.items;
 			this.reference = data.reference;
 			this.status = data.status;
 			this.time = data.time;
-
-			console.log(this.items);
+			this.ticket = data.ticket;
 
 			this.createElement();
 
@@ -350,6 +350,13 @@ var OrderItem = (function () {
 
 		this.clientName = clientName;
 		database.ref('transactions/' + this.reference).child('clientName').set(this.clientName);
+
+	};
+
+	OrderItem.prototype.setClientEmail = function (clientEmail) {
+
+		this.clientEmail = clientEmail;
+		database.ref('transactions/' + this.reference).child('clientEmail').set(this.clientEmail);
 
 	};
 
@@ -474,18 +481,65 @@ var OrderItem = (function () {
 
 		this.bodyElement.appendChild(this.codeFieldElement);
 
+		// Client Email Input element
+		this.clientEmailFieldElement = document.createElement('input');
+		this.clientEmailFieldElement.className = 'OrderItem-clientEmail';
+		this.clientEmailFieldElement.placeholder = 'E-mail';
+		this.clientEmailFieldElement.value = this.clientEmail || '';
+		this.clientEmailFieldElement.dataset.itemReferenceId = this.reference;
+		this.clientEmailFieldElement.addEventListener('input', function () {
+
+			if (this.dataset.itemReferenceId) {
+
+				var value = this.value.length ? this.value : null;
+
+				database.ref('transactions/' + this.dataset.itemReferenceId).child('clientEmail').set(value);
+
+			}
+
+		});
+
+		this.bodyElement.appendChild(this.clientEmailFieldElement);
+
+		// Create Ticket Button element
+		this.createTicketButtonElement = document.createElement('button');
+		this.createTicketButtonElement.className = 'OrderItem-createTicketButton';
+		this.createTicketButtonElement.innerHTML = "<span>Retirar</span>";
+		this.createTicketButtonElement.dataset.itemReferenceId = this.reference;
+		this.createTicketButtonElement.addEventListener('click', function () {
+
+			if (window.confirm("Você confirma a retirada deste ingresso?"))
+				if (this.dataset.itemReferenceId) {
+
+					// TODO
+					// Cris, edita aqui, só adicionar o user aqui
+					var value = {
+						timestamp: moment().format(),
+						user: true
+					};
+
+					database.ref('transactions/' + this.dataset.itemReferenceId).child('ticket').set(value);
+
+				}
+
+		});
+		if (this.ticket)
+			this.createTicketButtonElement.classList.add('is-empty');
+
+		this.bodyElement.appendChild(this.createTicketButtonElement);
+
 		// Show More button
 		this.showMoreButtonElement = document.createElement('button');
 		this.showMoreButtonElement.className = 'OrderItem-showMore';
-		this.showMoreButtonElement.innerHTML = "<span>Mostrar Mais</span>";
+		this.showMoreButtonElement.innerHTML = "<span>Mostrar mais</span>";
 		this.showMoreButtonElement.addEventListener('click', function () {
 
 			self.element.classList.toggle('is-showingMore');
 
 			if (self.element.classList.contains('is-showingMore'))
-				this.innerHTML = "<span>Mostrar Menos</span>";
+				this.innerHTML = "<span>Mostrar menos</span>";
 			else
-				this.innerHTML = "<span>Mostrar Mais</span>";
+				this.innerHTML = "<span>Mostrar mais</span>";
 
 		});
 
@@ -516,9 +570,28 @@ var OrderList = (function () {
 		// global list
 		this.list = [];
 
+		// global list view
+		this.view = [];
+
+		this.config = {
+			orderType: 'time',
+			orderReverse: false,
+			approvedOnly: true
+		}
+
 	}
 
-	OrderList.prototype.build = function () {
+	/**
+	 * build the list
+	 * se tiver uma findString, a função mostra apenas entradas com nome que inclua a string
+	 * @param findString {String}
+	 */
+	OrderList.prototype.build = function (findString) {
+
+		// fix findString value
+		findString = !!findString ? findString.toLowerCase() : '';
+
+		this.element.innerHTML = '';
 
 		if (!this.locked) {
 
@@ -530,12 +603,31 @@ var OrderList = (function () {
 
 			}
 
-			for (var i = this.list.length; i--; )
+			for (var i = this.list.length; i--; ) {
+
 				// permite apenas transações com estado
-				if (this.list[i].status)
-					appendOrderItem(this.list[i].element);
+				if (!!this.list[i].status) {
+
+					var addToViewList = false;
+
+					// permite apenas transações com nome parecido com a findString
+					if (this.list[i].clientName)
+						addToViewList = this.list[i].clientName.toLowerCase().includes(findString);
+
+					if (addToViewList)
+						appendOrderItem(this.list[i].element);
+
+				}
+
+			}
 
 		}
+
+	};
+
+	OrderList.prototype.buildViewList = function () {
+
+
 
 	};
 

@@ -18,9 +18,28 @@ var OrderList = (function () {
 		// global list
 		this.list = [];
 
+		// global list view
+		this.view = [];
+
+		this.config = {
+			orderType: 'time',
+			orderReverse: false,
+			approvedOnly: true
+		}
+
 	}
 
-	OrderList.prototype.build = function () {
+	/**
+	 * build the list
+	 * se tiver uma findString, a função mostra apenas entradas com nome que inclua a string
+	 * @param findString {String}
+	 */
+	OrderList.prototype.build = function (findString) {
+
+		// fix findString value
+		findString = !!findString ? findString.toLowerCase() : '';
+
+		this.element.innerHTML = '';
 
 		if (!this.locked) {
 
@@ -32,12 +51,31 @@ var OrderList = (function () {
 
 			}
 
-			for (var i = this.list.length; i--; )
+			for (var i = this.list.length; i--; ) {
+
 				// permite apenas transações com estado
-				if (this.list[i].status)
-					appendOrderItem(this.list[i].element);
+				if (!!this.list[i].status) {
+
+					var addToViewList = false;
+
+					// permite apenas transações com nome parecido com a findString
+					if (this.list[i].clientName)
+						addToViewList = this.list[i].clientName.toLowerCase().includes(findString);
+
+					if (addToViewList)
+						appendOrderItem(this.list[i].element);
+
+				}
+
+			}
 
 		}
+
+	};
+
+	OrderList.prototype.buildViewList = function () {
+
+
 
 	};
 

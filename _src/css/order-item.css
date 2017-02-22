@@ -87,6 +87,8 @@
 
 .OrderItem-body {
 	display: none;
+	-webkit-flex-flow: column;
+	flex-flow: column;
 }
 
 .OrderItem.is-showingMore .OrderItem-body {

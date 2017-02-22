@@ -1,4 +1,58 @@
 
 .OrderListSearch {
+	width: 100%;
+	max-width: 48em;
+	padding: 0 1em;
+	margin: 1em auto;
+}
 
+.OrderListSearch-field {
+	background-color: #ffffff;
+	border-radius: 2px;
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .16), 0 0 0 1px rgba(0 ,0 ,0 , 0.08);
+	-moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .16), 0 0 0 1px rgba(0 ,0 ,0 , 0.08);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .16), 0 0 0 1px rgba(0 ,0 ,0 , 0.08);
+	cursor: text;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	padding: .375em 1em;
+	-webkit-transition: box-shadow .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+	-moz-transition: box-shadow .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+	-ms-transition: box-shadow .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+	-o-transition: box-shadow .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+	transition: box-shadow .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+	width: 100%;
+}
+
+.OrderListSearch:hover .OrderListSearch-field,
+.OrderListSearch.is-focus .OrderListSearch-field {
+	-webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .2), 0 0 0 1px rgba(0 ,0 ,0 , 0.08);
+	-moz-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .2), 0 0 0 1px rgba(0 ,0 ,0 , 0.08);
+	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .2), 0 0 0 1px rgba(0 ,0 ,0 , 0.08);
+}
+
+.OrderListSearch-input {
+	background: none;
+	border: none;
+	color: #000000;
+	flex: 1;
+	font-size: 1em;
+	height: 2.25rem;
+	line-height: 2.25em;
+}
+
+.OrderListSearch-searchButton {
+	background: none;
+	border: none;
+	color: #03a9f4;
+	height: 100%;
+}
+
+.OrderListSearch-searchButton span {
+	font-size: 1.5em;
 }

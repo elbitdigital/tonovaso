@@ -50,6 +50,25 @@
 
 <button onclick="getXMLandSyncPagSeguroData();">Sincronizar com PagSeguro</button>
 
+<div id="orderListSearch" class="OrderListSearch">
+
+	<div class="OrderListSearch-field">
+
+		<input type="text" id="orderListSearch-input" class="OrderListSearch-input" placeholder="Busque por um nome"/>
+
+		<div class="OrderListSearch-controls">
+
+			<button id="orderListSearch-searchButton" class="OrderListSearch-searchButton">
+
+				<span class="icon-search"></span>
+
+			</button>
+
+		</div>
+
+	</div>
+
+</div>
 <div id="orderList" class="OrderList"></div>
 <span id="orderList-count"></span>
 
@@ -128,6 +147,16 @@
 
 					}
 
+					// atualiza o e-mail
+					if (!orderListItem.clientEmail) {
+
+						orderListItem.setClientEmail(pagSeguroDataItem['Cliente_Email']);
+
+						// significa que houve alguma atualização
+						changed = true;
+
+					}
+
 					// atualiza a data
 					if (orderListItem.date != pagSeguroDataItem['Data_Transacao']) {
 
@@ -175,7 +204,7 @@
 
 		if (self.fetch) {
 
-			fetch('data/PagSeguro_2017-02-20_22-19-01.xml')
+			fetch('data/PagSeguro_2017-02-22_03-31-45.xml')
 					.then(function (response) {
 
 						return response.text()
@@ -203,6 +232,51 @@
 		}
 
 	}
+
+</script>
+
+<script>
+
+	var orderListSearch = {};
+
+	orderListSearch.element = document.getElementById('orderListSearch');
+	orderListSearch.inputElement = document.getElementById('orderListSearch-input');
+	orderListSearch.searchButtonElement = document.getElementById('orderListSearch-searchButton');
+	orderListSearch.delay = false;
+
+	orderListSearch.inputElement.addEventListener('focus', function () {
+
+		orderListSearch.element.classList.add('is-focus');
+
+	});
+
+	orderListSearch.inputElement.addEventListener('blur', function () {
+
+		orderListSearch.element.classList.remove('is-focus');
+
+	});
+
+	orderListSearch.inputElement.addEventListener('input', function () {
+
+		// verifica se existe algum delay
+		if (!orderListSearch.delay)
+			orderList.build(this.value);
+
+		// um delay para não abusar de processamento para busca
+		orderListSearch.delay = setTimeout(function () {
+
+			orderList.build(orderListSearch.inputElement.value);
+			orderListSearch.delay = false;
+
+		}, 600);
+
+	});
+
+	orderListSearch.searchButtonElement.addEventListener('click', function () {
+
+		orderList.build(orderListSearch.inputElement.value);
+
+	});
 
 </script>
 
