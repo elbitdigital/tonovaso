@@ -513,9 +513,16 @@ var OrderItem = (function () {
 
 					// TODO
 					// Cris, edita aqui, só adicionar o user aqui
+					// DONE - 22-02-2017 16:35
+
+					var user = firebase.auth().currentUser;
 					var value = {
 						timestamp: moment().format(),
-						user: true
+						user: {
+							'displayName': user.displayName,
+							'email': user.email,
+							'uid': user.uid
+						}
 					};
 
 					database.ref('transactions/' + this.dataset.itemReferenceId).child('ticket').set(value);

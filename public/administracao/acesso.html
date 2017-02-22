@@ -36,14 +36,29 @@
 							var adminRef = firebase.database().ref('admins/a' + uid);
 
 							adminRef.once('value').then(function(snapshot) {
-								if(snapshot.exists())
-									window.location.href = uiConfig.signInSuccessUrl;
+								if(snapshot.exists()) {
+
+									var unauth = document.querySelectorAll('div.Login-inner');
+									unauth[0].classList.add('is-authorized');
+
+									setTimeout(function() {
+										window.location.href = uiConfig.signInSuccessUrl;
+									}, 3000);
+
+								}
 							}).catch(function(err) {
 								console.log('Você não tem permissão de administrador: ' + err);
 							});
 
 						} else {
+							var unauth = document.querySelectorAll('div.Login-inner');
+							unauth[0].classList.add('is-unauthorized');
+
 							console.log('Nível de permissão insuficiente');
+
+							setTimeout(function() {
+								window.location.href = '/administracao/sair';
+							}, 3000);
 						}
 
 					}).catch(function(err) {
@@ -111,6 +126,30 @@
 
 		.Login-inner .logo {
 			height: 150px;
+		}
+
+		.Login-inner.is-unauthorized .Unauthorized {
+			display: block;
+		}
+
+		.Login-inner.is-authorized .Authorized {
+			display:block;
+		}
+
+		.Login-inner.is-unauthorized #firebaseui-auth-container,
+		.Login-inner.is-authorized #firebaseui-auth-container{
+			display: none;
+			visibility: hidden;
+		}
+
+		.Unauthorized {
+			display: none;
+			color: #E53935;
+		}
+
+		.Authorized {
+			display: none;
+			color: #388E3C;
 		}
 
 		.TitleLight {
@@ -185,7 +224,15 @@
 		<img class="logo" src="../dist/img/logo/small/TNVLogo.png" alt="TNV_LOGO">
 
 		<div class="TitleLight">
-			<p class="TitleLight-gradient">Acesso administrativo - Autenticação</p>
+			<p class="TitleLight-gradient">Acesso administrativo</p>
+		</div>
+
+		<div class="Unauthorized">
+			<h2>Você não é um usuário autorizado.<br>Consulte o administrador.</h2>
+		</div>
+
+		<div class="Authorized">
+			<h2>Acesso permitido.<br>Você será redirecionado em breve.</h2>
 		</div>
 
 		<div id="firebaseui-auth-container"></div>

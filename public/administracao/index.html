@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="roboto">
 <meta charset="UTF-8">
 <title>Administração - TNV</title>
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 <script src="../dist/js/villa.min.js"></script>
 <link rel="stylesheet" href="../dist/css/villa.min.css"/>
+<link rel="stylesheet" href="../dist/css/tonovaso.css"/>
 <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="../dist/css/material-colors.css"/>
 <link rel="stylesheet" type="text/css" href="../dist/css/villa-cross.min.css"/>
@@ -14,9 +15,323 @@
 <script src="../dist/js/classList.min.js"></script>
 <![endif]-->
 
-<body class="roboto">
+<script type="text/javascript">
+	initApp = function() {
+		firebase.auth().onAuthStateChanged(function(user) {
+			if (user) {
 
-internal
+				var userRef = firebase.database().ref('/users/u' + user.uid);
+				userRef.once('value').then(function(snapshot) {
+
+					if(snapshot.exists() && snapshot.child('role').val() == "admin") {
+
+						var uid = snapshot.child('uid').val();
+						var adminRef = firebase.database().ref('admins/a' + uid);
+
+						adminRef.once('value').then(function(snapshot) {
+							if(snapshot.exists()) {
+
+								var email = user.email;
+								var uid = user.uid;
+								var name = user.displayName;
+
+								//setar dados do admin na tela inicial
+
+							}
+						}).catch(function(err) {
+							console.log('Você não tem permissão de administrador: ' + err);
+						});
+
+					} else {
+						window.location.href = '/administracao/sair';
+					}
+
+				}).catch(function(err) {
+					console.log('Algo de errado não está certo: ' + err);
+				});
+
+			} else {
+//				document.getElementById('account-details').textContent = 'null';
+			}
+		}, function(error) {
+			console.log(error);
+		});
+	};
+
+	window.addEventListener('load', function() {
+		initApp()
+	});
+
+	if (typeof localStorage["firebaseui::rememberedAccounts"] == "undefined") {
+		window.location.href = "/administracao/acesso";
+	}
+
+</script>
+
+<style>
+
+	body {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: column;
+		flex-flow: column;
+	}
+
+	#orderList-count {
+		cursor: default;
+		color: #bdbdbd;
+		font-size: .875em;
+		text-align: center;
+		margin: 1em auto 1.125em;
+		width: 100%;
+	}
+
+	@media (min-width: 48em) {
+
+		#orderList-count {
+			/*font-size: .875em;*/
+		}
+
+	}
+
+</style>
+
+<body class="grey-100">
+
+<button onclick="getXMLandSyncPagSeguroData();">Sincronizar com PagSeguro</button>
+
+<div id="orderListSearch" class="OrderListSearch">
+
+	<div class="OrderListSearch-field">
+
+		<input type="text" id="orderListSearch-input" class="OrderListSearch-input" placeholder="Busque por um nome"/>
+
+		<div class="OrderListSearch-controls">
+
+			<button id="orderListSearch-searchButton" class="OrderListSearch-searchButton">
+
+				<span class="icon-search"></span>
+
+			</button>
+
+		</div>
+
+	</div>
+
+</div>
+<div id="orderList" class="OrderList"></div>
+<span id="orderList-count"></span>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="../dist/js/xml2json.min.js"></script>
+<script src="../dist/js/moment.js"></script>
+<script src="../dist/js/moment-with-locales.js"></script>
+<script src="../dist/js/tonovaso.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyBK8q18qHSR0toQutQGp_1wAcfzyfC0pEI",
+		authDomain: "dalia-tonovaso-com-br.firebaseapp.com",
+		databaseURL: "https://dalia-tonovaso-com-br.firebaseio.com",
+		storageBucket: "dalia-tonovaso-com-br.appspot.com",
+		messagingSenderId: "737535874060"
+	};
+	firebase.initializeApp(config);
+</script>
+
+<script>
+
+	moment.locale('pt-br');
+	console.log(moment().format('LLLL'));
+
+	var database = firebase.database();
+
+	var orderList = new OrderList(document.getElementById('orderList'), database);
+	orderList.start();
+
+	function syncPagSeguroData(pagSeguroData) {
+
+		var changeCount = 0;
+
+		if (pagSeguroData) {
+
+			console.log(pagSeguroData.length);
+
+			for (var i = pagSeguroData.length; i--; ) {
+
+				var pagSeguroDataItem = pagSeguroData[i];
+
+				var filteredOrderListItems = orderList.list.filter(function (orderItem) {
+
+					if (orderItem.reference == pagSeguroDataItem['Ref_Transacao'])
+						return orderItem;
+
+				});
+
+				if (filteredOrderListItems.length > 0) {
+
+					var changed = false;
+
+					var orderListItem = filteredOrderListItems[0];
+
+					// atualiza o código
+					if (orderListItem.code != pagSeguroDataItem['Transacao_ID'])  {
+
+						// update
+						orderListItem.setCode(pagSeguroDataItem['Transacao_ID']);
+
+						// significa que houve alguma atualização
+						changed = true;
+
+					}
+
+					// atualiza o nome
+					if (!orderListItem.clientName) {
+
+						orderListItem.setClientName(pagSeguroDataItem['Cliente_Nome']);
+
+						// significa que houve alguma atualização
+						changed = true;
+
+					}
+
+					// atualiza o e-mail
+					if (!orderListItem.clientEmail) {
+
+						orderListItem.setClientEmail(pagSeguroDataItem['Cliente_Email']);
+
+						// significa que houve alguma atualização
+						changed = true;
+
+					}
+
+					// atualiza a data
+					if (orderListItem.date != pagSeguroDataItem['Data_Transacao']) {
+
+						var date = moment(pagSeguroDataItem['Data_Transacao'], 'DD/MM/YYYY HH:mm:ss');
+						orderListItem.setDate(date);
+
+						// significa que houve alguma atualização
+						changed = true;
+
+					}
+
+					// atualiza o status
+					if (orderListItem.date != pagSeguroDataItem['Status']) {
+
+						orderListItem.setStatus(pagSeguroDataItem['Status']);
+
+						// significa que houve alguma atualização
+						changed = true;
+
+					}
+
+					if (changed)
+						changeCount++;
+
+				} else {
+
+					console.log(pagSeguroDataItem['Ref_Transacao']);
+
+				}
+
+			}
+
+			if (changeCount)
+				console.log(changeCount + ' items de pedido foram atualizados com sucesso! :)');
+
+		} else {
+
+			alert('O XML está vazio');
+
+		}
+
+	}
+
+	function getXMLandSyncPagSeguroData() {
+
+		if (self.fetch) {
+
+			fetch('data/PagSeguro_2017-02-22_03-31-45.xml')
+				.then(function (response) {
+
+					return response.text()
+
+				}).then(function (xmlString) {
+
+				try {
+
+					var x2js = new X2JS();
+
+					syncPagSeguroData(x2js.xml_str2json(xmlString).NewDataSet.Table);
+
+				} catch (e) {
+
+//							alert('Algum erro com o XML, teste outro arquivo');
+
+				}
+
+			});
+
+		} else {
+
+			alert('Não é possível sincronizar no seu navegador, utilize o Firefox ou Chrome');
+
+		}
+
+	}
+
+</script>
+
+<script>
+
+	var orderListSearch = {};
+
+	orderListSearch.element = document.getElementById('orderListSearch');
+	orderListSearch.inputElement = document.getElementById('orderListSearch-input');
+	orderListSearch.searchButtonElement = document.getElementById('orderListSearch-searchButton');
+	orderListSearch.delay = false;
+
+	orderListSearch.inputElement.addEventListener('focus', function () {
+
+		orderListSearch.element.classList.add('is-focus');
+
+	});
+
+	orderListSearch.inputElement.addEventListener('blur', function () {
+
+		orderListSearch.element.classList.remove('is-focus');
+
+	});
+
+	orderListSearch.inputElement.addEventListener('input', function () {
+
+		// verifica se existe algum delay
+		if (!orderListSearch.delay)
+			orderList.build(this.value);
+
+		// um delay para não abusar de processamento para busca
+		orderListSearch.delay = setTimeout(function () {
+
+			orderList.build(orderListSearch.inputElement.value);
+			orderListSearch.delay = false;
+
+		}, 600);
+
+	});
+
+	orderListSearch.searchButtonElement.addEventListener('click', function () {
+
+		orderList.build(orderListSearch.inputElement.value);
+
+	});
+
+</script>
 
 </body>
 

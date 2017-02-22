@@ -176,7 +176,7 @@
 			<p class="TitleLight-gradient">Autorização de acesso cadastrada!</p>
 		</div>
 
-		<button id="sign-out" class="Button--narrow Button--alert roboto">Sair do sistema</button>
+		<a href="/administracao/sair" class="Button--narrow Button--alert roboto">Sair do sistema</a>
 
 		<p class="account-confirmation"><span id="user-name"></span>, você foi associado a um perfil administrativo com sucesso!<br> Esses são os dados que foram compartilhados:</p>
 
@@ -185,16 +185,6 @@
 	</div>
 
 </div>
-
-<script>
-
-	document.getElementById('sign-out').addEventListener('click', function () {
-		localStorage.removeItem("firebaseui::rememberedAccounts");
-		firebase.auth().signOut();
-		window.location.href = "/";
-	});
-
-</script>
 
 </body>
 
