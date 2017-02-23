@@ -15,6 +15,78 @@
 <script src="../dist/js/classList.min.js"></script>
 <![endif]-->
 
+<script>
+
+	initApp = function() {
+
+		self.isSuperUser = false;
+
+		firebase.auth().onAuthStateChanged(function(user) {
+
+			if (user) {
+
+				firebase.database().ref('users/').child('u' + user.uid).on('value', function (snap) {
+
+					if (snap.val().su)
+						self.isSuperUser = true;
+
+					console.log('Welcome Super User!');
+
+				});
+
+				var userRef = firebase.database().ref('/users/u' + user.uid);
+				userRef.once('value').then(function(snapshot) {
+
+					if(snapshot.exists() && snapshot.child('role').val() == "admin") {
+
+						var uid = snapshot.child('uid').val();
+						var adminRef = firebase.database().ref('admins/a' + uid);
+
+						adminRef.once('value').then(function(snapshot) {
+							if(snapshot.exists()) {
+
+								var email = user.email;
+								var uid = user.uid;
+								var name = user.displayName;
+
+								//setar dados do admin na tela inicial
+
+							}
+						}).catch(function(err) {
+							console.log('Você não tem permissão de administrador: ' + err);
+						});
+
+					} else {
+						window.location.href = '/administracao/sair';
+					}
+
+				}).catch(function(err) {
+					console.log('Algo de errado não está certo: ' + err);
+				});
+
+			} else {
+
+//				document.getElementById('account-details').textContent = 'null';
+
+			}
+
+		}, function(error) {
+
+			console.log(error);
+
+		});
+	};
+
+	window.addEventListener('load', function() {
+		initApp()
+	});
+
+	if (typeof localStorage["firebaseui::rememberedAccounts"] == "undefined") {
+		window.location.href = "/administracao/acesso";
+	}
+
+</script>
+
 <style>
 
 	button {

@@ -1,0 +1,39 @@
+
+/* Order List Controls */
+
+.OrderListControls {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	max-width: 48em;
+	padding: 0 1em;
+	margin: 0 auto 1em;
+}
+
+/* Order List Controls switcher */
+
+.OrderListControls-switch {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.OrderListControls-switch input {
+	margin-right: .375em;
+}
+
+.OrderListControls-switch label {
+	color: #757575;
+	font-size: .75em;
+}

@@ -185,45 +185,29 @@ var OrderItem = (function () {
 
 		this.headerElement.appendChild(this.clientNameLabelElement);
 
-		// Code ID Input element
-		this.codeFieldElement = document.createElement('input');
-		this.codeFieldElement.className = 'OrderItem-codeField';
-		this.codeFieldElement.placeholder = 'Código de Pagamento';
-		this.codeFieldElement.value = this.code || '';
-		this.codeFieldElement.dataset.itemReferenceId = this.reference;
-		this.codeFieldElement.addEventListener('input', function () {
+		// Client Email Label element
+		this.dateLabelElement = document.createElement('span');
+		this.dateLabelElement.className = 'OrderItem-dateLabel';
+		this.dateLabelElement.innerText = moment(this.date).format('LLL') || '';
+		this.dateLabelElement.dataset.itemReferenceId = this.reference;
 
-			if (this.dataset.itemReferenceId) {
+		this.bodyElement.appendChild(this.dateLabelElement);
 
-				var value = this.value.length ? this.value : null;
+		// Code ID Label element
+		this.codeLabelElement = document.createElement('span');
+		this.codeLabelElement.className = 'OrderItem-codeLabel';
+		this.codeLabelElement.innerText = this.code || '';
+		this.codeLabelElement.dataset.itemReferenceId = this.reference;
 
-				database.ref('transactions/' + this.dataset.itemReferenceId).child('code').set(value);
+		this.bodyElement.appendChild(this.codeLabelElement);
 
-			}
+		// Client Email Label element
+		this.clientEmailLabelElement = document.createElement('span');
+		this.clientEmailLabelElement.className = 'OrderItem-clientEmailLabel';
+		this.clientEmailLabelElement.innerText = this.clientEmail || '';
+		this.clientEmailLabelElement.dataset.itemReferenceId = this.reference;
 
-		});
-
-		this.bodyElement.appendChild(this.codeFieldElement);
-
-		// Client Email Input element
-		this.clientEmailFieldElement = document.createElement('input');
-		this.clientEmailFieldElement.className = 'OrderItem-clientEmail';
-		this.clientEmailFieldElement.placeholder = 'E-mail';
-		this.clientEmailFieldElement.value = this.clientEmail || '';
-		this.clientEmailFieldElement.dataset.itemReferenceId = this.reference;
-		this.clientEmailFieldElement.addEventListener('input', function () {
-
-			if (this.dataset.itemReferenceId) {
-
-				var value = this.value.length ? this.value : null;
-
-				database.ref('transactions/' + this.dataset.itemReferenceId).child('clientEmail').set(value);
-
-			}
-
-		});
-
-		this.bodyElement.appendChild(this.clientEmailFieldElement);
+		this.bodyElement.appendChild(this.clientEmailLabelElement);
 
 		// Create Ticket List element
 		this.ticketListElement = document.createElement('div');

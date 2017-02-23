@@ -504,45 +504,29 @@ var OrderItem = (function () {
 
 		this.headerElement.appendChild(this.clientNameLabelElement);
 
-		// Code ID Input element
-		this.codeFieldElement = document.createElement('input');
-		this.codeFieldElement.className = 'OrderItem-codeField';
-		this.codeFieldElement.placeholder = 'Código de Pagamento';
-		this.codeFieldElement.value = this.code || '';
-		this.codeFieldElement.dataset.itemReferenceId = this.reference;
-		this.codeFieldElement.addEventListener('input', function () {
+		// Client Email Label element
+		this.dateLabelElement = document.createElement('span');
+		this.dateLabelElement.className = 'OrderItem-dateLabel';
+		this.dateLabelElement.innerText = moment(this.date).format('LLL') || '';
+		this.dateLabelElement.dataset.itemReferenceId = this.reference;
 
-			if (this.dataset.itemReferenceId) {
+		this.bodyElement.appendChild(this.dateLabelElement);
 
-				var value = this.value.length ? this.value : null;
+		// Code ID Label element
+		this.codeLabelElement = document.createElement('span');
+		this.codeLabelElement.className = 'OrderItem-codeLabel';
+		this.codeLabelElement.innerText = this.code || '';
+		this.codeLabelElement.dataset.itemReferenceId = this.reference;
 
-				database.ref('transactions/' + this.dataset.itemReferenceId).child('code').set(value);
+		this.bodyElement.appendChild(this.codeLabelElement);
 
-			}
+		// Client Email Label element
+		this.clientEmailLabelElement = document.createElement('span');
+		this.clientEmailLabelElement.className = 'OrderItem-clientEmailLabel';
+		this.clientEmailLabelElement.innerText = this.clientEmail || '';
+		this.clientEmailLabelElement.dataset.itemReferenceId = this.reference;
 
-		});
-
-		this.bodyElement.appendChild(this.codeFieldElement);
-
-		// Client Email Input element
-		this.clientEmailFieldElement = document.createElement('input');
-		this.clientEmailFieldElement.className = 'OrderItem-clientEmail';
-		this.clientEmailFieldElement.placeholder = 'E-mail';
-		this.clientEmailFieldElement.value = this.clientEmail || '';
-		this.clientEmailFieldElement.dataset.itemReferenceId = this.reference;
-		this.clientEmailFieldElement.addEventListener('input', function () {
-
-			if (this.dataset.itemReferenceId) {
-
-				var value = this.value.length ? this.value : null;
-
-				database.ref('transactions/' + this.dataset.itemReferenceId).child('clientEmail').set(value);
-
-			}
-
-		});
-
-		this.bodyElement.appendChild(this.clientEmailFieldElement);
+		this.bodyElement.appendChild(this.clientEmailLabelElement);
 
 		// Create Ticket List element
 		this.ticketListElement = document.createElement('div');
@@ -627,13 +611,16 @@ var OrderList = (function () {
 		// global list
 		this.list = [];
 
-		// global list view
-		this.view = [];
+		// global list view list
+		this.viewList = [];
+
+		// a diferença entre viewList e list, é que na list, ficam armazenados os dados 'seguros', na listView, os dados são apenas ordenados
 
 		this.config = {
 			orderType: 'time',
 			orderReverse: false,
-			approvedOnly: true
+			approvedOnly: true,
+			hiddenCanceled: true
 		}
 
 	}
@@ -652,15 +639,20 @@ var OrderList = (function () {
 
 		if (!this.locked) {
 
+			// se não tiver uma viewList, cria uma
+			if (!this.viewList.length)
+				this.buildViewList();
+
 			var self = this;
 
+			// função para fazer o append dos items dentro da lista, usada no próximo for
 			function appendOrderItem(orderItemElement) {
 
 				self.element.appendChild(orderItemElement);
 
 			}
 
-			for (var i = this.list.length; i--; ) {
+			for (var i = 0; i < this.viewList.length; i++) {
 
 				// permite apenas transações com estado
 				if (!!this.list[i].status) {
@@ -670,6 +662,10 @@ var OrderList = (function () {
 					// permite apenas transações com nome parecido com a findString
 					if (this.list[i].clientName)
 						addToViewList = this.list[i].clientName.toLowerCase().includes(findString);
+
+					if (this.config.hiddenCanceled && !findString.length)
+						if (this.list[i].status == 'Cancelada' || this.list[i].status == 'Pagamento negado pela empresa de cartão de crédito')
+							addToViewList = false;
 
 					if (addToViewList)
 						appendOrderItem(this.list[i].element);
@@ -684,7 +680,22 @@ var OrderList = (function () {
 
 	OrderList.prototype.buildViewList = function () {
 
+		var viewList = this.list;
 
+		viewList.sort(function (a, b) {
+
+			if (a.clientName > b.clientName) {
+				return 1;
+			}
+			if (a.clientName < b.clientName) {
+				return -1;
+			}
+			// a must be equal to b
+			return 0;
+
+		});
+
+		this.viewList = viewList;
 
 	};
 
@@ -722,8 +733,10 @@ var OrderList = (function () {
 
 			document.getElementById('orderList-count').innerText = self.list.length + ' registro processados';
 
-			if (!self.locked)
+			if (!self.locked) {
+				self.buildViewList();
 				self.build();
+			}
 
 			if (!snap.val().reference)
 				console.log(snap.key);
@@ -764,10 +777,11 @@ var OrderTicketItem = (function () {
 			this.id = data.id;
 			this.amount= data.amount;
 			this.description = data.description;
+			this.shipping = data.shipping;
 
 			this.createElement();
 
-			database.ref('transactions/' + this.orderItem.reference + '/tickets/' + data.reference + '/').child('shipped').on('value', function (snap) {
+			database.ref('transactions/' + this.orderItem.reference + '/tickets/' + this.reference + '/').child('shipping').on('value', function (snap) {
 
 				self.updateShippingStatus(snap.val());
 
@@ -781,10 +795,46 @@ var OrderTicketItem = (function () {
 
 		this.shipping = data;
 
-		if (!this.shipping) {
+		if (this.shipping) {
 
-			this.element.innerHTML = "<span>" + this.id + "</span>";
-			this.element.innerHTML += "<button>" + 'RETIRAR' + "</button>";
+			this.element.classList.add('is-shipped');
+			this.shippingButtonElement.innerHTML = "<span>Retirado</span>";
+
+		} else {
+
+			this.element.classList.remove('is-shipped');
+			this.shippingButtonElement.innerHTML = "<span>Retirar</span>";
+
+		}
+
+	};
+
+	OrderTicketItem.prototype.getTicketTypeColor = function (ticketId) {
+
+		var maleClassName = 'font-indigo-700';
+		var femaleClassName = 'font-pink-700';
+
+		switch (ticketId) {
+
+			case 'TNVPACKPROMO_M':
+				return maleClassName;
+				break;
+			case 'TNVPACKPROMO_F':
+				return femaleClassName;
+				break;
+			case 'TNVPACK_M':
+				return maleClassName;
+				break;
+			case 'TNVPACK_F':
+				return femaleClassName;
+				break;
+			case 'TNVDIAR_M':
+				return maleClassName;
+				break;
+			case 'TNVDIAR_F':
+				return femaleClassName;
+				break;
+			default: return 'grey-700';
 
 		}
 
@@ -792,9 +842,101 @@ var OrderTicketItem = (function () {
 
 	OrderTicketItem.prototype.createElement = function () {
 
+		var self = this;
+
 		this.element = document.createElement('div');
 		this.element.className  = 'OrderTicketItem';
 		this.element.dataset.itemReferenceId = this.reference;
+
+		// Create ID Label Element
+		this.idLabelElement = document.createElement('span');
+		this.idLabelElement.className = 'OrderTicketItem-id';
+		this.idLabelElement.innerText = this.id + '';
+
+		//this.element.appendChild(this.idLabelElement);
+
+		// Create ID Label Element
+		this.descriptionLabelElement = document.createElement('span');
+		this.descriptionLabelElement.className = 'OrderTicketItem-description';
+		this.descriptionLabelElement.innerText = this.description + '';
+		this.descriptionLabelElement.classList.add(this.getTicketTypeColor(this.id));
+
+		this.element.appendChild(this.descriptionLabelElement);
+
+		// Create Shipping Button Element
+		this.shippingButtonElement = document.createElement('span');
+		this.shippingButtonElement.className = 'OrderTicketItem-shippingButton';
+		this.shippingButtonElement.innerHTML = "<span>Retirar</span>";
+		this.shippingButtonElement.addEventListener('click', function () {
+
+			if (!self.shipping) {
+
+				// aqui dentro é iniciado a retirada do ingresso (ticket)
+
+				if (window.confirm("Você confirma a retirada deste ingresso?")) {
+
+					var user = firebase.auth().currentUser;
+					var name = prompt("Qual o Nome da pessoa que está retirando?");
+					var cpf = prompt("Qual o CPF da pessoa que está retirando?");
+
+					var shippingObject = {
+						cpf: cpf,
+						name: name,
+						timestamp: moment().format(),
+						user: {
+							'displayName': user.displayName,
+							'email': user.email,
+							'uid': user.uid
+						}
+					};
+
+					database.ref('transactions/' + self.orderItem.reference + '/tickets/' + self.reference + '/').child('shipping').set(shippingObject);
+
+					shippingObject.reference = self.reference;
+					shippingObject.type = 'shipped';
+
+					database.ref('ticketShippings/').push(shippingObject);
+
+				}
+
+			} else if (window.isSuperUser) {
+
+				// aqui é feito o processo de 'des-retirada' do ingresso em casos de erros
+				// este processo só pode ser feito por um Super Usuário
+
+				if (window.confirm("Você está prestes a anular a retirada deste ticket, você confirma isso?")) {
+
+					var user = firebase.auth().currentUser;
+
+					var shippingObject = {
+						timestamp: moment().format(),
+						user: {
+							'displayName': user.displayName,
+							'email': user.email,
+							'uid': user.uid
+						}
+					};
+
+					database.ref('transactions/' + self.orderItem.reference + '/tickets/' + self.reference + '/').child('shipping').set(false);
+
+					shippingObject.reference = self.reference;
+					shippingObject.type = 'unshipped';
+
+					database.ref('ticketShippings/').push(shippingObject);
+
+				}
+
+			} else {
+
+				console.log('sorry');
+
+			}
+
+
+
+		});
+
+		this.element.appendChild(this.shippingButtonElement);
 
 	};
 

@@ -18,13 +18,16 @@ var OrderList = (function () {
 		// global list
 		this.list = [];
 
-		// global list view
-		this.view = [];
+		// global list view list
+		this.viewList = [];
+
+		// a diferença entre viewList e list, é que na list, ficam armazenados os dados 'seguros', na listView, os dados são apenas ordenados
 
 		this.config = {
 			orderType: 'time',
 			orderReverse: false,
-			approvedOnly: true
+			approvedOnly: true,
+			hiddenCanceled: true
 		}
 
 	}
@@ -43,15 +46,20 @@ var OrderList = (function () {
 
 		if (!this.locked) {
 
+			// se não tiver uma viewList, cria uma
+			if (!this.viewList.length)
+				this.buildViewList();
+
 			var self = this;
 
+			// função para fazer o append dos items dentro da lista, usada no próximo for
 			function appendOrderItem(orderItemElement) {
 
 				self.element.appendChild(orderItemElement);
 
 			}
 
-			for (var i = this.list.length; i--; ) {
+			for (var i = 0; i < this.viewList.length; i++) {
 
 				// permite apenas transações com estado
 				if (!!this.list[i].status) {
@@ -61,6 +69,10 @@ var OrderList = (function () {
 					// permite apenas transações com nome parecido com a findString
 					if (this.list[i].clientName)
 						addToViewList = this.list[i].clientName.toLowerCase().includes(findString);
+
+					if (this.config.hiddenCanceled && !findString.length)
+						if (this.list[i].status == 'Cancelada' || this.list[i].status == 'Pagamento negado pela empresa de cartão de crédito')
+							addToViewList = false;
 
 					if (addToViewList)
 						appendOrderItem(this.list[i].element);
@@ -75,7 +87,22 @@ var OrderList = (function () {
 
 	OrderList.prototype.buildViewList = function () {
 
+		var viewList = this.list;
 
+		viewList.sort(function (a, b) {
+
+			if (a.clientName > b.clientName) {
+				return 1;
+			}
+			if (a.clientName < b.clientName) {
+				return -1;
+			}
+			// a must be equal to b
+			return 0;
+
+		});
+
+		this.viewList = viewList;
 
 	};
 
@@ -113,8 +140,10 @@ var OrderList = (function () {
 
 			document.getElementById('orderList-count').innerText = self.list.length + ' registro processados';
 
-			if (!self.locked)
+			if (!self.locked) {
+				self.buildViewList();
 				self.build();
+			}
 
 			if (!snap.val().reference)
 				console.log(snap.key);

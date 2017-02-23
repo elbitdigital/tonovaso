@@ -1,0 +1,2163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewDataSet>
+<Table>
+    <Transacao_ID>F34F62C4-CFF9-43B3-BBEB-F3817238F45D</Transacao_ID>
+    <Cliente_Nome>francieli antonangelo dos santos</Cliente_Nome>
+    <Cliente_Email>francieli.pedagogia2008@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>176,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>7,4500</Valor_Taxa>
+    <Valor_Liquido>169,3500</Valor_Liquido>
+    <Data_Transacao>21/02/2017 18:34:19</Data_Transacao>
+    <Data_Compensacao>23/03/2017 18:36:20</Data_Compensacao>
+    <Ref_Transacao>-KdXa9D5hO0j5OBxM74P</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>7,0500</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>A016D345-D803-4472-8613-B72DA46D77B9</Transacao_ID>
+    <Cliente_Nome>Maria Benedita V de Moraes</Cliente_Nome>
+    <Cliente_Email>ana.mooraes@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>145,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>6,2100</Valor_Taxa>
+    <Valor_Liquido>139,3900</Valor_Liquido>
+    <Data_Transacao>21/02/2017 15:34:37</Data_Transacao>
+    <Data_Compensacao>23/03/2017 15:37:39</Data_Compensacao>
+    <Ref_Transacao>-KdWx11yjTO_mHP4FOg8</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>5,8100</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>B6DA2745-1F0B-44DA-9434-6994C0A7A98C</Transacao_ID>
+    <Cliente_Nome>DANILA DUARTE DE OLIVEIRA</Cliente_Nome>
+    <Cliente_Email>jussara.calesso@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>21/02/2017 12:15:00</Data_Transacao>
+    <Data_Compensacao>23/03/2017 12:33:27</Data_Compensacao>
+    <Ref_Transacao>-KdWEKhcgkSoUPgShhor</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>085ECE81-7EED-49F5-9F51-87FC098EAE7F</Transacao_ID>
+    <Cliente_Nome>DANIEL P OLIVEIRA</Cliente_Nome>
+    <Cliente_Email>danielparrilha@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>312,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>12,8500</Valor_Taxa>
+    <Valor_Liquido>299,1500</Valor_Liquido>
+    <Data_Transacao>21/02/2017 10:38:30</Data_Transacao>
+    <Data_Compensacao>23/03/2017 19:14:09</Data_Compensacao>
+    <Ref_Transacao>-KdVtFW_FzHbdoL5layk</Ref_Transacao>
+    <Parcelas>12</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>12,4500</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>F8902F96-72CF-4DFD-B5FC-C70E45896C43</Transacao_ID>
+    <Cliente_Nome>Thuany Ireno Dantas</Cliente_Nome>
+    <Cliente_Email>thuanyireno@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aguardando pagamento</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>156,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>6,6200</Valor_Taxa>
+    <Valor_Liquido>149,3800</Valor_Liquido>
+    <Data_Transacao>21/02/2017 10:14:38</Data_Transacao>
+    <Data_Compensacao>21/02/2017 10:14:38</Data_Compensacao>
+    <Ref_Transacao>-KdVnpauNYmxk9ESwUJe</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>6,2200</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>61BD6A4F-08E8-4AF5-A381-2BA8A360B8A2</Transacao_ID>
+    <Cliente_Nome>CARLOS HENRIQUE DE MELLO SANTOS</Cliente_Nome>
+    <Cliente_Email>carlosmellosantos2014@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aguardando pagamento</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>83,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,7200</Valor_Taxa>
+    <Valor_Liquido>79,4800</Valor_Liquido>
+    <Data_Transacao>21/02/2017 09:46:08</Data_Transacao>
+    <Data_Compensacao>21/02/2017 09:46:08</Data_Compensacao>
+    <Ref_Transacao>-KdVhGI8s5b0z9ZS2LTb</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>3,3200</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>14ADEFCD-8643-4F15-85D0-936BFAF90D04</Transacao_ID>
+    <Cliente_Nome>Rita de Cassia Branco da Silva</Cliente_Nome>
+    <Cliente_Email>rita.branco8@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>239,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,9400</Valor_Taxa>
+    <Valor_Liquido>229,2600</Valor_Liquido>
+    <Data_Transacao>21/02/2017 09:31:28</Data_Transacao>
+    <Data_Compensacao>23/03/2017 09:38:10</Data_Compensacao>
+    <Ref_Transacao>-KdVduqo2dFzGKVv9UfX</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,5400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>D2DBD9F3-C77F-466E-AFAC-B972A2F5C663</Transacao_ID>
+    <Cliente_Nome>valdeci vieira de jesus</Cliente_Nome>
+    <Cliente_Email>meyrinha_pedroso@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>21/02/2017 08:56:02</Data_Transacao>
+    <Data_Compensacao>23/03/2017 08:58:45</Data_Compensacao>
+    <Ref_Transacao>-KdVWnlzHYHTrk-RgNI4</Ref_Transacao>
+    <Parcelas>2</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>DA49912F-7C5A-4A2C-9058-BF8642B3FA83</Transacao_ID>
+    <Cliente_Nome>ISABELLA MONTEIRO PEDROSO</Cliente_Nome>
+    <Cliente_Email>isa-monteiro@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aguardando pagamento</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>21/02/2017 08:21:13</Data_Transacao>
+    <Data_Compensacao>21/02/2017 08:21:13</Data_Compensacao>
+    <Ref_Transacao>-KdVOowO-vPcglgHXPie</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>C8AF6892-0553-48F6-A6D0-FC83D6504926</Transacao_ID>
+    <Cliente_Nome>Thaisa Carolina de Souza Silva</Cliente_Nome>
+    <Cliente_Email>catthaisa@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>239,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,9400</Valor_Taxa>
+    <Valor_Liquido>229,2600</Valor_Liquido>
+    <Data_Transacao>20/02/2017 17:39:56</Data_Transacao>
+    <Data_Compensacao>22/03/2017 17:42:29</Data_Compensacao>
+    <Ref_Transacao>-KdSF6pbGoXJ3ejM9N8T</Ref_Transacao>
+    <Parcelas>10</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,5400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>7F94DA0E-C392-4277-86BE-A9FABA5EE240</Transacao_ID>
+    <Cliente_Nome>jussara c mello</Cliente_Nome>
+    <Cliente_Email>jussara.calesso@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>20/02/2017 16:45:11</Data_Transacao>
+    <Data_Compensacao>22/03/2017 16:58:18</Data_Compensacao>
+    <Ref_Transacao>-KdS2ZNUlU_0JhcYXp4I</Ref_Transacao>
+    <Parcelas>8</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>BADDF626-3F88-4599-BD6C-FAB737D49B98</Transacao_ID>
+    <Cliente_Nome>Maria M Q Guerino</Cliente_Nome>
+    <Cliente_Email>renatinhaguerino@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>104,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>4,5500</Valor_Taxa>
+    <Valor_Liquido>99,4500</Valor_Liquido>
+    <Data_Transacao>20/02/2017 13:49:58</Data_Transacao>
+    <Data_Compensacao>22/03/2017 13:54:38</Data_Compensacao>
+    <Ref_Transacao>-KdRQYXhyeMDnGGIE-t8</Ref_Transacao>
+    <Parcelas>2</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>4,1500</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>0EAA03A0-3F84-4187-B7C0-42105A81FFB8</Transacao_ID>
+    <Cliente_Nome>Ravena Laiza Sales</Cliente_Nome>
+    <Cliente_Email>salesravena@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>239,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,9400</Valor_Taxa>
+    <Valor_Liquido>229,2600</Valor_Liquido>
+    <Data_Transacao>20/02/2017 12:54:10</Data_Transacao>
+    <Data_Compensacao>22/03/2017 13:02:14</Data_Compensacao>
+    <Ref_Transacao>-KdRDiEGYwdjNqXK7776</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,5400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>96A6B02D-1C77-4954-822A-8200E63C6A75</Transacao_ID>
+    <Cliente_Nome>valdeci vieira de jesus</Cliente_Nome>
+    <Cliente_Email>meyrinha_pedroso@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>156,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>6,6200</Valor_Taxa>
+    <Valor_Liquido>149,3800</Valor_Liquido>
+    <Data_Transacao>20/02/2017 09:59:51</Data_Transacao>
+    <Data_Compensacao>22/03/2017 10:03:06</Data_Compensacao>
+    <Ref_Transacao>-KdQanpiFBR8qOLbHmlN</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>6,2200</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>87D241C6-3CD4-4E79-88C8-9D086A426656</Transacao_ID>
+    <Cliente_Nome>Camila Vieira de Oliveira</Cliente_Nome>
+    <Cliente_Email>camis.vieira_@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>145,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>6,2100</Valor_Taxa>
+    <Valor_Liquido>139,3900</Valor_Liquido>
+    <Data_Transacao>20/02/2017 09:33:30</Data_Transacao>
+    <Data_Compensacao>22/03/2017 09:37:19</Data_Compensacao>
+    <Ref_Transacao>-KdQVlqpwlo9rvd5R45w</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>5,8100</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>71AD0B6D-AB02-4C99-9322-281FC9F19616</Transacao_ID>
+    <Cliente_Nome>Ricardo Leite</Cliente_Nome>
+    <Cliente_Email>ricnkr12@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>83,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,7200</Valor_Taxa>
+    <Valor_Liquido>79,4800</Valor_Liquido>
+    <Data_Transacao>19/02/2017 19:24:57</Data_Transacao>
+    <Data_Compensacao>21/03/2017 19:26:04</Data_Compensacao>
+    <Ref_Transacao>-KdNTZS7ErUs2x6DpFwV</Ref_Transacao>
+    <Parcelas>2</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>3,3200</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>898AA0C6-65D3-4F51-87FA-9D6C62E7B096</Transacao_ID>
+    <Cliente_Nome>Luciene stengel</Cliente_Nome>
+    <Cliente_Email>lstengel1@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aguardando pagamento</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>228,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,5300</Valor_Taxa>
+    <Valor_Liquido>219,2700</Valor_Liquido>
+    <Data_Transacao>19/02/2017 15:35:34</Data_Transacao>
+    <Data_Compensacao>19/02/2017 15:35:34</Data_Compensacao>
+    <Ref_Transacao>-KdMe7jcJcINSWWGUG0U</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,1300</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>4113710C-12D6-407A-8B0F-2839CB20C704</Transacao_ID>
+    <Cliente_Nome>Gustavo Andreotti lucchini</Cliente_Nome>
+    <Cliente_Email>guuhandreotti@live.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aguardando pagamento</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>31,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>1,6400</Valor_Taxa>
+    <Valor_Liquido>29,5600</Valor_Liquido>
+    <Data_Transacao>19/02/2017 15:17:14</Data_Transacao>
+    <Data_Compensacao>19/02/2017 15:17:14</Data_Compensacao>
+    <Ref_Transacao>-KdM_qWhU9KYWyYYPusi</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>1,2400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>F3E09F44-A7B5-4E22-AF27-024967143C21</Transacao_ID>
+    <Cliente_Nome>Daniel Schneider Santos</Cliente_Nome>
+    <Cliente_Email>danielschsantos@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>603,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>24,4700</Valor_Taxa>
+    <Valor_Liquido>578,7300</Valor_Liquido>
+    <Data_Transacao>19/02/2017 14:12:23</Data_Transacao>
+    <Data_Compensacao>21/03/2017 14:16:14</Data_Compensacao>
+    <Ref_Transacao>-KdMM0l4uLBaGHE9VWhL</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>24,0700</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>6B59811F-4F73-4109-874E-EF448BC25A68</Transacao_ID>
+    <Cliente_Nome>Walter B Rodrigues</Cliente_Nome>
+    <Cliente_Email>beatrizbiaa96@outlook.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>31,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>1,6400</Valor_Taxa>
+    <Valor_Liquido>29,5600</Valor_Liquido>
+    <Data_Transacao>18/02/2017 13:16:51</Data_Transacao>
+    <Data_Compensacao>20/03/2017 12:21:22</Data_Compensacao>
+    <Ref_Transacao>-KdGmzYBK1aQ02k2RmlC</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>1,2400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>97475DCD-2A5B-4E25-80BF-A33DB3CBE390</Transacao_ID>
+    <Cliente_Nome>Nathalia Santos</Cliente_Nome>
+    <Cliente_Email>natisantos3060@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aguardando pagamento</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>239,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,9400</Valor_Taxa>
+    <Valor_Liquido>229,2600</Valor_Liquido>
+    <Data_Transacao>18/02/2017 10:28:57</Data_Transacao>
+    <Data_Compensacao>18/02/2017 10:28:57</Data_Compensacao>
+    <Ref_Transacao>-KdGBZIcyZd2GnSSbEo5</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,5400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>5DDE8A20-3495-425F-8097-91F1BD4AA3D9</Transacao_ID>
+    <Cliente_Nome>larissa pereira</Cliente_Nome>
+    <Cliente_Email>larissap.alves@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aguardando pagamento</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>239,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,9400</Valor_Taxa>
+    <Valor_Liquido>229,2600</Valor_Liquido>
+    <Data_Transacao>18/02/2017 09:56:00</Data_Transacao>
+    <Data_Compensacao>18/02/2017 09:56:00</Data_Compensacao>
+    <Ref_Transacao>-KdG40sJ3_BFsln-mlfJ</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,5400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>D77E9A23-7114-40D7-97BF-AA878A03E11E</Transacao_ID>
+    <Cliente_Nome>Rodrigo B Brandao</Cliente_Nome>
+    <Cliente_Email>rodrigobuzzobrandao@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>114,4000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>4,9600</Valor_Taxa>
+    <Valor_Liquido>109,4400</Valor_Liquido>
+    <Data_Transacao>17/02/2017 23:42:21</Data_Transacao>
+    <Data_Compensacao>19/03/2017 22:45:51</Data_Compensacao>
+    <Ref_Transacao>-KdDsZc1n-MTSF1RHeoS</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>4,5600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>3765D077-E688-4DE8-88E1-66CBD28AE308</Transacao_ID>
+    <Cliente_Nome>Giovana Rocha Silveira</Cliente_Nome>
+    <Cliente_Email>ambrosio.giovana@yahoo.com.br</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>104,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>4,5500</Valor_Taxa>
+    <Valor_Liquido>99,4500</Valor_Liquido>
+    <Data_Transacao>17/02/2017 23:30:57</Data_Transacao>
+    <Data_Compensacao>19/03/2017 22:34:39</Data_Compensacao>
+    <Ref_Transacao>-KdDpxDFU9NSrEJEIBIh</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>4,1500</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>C44C7D73-A3D8-43E5-B902-AB6E917CC00D</Transacao_ID>
+    <Cliente_Nome>ANELIZE G VIEIRA</Cliente_Nome>
+    <Cliente_Email>anelizegvieira@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>156,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>6,6200</Valor_Taxa>
+    <Valor_Liquido>149,3800</Valor_Liquido>
+    <Data_Transacao>17/02/2017 21:02:23</Data_Transacao>
+    <Data_Compensacao>19/03/2017 20:17:29</Data_Compensacao>
+    <Ref_Transacao>-KdDIwTgAiSMrvT4pU6w</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>6,2200</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>62F8527A-CB18-4C06-9868-73ACB6A641B3</Transacao_ID>
+    <Cliente_Nome>DENNYS DE MELLO GONGORA DIAS</Cliente_Nome>
+    <Cliente_Email>dennysmello@yahoo.com.br</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>166,4000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>7,0400</Valor_Taxa>
+    <Valor_Liquido>159,3600</Valor_Liquido>
+    <Data_Transacao>17/02/2017 20:52:11</Data_Transacao>
+    <Data_Compensacao>19/03/2017 20:01:09</Data_Compensacao>
+    <Ref_Transacao>-KdDG_YfFKZ8VygIfvBN</Ref_Transacao>
+    <Parcelas>2</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>6,6400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>6E73C067-C52D-45E8-92EE-00EC8FFB2436</Transacao_ID>
+    <Cliente_Nome>Tauana n v da palma</Cliente_Nome>
+    <Cliente_Email>lyres.mariana@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>291,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>12,0200</Valor_Taxa>
+    <Valor_Liquido>279,1800</Valor_Liquido>
+    <Data_Transacao>17/02/2017 15:06:57</Data_Transacao>
+    <Data_Compensacao>19/03/2017 14:10:23</Data_Compensacao>
+    <Ref_Transacao>-KdC1b3gQ_IcFwpbLanN</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>11,6200</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>98FDDB1A-8966-494D-8542-FF8B7439912B</Transacao_ID>
+    <Cliente_Nome>TATIANE M MELO</Cliente_Nome>
+    <Cliente_Email>tatianemiliorini@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>145,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>6,2100</Valor_Taxa>
+    <Valor_Liquido>139,3900</Valor_Liquido>
+    <Data_Transacao>17/02/2017 01:32:47</Data_Transacao>
+    <Data_Compensacao>19/03/2017 00:36:48</Data_Compensacao>
+    <Ref_Transacao>-Kd97ENktAS3n0F_Ikc9</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>5,8100</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>D9941C13-76E2-495B-B93A-3B6E227F5931</Transacao_ID>
+    <Cliente_Nome>Vanessa Toledo</Cliente_Nome>
+    <Cliente_Email>nessa-toledo@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>239,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,9400</Valor_Taxa>
+    <Valor_Liquido>229,2600</Valor_Liquido>
+    <Data_Transacao>17/02/2017 00:11:14</Data_Transacao>
+    <Data_Compensacao>18/03/2017 23:19:33</Data_Compensacao>
+    <Ref_Transacao>-Kd8p_mVmWJ-fH2R3t1A</Ref_Transacao>
+    <Parcelas>12</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,5400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>D00C4E00-C9C5-45C5-B67D-D482FDF4952D</Transacao_ID>
+    <Cliente_Nome>NILCEIA SILVA</Cliente_Nome>
+    <Cliente_Email>nilceiadn@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aguardando pagamento</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>16/02/2017 16:02:34</Data_Transacao>
+    <Data_Compensacao>16/02/2017 16:02:34</Data_Compensacao>
+    <Ref_Transacao>-Kd74jlPZDhGNTlwLGig</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>6859B5D8-EB27-422C-9B16-2F2806071EC2</Transacao_ID>
+    <Cliente_Nome>Helen Carolini Pereira</Cliente_Nome>
+    <Cliente_Email>carolinihelen@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>239,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,9400</Valor_Taxa>
+    <Valor_Liquido>229,2600</Valor_Liquido>
+    <Data_Transacao>15/02/2017 00:38:07</Data_Transacao>
+    <Data_Compensacao>16/03/2017 23:52:17</Data_Compensacao>
+    <Ref_Transacao>-KczcYDw5cVLIVUt2ad-</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,5400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>FD017A68-A430-415D-A50F-AA8D97846963</Transacao_ID>
+    <Cliente_Nome>APARECIDA F F SILVA</Cliente_Nome>
+    <Cliente_Email>dessa_ferreirafreitas@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>14/02/2017 21:56:14</Data_Transacao>
+    <Data_Compensacao>18/03/2017 14:45:16</Data_Compensacao>
+    <Ref_Transacao>-Kcz2W1vvm5MLldyfh0-</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>B9A1EE73-25C2-4FD3-9D55-752F03DB2F72</Transacao_ID>
+    <Cliente_Nome>Katrilen souza dos santos</Cliente_Nome>
+    <Cliente_Email>katrillincosta44@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aguardando pagamento</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>14/02/2017 16:22:03</Data_Transacao>
+    <Data_Compensacao>14/02/2017 16:22:03</Data_Compensacao>
+    <Ref_Transacao>-KcxqyrU4HmhfRymuxOR</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>DA9E34E7-593F-4230-99B1-8EC0FAF407F3</Transacao_ID>
+    <Cliente_Nome>BRUNO RICARDO M ORENIDES</Cliente_Nome>
+    <Cliente_Email>bruno.orenitis@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>166,4000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>7,0400</Valor_Taxa>
+    <Valor_Liquido>159,3600</Valor_Liquido>
+    <Data_Transacao>13/02/2017 15:52:15</Data_Transacao>
+    <Data_Compensacao>15/03/2017 14:56:20</Data_Compensacao>
+    <Ref_Transacao>-KcsacJwsGFDaWDeqsbK</Ref_Transacao>
+    <Parcelas>12</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>6,6400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>249440BB-02AC-42FE-B532-3EEAE143FF29</Transacao_ID>
+    <Cliente_Nome>NILCEIA SILVA</Cliente_Nome>
+    <Cliente_Email>nilceiadn@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aguardando pagamento</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>13/02/2017 14:33:27</Data_Transacao>
+    <Data_Compensacao>13/02/2017 14:33:27</Data_Compensacao>
+    <Ref_Transacao>-KcsJZNwD-sKqmBEbfGn</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>A6993CE9-4864-4CB2-B7C6-1E5E81B3AAD5</Transacao_ID>
+    <Cliente_Nome>Rita de Cassia Branco da Silva</Cliente_Nome>
+    <Cliente_Email>rita.branco8@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>603,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>24,4700</Valor_Taxa>
+    <Valor_Liquido>578,7300</Valor_Liquido>
+    <Data_Transacao>13/02/2017 14:10:54</Data_Transacao>
+    <Data_Compensacao>15/03/2017 13:16:49</Data_Compensacao>
+    <Ref_Transacao>-KcsEOrXs7UeMTa6l6AU</Ref_Transacao>
+    <Parcelas>5</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>24,0700</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>8C4E6091-3530-4780-B81B-DDCEA8B02354</Transacao_ID>
+    <Cliente_Nome>Jean lucas f alves</Cliente_Nome>
+    <Cliente_Email>renan.toni@taruma.sp.gov.br</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Pagamento negado pela empresa de cartão de crédito</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>239,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,9400</Valor_Taxa>
+    <Valor_Liquido>229,2600</Valor_Liquido>
+    <Data_Transacao>09/02/2017 11:26:47</Data_Transacao>
+    <Data_Compensacao>09/02/2017 11:26:47</Data_Compensacao>
+    <Ref_Transacao>-KcY2UWOqbN5t4Vozh3I</Ref_Transacao>
+    <Parcelas>12</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,5400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>245C1BEF-060E-4B46-ADDB-FDE7C2D31C54</Transacao_ID>
+    <Cliente_Nome>Bianca C Froes</Cliente_Nome>
+    <Cliente_Email>bia_frsw@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Pagamento negado pela empresa de cartão de crédito</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>08/02/2017 22:44:52</Data_Transacao>
+    <Data_Compensacao>08/02/2017 22:44:52</Data_Compensacao>
+    <Ref_Transacao>-Kc_TZAgwJ_Ot5mUykCM</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>EB8FECC3-ECB5-49B8-B09B-AE6BDFA1BE43</Transacao_ID>
+    <Cliente_Nome>Ana Carolina passianoto</Cliente_Nome>
+    <Cliente_Email>krol222010@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>07/02/2017 20:40:37</Data_Transacao>
+    <Data_Compensacao>07/02/2017 20:40:37</Data_Compensacao>
+    <Ref_Transacao>-KcPj5VAOB0u-24yB-ng</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>B38C269C-EC52-4CFA-9E0B-A3ADA3C3FD7D</Transacao_ID>
+    <Cliente_Nome>RHAÍ ARAUJO ROCHA</Cliente_Nome>
+    <Cliente_Email>rocharhai@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>166,4000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>7,0400</Valor_Taxa>
+    <Valor_Liquido>159,3600</Valor_Liquido>
+    <Data_Transacao>07/02/2017 16:53:36</Data_Transacao>
+    <Data_Compensacao>09/03/2017 15:57:43</Data_Compensacao>
+    <Ref_Transacao>-KcOvIAmICrC4yDTYBMo</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>6,6400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>021EAA64-9889-401C-9197-240FC7C88C34</Transacao_ID>
+    <Cliente_Nome>LYARA M NASCIMENTO</Cliente_Nome>
+    <Cliente_Email>lyara.nascimento@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>07/02/2017 14:24:20</Data_Transacao>
+    <Data_Compensacao>09/03/2017 13:49:24</Data_Compensacao>
+    <Ref_Transacao>-KcONwgCd5Uz8I6zdjOt</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>56E4579D-8098-4BD2-8A98-280B13B24B5D</Transacao_ID>
+    <Cliente_Nome>Mariana Yoshiy Doi</Cliente_Nome>
+    <Cliente_Email>mariana.ag@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>145,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>6,2100</Valor_Taxa>
+    <Valor_Liquido>139,3900</Valor_Liquido>
+    <Data_Transacao>06/02/2017 13:38:29</Data_Transacao>
+    <Data_Compensacao>08/03/2017 12:40:40</Data_Compensacao>
+    <Ref_Transacao>-KcJ3rmrwVZSmYGb2bGJ</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>5,8100</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>935F3730-8CD8-41C0-92F0-882F6AD77513</Transacao_ID>
+    <Cliente_Nome>Fernando Rodrigues Silva</Cliente_Nome>
+    <Cliente_Email>fernandinho@femanet.com.br</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>378,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>15,4800</Valor_Taxa>
+    <Valor_Liquido>362,5200</Valor_Liquido>
+    <Data_Transacao>01/02/2017 22:49:54</Data_Transacao>
+    <Data_Compensacao>03/03/2017 21:53:00</Data_Compensacao>
+    <Ref_Transacao>-KbwI59GTjY-Pu_1pZZq</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>15,0800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>F97F14C1-CC00-4CC9-9537-7B89030E080C</Transacao_ID>
+    <Cliente_Nome>Bruna Maqueda Martins</Cliente_Nome>
+    <Cliente_Email>bruna-maqueda@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>72,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,3000</Valor_Taxa>
+    <Valor_Liquido>69,5000</Valor_Liquido>
+    <Data_Transacao>31/01/2017 20:16:37</Data_Transacao>
+    <Data_Compensacao>05/03/2017 01:59:33</Data_Compensacao>
+    <Ref_Transacao>-KbqaRsaL2n2k7i--tzh</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>2,9000</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>8C807A43-C116-4D45-A8F6-3136EBB065EA</Transacao_ID>
+    <Cliente_Nome>BRUNA BARBOZA OLIVEIRA</Cliente_Nome>
+    <Cliente_Email>bruhholliveira@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>239,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,9400</Valor_Taxa>
+    <Valor_Liquido>229,2600</Valor_Liquido>
+    <Data_Transacao>28/01/2017 10:32:55</Data_Transacao>
+    <Data_Compensacao>27/02/2017 09:35:15</Data_Compensacao>
+    <Ref_Transacao>-Kb_3Bpqqw8pPsgAJjge</Ref_Transacao>
+    <Parcelas>10</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,5400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>1ADEA20A-E226-42A8-9536-7F17504A6872</Transacao_ID>
+    <Cliente_Nome>BRUNA BARBOZA OLIVEIRA</Cliente_Nome>
+    <Cliente_Email>bruhholliveira@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>239,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,9400</Valor_Taxa>
+    <Valor_Liquido>229,2600</Valor_Liquido>
+    <Data_Transacao>28/01/2017 10:14:13</Data_Transacao>
+    <Data_Compensacao>27/02/2017 09:27:36</Data_Compensacao>
+    <Ref_Transacao>-KbZzuaMD_Yr5nNv56pa</Ref_Transacao>
+    <Parcelas>10</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,5400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>B1B6053C-65B2-4CE6-9835-2F2F6C5E1513</Transacao_ID>
+    <Cliente_Nome>Jonathas Junior Quevedo Melo</Cliente_Nome>
+    <Cliente_Email>jonathas.melo@msn.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>86,4000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,8500</Valor_Taxa>
+    <Valor_Liquido>82,5500</Valor_Liquido>
+    <Data_Transacao>25/01/2017 08:45:02</Data_Transacao>
+    <Data_Compensacao>24/02/2017 07:55:15</Data_Compensacao>
+    <Ref_Transacao>-KbKDdMhKf1nNJ0O_gmc</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>3,4500</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>9CE4CC8C-EA35-4827-AA87-23F62866815D</Transacao_ID>
+    <Cliente_Nome>Polyana Palomares</Cliente_Nome>
+    <Cliente_Email>polyanapg@outlook.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>259,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>10,7400</Valor_Taxa>
+    <Valor_Liquido>248,4600</Valor_Liquido>
+    <Data_Transacao>24/01/2017 21:35:42</Data_Transacao>
+    <Data_Compensacao>23/02/2017 20:41:45</Data_Compensacao>
+    <Ref_Transacao>-KbHpQPJklOc3V6cW-1u</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>10,3400</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>2F74E140-A98F-4CF6-B9B2-4EAB2ADC9A45</Transacao_ID>
+    <Cliente_Nome>Vilma Gazola</Cliente_Nome>
+    <Cliente_Email>gabi_cm12@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>86,4000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,8500</Valor_Taxa>
+    <Valor_Liquido>82,5500</Valor_Liquido>
+    <Data_Transacao>24/01/2017 20:39:14</Data_Transacao>
+    <Data_Compensacao>23/02/2017 19:45:22</Data_Compensacao>
+    <Ref_Transacao>-KbHcW-x-JEP_D1WfTwH</Ref_Transacao>
+    <Parcelas>2</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>3,4500</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>109AD7CC-CDBF-47DD-BC9A-9301AC86C59B</Transacao_ID>
+    <Cliente_Nome>Flávia Oliveira</Cliente_Nome>
+    <Cliente_Email>jhenijorge21@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Pagamento negado pela empresa de cartão de crédito</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>615,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>24,9600</Valor_Taxa>
+    <Valor_Liquido>590,6400</Valor_Liquido>
+    <Data_Transacao>24/01/2017 19:03:09</Data_Transacao>
+    <Data_Compensacao>24/01/2017 19:03:09</Data_Compensacao>
+    <Ref_Transacao>-KbHHU3_llSm8CK07WXf</Ref_Transacao>
+    <Parcelas>12</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>24,5600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>26CA28AF-2812-414A-9B8A-EA96B556D354</Transacao_ID>
+    <Cliente_Nome>Diego Henrique Melo</Cliente_Nome>
+    <Cliente_Email>sertaoskt@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>86,4000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,8500</Valor_Taxa>
+    <Valor_Liquido>82,5500</Valor_Liquido>
+    <Data_Transacao>24/01/2017 18:55:35</Data_Transacao>
+    <Data_Compensacao>23/02/2017 18:15:24</Data_Compensacao>
+    <Ref_Transacao>-KbHFXulWzoh3mZ6lfgg</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>3,4500</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>C61AFF24-867D-4B13-9C91-261ACCA24BFB</Transacao_ID>
+    <Cliente_Nome>Flávia Oliveira</Cliente_Nome>
+    <Cliente_Email>jhenijorge21@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>615,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>24,9600</Valor_Taxa>
+    <Valor_Liquido>590,6400</Valor_Liquido>
+    <Data_Transacao>24/01/2017 18:37:33</Data_Transacao>
+    <Data_Compensacao>24/01/2017 18:37:33</Data_Compensacao>
+    <Ref_Transacao>-KbHBdJl6NWtWniIkRL-</Ref_Transacao>
+    <Parcelas>12</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>24,5600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>99E3EF59-82F1-49EA-845F-80DCD07CBE53</Transacao_ID>
+    <Cliente_Nome>danilo emerson de melo cam</Cliente_Nome>
+    <Cliente_Email>danilo89_campos@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>86,4000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,8500</Valor_Taxa>
+    <Valor_Liquido>82,5500</Valor_Liquido>
+    <Data_Transacao>24/01/2017 18:28:36</Data_Transacao>
+    <Data_Compensacao>23/02/2017 17:51:11</Data_Compensacao>
+    <Ref_Transacao>-KbH9aHjPxotyRqYGX1M</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>3,4500</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>660339DA-2420-437B-8315-CDB417C0C617</Transacao_ID>
+    <Cliente_Nome>BERNARDETE LIMA INOUE</Cliente_Nome>
+    <Cliente_Email>andreia.inoue@bol.com.br</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>129,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>5,5700</Valor_Taxa>
+    <Valor_Liquido>124,0300</Valor_Liquido>
+    <Data_Transacao>24/01/2017 18:14:59</Data_Transacao>
+    <Data_Compensacao>23/02/2017 17:19:58</Data_Compensacao>
+    <Ref_Transacao>-KbH6lacW_pj8_xgHy_l</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>5,1700</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>A0A36454-E8B7-479C-B2A3-6148F4750847</Transacao_ID>
+    <Cliente_Nome>Aguinaldo Junior Yamamoto Peres</Cliente_Nome>
+    <Cliente_Email>guinaperes@terra.com.br</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>23/01/2017 21:39:19</Data_Transacao>
+    <Data_Compensacao>22/02/2017 20:40:24</Data_Compensacao>
+    <Ref_Transacao>-KbCgeUOgEfzNPLx5vJG</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>4883029F-A13D-482F-B93E-8FB03D1D7B3F</Transacao_ID>
+    <Cliente_Nome>Aguinaldo Junior Yamamoto Peres</Cliente_Nome>
+    <Cliente_Email>guinaperes@terra.com.br</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>23/01/2017 21:37:12</Data_Transacao>
+    <Data_Compensacao>22/02/2017 20:38:29</Data_Compensacao>
+    <Ref_Transacao>-KbCgAd9NuDfVzLqv7rs</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>F7324D8C-91E5-4EED-BFE0-196EDD5EEBF3</Transacao_ID>
+    <Cliente_Nome>Giovanna Ortiz Monteiro</Cliente_Nome>
+    <Cliente_Email>gi_ortiz.monteiro@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>23/01/2017 11:49:58</Data_Transacao>
+    <Data_Compensacao>23/02/2017 03:21:57</Data_Compensacao>
+    <Ref_Transacao>-KbA_lYEYZMy68lqLHvJ</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>01836565-0507-47A6-A5F2-F062B5D235C3</Transacao_ID>
+    <Cliente_Nome>Leandro Cabral dos Santos</Cliente_Nome>
+    <Cliente_Email>leandrocabral1991@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>172,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>7,2900</Valor_Taxa>
+    <Valor_Liquido>165,5100</Valor_Liquido>
+    <Data_Transacao>17/01/2017 22:47:41</Data_Transacao>
+    <Data_Compensacao>16/02/2017 23:39:36</Data_Compensacao>
+    <Ref_Transacao>-Kaj1vpIgaHOmMOvpKuj</Ref_Transacao>
+    <Parcelas>2</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>165,5100</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>6,8900</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>98CEC27D-EC26-40BB-8970-8B362F3661FA</Transacao_ID>
+    <Cliente_Nome>Josiane Torreti</Cliente_Nome>
+    <Cliente_Email>josiane_torreti@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>172,8000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>7,2900</Valor_Taxa>
+    <Valor_Liquido>165,5100</Valor_Liquido>
+    <Data_Transacao>17/01/2017 19:17:09</Data_Transacao>
+    <Data_Compensacao>16/02/2017 19:25:31</Data_Compensacao>
+    <Ref_Transacao>-KaiH_cWvtBpqPpnnCrZ</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>165,5100</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>6,8900</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>599CD6E9-4782-40FF-BFF2-54329611B763</Transacao_ID>
+    <Cliente_Nome>lais bonifacio rode</Cliente_Nome>
+    <Cliente_Email>laaisroder@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>475,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>19,3600</Valor_Taxa>
+    <Valor_Liquido>455,8400</Valor_Liquido>
+    <Data_Transacao>17/01/2017 10:24:48</Data_Transacao>
+    <Data_Compensacao>16/02/2017 10:29:57</Data_Compensacao>
+    <Ref_Transacao>-KagNidhH1jBydNZMcA4</Ref_Transacao>
+    <Parcelas>6</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>455,8400</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>18,9600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>B6781C7B-D958-4A3C-B2FA-D3B8AB176039</Transacao_ID>
+    <Cliente_Nome>Ana lucia gonçalves</Cliente_Nome>
+    <Cliente_Email>anna33483@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>16/01/2017 23:39:33</Data_Transacao>
+    <Data_Compensacao>16/01/2017 23:39:33</Data_Compensacao>
+    <Ref_Transacao>-Kae42WC-N3YpEIvZqWm</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>14144852-BC29-4F34-B52F-CF882078AD27</Transacao_ID>
+    <Cliente_Nome>lais b roder</Cliente_Nome>
+    <Cliente_Email>laaisroder@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>16/01/2017 15:26:45</Data_Transacao>
+    <Data_Compensacao>15/02/2017 15:31:48</Data_Compensacao>
+    <Ref_Transacao>-KacJHMTgB933KIJ7wvt</Ref_Transacao>
+    <Parcelas>6</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>227,7200</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>5DEEC32B-19B3-4CED-AFAC-6CC8D743C693</Transacao_ID>
+    <Cliente_Nome>Bianca Pepece Oliveira</Cliente_Nome>
+    <Cliente_Email>biancapepece@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>615,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>24,9600</Valor_Taxa>
+    <Valor_Liquido>590,6400</Valor_Liquido>
+    <Data_Transacao>13/01/2017 14:00:02</Data_Transacao>
+    <Data_Compensacao>13/01/2017 14:00:02</Data_Compensacao>
+    <Ref_Transacao>-KaNYdOFS4isPjhEDTqa</Ref_Transacao>
+    <Parcelas>7</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>24,5600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>6DC97499-5F7D-400E-9530-9821B510A9EE</Transacao_ID>
+    <Cliente_Nome>Bianca Pepece Oliveira</Cliente_Nome>
+    <Cliente_Email>biancapepece@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>615,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>24,9600</Valor_Taxa>
+    <Valor_Liquido>590,6400</Valor_Liquido>
+    <Data_Transacao>12/01/2017 11:01:17</Data_Transacao>
+    <Data_Compensacao>12/01/2017 11:01:17</Data_Compensacao>
+    <Ref_Transacao>-KaHl80b-z-OgPEhKg5q</Ref_Transacao>
+    <Parcelas>7</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>24,5600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>4DB14323-7173-4C15-9C95-D3177BF54A29</Transacao_ID>
+    <Cliente_Nome>Bianca C Froes</Cliente_Nome>
+    <Cliente_Email>bia_frsw@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>12/01/2017 10:11:49</Data_Transacao>
+    <Data_Compensacao>11/02/2017 12:57:49</Data_Compensacao>
+    <Ref_Transacao>-KaH_ohb9jEXTi2pVWCx</Ref_Transacao>
+    <Parcelas>12</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>227,7200</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>692AEC8A-80A8-4279-9206-5F460B50B7E8</Transacao_ID>
+    <Cliente_Nome>Vilma Gazola</Cliente_Nome>
+    <Cliente_Email>gabi_cm12@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>129,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>5,5700</Valor_Taxa>
+    <Valor_Liquido>124,0300</Valor_Liquido>
+    <Data_Transacao>11/01/2017 22:38:15</Data_Transacao>
+    <Data_Compensacao>10/02/2017 22:49:09</Data_Compensacao>
+    <Ref_Transacao>-KaF62uLaUHtGogcfazm</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>124,0300</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>5,1700</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>B8C441A9-0EBB-419B-9D4D-810D203F9386</Transacao_ID>
+    <Cliente_Nome>Bianca Pepece Oliveira</Cliente_Nome>
+    <Cliente_Email>biancapepece@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>615,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>24,9600</Valor_Taxa>
+    <Valor_Liquido>590,6400</Valor_Liquido>
+    <Data_Transacao>11/01/2017 16:02:52</Data_Transacao>
+    <Data_Compensacao>11/01/2017 16:02:52</Data_Compensacao>
+    <Ref_Transacao>-KaDg_F_VQ0HkOaOQDMn</Ref_Transacao>
+    <Parcelas>7</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>24,5600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>0AE92F6E-3363-4141-8E7D-E44A87D12A5E</Transacao_ID>
+    <Cliente_Nome>Bianca Pepece Oliveira</Cliente_Nome>
+    <Cliente_Email>biancapepece@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>615,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>24,9600</Valor_Taxa>
+    <Valor_Liquido>590,6400</Valor_Liquido>
+    <Data_Transacao>11/01/2017 12:41:05</Data_Transacao>
+    <Data_Compensacao>11/01/2017 12:41:05</Data_Compensacao>
+    <Ref_Transacao>-KaCx0wgdtlUF567bP-e</Ref_Transacao>
+    <Parcelas>7</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>24,5600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>42CC8305-A28F-406C-B40E-5B3CD13CA2AC</Transacao_ID>
+    <Cliente_Nome>Elaine C Conde</Cliente_Nome>
+    <Cliente_Email>naty-fontana@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>129,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>5,5700</Valor_Taxa>
+    <Valor_Liquido>124,0300</Valor_Liquido>
+    <Data_Transacao>11/01/2017 12:03:48</Data_Transacao>
+    <Data_Compensacao>10/02/2017 12:12:08</Data_Compensacao>
+    <Ref_Transacao>-KaCpre__E0SS4cmhSWf</Ref_Transacao>
+    <Parcelas>5</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>124,0300</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>5,1700</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>018B0A02-4366-4EC8-9646-A6DF330194FF</Transacao_ID>
+    <Cliente_Nome>Luana Bonfim Da Silva</Cliente_Nome>
+    <Cliente_Email>luanabonfim21@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>129,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>5,5700</Valor_Taxa>
+    <Valor_Liquido>124,0300</Valor_Liquido>
+    <Data_Transacao>10/01/2017 20:20:44</Data_Transacao>
+    <Data_Compensacao>10/01/2017 20:20:44</Data_Compensacao>
+    <Ref_Transacao>-Ka9T-esn1xJGH6BxKz9</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>5,1700</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>2606D944-B4FF-43F0-ABAF-3890F9FB83DF</Transacao_ID>
+    <Cliente_Nome>Stefani de araujo</Cliente_Nome>
+    <Cliente_Email>stefaniaraujo813@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>10/01/2017 14:48:36</Data_Transacao>
+    <Data_Compensacao>10/01/2017 14:48:36</Data_Compensacao>
+    <Ref_Transacao>-Ka8Gz-0iCjd6cwRAj7A</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>A304AF1E-B915-441C-A80F-09B484471ED8</Transacao_ID>
+    <Cliente_Nome>Thiago Ramos Bocardo</Cliente_Nome>
+    <Cliente_Email>thiago-bocardo@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>378,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>15,4800</Valor_Taxa>
+    <Valor_Liquido>362,5200</Valor_Liquido>
+    <Data_Transacao>09/01/2017 16:36:00</Data_Transacao>
+    <Data_Compensacao>08/02/2017 16:39:10</Data_Compensacao>
+    <Ref_Transacao>-Ka3VtidlYDs1af5jurP</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>362,5200</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>15,0800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>95BBF68E-66C2-419E-85CC-86269E2E9A3A</Transacao_ID>
+    <Cliente_Nome>ANGELICA S J V BOAS</Cliente_Nome>
+    <Cliente_Email>asjvilasboas@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>756,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>30,5600</Valor_Taxa>
+    <Valor_Liquido>725,4400</Valor_Liquido>
+    <Data_Transacao>09/01/2017 12:06:13</Data_Transacao>
+    <Data_Compensacao>09/01/2017 12:06:13</Data_Compensacao>
+    <Ref_Transacao>-Ka2YD_QJwmPF7XF3c4Y</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>30,1600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>684BC346-165F-46B9-AEE8-F58B69357A5D</Transacao_ID>
+    <Cliente_Nome>ISABELA L MENDONCA</Cliente_Nome>
+    <Cliente_Email>isablmendonca@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>08/01/2017 22:08:12</Data_Transacao>
+    <Data_Compensacao>07/02/2017 22:11:58</Data_Compensacao>
+    <Ref_Transacao>-Ka-YR5Sm0xwBvw8lrOM</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>227,7200</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>C820B2AB-09E6-4475-AD13-49A965F31D6E</Transacao_ID>
+    <Cliente_Nome>Gabriela Pereira balabem</Cliente_Nome>
+    <Cliente_Email>casipe@outlook.com.br</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>08/01/2017 09:08:43</Data_Transacao>
+    <Data_Compensacao>08/01/2017 09:08:43</Data_Compensacao>
+    <Ref_Transacao>-K_xl0NUoqZpcDIMI2op</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>9DD6226F-D9D6-4648-B203-0875D99D7F81</Transacao_ID>
+    <Cliente_Nome>Aline Assalim Silva</Cliente_Nome>
+    <Cliente_Email>alineassalim1234@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>475,2000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>19,3600</Valor_Taxa>
+    <Valor_Liquido>455,8400</Valor_Liquido>
+    <Data_Transacao>06/01/2017 17:23:38</Data_Transacao>
+    <Data_Compensacao>06/02/2017 18:55:44</Data_Compensacao>
+    <Ref_Transacao>-K_pE1o8If_wHAEFxGCP</Ref_Transacao>
+    <Parcelas>5</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>455,8400</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>18,9600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>BF3F1D04-57BF-4F5E-A779-E570CA0315D1</Transacao_ID>
+    <Cliente_Nome>MATHEUS T EVARISTO</Cliente_Nome>
+    <Cliente_Email>maevaristo@outlook.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>86,4000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>3,8500</Valor_Taxa>
+    <Valor_Liquido>82,5500</Valor_Liquido>
+    <Data_Transacao>05/01/2017 09:13:22</Data_Transacao>
+    <Data_Compensacao>04/02/2017 09:18:52</Data_Compensacao>
+    <Ref_Transacao>-K_iKHO_XxrjmZRr8JWR</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>82,5500</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>3,4500</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>7CE8BF1B-51F7-4063-9DFE-CA2DC1BB8220</Transacao_ID>
+    <Cliente_Nome>LUIZ CLAUDIO CARNIO FILHO</Cliente_Nome>
+    <Cliente_Email>luiiz_claudioo@outlook.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>378,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>15,4800</Valor_Taxa>
+    <Valor_Liquido>362,5200</Valor_Liquido>
+    <Data_Transacao>04/01/2017 22:33:43</Data_Transacao>
+    <Data_Compensacao>03/02/2017 22:45:07</Data_Compensacao>
+    <Ref_Transacao>-K_g1tOzPxp9tE9hzOam</Ref_Transacao>
+    <Parcelas>5</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>362,5200</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>15,0800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>D5B37132-32AE-4041-9086-EF6542B28562</Transacao_ID>
+    <Cliente_Nome>ANGELICA S J V BOAS</Cliente_Nome>
+    <Cliente_Email>asjvilasboas@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>756,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>30,5600</Valor_Taxa>
+    <Valor_Liquido>725,4400</Valor_Liquido>
+    <Data_Transacao>04/01/2017 20:51:40</Data_Transacao>
+    <Data_Compensacao>09/02/2017 03:57:30</Data_Compensacao>
+    <Ref_Transacao>-K_ffXvok7HDiICzOyl8</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>725,4400</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>30,1600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>95956324-249B-4981-9A08-182C8FBE05B7</Transacao_ID>
+    <Cliente_Nome>Gabriella G Martins</Cliente_Nome>
+    <Cliente_Email>gabriella.martins20@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>04/01/2017 19:18:36</Data_Transacao>
+    <Data_Compensacao>03/02/2017 19:21:39</Data_Compensacao>
+    <Ref_Transacao>-K_fLGIzsNf6qtkdjLSR</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>227,7200</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>7E87C2BD-F53D-4D83-A944-227CBE448798</Transacao_ID>
+    <Cliente_Nome>Bianca C Froes</Cliente_Nome>
+    <Cliente_Email>bia_frsw@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Pagamento negado pela empresa de cartão de crédito</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>378,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>15,4800</Valor_Taxa>
+    <Valor_Liquido>362,5200</Valor_Liquido>
+    <Data_Transacao>04/01/2017 12:14:57</Data_Transacao>
+    <Data_Compensacao>04/01/2017 12:14:57</Data_Compensacao>
+    <Ref_Transacao>-K_dpHnFF-bF0-oO-M3S</Ref_Transacao>
+    <Parcelas>5</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>15,0800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>92A999DD-73FA-4D4E-9CA1-6DC4F0AB01BD</Transacao_ID>
+    <Cliente_Nome>Dhiane Caroline Maran</Cliente_Nome>
+    <Cliente_Email>dhi_brankela@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>32,4000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>1,6900</Valor_Taxa>
+    <Valor_Liquido>30,7100</Valor_Liquido>
+    <Data_Transacao>03/01/2017 19:31:50</Data_Transacao>
+    <Data_Compensacao>03/01/2017 19:31:50</Data_Compensacao>
+    <Ref_Transacao>-K_aEgIexnE7V5QuJXiK</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>1,2900</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>55E313C8-CDF2-45B6-9ACF-CF8E0B698748</Transacao_ID>
+    <Cliente_Nome>Giovanna Ortiz Monteiro</Cliente_Nome>
+    <Cliente_Email>gi_ortiz.monteiro@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>02/01/2017 10:15:45</Data_Transacao>
+    <Data_Compensacao>04/02/2017 03:04:15</Data_Compensacao>
+    <Ref_Transacao>-K_U5nZ0u7UET2F-pZHL</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>227,7200</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>3D467E79-895E-4CD1-9FB6-05C578C4871D</Transacao_ID>
+    <Cliente_Nome>Camila b Viana</Cliente_Nome>
+    <Cliente_Email>camilab.viana@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>237,6000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>9,8800</Valor_Taxa>
+    <Valor_Liquido>227,7200</Valor_Liquido>
+    <Data_Transacao>29/12/2016 13:47:22</Data_Transacao>
+    <Data_Compensacao>28/01/2017 13:52:21</Data_Compensacao>
+    <Ref_Transacao>-K_AFtgq3QJy0Z9uYaHU</Ref_Transacao>
+    <Parcelas>4</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>227,7200</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>9,4800</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>595E8AA4-CB66-4C9D-A8C7-469EDDD1D6D2</Transacao_ID>
+    <Cliente_Nome>LAILA B G TAVARES</Cliente_Nome>
+    <Cliente_Email>lailagerdulli@hotmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>194,3900</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>8,1600</Valor_Taxa>
+    <Valor_Liquido>186,2300</Valor_Liquido>
+    <Data_Transacao>15/12/2016 18:13:45</Data_Transacao>
+    <Data_Compensacao>14/01/2017 18:15:47</Data_Compensacao>
+    <Ref_Transacao>-KZ36beqxqR2V7fJwpCJ</Ref_Transacao>
+    <Parcelas>3</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>186,2300</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>7,7600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>498A0215-E91E-4E71-BCD8-6ECDD54945F6</Transacao_ID>
+    <Cliente_Nome>MARIA LAURA MARTINS BEZ</Cliente_Nome>
+    <Cliente_Email>lau.bez@live.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>194,3900</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>8,1600</Valor_Taxa>
+    <Valor_Liquido>186,2300</Valor_Liquido>
+    <Data_Transacao>13/12/2016 00:20:26</Data_Transacao>
+    <Data_Compensacao>13/12/2016 00:20:26</Data_Compensacao>
+    <Ref_Transacao>-KYpypNBYbp5UpKmk_e2</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>7,7600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>A9EE8524-530E-4EF4-84D8-EA01C6943D87</Transacao_ID>
+    <Cliente_Nome>Gustavo A Oliveira</Cliente_Nome>
+    <Cliente_Email>g.azevedo@outlook.com.br</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Aprovada</Status>
+    <Tipo_Pagamento>Cartão de Crédito</Tipo_Pagamento>
+    <Valor_Bruto>324,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>13,3300</Valor_Taxa>
+    <Valor_Liquido>310,6700</Valor_Liquido>
+    <Data_Transacao>07/12/2016 18:50:02</Data_Transacao>
+    <Data_Compensacao>06/01/2017 19:07:38</Data_Compensacao>
+    <Ref_Transacao>-KYQ2Bqw0JqEolMMdw9V</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>1</Recebimentos>
+    <Recebidos>1</Recebidos>
+    <Valor_Recebido>310,6700</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>12,9300</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>021A5DA6-5525-48A7-8229-0E3FEE2002F3</Transacao_ID>
+    <Cliente_Nome>Ana Flávia Moreira Lima</Cliente_Nome>
+    <Cliente_Email>anamoreiralmr@outlook.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>194,3900</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>8,1600</Valor_Taxa>
+    <Valor_Liquido>186,2300</Valor_Liquido>
+    <Data_Transacao>06/12/2016 13:25:24</Data_Transacao>
+    <Data_Compensacao>06/12/2016 13:25:24</Data_Compensacao>
+    <Ref_Transacao>-KYJjIgnEVPmzk4-0KIu</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>7,7600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>2A73514D-F313-4D18-8DF9-303DC7CE7891</Transacao_ID>
+    <Cliente_Nome>Taluana batista viana</Cliente_Nome>
+    <Cliente_Email>taluana.viana@gmail.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>Boleto</Tipo_Pagamento>
+    <Valor_Bruto>194,3900</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>8,1600</Valor_Taxa>
+    <Valor_Liquido>186,2300</Valor_Liquido>
+    <Data_Transacao>25/11/2016 20:55:43</Data_Transacao>
+    <Data_Compensacao>25/11/2016 20:55:43</Data_Compensacao>
+    <Ref_Transacao>-KXSgsbPleuCEPwqO0rC</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>7,7600</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+<Table>
+    <Transacao_ID>6B0241D4-5869-4006-8B9D-59915D3A059F</Transacao_ID>
+    <Cliente_Nome>Osmair Silva</Cliente_Nome>
+    <Cliente_Email>osmairantt@yahoo.com</Cliente_Email>
+    <Debito_Credito>Crédito</Debito_Credito>
+    <Tipo_Transacao>Pagamento</Tipo_Transacao>
+    <Status>Cancelada</Status>
+    <Tipo_Pagamento>TEF</Tipo_Pagamento>
+    <Valor_Bruto>324,0000</Valor_Bruto>
+    <Valor_Desconto>0,0000</Valor_Desconto>
+    <Valor_Taxa>13,3300</Valor_Taxa>
+    <Valor_Liquido>310,6700</Valor_Liquido>
+    <Data_Transacao>17/11/2016 12:27:22</Data_Transacao>
+    <Data_Compensacao>17/11/2016 12:27:22</Data_Compensacao>
+    <Ref_Transacao>-KWmfnDAdjBZbJNLHtZc</Ref_Transacao>
+    <Parcelas>1</Parcelas>
+    <Recebimentos>0</Recebimentos>
+    <Recebidos>0</Recebidos>
+    <Valor_Recebido>0,0000</Valor_Recebido>
+    <Valor_Tarifa_Intermediacao>0,4000</Valor_Tarifa_Intermediacao>
+    <Valor_Taxa_Intermediacao>12,9300</Valor_Taxa_Intermediacao>
+    <Valor_Taxa_Parcelamento>0,0000</Valor_Taxa_Parcelamento>
+    <Valor_Tarifa_Boleto>0,0000</Valor_Tarifa_Boleto>
+</Table>
+</NewDataSet>

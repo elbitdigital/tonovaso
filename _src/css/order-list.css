@@ -9,6 +9,6 @@
 	-webkit-flex-flow: column;
 	flex-flow: column;
 	max-width: 48em;
-	padding: 1em 1em 0;
+	padding: 0 1em 0;
 	width: 100%;
 }

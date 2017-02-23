@@ -23,6 +23,18 @@
 	width: 100%;
 }
 
+.OrderItem-dateLabel,
+.OrderItem-codeLabel,
+.OrderItem-clientEmailLabel {
+	font-size: .75em;
+	padding-left: .5em;
+	margin-bottom: .5em;
+}
+
+.OrderItem-dateLabel {
+	font-weight: 700;
+}
+
 .OrderItem:hover {
 	background-color: #ffffff;
 }

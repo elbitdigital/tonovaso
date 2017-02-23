@@ -15,10 +15,24 @@
 <script src="../dist/js/classList.min.js"></script>
 <![endif]-->
 
-<script type="text/javascript">
+<script>
+
 	initApp = function() {
+
+		self.isSuperUser = false;
+
 		firebase.auth().onAuthStateChanged(function(user) {
+
 			if (user) {
+
+				firebase.database().ref('users/').child('u' + user.uid).on('value', function (snap) {
+
+					if (snap.val().su)
+						self.isSuperUser = true;
+
+					console.log('Welcome Super User!');
+
+				});
 
 				var userRef = firebase.database().ref('/users/u' + user.uid);
 				userRef.once('value').then(function(snapshot) {
@@ -51,10 +65,15 @@
 				});
 
 			} else {
+
 //				document.getElementById('account-details').textContent = 'null';
+
 			}
+
 		}, function(error) {
+
 			console.log(error);
+
 		});
 	};
 
@@ -122,6 +141,18 @@
 	</div>
 
 </div>
+
+<div class="OrderListControls">
+
+	<div class="OrderListControls-switch">
+
+		<input type="checkbox" name="orderListControls-hiddenCanceled" id="orderListControls-hiddenCanceled" checked/>
+		<label for="orderListControls-hiddenCanceled">Ocultar canceladas</label>
+
+	</div>
+
+</div>
+
 <div id="orderList" class="OrderList"></div>
 <span id="orderList-count"></span>
 
@@ -257,26 +288,28 @@
 
 		if (self.fetch) {
 
-			fetch('data/PagSeguro_2017-02-22_03-31-45.xml')
+			fetch('data/PagSeguro_2017-02-23_02-55-17.xml')
 				.then(function (response) {
 
-					return response.text()
+						console.log(response.text);
+					return response.text();
 
 				}).then(function (xmlString) {
 
-				try {
+					try {
 
-					var x2js = new X2JS();
+						var x2js = new X2JS();
 
-					syncPagSeguroData(x2js.xml_str2json(xmlString).NewDataSet.Table);
+						syncPagSeguroData(x2js.xml_str2json(xmlString).NewDataSet.Table);
+						console.log('kkk');
 
-				} catch (e) {
+					} catch (e) {
 
-//							alert('Algum erro com o XML, teste outro arquivo');
+//						alert('Algum erro com o XML, teste outro arquivo');
 
-				}
+					}
 
-			});
+				});
 
 		} else {
 
@@ -328,6 +361,27 @@
 	orderListSearch.searchButtonElement.addEventListener('click', function () {
 
 		orderList.build(orderListSearch.inputElement.value);
+
+	});
+
+</script>
+
+<script>
+
+	var orderListControl = {
+		hiddenControlCheckboxElement: document.getElementById('orderListControls-hiddenCanceled')
+	};
+
+	orderListControl.hiddenControlCheckboxElement.addEventListener('change', function () {
+
+		// anula o valor do input de pesquisa
+		orderListSearch.inputElement.value = '';
+
+		// troca configuração da lista de pedidos
+		orderList.config.hiddenCanceled = !!this.checked;
+
+		// constroi a view
+		orderList.build();
 
 	});
 
