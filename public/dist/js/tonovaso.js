@@ -811,8 +811,14 @@ var OrderTicketItem = (function () {
 
 	OrderTicketItem.prototype.getTicketTypeColor = function (ticketId) {
 
-		var maleClassName = 'font-indigo-700';
-		var femaleClassName = 'font-pink-700';
+		var maleClassName = {
+			'background': 'indigo-50',
+			'font': 'font-indigo-700'
+		};
+		var femaleClassName = {
+			'background': 'pink-50',
+			'font': 'font-pink-700'
+		};
 
 		switch (ticketId) {
 
@@ -843,10 +849,13 @@ var OrderTicketItem = (function () {
 	OrderTicketItem.prototype.createElement = function () {
 
 		var self = this;
+		var colors = this.getTicketTypeColor(this.id);
 
 		this.element = document.createElement('div');
 		this.element.className  = 'OrderTicketItem';
 		this.element.dataset.itemReferenceId = this.reference;
+		this.element.classList.add(colors.background);
+
 
 		// Create ID Label Element
 		this.idLabelElement = document.createElement('span');
@@ -859,7 +868,7 @@ var OrderTicketItem = (function () {
 		this.descriptionLabelElement = document.createElement('span');
 		this.descriptionLabelElement.className = 'OrderTicketItem-description';
 		this.descriptionLabelElement.innerText = this.description + '';
-		this.descriptionLabelElement.classList.add(this.getTicketTypeColor(this.id));
+		this.descriptionLabelElement.classList.add(colors.font);
 
 		this.element.appendChild(this.descriptionLabelElement);
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="roboto">
 <meta charset="UTF-8">
-<title>Administração - TNV</title>
+<title>TnV - Vendas</title>
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 <script src="../dist/js/villa.min.js"></script>
@@ -14,77 +14,6 @@
 <script src="../dist/js/html5shiv-printshiv.js"></script>
 <script src="../dist/js/classList.min.js"></script>
 <![endif]-->
-
-<script>
-
-	initApp = function() {
-
-		self.isSuperUser = false;
-
-		firebase.auth().onAuthStateChanged(function(user) {
-
-			if (user) {
-
-				firebase.database().ref('users/').child('u' + user.uid).on('value', function (snap) {
-
-					if (snap.val().su)
-						self.isSuperUser = true;
-
-					console.log('Welcome Super User!');
-
-				});
-
-				var userRef = firebase.database().ref('/users/u' + user.uid);
-				userRef.once('value').then(function(snapshot) {
-
-					if(snapshot.exists() && snapshot.child('role').val() == "admin") {
-
-						var uid = snapshot.child('uid').val();
-						var adminRef = firebase.database().ref('admins/a' + uid);
-
-						adminRef.once('value').then(function(snapshot) {
-							if(snapshot.exists()) {
-
-								document.getElementById('userInfo-name').textContent = user.displayName;
-								document.getElementById('userInfo-email').textContent = user.email;
-								document.getElementById('userInfo-uid').textContent = user.uid;
-								document.querySelectorAll('div.AdminHeader-control')[0].classList.add('is-online');
-
-							}
-						}).catch(function(err) {
-							console.log('Você não tem permissão de administrador: ' + err);
-						});
-
-					} else {
-						window.location.href = '/administracao/sair';
-					}
-
-				}).catch(function(err) {
-					console.log('Algo de errado não está certo: ' + err);
-				});
-
-			} else {
-
-//				document.getElementById('account-details').textContent = 'null';
-
-			}
-
-		}, function(error) {
-
-			console.log(error);
-
-		});
-	};
-
-	window.addEventListener('load', function() {
-		initApp()
-	});
-
-	if (typeof localStorage["firebaseui::rememberedAccounts"] == "undefined") {
-		window.location.href = "/administracao/acesso";
-	}
-
-</script>
 
 <style>
 
@@ -119,39 +48,7 @@
 
 <body class="grey-100">
 
-<!--<button onclick="getXMLandSyncPagSeguroData();">Sincronizar com PagSeguro</button>-->
-
-<header class="AdminHeader">
-
-	<div class="AdminHeader-background"></div>
-
-	<div class="AdminHeader-inner font-brown-900">
-
-		<div class="AdminHeader-logo">
-
-			<img class="logo" src="../dist/img/logo/small/TNVLogo-mini.png" alt="TNV_LOGO" width="150" height="83">
-
-		</div>
-
-		<div class="AdminHeader-info">
-
-			<span style="margin-bottom: .25em;"><b>DADOS DE ACESSO</b></span>
-			<span id="userInfo-name">Nome de exibição</span>
-			<span id="userInfo-email">Email</span>
-			<span id="userInfo-uid">Código de autenticação</span>
-
-		</div>
-
-		<div class="AdminHeader-control">
-
-			<a id="userLogout" href="/administracao/sair" class="Button--narrow Button--alert">Sair</a>
-			<span id="userOffline" class="Button--narrow Button--disabled">Offline</span>
-
-		</div>
-
-	</div>
-
-</header>
+<button onclick="getXMLandSyncPagSeguroData();">Sincronizar com PagSeguro</button>
 
 <div id="orderListSearch" class="OrderListSearch">
 
@@ -172,18 +69,6 @@
 	</div>
 
 </div>
-
-<div class="OrderListControls">
-
-	<div class="OrderListControls-switch">
-
-		<input type="checkbox" name="orderListControls-hiddenCanceled" id="orderListControls-hiddenCanceled" checked/>
-		<label for="orderListControls-hiddenCanceled">Ocultar canceladas</label>
-
-	</div>
-
-</div>
-
 <div id="orderList" class="OrderList"></div>
 <span id="orderList-count"></span>
 
@@ -319,28 +204,26 @@
 
 		if (self.fetch) {
 
-			fetch('data/PagSeguro_2017-02-23_02-55-17.xml')
-				.then(function (response) {
+			fetch('data/PagSeguro_2017-02-22_03-31-45.xml')
+					.then(function (response) {
 
-						console.log(response.text);
-					return response.text();
+						return response.text()
 
-				}).then(function (xmlString) {
+					}).then(function (xmlString) {
 
-					try {
+						try {
 
-						var x2js = new X2JS();
+							var x2js = new X2JS();
 
-						syncPagSeguroData(x2js.xml_str2json(xmlString).NewDataSet.Table);
-						console.log('kkk');
+							syncPagSeguroData(x2js.xml_str2json(xmlString).NewDataSet.Table);
 
-					} catch (e) {
+						} catch (e) {
 
-//						alert('Algum erro com o XML, teste outro arquivo');
+//							alert('Algum erro com o XML, teste outro arquivo');
 
-					}
+						}
 
-				});
+					});
 
 		} else {
 
@@ -392,27 +275,6 @@
 	orderListSearch.searchButtonElement.addEventListener('click', function () {
 
 		orderList.build(orderListSearch.inputElement.value);
-
-	});
-
-</script>
-
-<script>
-
-	var orderListControl = {
-		hiddenControlCheckboxElement: document.getElementById('orderListControls-hiddenCanceled')
-	};
-
-	orderListControl.hiddenControlCheckboxElement.addEventListener('change', function () {
-
-		// anula o valor do input de pesquisa
-		orderListSearch.inputElement.value = '';
-
-		// troca configuração da lista de pedidos
-		orderList.config.hiddenCanceled = !!this.checked;
-
-		// constroi a view
-		orderList.build();
 
 	});
 

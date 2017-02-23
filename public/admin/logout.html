@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Logout - TnV</title>
+</head>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+<script>
+	var config = {
+		apiKey: "AIzaSyBK8q18qHSR0toQutQGp_1wAcfzyfC0pEI",
+		authDomain: "dalia-tonovaso-com-br.firebaseapp.com",
+		databaseURL: "https://dalia-tonovaso-com-br.firebaseio.com",
+		storageBucket: "dalia-tonovaso-com-br.appspot.com",
+		messagingSenderId: "737535874060"
+	};
+	firebase.initializeApp(config);
+
+	window.addEventListener('load', function() {
+		localStorage.removeItem("firebaseui::rememberedAccounts");
+		firebase.auth().signOut();
+		window.location.href = "/admin/login";
+	});
+
+</script>
+<body>
+</body>
+</html>

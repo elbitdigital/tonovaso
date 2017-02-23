@@ -84,18 +84,35 @@
 .OrderItem-showMore {
 	border: none;
 	background: none;
-	color: #03a9f4;
+	color: #039be5;
 	cursor: pointer;
 	text-align: left;
 }
 
-.OrderItem-showMore:focus,
-.OrderItem-showMore:hover {
-	text-decoration: underline;
+.OrderItem-showMore:focus span,
+.OrderItem-showMore:hover span {
+	background-color: #e1f3fc;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 .OrderItem-showMore span {
-	font-size: .75em;
+	background-color: transparent;
+	border-radius: 2px;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .16);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .16);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .16);
+	font-family: "Roboto", sans-serif;
+	font-size: .875em;
+	font-weight: 600;
+	text-transform: uppercase;
+	-webkit-transition: background-color .2s;
+	-moz-transition: background-color .2s;
+	-ms-transition: background-color .2s;
+	-o-transition: background-color .2s;
+	transition: background-color .2s;
+	padding: .5em .75em;
 }
 
 .OrderItem-body {
@@ -122,7 +139,8 @@
 	.OrderItem input {
 		padding: .5em;
 		font-size: .875em;
-		max-width: 18rem;
+		/*max-width: 18rem;*/
+		max-width: 65%;
 	}
 
 	.OrderItem input.OrderItem-clientNameField {

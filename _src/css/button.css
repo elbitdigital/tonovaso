@@ -93,6 +93,64 @@ a.Button {
 	background-color: #039be5;
 }
 
+.Button--narrow {
+	background-color: #03a9f4;
+	border: none;
+	border-radius: 2px;
+	color: #ffffff;
+	font-weight: 700;
+	padding: .25em .5em;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	-ms-transition: background .3s ease-in-out;
+	-o-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+	text-transform: uppercase;
+}
+
+.Button--narrow:focus,
+.Button--narrow:hover {
+	background-color: #81d4fa;
+	cursor: pointer;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	-ms-transition: background .3s ease-in-out;
+	-o-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+}
+
+.Button--narrow:active {
+	background-color: #039be5;
+}
+
+.Button--alert {
+	background-color: #F44336;
+}
+
+.Button--alert:focus,
+.Button--alert:hover {
+	background-color: #EF9A9A;
+}
+
+.Button--alert:active {
+	background-color: #E53935;
+}
+
+.Button--disabled {
+	color: #424242;
+	background-color: #e0e0e0;
+}
+
+.Button--disabled:focus,
+.Button--disabled:hover {
+	color: #757575;
+	background-color: #eeeeee;
+}
+
+.Button--disabled:active {
+	background-color: #e0e0e0;
+}
+
 /* Button span */
 
 .Button span {

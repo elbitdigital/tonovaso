@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Homologação de Autenticação - TnV</title>
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+	<link type="text/css" rel="stylesheet" href="../dist/css/tonovaso.min.css" />
+	<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBK8q18qHSR0toQutQGp_1wAcfzyfC0pEI",
+			authDomain: "dalia-tonovaso-com-br.firebaseapp.com",
+			databaseURL: "https://dalia-tonovaso-com-br.firebaseio.com",
+			storageBucket: "dalia-tonovaso-com-br.appspot.com",
+			messagingSenderId: "737535874060"
+		};
+		firebase.initializeApp(config);
+	</script>
+
+	<script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+
+	<script type="text/javascript">
+		var uiConfig = {
+			callbacks: {
+				'signInSuccess': function(user, credential, redirectUrl) {
+
+					var inner = document.querySelectorAll('div.Login-inner');
+					inner[0].classList.add('is-return');
+
+					var updates = {};
+					updates['/admins/a' + user.uid] = {
+						'uid': user.uid,
+						'datetime': new Date().toLocaleString()
+					};
+					updates['/users/u' + user.uid] = {
+						'role': 'admin',
+						'displayName': user.displayName,
+						'email': user.email,
+						'emailVerified': user.emailVerified,
+						'photoURL': user.photoURL,
+						'uid': user.uid,
+						'providerData': user.providerData
+					};
+
+					firebase.database().ref().update(updates).then(function() {
+						window.location.href = uiConfig.signInSuccessUrl;
+					}).catch(function(err){
+						console.log('Algo de errado não está certo: ' + err);
+					});
+
+				}
+			},
+			signInSuccessUrl: '/admin/confirmation',
+			signInOptions: [
+				firebase.auth.FacebookAuthProvider.PROVIDER_ID
+			],
+			tosUrl: 'https://tonovaso.com.br'
+		};
+
+		var ui = new firebaseui.auth.AuthUI(firebase.auth());
+		ui.start('#firebaseui-auth-container', uiConfig);
+
+	</script>
+
+	<style>
+
+		body {
+			overflow-y: hidden;
+			overflow-x: hidden;
+		}
+
+		.Login {
+			-webkit-align-items: center;
+			align-items: center;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: center;
+			justify-content: center;
+			height: 100vh;
+			width: 100vw;
+		}
+
+		.Login-inner {
+			font-family: "Roboto", sans-serif;
+			-webkit-align-items: center;
+			align-items: center;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: space-around;
+			justify-content: space-around;
+			-webkit-flex-flow: column;
+			flex-flow: column;
+			height: 50%;
+			text-align: center;
+		}
+
+		.Login-inner .logo {
+			height: 150px;
+		}
+
+		.Login-inner.is-return .Return {
+			display: block;
+		}
+
+		.Login-inner-is-return #firebaseui-auth-container {
+			display: none;
+		}
+
+		.Return {
+			display: none;
+		}
+
+		.TitleLight {
+			color: #d5ac70;
+		}
+
+		@supports (mix-blend-mode: lighten) {
+			.TitleLight-gradient {
+				display: inline-block;
+				position: relative;
+				color: #000;
+				background: #fff;
+				mix-blend-mode: multiply;
+				-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+				backface-visibility: hidden;
+			}
+			.TitleLight-gradient::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: -webkit-linear-gradient(left, #947341, #D5AC70, #7B5C2D);
+				background: linear-gradient(to right, #947341, #D5AC70, #7B5C2D);
+				pointer-events: none;
+			}
+			.TitleLight-gradient::before {
+				mix-blend-mode: screen;
+			}
+		}
+
+		.TitleLight p {
+			text-transform: uppercase;
+			margin: .5em 0;
+			font-weight: 600;
+			font-size: 1.25em;
+		}
+
+		@media(min-width: 48em) {
+
+			.TitleLight p {
+				font-size: 1.75em;
+			}
+
+		}
+
+	</style>
+
+	<script>
+
+		window.addEventListener('load', function() {
+			setTimeout(function() {
+				var en = document.querySelectorAll('span.firebaseui-idp-text-long');
+				for (var i = 0; i < en.length; i++) {
+					var pt = en[i].innerText;
+					en[i].innerText = pt.replace("Sign in with", "Entrar com");
+				}
+			}, 500);
+		});
+
+	</script>
+
+</head>
+<body>
+
+<div class="Login">
+
+	<div class="Login-inner">
+
+		<img class="logo" src="../dist/img/logo/small/TNVLogo.png" alt="TNV_LOGO">
+
+		<div class="TitleLight">
+			<p class="TitleLight-gradient">Homologação de acesso - Autenticação</p>
+		</div>
+
+		<div class="Return">
+			<span class="icon-spin5 animate-spin" style="font-size: 1.75em; color: #d5ac70;"></span>
+			<div class="TitleLight">
+				<p class="TitleLight-gradient">Processando dados</p>
+			</div>
+		</div>
+
+		<div id="firebaseui-auth-container"></div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -325,7 +325,11 @@ gulp.task('serve', function () {
 				"/administracao/retirada": "./public/administracao/retirada.html",
 				"/administracao/homologacao": "./public/administracao/homologacao.html",
 				"/administracao/confirmacao": "./public/administracao/confirmacao.html",
-				"/administracao/sair": "./public/administracao/sair.html"
+				"/administracao/sair": "./public/administracao/sair.html",
+				"/admin/login": "./public/admin/login.html",
+				"/admin/logout": "./public/admin/logout.html",
+				"/admin/signup": "./public/admin/signup.html",
+				"/admin/confirmation": "./public/admin/confirmation.html"
 			}
 		},
 		ghostMode: false

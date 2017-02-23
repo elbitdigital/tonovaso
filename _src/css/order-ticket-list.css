@@ -9,6 +9,6 @@
 	display: flex;
 	-webkit-flex-flow: column;
 	flex-flow: column;
-	padding: 0 .5em;
+	padding: .5em;
 	width: 100%;
 }

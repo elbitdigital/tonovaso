@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="roboto">
+<meta charset="UTF-8">
+<title>Administração - TNV</title>
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<script src="../dist/js/villa.min.js"></script>
+<link rel="stylesheet" href="../dist/css/villa.min.css"/>
+<link rel="stylesheet" href="../dist/css/tonovaso.css"/>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="../dist/css/material-colors.css"/>
+<link rel="stylesheet" type="text/css" href="../dist/css/villa-cross.min.css"/>
+<script src="../dist/js/html5shiv.js"></script>
+<script src="../dist/js/html5shiv-printshiv.js"></script>
+<script src="../dist/js/classList.min.js"></script>
+<![endif]-->
+
+<style>
+
+	body {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: column;
+		flex-flow: column;
+	}
+
+	#orderList-count {
+		cursor: default;
+		color: #bdbdbd;
+		font-size: .875em;
+		text-align: center;
+		margin: 1em auto 1.125em;
+		width: 100%;
+	}
+
+	@media (min-width: 48em) {
+
+		#orderList-count {
+			/*font-size: .875em;*/
+		}
+
+	}
+
+</style>
+
+<body class="grey-100">
+
+<header class="AdminHeader">
+
+	<div class="AdminHeader-background"></div>
+	<div class="AdminHeader-inner font-brown-900">
+
+		<div class="AdminHeader-logo">
+			<img class="logo" src="../dist/img/logo/small/TNVLogo-mini.png" alt="TNV_LOGO" width="150px" height="85px">
+		</div>
+
+		<div class="AdminHeader-info">
+			<span style="margin-bottom: .25em;"><b>DADOS DE ACESSO</b></span>
+			<span id="UserInfo-name">Nome de exibição</span>
+			<span id="UserInfo-email">Email</span>
+			<span id="UserInfo-uid">Código de autenticação</span>
+		</div>
+
+		<div class="AdminHeader-control">
+			<a href="/administracao/sair" class="Button--narrow Button--alert">Sair</a>
+			<span class="Button--narrow Button--disabled">Offline</span>
+		</div>
+
+	</div>
+
+</header>
+
+<div id="orderListSearch" class="OrderListSearch">
+
+	<div class="OrderListSearch-field">
+
+		<input type="text" id="orderListSearch-input" class="OrderListSearch-input" placeholder="Busque por um nome"/>
+
+		<div class="OrderListSearch-controls">
+
+			<button id="orderListSearch-searchButton" class="OrderListSearch-searchButton">
+
+				<span class="icon-search"></span>
+
+			</button>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="OrderListControls">
+
+	<div class="OrderListControls-switch">
+
+		<input type="checkbox" name="orderListControls-hiddenCanceled" id="orderListControls-hiddenCanceled" checked/>
+		<label for="orderListControls-hiddenCanceled">Ocultar canceladas</label>
+
+	</div>
+
+</div>
+
+<div id="orderList" class="OrderList"></div>
+<span id="orderList-count"></span>
+
+</body>
+
+</html>
