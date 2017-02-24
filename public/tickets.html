@@ -55,6 +55,24 @@
 	.Tickets h1, h2, h3 {
 		font-family: inherit !important;
 	}
+
+	.Warning {
+		-webkit-align-items: center;
+		align-items: center;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-flex-flow: column;
+		flex-flow: column;
+		padding: 0 1em;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
 </style>
 
 <body class="tk-proxima-nova">
@@ -215,553 +233,14 @@
 
 </header>
 
-<section id="como-comprar" class="Guide grey-50 font-brown-900">
+<div class="Warning">
 
-	<div class="Guide-background"></div>
-	<div class="Guide-inner container">
-
-		<div class="Guide-list">
-
-			<div class="GuideStep">
-
-				<div class="GuideStep-icon">
-
-					<span class="icon-add_shopping_cart"></span>
-
-				</div>
-
-				<h1 class="GuideStep-number font-amber-a700 mobile-hidden">1</h1>
-
-				<h2 class="GuideStep-title font-amber-a700">1 - Escolha</h2>
-
-				<p class="GuideStep-description"><a id="trigger-tickets" href="#tickets">Selecione abaixo</a> os Pacotes e/ou Diárias desejadas e clique em "Finalizar pedido"</p>
-
-			</div>
-
-			<div class="GuideStep">
-
-				<div class="GuideStep-icon">
-
-					<span class="icon-pagseguro"></span>
-
-				</div>
-
-				<h1 class="GuideStep-number font-amber-a700 mobile-hidden">2</h1>
-
-				<h2 class="GuideStep-title font-amber-a700">2 - Ambiente seguro</h2>
-
-				<p class="GuideStep-description">Você será redirecionado ao PagSeguro</p>
-
-			</div>
-
-			<div class="GuideStep">
-
-				<div class="GuideStep-icon">
-
-					<span class="icon-edit"></span>
-
-				</div>
-
-				<h1 class="GuideStep-number font-amber-a700 mobile-hidden">3</h1>
-
-				<h2 class="GuideStep-title font-amber-a700">3 - Identifique-se</h2>
-
-				<p class="GuideStep-description">Insira seu login e senha ou cadastre-se no PagSeguro</p>
-
-			</div>
-
-			<div class="GuideStep">
-
-				<div class="GuideStep-icon">
-
-					<span class="icon-credit-card"></span>
-
-				</div>
-
-				<h1 class="GuideStep-number font-amber-a700 mobile-hidden">4</h1>
-
-				<h2 class="GuideStep-title font-amber-a700">4 - Pague em até 18x</h2>
-
-				<p class="GuideStep-description">Escolha a forma de pagamento desejada e aguarde a confirmação de pagamento</p>
-
-			</div>
-
-			<div class="GuideStep">
-
-				<div class="GuideStep-icon">
-
-					<span class="icon-print"></span>
-
-				</div>
-
-				<h1 class="GuideStep-number font-amber-a700 mobile-hidden">5</h1>
-
-				<h2 class="GuideStep-title font-amber-a700">5 - Pronto!</h2>
-
-				<p class="GuideStep-description">Com comprovante impresso, retire sua pulseira na portaria e <a class="trigger-abadas" href="#abadas">confira os locais de retirada dos abadás</a>.</p>
-
-			</div>
-
-		</div>
-
+	<div class="TitleLight">
+		<p class="TitleLight-gradient" style="max-width: 100%;">As vendas pelo site foram encerradas...</p>
 	</div>
 
-</section>
-
-<div id="tickets" class="Tickets">
-
-	<div class="Tickets-inner container">
-
-		<div class="Tickets-info"></div>
-
-		<div class="Tickets-options">
-
-			<div class="TicketsOption" data-option-id="TNVPACK_M" data-price="364.00" data-description="Pacote Masculino + Abadá">
-
-				<div class="TicketsOption-inner">
-
-					<div class="TicketsOption-header">
-
-						<div class="TicketsOption-primary">
-
-							<h2 class="TicketOption-title">Pacote Masculino + Abadá</h2>
-
-							<div class="TicketOption-info">
-
-								<span class="TicketOption-price">R$350,00</span>
-								<span class="TicketOption-taxFee">(+R$14,00 TAXA)</span> <!-- 7,999% ~ 8% -->
-
-							</div>
-
-						</div>
-
-						<div class="TicketsOption-secondary">
-
-							<div class="TicketsOption-quantity">
-
-								<div class="Select Select--ticketOption" data-name="select-01">
-
-									<div class="Select-inner">
-
-										<div class="Select-value"></div>
-										<div class="Select-arrow">
-
-											<span class="icon-keyboard_arrow_down"></span>
-
-										</div>
-
-										<select class="Select-select" name="quantity" id="q01">
-
-											<option value="0">0</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-											<option value="6">6</option>
-											<option value="7">7</option>
-											<option value="8">8</option>
-											<option value="9">9</option>
-
-										</select>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="TicketsOption-footer">
-
-						<div class="TicketsOption-description">
-
-							<p>
-								O pacote masculino dá o direito a dois abadás e uma pulseira para curtir todos os 5 dias do melhor carnaval da região.
-								São 14 horas de festa open bar todos os dias com atrações ao vivo, muita bebida e gente bonita.
-								A pulseira poderá ser retirada na portaria do bloco à partir do dia 23/02/2017 e os abadás já podem ser retirados nos locais que você <a class="trigger-abadas" href="#abadas">confere aqui.</a>
-							</p>
-
-						</div>
-
-						<div class="TicketsOption-expand">
-
-							<a href="#" class="TicketsOptions-showMore">Mais Informações</a>
-							<a class="TicketsOptions-showLess">Ocultar Informações</a>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="TicketsOption" data-option-id="TNVPACK_F" data-price="239.20" data-description="Pacote Feminino + Abadá">
-
-				<div class="TicketsOption-inner">
-
-					<div class="TicketsOption-header">
-
-						<div class="TicketsOption-primary">
-
-							<h2 class="TicketOption-title">Pacote Feminino + Abadá</h2>
-
-							<div class="TicketOption-info">
-
-								<span class="TicketOption-price">R$230,00</span>
-								<span class="TicketOption-taxFee">(+R$9,20 TAXA)</span> <!-- 7,999% ~ 8% -->
-
-							</div>
-
-						</div>
-
-						<div class="TicketsOption-secondary">
-
-							<div class="TicketsOption-quantity">
-
-								<div class="Select Select--ticketOption" data-name="select-02">
-
-									<div class="Select-inner">
-
-										<div class="Select-value"></div>
-										<div class="Select-arrow">
-
-											<span class="icon-keyboard_arrow_down"></span>
-
-										</div>
-
-										<select class="Select-select" name="quantity" id="q02">
-
-											<option value="0">0</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-											<option value="6">6</option>
-											<option value="7">7</option>
-											<option value="8">8</option>
-											<option value="9">9</option>
-
-										</select>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="TicketsOption-footer">
-
-						<div class="TicketsOption-description">
-
-							<p>
-								O pacote feminino dá o direito a um abadá e uma pulseira para curtir todos os 5 dias do melhor carnaval da região.
-								São 14 horas de festa open bar todos os dias com atrações ao vivo, muita bebida e gente bonita.
-								A pulseira poderá ser retirada na portaria do bloco à partir do dia 23/02/2017 e o abadá já pode ser retirado nos locais que você <a class="trigger-abadas" href="#abadas">confere aqui.</a>
-							</p>
-
-						</div>
-
-						<div class="TicketsOption-expand">
-
-							<a href="#" class="TicketsOptions-showMore">Mais Informações</a>
-							<a class="TicketsOptions-showLess">Ocultar Informações</a>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="TicketsOption" data-option-id="TNVDIAR_M" data-price="83.20" data-description="Diária Masculina">
-
-				<div class="TicketsOption-inner">
-
-					<div class="TicketsOption-header">
-
-						<div class="TicketsOption-primary">
-
-							<h2 class="TicketOption-title">Diária Masculina</h2>
-
-							<div class="TicketOption-info">
-
-								<span class="TicketOption-price">R$80,00</span>
-								<span class="TicketOption-taxFee">(+R$3,20 TAXA)</span> <!-- 7,999% ~ 8% -->
-
-							</div>
-
-						</div>
-
-						<div class="TicketsOption-secondary">
-
-							<div class="TicketsOption-quantity">
-
-								<div class="Select Select--ticketOption" data-name="select-03">
-
-									<div class="Select-inner">
-
-										<div class="Select-value"></div>
-										<div class="Select-arrow">
-
-											<span class="icon-keyboard_arrow_down"></span>
-
-										</div>
-
-										<select class="Select-select" name="quantity" id="q03">
-
-											<option value="0">0</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-											<option value="6">6</option>
-											<option value="7">7</option>
-											<option value="8">8</option>
-											<option value="9">9</option>
-
-										</select>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="TicketsOption-footer">
-
-						<div class="TicketsOption-description">
-
-							<p>
-								A diária dá direito a entrada a um dia de folia, escolhido pelo folião na hora da retirada da pulseira.
-								As pulseiras poderão ser retiradas na portaria do bloco à partir do dia 23/02/2017.
-							</p>
-
-						</div>
-
-						<div class="TicketsOption-expand">
-
-							<a href="#" class="TicketsOptions-showMore">Mais Informações</a>
-							<a class="TicketsOptions-showLess">Ocultar Informações</a>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="TicketsOption" data-option-id="TNVDIAR_F" data-price="72.80" data-description="Diária Feminina">
-
-				<div class="TicketsOption-inner">
-
-					<div class="TicketsOption-header">
-
-						<div class="TicketsOption-primary">
-
-							<h2 class="TicketOption-title">Diária Feminina</h2>
-
-							<div class="TicketOption-info">
-
-								<span class="TicketOption-price">R$70,00</span>
-								<span class="TicketOption-taxFee">(+R$2,80 TAXA)</span> <!-- 7,999% ~ 8% -->
-
-							</div>
-
-						</div>
-
-						<div class="TicketsOption-secondary">
-
-							<div class="TicketsOption-quantity">
-
-								<div class="Select Select--ticketOption" data-name="select-04">
-
-									<div class="Select-inner">
-
-										<div class="Select-value"></div>
-										<div class="Select-arrow">
-
-											<span class="icon-keyboard_arrow_down"></span>
-
-										</div>
-
-										<select class="Select-select" name="quantity" id="q04">
-
-											<option value="0">0</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-											<option value="6">6</option>
-											<option value="7">7</option>
-											<option value="8">8</option>
-											<option value="9">9</option>
-
-										</select>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="TicketsOption-footer">
-
-						<div class="TicketsOption-description">
-
-							<p>
-								A diária dá direito a entrada a um dia de folia, escolhido pelo folião na hora da retirada da pulseira.
-								As pulseiras poderão ser retiradas na portaria do bloco à partir do dia 23/02/2017.
-							</p>
-
-						</div>
-
-						<div class="TicketsOption-expand">
-
-							<a href="#" class="TicketsOptions-showMore">Mais Informações</a>
-							<a class="TicketsOptions-showLess">Ocultar Informações</a>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="TicketsOption" data-option-id="TNVABADA" data-price="31.20" data-description="Abadá">
-
-				<div class="TicketsOption-inner">
-
-					<div class="TicketsOption-header">
-
-						<div class="TicketsOption-primary">
-
-							<h2 class="TicketOption-title">Abadá</h2>
-
-							<div class="TicketOption-info">
-
-								<span class="TicketOption-price">R$30,00</span>
-								<span class="TicketOption-taxFee">(+R$1,20 TAXA)</span> <!-- 7,999% ~ 8% -->
-
-							</div>
-
-						</div>
-
-						<div class="TicketsOption-secondary">
-
-							<div class="TicketsOption-quantity">
-
-								<div class="Select Select--ticketOption" data-name="select-05">
-
-									<div class="Select-inner">
-
-										<div class="Select-value"></div>
-										<div class="Select-arrow">
-
-											<span class="icon-keyboard_arrow_down"></span>
-
-										</div>
-
-										<select class="Select-select" name="quantity" id="q05">
-
-											<option value="0">0</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-											<option value="6">6</option>
-											<option value="7">7</option>
-											<option value="8">8</option>
-											<option value="9">9</option>
-
-										</select>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="TicketsOption-footer">
-
-						<div class="TicketsOption-description">
-
-							<p>
-								Adquira um abadá pelo site e compareça a um dos diversos pontos de retirada com seu comprovante para efetuar sua retirada.
-								Os locais para retirada você <a class="trigger-abadas" href="#abadas">encontra aqui.</a>
-							</p>
-
-						</div>
-
-						<div class="TicketsOption-expand">
-
-							<a href="#" class="TicketsOptions-showMore">Mais Informações</a>
-							<a class="TicketsOptions-showLess">Ocultar Informações</a>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="TicketsCheckout Tickets-checkout">
-
-			<div class="TicketsCheckout-inner container">
-
-				<div class="TicketsCheckout-details">
-
-					<div class="TicketsCheckout-quantity"></div>
-					<div class="TicketsCheckout-amount"></div>
-
-				</div>
-
-				<div class="TicketsCheckout-emptyCart">
-
-					<span>Carrinho Vazio</span>
-
-				</div>
-
-				<div class="TicketsCheckout-start">
-
-					<span>Finalizar pedido</span>
-
-				</div>
-
-			</div>
-
-		</div>
-
+	<div class="TitleLight">
+		<p class="TitleLight-gradient" style="max-width: 100%;">Mas você ainda pode adquirir seu pacote, diária ou abadá nos pontos de venda!</p>
 	</div>
 
 </div>
@@ -771,42 +250,7 @@
 	<div class="Points-background"></div>
 	<div class="Points-inner">
 
-		<div id="abadas" class="Points-title grey-50 font-amber-a700">
-			Pontos de retirada dos abadás
-		</div>
-
-		<div class="Points-list container">
-
-			<div class="PointTag">
-
-				<h1 class="PointTag-city">ASSIS</h1>
-				<h2 class="PointTag-local font-amber-a700">Cheia de Charme</h2>
-				<p class="PointTag-address">Rua Gonçalves Dias, 50</p>
-				<p class="PointTag-phone">18 3325 1399</p>
-
-			</div>
-
-			<div class="PointTag">
-
-				<h1 class="PointTag-city">PALMITAL</h1>
-				<h2 class="PointTag-local font-amber-a700">Cheia de Charme</h2>
-				<p class="PointTag-address">Rua Praça da Matriz, 55</p>
-				<p class="PointTag-phone">18 3351 4515</p>
-
-			</div>
-
-			<div class="PointTag">
-
-				<h1 class="PointTag-city">PORTARIA</h1>
-				<h2 class="PointTag-local font-amber-a700">Bola e Cidadania</h2>
-				<p class="PointTag-address">Rua Manoel Leão Rego, 527</p>
-				<p class="PointTag-phone">(Das 9h às 22h)</p>
-
-			</div>
-
-		</div>
-
-		<div class="Points-title grey-50 font-amber-a700">
+		<div id="vendas" class="Points-title grey-50 font-amber-a700">
 			Pontos de Venda
 		</div>
 
@@ -870,6 +314,41 @@
 
 	</div>
 
+		<div id="abadas" class="Points-title grey-50 font-amber-a700">
+			Pontos de retirada dos abadás
+		</div>
+
+		<div class="Points-list container">
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">ASSIS</h1>
+				<h2 class="PointTag-local font-amber-a700">Cheia de Charme</h2>
+				<p class="PointTag-address">Rua Gonçalves Dias, 50</p>
+				<p class="PointTag-phone">18 3325 1399</p>
+
+			</div>
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">PALMITAL</h1>
+				<h2 class="PointTag-local font-amber-a700">Cheia de Charme</h2>
+				<p class="PointTag-address">Rua Praça da Matriz, 55</p>
+				<p class="PointTag-phone">18 3351 4515</p>
+
+			</div>
+
+			<div class="PointTag">
+
+				<h1 class="PointTag-city">PORTARIA</h1>
+				<h2 class="PointTag-local font-amber-a700">Bola e Cidadania</h2>
+				<p class="PointTag-address">Rua Manoel Leão Rego, 527</p>
+				<p class="PointTag-phone">(Das 9h às 22h)</p>
+
+			</div>
+
+		</div>
+
 </section>
 
 <footer class="Footer Footer--tickets">
@@ -912,28 +391,10 @@
 
 </footer>
 
-<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
-<script>
-	// Initialize Firebase
-	var config = {
-		apiKey: "AIzaSyBK8q18qHSR0toQutQGp_1wAcfzyfC0pEI",
-		authDomain: "dalia-tonovaso-com-br.firebaseapp.com",
-		databaseURL: "https://dalia-tonovaso-com-br.firebaseio.com",
-		storageBucket: "dalia-tonovaso-com-br.appspot.com",
-		messagingSenderId: "737535874060"
-	};
-	firebase.initializeApp(config);
-</script>
-
 <script src="dist/js/underscore-min.js"></script>
 <script src="dist/js/tonovaso.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
 <script>
-
-	var tickets = new Tickets(document.getElementById('tickets'));
-	tickets.dialog = new Dialog(document.getElementById('tickets-dialog'));
 
 	var abadaAnchor = new Anchor(document.getElementById('abadas'), {
 		duration: 600,
@@ -950,17 +411,6 @@
 		});
 
 	}
-
-	var ticketsAnchor = new Anchor(document.getElementById('tickets'), {
-		duration: 600,
-		easing: 'easeInQuad',
-		scrollOffset: -25
-	});
-
-	document.getElementById('trigger-tickets').addEventListener('click', function (e) {
-		e.preventDefault();
-		ticketsAnchor.push();
-	});
 
 </script>
 
