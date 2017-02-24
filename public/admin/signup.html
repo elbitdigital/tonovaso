@@ -48,7 +48,7 @@
 
 					firebase.database().ref().update(updates).then(function() {
 						window.location.href = uiConfig.signInSuccessUrl;
-					}).catch(function(err){
+					}).catch(function(err) {
 						console.log('Algo de errado não está certo: ' + err);
 					});
 

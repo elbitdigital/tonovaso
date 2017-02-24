@@ -1,6 +1,22 @@
 {
   "rules": {
-    ".read": "auth != null",
-    ".write": "auth != null"
+    "admins": {
+      ".read": "root.child('admins').hasChild('a' + auth.uid) && root.child('users/u' + auth.uid + '/role').val() === 'admin'",
+      "$uid": {
+        ".write": "auth != null"
+      }
+    },
+    "transactions": {
+      ".read": "root.child('admins').hasChild('a' + auth.uid)",
+      ".write": "true"
+    },
+    "users": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "ticketShippings": {
+      ".read": "root.child('admins').hasChild('a' + auth.uid)",
+      ".write": "true"
+    }
   }
 }

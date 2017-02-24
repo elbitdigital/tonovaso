@@ -40,16 +40,14 @@
 				var uid = user.uid;
 				var providerData = user.providerData;
 				document.getElementById('user-name').textContent = displayName.substr(0, displayName.indexOf(' '));
-				user.getToken().then(function(accessToken) {
-					document.getElementById('account-details').textContent = JSON.stringify({
-						displayName: displayName,
-						email: email,
-						emailVerified: emailVerified,
-						photoURL: photoURL,
-						uid: uid,
-						providerData: providerData
-					}, null, 4);
-				});
+				document.getElementById('account-details').textContent = JSON.stringify({
+					displayName: displayName,
+					email: email,
+					emailVerified: emailVerified,
+					photoURL: photoURL,
+					uid: uid,
+					providerData: providerData
+				}, null, 4);
 
 			} else {
 				// User is signed out.
@@ -61,14 +59,8 @@
 	};
 
 	window.addEventListener('load', function() {
-		initApp()
+		initApp();
 	});
-
-	if (typeof localStorage["firebaseui::rememberedAccounts"] == "undefined") {
-		window.location.href = "/admin/signup";
-	} else {
-		window.location.href = "/admin/";
-	}
 
 </script>
 
