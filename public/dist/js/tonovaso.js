@@ -941,8 +941,6 @@ var OrderTicketItem = (function () {
 
 			}
 
-
-
 		});
 
 		this.element.appendChild(this.shippingButtonElement);
